@@ -1,0 +1,23 @@
+{
+  "name": "c-flo",
+  "version": "1.0.0",
+  "description": "MsgFlo setup for the c-base space station",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-base/c-flo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/c-base/c-flo/issues"
+  },
+  "homepage": "https://github.com/c-base/c-flo#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-yamllint": "^0.2.0"
+  }
+}
