@@ -34,11 +34,19 @@
       "FOREIGN": "./node_modules/.bin/msgflo-register-foreign participants/#ROLE.yml"
     },
     "components": {
-      "c-flo/c-beam": "#FOREIGN",
-      "c-flo/ingress-table": "#FOREIGN",
-      "c-flo/ampel-nerd": "#FOREIGN",
       "c-flo/DetectPartyMods": "#NOFLO",
-      "c-flo/logger": "#NOFLO"
+      "c-flo/logger": "#NOFLO",
+      "c-flo/ampel-nerd": "#FOREIGN",
+      "c-flo/barstatus-bar": "#FOREIGN",
+      "c-flo/barstatus-c-lab": "#FOREIGN",
+      "c-flo/barstatus-nerd": "#FOREIGN",
+      "c-flo/c-beam": "#FOREIGN",
+      "c-flo/c_leuse": "#FOREIGN",
+      "c-flo/he1": "#FOREIGN",
+      "c-flo/ingress-table": "#FOREIGN",
+      "c-flo/mechblast": "#FOREIGN",
+      "c-flo/nerdctrl": "#FOREIGN",
+      "c-flo/siri": "#FOREIGN"
     }
   },
   "noflo": {
