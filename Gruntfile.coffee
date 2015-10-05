@@ -7,12 +7,19 @@ module.exports = ->
   @initConfig
     pkg: @file.readJSON 'package.json'
 
+    # Updating the package manifest files
+    noflo_manifest:
+      update:
+        files:
+          'package.json': ['graphs/*', 'components/*']
+
     yamllint:
       participants: ['participants/*.yml']
     register:
       participants: ['participants/*.yml']
 
   @loadNpmTasks 'grunt-yamllint'
+  @loadNpmTasks 'grunt-noflo-manifest'
   @task.registerMultiTask 'register', ->
     done = @async()
     options = @options
@@ -42,5 +49,5 @@ module.exports = ->
           todo--
           return done() if todo < 1
 
-  @registerTask 'test', ['yamllint']
+  @registerTask 'test', ['noflo_manifest', 'yamllint']
   @registerTask 'default', ['test']
