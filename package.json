@@ -21,7 +21,7 @@
     "grunt-yamllint": "^0.2.0"
   },
   "dependencies": {
-    "msgflo": "^0.5.12",
+    "msgflo": "^0.5.13",
     "msgflo-nodejs": "^0.4.10",
     "noflo-core": "^0.1.14",
     "noflo-runtime-msgflo": "^0.1.13"
@@ -29,7 +29,7 @@
   "msgflo": {
     "variables": {},
     "components": {
-      "c-flo/c-beam": "./node_modules/.bin/msgflo-register-foreign participants/cbeam.yml",
+      "c-flo/c-beam": "./node_modules/.bin/msgflo-register-foreign participants/c-beam.yml",
       "c-flo/logger": "./node_modules/.bin/noflo-runtime-msgflo --name log --graph core/Output"
     }
   }
