@@ -18,11 +18,18 @@ For example, to start a simple NoFlo participant, run:
 ./node_modules/.bin/noflo-runtime-msgflo --name Log --graph core/Output --prefetch 1 --broker mqtt://localhost
 ```
 
+# Installing & setup
+
+    npm install
+
 ## Examples
 
-Output the time from c-beam time server
+Output the time from c-beam time server:
 
     export MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org
     ./node_modules/.bin/msgflo-setup graphs/timelogger.fbp --participants --discover --forever --forward stderr,stdout
-    OR
+
+Make traffic lights in the downstairs hallway turn green when c-base portal has Ingress party mods:
+
+    export MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org
     ./node_modules/.bin/msgflo-setup graphs/hacklight.fbp --participants --discover --forever --forward stderr,stdout
