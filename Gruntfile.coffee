@@ -15,11 +15,27 @@ module.exports = ->
 
     yamllint:
       participants: ['participants/*.yml']
+    updateforeign:
+      participants: ['participants/*.yml']
     register:
       participants: ['participants/*.yml']
 
   @loadNpmTasks 'grunt-yamllint'
   @loadNpmTasks 'grunt-noflo-manifest'
+  @task.registerMultiTask 'updateforeign', ->
+    conf = grunt.file.readJSON 'package.json'
+    foreigns = []
+    @files.forEach (file) ->
+      file.src.forEach (src) ->
+        foreigns.push path.basename src, path.extname src
+    conf.msgflo = {} unless conf.msgflo
+    conf.msgflo.components = {} unless conf.msgflo.components
+    for k, v of conf.msgflo.components
+      delete conf.msgflo.components[k] if v is '#FOREIGN'
+    for f in foreigns
+      conf.msgflo.components["#{conf.name}/#{f}"] = '#FOREIGN'
+    grunt.file.write 'package.json', JSON.stringify(conf, null, 2), 'utf-8'
+
   @task.registerMultiTask 'register', ->
     done = @async()
     options = @options
@@ -49,5 +65,5 @@ module.exports = ->
           todo--
           return done() if todo < 1
 
-  @registerTask 'test', ['noflo_manifest', 'yamllint']
+  @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint']
   @registerTask 'default', ['test']
