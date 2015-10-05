@@ -1,0 +1,8 @@
+component: c-base/he1
+label: c-base siri data rescue probe
+icon: dashboard
+inports:
+  openurl:
+    queue: he1/open
+    type: string
+outports: {}

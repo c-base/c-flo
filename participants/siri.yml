@@ -1,0 +1,20 @@
+component: c-base/siri
+label: c-base siri data rescue probe
+icon: ambulance
+inports:
+  openurl:
+    queue: siri/open
+    type: string
+  playsound:
+    queue: c_out/play
+    type: string
+  playrandomsound:
+    queue: c_out/loop
+    type: bang
+  saytext:
+    queue: c_out/Julia
+    type: string
+outports:
+  openurl:
+    queue: siri/open
+    type: string
