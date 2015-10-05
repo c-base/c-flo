@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "msgflo": "^0.5.8",
-    "msgflo-nodejs": "^0.4.9"
+    "msgflo-nodejs": "^0.4.9",
+    "noflo-core": "^0.1.14",
+    "noflo-runtime-msgflo": "^0.1.11"
   }
 }

@@ -1,0 +1,2 @@
+cbeam(c-base/c-beam) TIME -> IN Log(core/Output)
+table(c-base/ingress-table) CBASE -> IN Log
