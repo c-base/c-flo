@@ -32,6 +32,9 @@
     "variables": {},
     "components": {
       "c-flo/c-beam": "./node_modules/.bin/msgflo-register-foreign participants/c-beam.yml",
+      "c-flo/ingress-table": "./node_modules/.bin/msgflo-register-foreign participants/ingress-table.yml",
+      "c-flo/ampel-nerd": "./node_modules/.bin/msgflo-register-foreign participants/ampel-nerd.yml",
+      "c-flo/DetectPartyMods": "./node_modules/.bin/noflo-runtime-msgflo --name partymods --graph c-flo/DetectPartyMods",
       "c-flo/logger": "./node_modules/.bin/noflo-runtime-msgflo --name log --graph core/Output"
     }
   },

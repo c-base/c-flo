@@ -1,0 +1,3 @@
+# @runtime msgflo
+ingress-table(c-flo/ingress-table) CBASE -> STATE partymods(c-flo/DetectPartyMods)
+partymods LIGHTS -> BARSTATUS ampel-nerd(c-flo/ampel-nerd)
