@@ -1,0 +1,27 @@
+# @runtime msgflo
+c-beam(c-flo/c-beam) PLAYSOUND -> PLAYSOUND c_leuse(c-flo/c_leuse)
+c-beam PLAYRANDOMSOUND -> PLAYRANDOMSOUND c_leuse
+c-beam SAYTEXT -> SAYTEXT c_leuse
+
+c-beam OPENURL1 -> OPENURL nerdctrl(c-flo/nerdctrl)
+c-beam PLAYSOUND -> PLAYSOUND nerdctrl
+c-beam PLAYRANDOMSOUND -> PLAYRANDOMSOUND nerdctrl
+c-beam SAYTEXT -> SAYTEXT nerdctrl
+nerdctrl OPENURL -> OPENURL nerdctrl
+
+c-beam OPENURL2 -> OPENURL siri(c-flo/siri)
+siri OPENURL -> OPENURL siri
+c-beam PLAYSOUND -> PLAYSOUND siri
+c-beam PLAYRANDOMSOUND -> PLAYRANDOMSOUND siri
+c-beam SAYTEXT -> SAYTEXT siri
+
+c-beam PLAYSOUND -> PLAYSOUND mechblast(c-flo/mechblast)
+c-beam PLAYRANDOMSOUND -> PLAYRANDOMSOUND mechblast
+c-beam SAYTEXT -> SAYTEXT mechblast
+
+c-beam BARSTATUS -> BARSTATUS barstatus-bar(c-flo/barstatus-bar)
+c-beam BARSTATUS -> BARSTATUS barstatus-c-lab(c-flo/barstatus-c-lab)
+c-beam BARSTATUS -> BARSTATUS barstatus-nerd(c-flo/barstatus-nerd)
+
+ingress-table(c-flo/ingress-table) CBASE -> STATE partymods(c-flo/DetectPartyMods)
+partymods LIGHTS -> BARSTATUS ampel-nerd(c-flo/ampel-nerd)
