@@ -18,6 +18,10 @@ For example, to start a simple NoFlo participant, run:
 ./node_modules/.bin/noflo-runtime-msgflo --name Log --graph core/Output --prefetch 1 --broker mqtt://localhost
 ```
 
+# Installing & setup
+
+    npm install
+
 ## Examples
 
 Output the time from c-beam time server:
