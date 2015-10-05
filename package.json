@@ -24,6 +24,13 @@
     "msgflo": "^0.5.9",
     "msgflo-nodejs": "^0.4.9",
     "noflo-core": "^0.1.14",
-    "noflo-runtime-msgflo": "^0.1.11"
+    "noflo-runtime-msgflo": "^0.1.12"
+  },
+  "msgflo": {
+    "variables": {},
+    "components": {
+      "c-flo/c-beam": "./node_modules/.bin/msgflo-register-foreign --broker mqtt://localhost participants/cbeam.yml",
+      "c-flo/logger": "./node_modules/.bin/noflo-runtime-msgflo --name log --graph core/Output --broker mqtt://localhost"
+    }
   }
 }
