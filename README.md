@@ -1,6 +1,6 @@
 # c-flo
 
-MsgFlo setup for the c-base space station
+[MsgFlo](https://github.com/msgflo/msgflo#readme) setup for the c-base space station
 
 ## Participants
 
