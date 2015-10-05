@@ -21,10 +21,10 @@
     "grunt-yamllint": "^0.2.0"
   },
   "dependencies": {
-    "msgflo": "^0.5.9",
+    "msgflo": "^0.5.10",
     "msgflo-nodejs": "^0.4.9",
     "noflo-core": "^0.1.14",
-    "noflo-runtime-msgflo": "^0.1.12"
+    "noflo-runtime-msgflo": "^0.1.13"
   },
   "msgflo": {
     "variables": {},

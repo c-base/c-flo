@@ -1,0 +1,8 @@
+component: c-base/ampel-nerd
+label: pedestrian traffic light in front of the door to nerdarea
+icon: lightbulb-o
+inports:
+  barstatus:
+    queue: ampel/nerd
+    type: object
+outports: {}
