@@ -1,5 +1,6 @@
 msgflo_nodejs = require 'msgflo-nodejs'
 msgflo = require 'msgflo'
+path = require 'path'
 
 module.exports = ->
   grunt = @
@@ -30,9 +31,12 @@ module.exports = ->
       @files.forEach (file) ->
         file.src.forEach (src) ->
           def = grunt.file.readYAML src
+          def.id = path.basename src, path.extname src unless def.id
+          def.role = path.basename src, path.extname src unless def.role
           defs.push msgflo.foreignParticipant.mapPorts def
       todo = defs.length
       for def in defs
+        grunt.log.writeln "Registering #{def.role} (#{def.component})"
         msgflo.foreignParticipant.register messaging, def, (err) ->
           return done err if err
           todo--
