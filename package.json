@@ -29,8 +29,8 @@
   "msgflo": {
     "variables": {},
     "components": {
-      "c-flo/c-beam": "./node_modules/.bin/msgflo-register-foreign --broker mqtt://localhost participants/cbeam.yml",
-      "c-flo/logger": "./node_modules/.bin/noflo-runtime-msgflo --name log --graph core/Output --broker mqtt://localhost"
+      "c-flo/c-beam": "./node_modules/.bin/msgflo-register-foreign participants/cbeam.yml",
+      "c-flo/logger": "./node_modules/.bin/noflo-runtime-msgflo --name log --graph core/Output"
     }
   }
 }
