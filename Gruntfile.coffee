@@ -15,7 +15,7 @@ module.exports = ->
   @task.registerMultiTask 'register', ->
     done = @async()
     options = @options
-      broker: 'amqp://localhost'
+      broker: 'mqtt://localhost'
     grunt.verbose.writeln "Connecting to MsgFlo broker #{options.broker}"
     messaging = msgflo_nodejs.transport.getClient options.broker
     connected = false
