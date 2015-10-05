@@ -1,0 +1,8 @@
+component: c-base/barstatus-bar
+label: c-base bar status sign at the bar
+icon: map-signs
+inports:
+  barstatus:
+    queue: bar/status
+    type: string
+outports: {}

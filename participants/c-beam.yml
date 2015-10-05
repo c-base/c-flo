@@ -30,3 +30,8 @@ outports:
   time:
     queue: info/time
     type: string
+  barstatus:
+    queue: bar/status
+    type: string
+
+
