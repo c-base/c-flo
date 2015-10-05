@@ -1,4 +1,5 @@
 component: c-base/c-beam
+source: 'https://github.com/c-base/c-beam'
 label: c-base on-board computer
 icon: empire
 inports: {}
