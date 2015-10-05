@@ -1,0 +1,31 @@
+component: c-base/c-beam
+label: c-base on-board computer
+icon: empire
+inports: {}
+outports:
+  userboarding:
+    queue: user/boarding
+    type: object
+    datatype: 'http://c-base.org#user'
+  usereta:
+    queue: user/eta
+    type: object
+    datatype: 'http://c-base.org#user'
+  playsound:
+    queue: c_out/play
+    type: string
+  playrandomsound:
+    queue: c_out/loop
+    type: bang
+  saytext:
+    queue: c_out/Julia
+    type: string
+  openurl1:
+    queue: nerdctrl/open
+    type: string
+  openurl2:
+    queue: siri/open
+    type: string
+  time:
+    queue: info/time
+    type: string
