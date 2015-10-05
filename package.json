@@ -21,7 +21,7 @@
     "grunt-yamllint": "^0.2.0"
   },
   "dependencies": {
-    "msgflo": "^0.5.7",
+    "msgflo": "^0.5.8",
     "msgflo-nodejs": "^0.4.9"
   }
 }
