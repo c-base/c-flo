@@ -71,14 +71,13 @@ module.exports = ->
     mqttArtifacts = []
     artifact = ""
     @files.forEach (file) ->
-      artifact += "^ component ^ source ^ label ^ inports queue ^ outports queue^ \n"
+      artifact += "^ component ^ label ^ inports queue ^ outports queue^ \n"
       file.src.forEach (src) ->
         readYaml = grunt.file.readYAML src
-        artifact += "|#{readYaml.component} "
         if readYaml.source?
-          artifact += "|#{readYaml.source}"
+          artifact += "|[[#{readYaml.source}|#{readYaml.component}]] "
         else
-          artifact += "| n/a "
+          artifact += "|#{readYaml.component} "
         artifact +="|#{readYaml.label}"
         if Object.keys(readYaml.inports).length == 0
           artifact += "| n/a "
@@ -88,9 +87,9 @@ module.exports = ->
           for key, val of readYaml.inports
             for key1, val1 of val
               if key1 == "queue"
-                queues.push "#{val1}"
+                queues.push "**#{key}**: #{val1}"
 
-          artifact += queues.join(', ')
+          artifact += queues.join(' \\\\ ')
 
         if Object.keys(readYaml.outports).length == 0
           artifact += "| n/a "
@@ -99,10 +98,12 @@ module.exports = ->
           queues = []
           for key, val of readYaml.outports
             for key1, val1 of val
+              valParts = val1.split '/'
+              val1 = "#{valParts[0]}/#{valParts[1]}/+" if valParts[0] is 'ingress'
               if key1 == "queue"
-                queues.push "#{val1}"
+                queues.push "**#{key}**: #{val1}"
 
-          artifact += queues.join(', ')
+          artifact += queues.join(' \\\\ ')
         artifact +="|\n"
       grunt.log.writeln "#{artifact}"
 
