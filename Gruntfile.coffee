@@ -71,15 +71,16 @@ module.exports = ->
         mqttArtifacts = []
         artifact = ""
         @files.forEach (file) ->
-          artifact += "^ component ^ source ^ label ^"
+          artifact += "^ component ^ source ^ label ^ \n"
           file.src.forEach (src) ->
             readYaml = grunt.file.readYAML src
             artifact += "|#{readYaml.component} |"
-            if source?
+            if readYaml.source?
               artifact += "#{readYaml.source}"
-            artifact +="|#{readYaml.label}"
-          artifact += "|\n"
-        grunt.log.writeln "The array is: #{artifact}"
+            else
+              artifact += " n/a "
+            artifact +="|#{readYaml.label}|\n"
+        grunt.log.writeln "#{artifact}"
       
           
 
