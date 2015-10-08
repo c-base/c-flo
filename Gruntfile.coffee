@@ -71,9 +71,10 @@ module.exports = ->
     mqttArtifacts = []
     artifact = ""
     @files.forEach (file) ->
-      artifact += "^ component ^ label ^ inports queue ^ outports queue^ \n"
+      artifact += "^ artifact ^ description ^ inports topic ^ outports topic^ \n"
       file.src.forEach (src) ->
         readYaml = grunt.file.readYAML src
+        readYaml.component = readYaml.component.replace 'c-base/', ''
         if readYaml.source?
           artifact += "|[[#{readYaml.source}|#{readYaml.component}]] "
         else
