@@ -33,3 +33,14 @@ Make traffic lights in the downstairs hallway turn green when c-base portal has 
 
     export MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org
     ./node_modules/.bin/msgflo-setup graphs/hacklight.fbp --participants --discover --forever --forward stderr,stdout
+
+
+## create Markup for WIKI
+
+  command 
+  $ grunt createMarkup
+ will generate a table from the participants folder that can be copied and inserted into the mqtt wiki page (https://wiki.c-base.org/dokuwiki/projects:mqtt). 
+
+  TODO: automate the process, so the wiki is always up to date
+  TODO: add support for FontAwesome to wiki.
+
