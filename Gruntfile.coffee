@@ -19,6 +19,8 @@ module.exports = ->
       participants: ['participants/*.yml']
     register:
       participants: ['participants/*.yml']
+    createMarkup:
+      participants: ['participants/*.yml']
 
   @loadNpmTasks 'grunt-yamllint'
   @loadNpmTasks 'grunt-noflo-manifest'
@@ -64,6 +66,24 @@ module.exports = ->
           return done err if err
           todo--
           return done() if todo < 1
+  
+  @task.registerMultiTask 'createMarkup', ->
+        mqttArtifacts = []
+        artifact = ""
+        iterator = 1
+        @files.forEach (file) ->
+          artifact += "<table class=\"inline\"><tbody><tr class=\"row0\"><th class=\"col0 leftalign\"> component</th><th class=\"col1\"> source </th><th class=\"col2\"> label </th></tr>"
+          file.src.forEach (src) ->
+            readYaml = grunt.file.readYAML src
+            artifact += "<tr class=\"row#{iterator}\"><td class=\"col0 leftalign\"> #{readYaml.component} <i class=\"fa fa-#{readYaml.icon}\"></i></td><td class=\"col1 centeralign\">"
+            if source?
+              artifact += "#{readYaml.source}"
+            artifact +="</td><td class=\"col2\"> #{readYaml.label}</td></tr>"
+            iterator++
+          artifact += "</tbody></table>"
+        grunt.log.writeln "The array is: #{artifact}"
+      
+          
 
   @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint']
   @registerTask 'default', ['test']
