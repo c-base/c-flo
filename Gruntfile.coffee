@@ -68,45 +68,43 @@ module.exports = ->
           return done() if todo < 1
   
   @task.registerMultiTask 'createMarkup', ->
-        mqttArtifacts = []
-        artifact = ""
-        @files.forEach (file) ->
-          artifact += "^ component ^ source ^ label ^ inports queue ^ outports queue^ \n"
-          file.src.forEach (src) ->
-            readYaml = grunt.file.readYAML src
-            artifact += "|#{readYaml.component} "
-            if readYaml.source?
-              artifact += "|#{readYaml.source}"
-            else
-              artifact += "| n/a "
-            artifact +="|#{readYaml.label}"
-            if Object.keys(readYaml.inports).length == 0
-                artifact += "| n/a "
-            else
-                artifact += "|"
-                queues = []
-                for key, val of readYaml.inports
-                  for key1, val1 of val
-                    if key1 == "queue"
-                      queues.push "#{val1}"
+    mqttArtifacts = []
+    artifact = ""
+    @files.forEach (file) ->
+      artifact += "^ component ^ source ^ label ^ inports queue ^ outports queue^ \n"
+      file.src.forEach (src) ->
+        readYaml = grunt.file.readYAML src
+        artifact += "|#{readYaml.component} "
+        if readYaml.source?
+          artifact += "|#{readYaml.source}"
+        else
+          artifact += "| n/a "
+        artifact +="|#{readYaml.label}"
+        if Object.keys(readYaml.inports).length == 0
+          artifact += "| n/a "
+        else
+          artifact += "|"
+          queues = []
+          for key, val of readYaml.inports
+            for key1, val1 of val
+              if key1 == "queue"
+                queues.push "#{val1}"
 
-                artifact += queues.join(', ')
+          artifact += queues.join(', ')
 
-            if Object.keys(readYaml.outports).length == 0
-                artifact += "| n/a "
-            else
-                artifact += "|"
-                queues = []
-                for key, val of readYaml.outports
-                  for key1, val1 of val
-                    if key1 == "queue"
-                      queues.push "#{val1}"
+        if Object.keys(readYaml.outports).length == 0
+          artifact += "| n/a "
+        else
+          artifact += "|"
+          queues = []
+          for key, val of readYaml.outports
+            for key1, val1 of val
+              if key1 == "queue"
+                queues.push "#{val1}"
 
-                artifact += queues.join(', ')
-            artifact +="|\n"
-          grunt.log.writeln "#{artifact}"
-      
-          
+          artifact += queues.join(', ')
+        artifact +="|\n"
+      grunt.log.writeln "#{artifact}"
 
   @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint']
   @registerTask 'default', ['test']
