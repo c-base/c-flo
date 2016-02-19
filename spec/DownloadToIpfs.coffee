@@ -6,6 +6,7 @@ baseDir = path.resolve __dirname, '../'
 describe 'DownloadToIpfs component', ->
   c = null
   url = null
+  host = null
   hash = null
   error = null
   before (done) ->
@@ -17,19 +18,23 @@ describe 'DownloadToIpfs component', ->
       done()
   beforeEach ->
     url = noflo.internalSocket.createSocket()
+    host = noflo.internalSocket.createSocket()
     hash = noflo.internalSocket.createSocket()
     error = noflo.internalSocket.createSocket()
     c.inPorts.url.attach url
+    c.inPorts.host.attach host
     c.outPorts.hash.attach hash
     c.outPorts.error.attach error
   afterEach ->
     c.inPorts.url.detach url
+    c.inPorts.host.detach host
     c.outPorts.hash.detach hash
     c.outPorts.error.detach error
 
   describe 'receiving a valid URL', ->
     it 'should produce IPFS hash', (done) ->
       @timeout 200 * 1000
+      host.send 'localhost'
       error.on 'data', done
       hash.on 'data', (data) ->
         chai.expect(data).to.eql
@@ -40,6 +45,7 @@ describe 'DownloadToIpfs component', ->
   describe 'receiving an invalid URL', ->
     it 'should produce an error', (done) ->
       @timeout 200 * 1000
+      host.send 'localhost'
       error.on 'data', (err) ->
         chai.expect(err).to.be.an 'error'
         done()

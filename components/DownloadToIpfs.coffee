@@ -10,13 +10,17 @@ exports.getComponent = ->
 
   c.inPorts.add 'url',
     datatype: 'string'
+  c.inPorts.add 'host',
+    datatype: 'string'
   c.outPorts.add 'hash',
     datatype: 'string'
+    required: true
   c.outPorts.add 'error',
     datatype: 'object'
 
   noflo.helpers.WirePattern c,
     in: 'url'
+    params: ['host']
     out: 'hash'
     async: true
     forwardGroups: true
@@ -24,7 +28,7 @@ exports.getComponent = ->
     unless typeof data is 'string'
       return callback new Error 'Expected string, got something else'
 
-    ipfs = ipfsApi() # '10.0.1.36'
+    ipfs = ipfsApi c.params.host
 
     errored = false
     tempStream = temp.createWriteStream()
