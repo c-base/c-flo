@@ -27,6 +27,7 @@
     "noflo-nodejs": "^0.5.2"
   },
   "dependencies": {
+    "coffee-script": "^1.10.0",
     "ipfs-api": "^2.13.0",
     "msgflo": "^0.5.13",
     "msgflo-nodejs": "^0.4.10",
