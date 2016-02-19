@@ -33,5 +33,3 @@ outports:
   barstatus:
     queue: bar/status
     type: string
-
-

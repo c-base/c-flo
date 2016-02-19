@@ -29,11 +29,10 @@ Output the time from c-beam time server:
     export MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org
     ./node_modules/.bin/msgflo-setup graphs/timelogger.fbp --participants --discover --forever --forward stderr,stdout
 
-Make traffic lights in the downstairs hallway turn green when c-base portal has Ingress party mods:
+Make traffic lights in the downstairs hallway turn green when c-base portal has Ingress party mods, and set up Siri downloader:
 
     export MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org
-    ./node_modules/.bin/msgflo-setup graphs/hacklight.fbp --participants --discover --forever --forward stderr,stdout
-
+    ./node_modules/.bin/msgflo-setup graphs/c-base-noflo.fbp --participants --discover --forever --forward stderr,stdout
 
 ## create Markup for WIKI
 

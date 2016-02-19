@@ -14,6 +14,9 @@ inports:
   saytext:
     queue: c_out/Julia
     type: string
+  ipfs:
+    queue: c_out/IPFS
+    type: string
 outports:
   openurl:
     queue: siri/open
