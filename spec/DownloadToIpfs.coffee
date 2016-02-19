@@ -32,7 +32,9 @@ describe 'DownloadToIpfs component', ->
       @timeout 200 * 1000
       error.on 'data', done
       hash.on 'data', (data) ->
-        chai.expect(data).to.equal 'Qmei9gT6df2oc7EGtifNAYL6MMqYT3WdHiCBycHFsM6zVU'
+        chai.expect(data).to.eql
+          url: 'http://bergie.iki.fi/style/img/xhdpi/bergie_istanbul_small.jpg'
+          ipfs: 'Qmei9gT6df2oc7EGtifNAYL6MMqYT3WdHiCBycHFsM6zVU'
         done()
       url.send 'http://bergie.iki.fi/style/img/xhdpi/bergie_istanbul_small.jpg'
   describe 'receiving an invalid URL', ->

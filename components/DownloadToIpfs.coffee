@@ -41,5 +41,7 @@ exports.getComponent = ->
         ipfs.add tempStream.path, (err, res) ->
           return callback err if err
           console.log "#{data} -> #{res[0].Hash}"
-          out.send res[0].Hash
+          out.send
+            url: data
+            ipfs: res[0].Hash
           do callback
