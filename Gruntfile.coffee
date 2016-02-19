@@ -22,7 +22,16 @@ module.exports = ->
     createMarkup:
       participants: ['participants/*.yml']
 
+    # BDD tests on Node.js
+    mochaTest:
+      nodejs:
+        src: ['spec/*.coffee']
+        options:
+          reporter: 'spec'
+          require: 'coffee-script/register'
+
   @loadNpmTasks 'grunt-yamllint'
+  @loadNpmTasks 'grunt-mocha-test'
   @loadNpmTasks 'grunt-noflo-manifest'
   @task.registerMultiTask 'updateforeign', ->
     conf = grunt.file.readJSON 'package.json'
@@ -108,5 +117,5 @@ module.exports = ->
         artifact +="|\n"
       grunt.log.writeln "#{artifact}"
 
-  @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint']
+  @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint', 'mochaTest']
   @registerTask 'default', ['test']
