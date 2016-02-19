@@ -39,7 +39,7 @@
   },
   "msgflo": {
     "variables": {
-      "NOFLO": "./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT --iips #IIPS",
+      "NOFLO": "sh -c ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT --iips #IIPS",
       "FOREIGN": "./node_modules/.bin/msgflo-register-foreign participants/#ROLE.yml"
     },
     "components": {
