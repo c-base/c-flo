@@ -14,13 +14,13 @@ inports:
   saytext:
     queue: c_out/Julia
     type: string
-  download:
-    queue: siri/download
-    type: string
   ipfs:
     queue: c_out/downloaded
     type: string
 outports:
   openurl:
     queue: siri/open
+    type: string
+  download:
+    queue: siri/download
     type: string
