@@ -36,10 +36,7 @@ Make traffic lights in the downstairs hallway turn green when c-base portal has 
 
 ## create Markup for WIKI
 
-  command 
-  $ grunt createMarkup
- will generate a table from the participants folder that can be copied and inserted into the mqtt wiki page (https://wiki.c-base.org/dokuwiki/projects:mqtt). 
+Command  `grunt createMarkup` will generate a table from the participants folder that can be copied and inserted into the mqtt wiki page (https://wiki.c-base.org/dokuwiki/projects:mqtt).
 
-  TODO: automate the process, so the wiki is always up to date
-  TODO: add support for FontAwesome to wiki.
-
+* TODO: automate the process, so the wiki is always up to date
+* TODO: add support for FontAwesome to wiki.
