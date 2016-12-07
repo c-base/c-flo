@@ -1,6 +1,7 @@
 msgflo_nodejs = require 'msgflo-nodejs'
 msgflo = require 'msgflo'
 path = require 'path'
+ipfsd = require 'ipfsd-ctl'
 
 module.exports = ->
   grunt = @
@@ -135,13 +136,7 @@ module.exports = ->
           return done false
         grunt.log.writeln "IPFS at #{node.apiAddr} started"
         daemons.push node
-        api = ipfs node.apiAddr
-        # Add the fixtures
-        api.add new Buffer("Hello, World!\n"), (err, hash) ->
-          if err
-            grunt.log.error err
-            return done false
-          done()
+        done()
 
   @registerTask 'stopIPFS', ->
     done = @async()
