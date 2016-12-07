@@ -16,6 +16,10 @@
   "bugs": {
     "url": "https://github.com/c-base/c-flo/issues"
   },
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
+  },
   "homepage": "https://github.com/c-base/c-flo#readme",
   "devDependencies": {
     "chai": "^3.5.0",
@@ -25,7 +29,6 @@
     "grunt-yamllint": "^0.2.0",
     "ipfsd-ctl": "^0.17.0",
     "mocha": "^3.2.0",
-    "noflo-core": "^0.2.3",
     "noflo-nodejs": "^0.7.2"
   },
   "dependencies": {
