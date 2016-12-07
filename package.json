@@ -23,6 +23,7 @@
     "grunt-mocha-test": "^0.13.2",
     "grunt-noflo-manifest": "^0.1.11",
     "grunt-yamllint": "^0.2.0",
+    "ipfsd-ctl": "^0.17.0",
     "mocha": "^3.2.0",
     "noflo-core": "^0.2.3",
     "noflo-nodejs": "^0.7.2"

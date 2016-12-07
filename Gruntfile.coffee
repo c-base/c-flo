@@ -117,5 +117,50 @@ module.exports = ->
         artifact +="|\n"
       grunt.log.writeln "#{artifact}"
 
-  @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint', 'mochaTest']
+  daemons = []
+  grunt = @
+  # IPFS daemon control
+  @registerTask 'startIPFS', ->
+    done = @async()
+    ipfsd.disposable
+      apiAddr: '/ip4/127.0.0.1/tcp/5001'
+    , (err, node) ->
+      if err
+        grunt.log.error err
+        return done false
+      node.startDaemon (err) ->
+        if err
+          grunt.log.error err
+          return done false
+        grunt.log.writeln "IPFS at #{node.apiAddr} started"
+        daemons.push node
+        api = ipfs node.apiAddr
+        # Add the fixtures
+        api.add new Buffer("Hello, World!\n"), (err, hash) ->
+          if err
+            grunt.log.error err
+            return done false
+          done()
+
+  @registerTask 'stopIPFS', ->
+    done = @async()
+    unless daemons.length
+      return done()
+
+    stop = ->
+      return done() if daemons.length < 1
+      d = daemons.shift()
+      returned = false
+      d.stopDaemon (err) ->
+        return if returned
+        returned = true
+        if err
+          grunt.log.error err
+          return done false
+        grunt.log.writeln "IPFS at #{d.apiAddr} stopped"
+        do stop
+
+    do stop
+
+  @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint', 'startIPFS', 'mochaTest', 'stopIPFS']
   @registerTask 'default', ['test']
