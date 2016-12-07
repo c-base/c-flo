@@ -16,27 +16,30 @@
   "bugs": {
     "url": "https://github.com/c-base/c-flo/issues"
   },
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
+  },
   "homepage": "https://github.com/c-base/c-flo#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "grunt": "^0.4.5",
-    "grunt-mocha-test": "^0.12.7",
+    "grunt": "^1.0.1",
+    "grunt-mocha-test": "^0.13.2",
     "grunt-noflo-manifest": "^0.1.11",
     "grunt-yamllint": "^0.2.0",
-    "mocha": "^2.4.5",
-    "noflo-core": "^0.1.14",
-    "noflo-nodejs": "^0.5.2"
+    "ipfsd-ctl": "^0.17.0",
+    "mocha": "^3.2.0",
+    "noflo-nodejs": "^0.7.2"
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
-    "ipfs-api": "^2.13.0",
-    "msgflo": "^0.5.28",
-    "msgflo-nodejs": "^0.4.13",
+    "ipfs-api": "^12.0.2",
+    "msgflo": "^0.9.1",
+    "msgflo-nodejs": "^0.7.2",
     "needle": "^1.0.0",
-    "noflo": "^0.5.22",
-    "noflo-core": "^0.1.14",
-    "noflo-runtime-msgflo": "~0.2.14",
-    "temp": "^0.8.3"
+    "noflo": "^0.7.9",
+    "noflo-core": "^0.2.3",
+    "noflo-runtime-msgflo": "~0.9.0"
   },
   "msgflo": {
     "variables": {
@@ -51,8 +54,8 @@
       "c-flo/barstatus-bar": "#FOREIGN",
       "c-flo/barstatus-c-lab": "#FOREIGN",
       "c-flo/barstatus-nerd": "#FOREIGN",
-      "c-flo/c-beam": "#FOREIGN",
       "c-flo/c_leuse": "#FOREIGN",
+      "c-flo/c-beam": "#FOREIGN",
       "c-flo/he1": "#FOREIGN",
       "c-flo/ingress-table": "#FOREIGN",
       "c-flo/mechblast": "#FOREIGN",

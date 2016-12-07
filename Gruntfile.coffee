@@ -1,6 +1,7 @@
 msgflo_nodejs = require 'msgflo-nodejs'
 msgflo = require 'msgflo'
 path = require 'path'
+ipfsd = require 'ipfsd-ctl'
 
 module.exports = ->
   grunt = @
@@ -45,7 +46,8 @@ module.exports = ->
       delete conf.msgflo.components[k] if v is '#FOREIGN'
     for f in foreigns
       conf.msgflo.components["#{conf.name}/#{f}"] = '#FOREIGN'
-    grunt.file.write 'package.json', JSON.stringify(conf, null, 2), 'utf-8'
+    grunt.file.write 'package.json', JSON.stringify(conf, null, 2),
+      encoding: 'utf-8'
 
   @task.registerMultiTask 'register', ->
     done = @async()
@@ -117,5 +119,44 @@ module.exports = ->
         artifact +="|\n"
       grunt.log.writeln "#{artifact}"
 
-  @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint', 'mochaTest']
+  daemons = []
+  grunt = @
+  # IPFS daemon control
+  @registerTask 'startIPFS', ->
+    done = @async()
+    ipfsd.disposable
+      apiAddr: '/ip4/127.0.0.1/tcp/5001'
+    , (err, node) ->
+      if err
+        grunt.log.error err
+        return done false
+      node.startDaemon (err) ->
+        if err
+          grunt.log.error err
+          return done false
+        grunt.log.writeln "IPFS at #{node.apiAddr} started"
+        daemons.push node
+        done()
+
+  @registerTask 'stopIPFS', ->
+    done = @async()
+    unless daemons.length
+      return done()
+
+    stop = ->
+      return done() if daemons.length < 1
+      d = daemons.shift()
+      returned = false
+      d.stopDaemon (err) ->
+        return if returned
+        returned = true
+        if err
+          grunt.log.error err
+          return done false
+        grunt.log.writeln "IPFS at #{d.apiAddr} stopped"
+        do stop
+
+    do stop
+
+  @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint', 'startIPFS', 'mochaTest', 'stopIPFS']
   @registerTask 'default', ['test']

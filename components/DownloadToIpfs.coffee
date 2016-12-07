@@ -1,6 +1,5 @@
 noflo = require 'noflo'
 needle = require 'needle'
-temp = require 'temp'
 ipfsApi = require 'ipfs-api'
 
 exports.getComponent = ->
@@ -31,7 +30,6 @@ exports.getComponent = ->
     ipfs = ipfsApi c.params.host
 
     errored = false
-    tempStream = temp.createWriteStream()
     req = needle.get data
     req.on 'error', (err) ->
       console.log "Request error for #{data}", err
@@ -40,12 +38,10 @@ exports.getComponent = ->
       if req.request.res.statusCode isnt 200
         console.log "Request error for #{data}", req.request.res.statusCode
         return callback new Error "#{data} responded with #{req.request.res.statusCode}"
-      req.pipe tempStream
-      tempStream.on 'finish', ->
-        ipfs.add tempStream.path, (err, res) ->
-          return callback err if err
-          console.log "#{data} -> #{res[0].Hash}"
-          out.send
-            url: data
-            ipfs: res[0].Hash
-          do callback
+      ipfs.add req, (err, res) ->
+        return callback err if err
+        console.log "#{data} -> #{res[0].hash}"
+        out.send
+          url: data
+          ipfs: res[0].hash
+        do callback
