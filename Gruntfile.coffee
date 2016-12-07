@@ -45,7 +45,8 @@ module.exports = ->
       delete conf.msgflo.components[k] if v is '#FOREIGN'
     for f in foreigns
       conf.msgflo.components["#{conf.name}/#{f}"] = '#FOREIGN'
-    grunt.file.write 'package.json', JSON.stringify(conf, null, 2), 'utf-8'
+    grunt.file.write 'package.json', JSON.stringify(conf, null, 2),
+      encoding: 'utf-8'
 
   @task.registerMultiTask 'register', ->
     done = @async()
