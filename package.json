@@ -44,7 +44,7 @@
   "msgflo": {
     "variables": {
       "NOFLO": "node ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT --iips #IIPS --cache true",
-      "FOREIGN": "node ./node_modules/.bin/msgflo-register-foreign participants/#ROLE.yml"
+      "FOREIGN": "node ./node_modules/.bin/msgflo-register-foreign participants/#ROLE.yml --forever=true"
     },
     "components": {
       "c-flo/DetectPartyMods": "#NOFLO",
