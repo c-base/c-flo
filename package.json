@@ -42,25 +42,16 @@
     "noflo-runtime-msgflo": "~0.9.0"
   },
   "msgflo": {
+    "handlers": {
+      ".yml": "node ./node_modules/.bin/msgflo-register-foreign #FILENAME --forever=true"
+    },
     "variables": {
-      "NOFLO": "node ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT --iips #IIPS --cache true",
-      "FOREIGN": "node ./node_modules/.bin/msgflo-register-foreign participants/#ROLE.yml --forever=true"
+      "NOFLO": "node ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT  --cache true"
     },
     "components": {
       "c-flo/DetectPartyMods": "#NOFLO",
       "c-flo/DownloadToIpfs": "#NOFLO",
-      "c-flo/logger": "#NOFLO",
-      "c-flo/ampel-nerd": "#FOREIGN",
-      "c-flo/barstatus-bar": "#FOREIGN",
-      "c-flo/barstatus-c-lab": "#FOREIGN",
-      "c-flo/barstatus-nerd": "#FOREIGN",
-      "c-flo/c_leuse": "#FOREIGN",
-      "c-flo/c-beam": "#FOREIGN",
-      "c-flo/he1": "#FOREIGN",
-      "c-flo/ingress-table": "#FOREIGN",
-      "c-flo/mechblast": "#FOREIGN",
-      "c-flo/nerdctrl": "#FOREIGN",
-      "c-flo/siri": "#FOREIGN"
+      "c-flo/logger": "#NOFLO"
     }
   },
   "noflo": {
