@@ -125,7 +125,7 @@ module.exports = ->
   @registerTask 'startIPFS', ->
     done = @async()
     ipfsd.disposable
-      apiAddr: '/ip4/127.0.0.1/tcp/5001'
+      'Addresses.API': '/ip4/127.0.0.1/tcp/5001'
     , (err, node) ->
       if err
         grunt.log.error err
