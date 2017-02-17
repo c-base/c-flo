@@ -1,0 +1,8 @@
+component: c-base/powermon
+label: station power usage monitoring
+icon: bolt
+inports: {}
+outports:
+  load:
+    queue: system/lowermon/load
+    type: int

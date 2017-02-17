@@ -36,6 +36,9 @@
     "partymods": {
       "component": "c-flo/DetectPartyMods"
     },
+    "powermon": {
+      "component": "c-base/powermon"
+    },
     "siri": {
       "component": "c-base/siri"
     }
