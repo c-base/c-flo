@@ -52,7 +52,8 @@
     },
     "components": {
       "c-flo/DetectPartyMods": "#NOFLO",
-      "c-flo/DownloadToIpfs": "#NOFLO"
+      "c-flo/DownloadToIpfs": "#NOFLO",
+      "core/Output": "#NOFLO"
     }
   },
   "noflo": {
