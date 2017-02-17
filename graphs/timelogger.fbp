@@ -1,2 +1,2 @@
 # @runtime msgflo
-c-beam(c-base/c-beam) TIME -> IN log(c-flo/logger)
+c-beam(c-base/c-beam) TIME -> IN log(core/Output)
