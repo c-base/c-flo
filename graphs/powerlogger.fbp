@@ -1,0 +1,2 @@
+# @runtime msgflo
+powermon(c-base/powermon) LOAD -> IN log(core/Output)
