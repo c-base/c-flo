@@ -1,10 +1,10 @@
 # @runtime msgflo
 
 # Drive downstairs hallway traffic light from Ingress Table
-ingress-table(c-flo/ingress-table) CBASE -> STATE partymods(c-flo/DetectPartyMods)
-partymods LIGHTS -> COLORS ampel-nerd(c-flo/ampel-nerd)
+ingress-table(c-base/ingress-table) CBASE -> STATE partymods(c-flo/DetectPartyMods)
+partymods LIGHTS -> COLORS ampel-nerd(c-base/ampel-nerd)
 
 # Allow sending URLs for Siri to archive
 'siri.cbrp3.c-base.org' -> HOST downloader(c-flo/DownloadToIpfs)
-siri(c-flo/siri) DOWNLOAD -> URL downloader
+siri(c-base/siri) DOWNLOAD -> URL downloader
 downloader HASH -> IPFS siri
