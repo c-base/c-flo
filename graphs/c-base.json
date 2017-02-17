@@ -6,11 +6,11 @@
     }
   },
   "processes": {
+    "ampel-nerd": {
+      "component": "c-base/ampel-nerd"
+    },
     "barstatus-bar": {
       "component": "c-base/barstatus-bar"
-    },
-    "c_leuse": {
-      "component": "c-base/c_leuse"
     },
     "barstatus-c-lab": {
       "component": "c-base/barstatus-c-lab"
@@ -18,139 +18,29 @@
     "barstatus-nerd": {
       "component": "c-base/barstatus-nerd"
     },
+    "c-beam": {
+      "component": "c-base/c-beam"
+    },
+    "c_leuse": {
+      "component": "c-base/c_leuse"
+    },
+    "ingress-table": {
+      "component": "c-base/ingress-table"
+    },
     "mechblast": {
       "component": "c-base/mechblast"
     },
     "nerdctrl": {
       "component": "c-base/nerdctrl"
     },
-    "c-beam": {
-      "component": "c-base/c-beam"
+    "partymods": {
+      "component": "c-flo/DetectPartyMods"
     },
     "siri": {
       "component": "c-base/siri"
-    },
-    "ingress-table": {
-      "component": "c-base/ingress-table"
-    },
-    "ampel-nerd": {
-      "component": "c-base/ampel-nerd"
-    },
-    "partymods": {
-      "component": "c-flo/DetectPartyMods"
     }
   },
   "connections": [
-    {
-      "src": {
-        "process": "nerdctrl",
-        "port": "openurl"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "openurl"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "c_leuse",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "mechblast",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "c_leuse",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "mechblast",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "saytext"
-      },
-      "tgt": {
-        "process": "c_leuse",
-        "port": "saytext"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "saytext"
-      },
-      "tgt": {
-        "process": "mechblast",
-        "port": "saytext"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "saytext"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "saytext"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "openurl1"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "openurl"
-      }
-    },
     {
       "src": {
         "process": "c-beam",
@@ -184,6 +74,16 @@
     {
       "src": {
         "process": "c-beam",
+        "port": "openurl1"
+      },
+      "tgt": {
+        "process": "nerdctrl",
+        "port": "openurl"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
         "port": "openurl2"
       },
       "tgt": {
@@ -193,12 +93,72 @@
     },
     {
       "src": {
-        "process": "siri",
-        "port": "openurl"
+        "process": "c-beam",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "nerdctrl",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
+        "port": "playrandomsound"
       },
       "tgt": {
         "process": "siri",
-        "port": "openurl"
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "nerdctrl",
+        "port": "playsound"
       }
     },
     {
@@ -214,11 +174,31 @@
     {
       "src": {
         "process": "c-beam",
-        "port": "playrandomsound"
+        "port": "saytext"
       },
       "tgt": {
-        "process": "siri",
-        "port": "playrandomsound"
+        "process": "c_leuse",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c-beam",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "nerdctrl",
+        "port": "saytext"
       }
     },
     {
@@ -243,12 +223,32 @@
     },
     {
       "src": {
+        "process": "nerdctrl",
+        "port": "openurl"
+      },
+      "tgt": {
+        "process": "nerdctrl",
+        "port": "openurl"
+      }
+    },
+    {
+      "src": {
         "process": "partymods",
         "port": "lights"
       },
       "tgt": {
         "process": "ampel-nerd",
         "port": "colors"
+      }
+    },
+    {
+      "src": {
+        "process": "siri",
+        "port": "openurl"
+      },
+      "tgt": {
+        "process": "siri",
+        "port": "openurl"
       }
     }
   ],
