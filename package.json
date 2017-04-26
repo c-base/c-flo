@@ -30,7 +30,7 @@
     "grunt-yamllint": "^0.3.0",
     "ipfsd-ctl": "^0.20.0",
     "mocha": "^3.2.0",
-    "noflo-nodejs": "^0.7.2"
+    "noflo-nodejs": "^0.8.1"
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
