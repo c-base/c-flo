@@ -8,12 +8,6 @@ module.exports = ->
   @initConfig
     pkg: @file.readJSON 'package.json'
 
-    # Updating the package manifest files
-    noflo_manifest:
-      update:
-        files:
-          'package.json': ['graphs/*', 'components/*']
-
     yamllint:
       participants: ['participants/*.yml']
     updateforeign:
@@ -33,7 +27,6 @@ module.exports = ->
 
   @loadNpmTasks 'grunt-yamllint'
   @loadNpmTasks 'grunt-mocha-test'
-  @loadNpmTasks 'grunt-noflo-manifest'
   @task.registerMultiTask 'updateforeign', ->
     conf = grunt.file.readJSON 'package.json'
     foreigns = []
@@ -158,5 +151,5 @@ module.exports = ->
 
     do stop
 
-  @registerTask 'test', ['noflo_manifest', 'updateforeign', 'yamllint', 'startIPFS', 'mochaTest', 'stopIPFS']
+  @registerTask 'test', ['updateforeign', 'yamllint', 'startIPFS', 'mochaTest', 'stopIPFS']
   @registerTask 'default', ['test']

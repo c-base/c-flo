@@ -26,7 +26,6 @@
     "chai": "^3.5.0",
     "grunt": "^1.0.1",
     "grunt-mocha-test": "^0.13.2",
-    "grunt-noflo-manifest": "^0.1.11",
     "grunt-yamllint": "^0.3.0",
     "ipfsd-ctl": "^0.20.0",
     "mocha": "^3.2.0",
@@ -54,12 +53,6 @@
       "c-flo/DetectPartyMods": "#NOFLO",
       "c-flo/DownloadToIpfs": "#NOFLO",
       "core/Output": "#NOFLO"
-    }
-  },
-  "noflo": {
-    "components": {
-      "DetectPartyMods": "components/DetectPartyMods.coffee",
-      "DownloadToIpfs": "components/DownloadToIpfs.coffee"
     }
   }
 }
