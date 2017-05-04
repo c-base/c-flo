@@ -1,5 +1,7 @@
 # c-flo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/c-base/c-flo.svg)](https://greenkeeper.io/)
+
 [MsgFlo](https://github.com/msgflo/msgflo#readme) setup for the c-base space station
 
 ## Existing Participants
