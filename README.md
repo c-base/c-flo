@@ -1,6 +1,4 @@
-# c-flo
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/c-base/c-flo.svg)](https://greenkeeper.io/)
+# c-flo [![Build Status](https://travis-ci.org/c-base/c-flo.svg?branch=master)](https://travis-ci.org/c-base/c-flo) [![Greenkeeper badge](https://badges.greenkeeper.io/c-base/c-flo.svg)](https://greenkeeper.io/)
 
 [MsgFlo](https://github.com/msgflo/msgflo#readme) setup for the c-base space station
 
