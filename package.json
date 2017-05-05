@@ -6,7 +6,7 @@
   "scripts": {
     "test": "grunt test",
     "postinstall": "./node_modules/.bin/noflo-cache-preheat",
-    "start": "./node_modules/.bin/msgflo --graph graphs/c-base.json --auto-save=true --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600 --host=10.0.1.101"
+    "start": "./node_modules/.bin/msgflo --graph graphs/c-base.json --auto-save=true --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
   "msgflo": {
     "namespace": "c-base",
     "handlers": {
-      ".yml": "node ./node_modules/.bin/msgflo-register-foreign #FILENAME --forever=true"
+      ".yml": "node ./node_modules/.bin/msgflo-register-foreign #FILENAME --role #ROLE --forever=true"
     },
     "variables": {
       "NOFLO": "node ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT  --cache true"
