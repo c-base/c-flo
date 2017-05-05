@@ -6,3 +6,4 @@ inports:
     queue: '#ROLE/open'
     type: string
     description: HTTP URL available on the member network
+outports: {}
