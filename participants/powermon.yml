@@ -9,3 +9,9 @@ outports:
   load:
     queue: system/powermon/load
     type: int
+  counter:
+    queue: system/powermon/counter
+    type: number
+  updated:
+    queue: system/powermon/last_update
+    type: string

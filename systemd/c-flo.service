@@ -1,0 +1,12 @@
+[Service]
+WorkingDirectory=/opt/c-flo
+ExecStart=/usr/bin/node ./node_modules/.bin/msgflo --graph graphs/c-base.json --auto-save=true --broker mqtt://10.0.1.17 --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600 --host=10.0.1.101
+Restart=always
+User=bergie
+Environment=PATH=/opt/c-flo/node_modules/.bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+
+[Unit]
+After=network-online.target
+
+[Install]
+WantedBy=multi-user.target

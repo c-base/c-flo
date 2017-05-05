@@ -1,0 +1,9 @@
+component: c-base/showurl
+label: Display web page in a screen
+icon: television
+inports:
+  show:
+    queue: '#ROLE/open'
+    type: string
+    description: HTTP URL available on the member network
+outports: {}

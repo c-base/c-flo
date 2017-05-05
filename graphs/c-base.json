@@ -6,97 +6,89 @@
     }
   },
   "processes": {
-    "ampel-nerd": {
-      "component": "c-base/ampel-nerd"
+    "a6301120831b46f1be00fa2cb0bce195.16": {
+      "component": "c-base/ingress-portal"
     },
-    "barstatus-bar": {
-      "component": "c-base/barstatus-bar"
+    "barstatus_bar": {
+      "component": "c-base/statuslight"
     },
-    "barstatus-c-lab": {
-      "component": "c-base/barstatus-c-lab"
+    "barstatus_clab": {
+      "component": "c-base/statuslight"
     },
-    "barstatus-nerd": {
-      "component": "c-base/barstatus-nerd"
+    "barstatus_nerdarea": {
+      "component": "c-base/statuslight"
     },
-    "c-beam": {
-      "component": "c-base/c-beam"
+    "barstatus_switch": {
+      "component": "c-base/barstatus"
     },
     "c_leuse": {
-      "component": "c-base/c_leuse"
+      "component": "c-base/playsound"
     },
-    "ingress-table": {
-      "component": "c-base/ingress-table"
+    "c_out_generator": {
+      "component": "c-base/c_out"
+    },
+    "c_out_output": {
+      "component": "c-base/playsound"
+    },
+    "crew": {
+      "component": "c-base/crew"
     },
     "mechblast": {
-      "component": "c-base/mechblast"
+      "component": "c-base/playsound"
+    },
+    "nerd": {
+      "component": "c-base/pedestrianlight"
     },
     "nerdctrl": {
-      "component": "c-base/nerdctrl"
+      "component": "c-base/showurl"
     },
-    "partymods": {
-      "component": "c-flo/DetectPartyMods"
+    "nerdctrl_switch": {
+      "component": "c-base/nerdctrl"
     },
     "powermon": {
       "component": "c-base/powermon"
     },
     "siri": {
-      "component": "c-base/siri"
+      "component": "c-base/showurl"
+    },
+    "time": {
+      "component": "c-base/time"
     }
   },
   "connections": [
     {
       "src": {
-        "process": "c-beam",
-        "port": "barstatus"
+        "process": "barstatus_switch",
+        "port": "stateful"
       },
       "tgt": {
-        "process": "barstatus-bar",
+        "process": "barstatus_bar",
         "port": "barstatus"
       }
     },
     {
       "src": {
-        "process": "c-beam",
-        "port": "barstatus"
+        "process": "barstatus_switch",
+        "port": "stateful"
       },
       "tgt": {
-        "process": "barstatus-c-lab",
-        "port": "barstatus"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "barstatus"
-      },
-      "tgt": {
-        "process": "barstatus-nerd",
+        "process": "barstatus_clab",
         "port": "barstatus"
       }
     },
     {
       "src": {
-        "process": "c-beam",
-        "port": "openurl1"
+        "process": "barstatus_switch",
+        "port": "stateful"
       },
       "tgt": {
-        "process": "nerdctrl",
-        "port": "openurl"
+        "process": "barstatus_nerdarea",
+        "port": "barstatus"
       }
     },
     {
       "src": {
-        "process": "c-beam",
-        "port": "openurl2"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "openurl"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
+        "process": "c_out_generator",
         "port": "playrandomsound"
       },
       "tgt": {
@@ -106,7 +98,17 @@
     },
     {
       "src": {
-        "process": "c-beam",
+        "process": "c_out_generator",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
         "port": "playrandomsound"
       },
       "tgt": {
@@ -116,27 +118,7 @@
     },
     {
       "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
+        "process": "c_out_generator",
         "port": "playsound"
       },
       "tgt": {
@@ -146,7 +128,17 @@
     },
     {
       "src": {
-        "process": "c-beam",
+        "process": "c_out_generator",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
         "port": "playsound"
       },
       "tgt": {
@@ -156,27 +148,7 @@
     },
     {
       "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
+        "process": "c_out_generator",
         "port": "saytext"
       },
       "tgt": {
@@ -186,7 +158,17 @@
     },
     {
       "src": {
-        "process": "c-beam",
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
         "port": "saytext"
       },
       "tgt": {
@@ -196,62 +178,42 @@
     },
     {
       "src": {
-        "process": "c-beam",
-        "port": "saytext"
+        "process": "c_out_generator",
+        "port": "saytext_en"
       },
       "tgt": {
-        "process": "nerdctrl",
-        "port": "saytext"
+        "process": "c_leuse",
+        "port": "saytext_en"
       }
     },
     {
       "src": {
-        "process": "c-beam",
-        "port": "saytext"
+        "process": "c_out_generator",
+        "port": "saytext_en"
       },
       "tgt": {
-        "process": "siri",
-        "port": "saytext"
+        "process": "c_out_output",
+        "port": "saytext_en"
       }
     },
     {
       "src": {
-        "process": "ingress-table",
-        "port": "cbase"
+        "process": "c_out_generator",
+        "port": "saytext_en"
       },
       "tgt": {
-        "process": "partymods",
-        "port": "state"
+        "process": "mechblast",
+        "port": "saytext_en"
       }
     },
     {
       "src": {
-        "process": "nerdctrl",
+        "process": "nerdctrl_switch",
         "port": "openurl"
       },
       "tgt": {
         "process": "nerdctrl",
-        "port": "openurl"
-      }
-    },
-    {
-      "src": {
-        "process": "partymods",
-        "port": "lights"
-      },
-      "tgt": {
-        "process": "ampel-nerd",
-        "port": "colors"
-      }
-    },
-    {
-      "src": {
-        "process": "siri",
-        "port": "openurl"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "openurl"
+        "port": "show"
       }
     }
   ],

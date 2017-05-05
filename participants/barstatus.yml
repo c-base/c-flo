@@ -1,0 +1,16 @@
+component: c-base/barstatus
+label: c-base bar status switch
+icon: beer
+inports: {}
+outports:
+  state:
+    description: "open or closed"
+    queue: bar/state
+    type: string
+  stateful:
+    description: "opening, opened, etc"
+    queue: bar/stateful
+    type: string
+  status:
+    queue: bar/status
+    type: string

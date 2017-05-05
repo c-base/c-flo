@@ -1,0 +1,22 @@
+#!/usr/bin/env coffee
+mqtt = require 'mqtt'
+client = mqtt.connect 'mqtt://10.0.1.17'
+client.on 'connect', ->
+  console.log 'connected'
+  client.subscribe '#'
+
+seen = []
+
+client.on 'message', (topic, msg) ->
+  # Ignore if we've already see it
+  return unless seen.indexOf(topic) is -1
+
+  console.log "NEW TOPIC '#{topic}'"
+  console.log "  #{msg.toString()}"
+  seen.push topic
+
+process.on 'SIGINT', ->
+  console.log "\n\nALL TOPICS"
+  for topic in seen
+    console.log topic
+  process.exit 0
