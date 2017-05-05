@@ -241,8 +241,8 @@
     },
     {
       "src": {
-        "process": "powermon",
-        "port": "load"
+        "process": "time",
+        "port": "time"
       },
       "tgt": {
         "process": "c-base/togglelights_3r8fy",
