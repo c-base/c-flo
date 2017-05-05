@@ -1,260 +1,194 @@
 {
-  "properties": {
-    "name": "main",
-    "environment": {
-      "type": "msgflo"
-    }
-  },
-  "processes": {
-    "ampel-nerd": {
-      "component": "c-base/ampel-nerd"
+    "caseSensitive": false,
+    "properties": {
+        "name": "default/main",
+        "environment": {
+            "type": "msgflo"
+        },
+        "description": "c-base intranet of things",
+        "icon": "empire"
     },
-    "barstatus-bar": {
-      "component": "c-base/barstatus-bar"
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "c-base/barstatus_4z520": {
+            "component": "c-base/barstatus",
+            "metadata": {
+                "label": "barstatus",
+                "x": 360,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "c-base/c_out_2at8r": {
+            "component": "c-base/c_out",
+            "metadata": {
+                "label": "c_out",
+                "x": 360,
+                "y": 252,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "c-base/crew_z21s5": {
+            "component": "c-base/crew",
+            "metadata": {
+                "label": "crew",
+                "x": 360,
+                "y": -36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "c-base/powermon_3abwu": {
+            "component": "c-base/powermon",
+            "metadata": {
+                "label": "powermon",
+                "x": 360,
+                "y": -180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "c-base/time_xrlls": {
+            "component": "c-base/time",
+            "metadata": {
+                "label": "time",
+                "x": 360,
+                "y": 396,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "a6301120831b46f1be00fa2cb0bce195.16": {
+            "component": "c-base/ingress-portal",
+            "metadata": {
+                "label": "c-base portal",
+                "x": 360,
+                "y": -288,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "nerdctrl": {
+            "component": "c-base/showurl",
+            "metadata": {
+                "label": "nerdctrl",
+                "x": 792,
+                "y": 36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "siri": {
+            "component": "c-base/showurl",
+            "metadata": {
+                "label": "siri",
+                "x": 792,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "c-base/nerdctrl_7m8wc": {
+            "component": "c-base/nerdctrl",
+            "metadata": {
+                "label": "nerdctrl",
+                "x": 684,
+                "y": 36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "nerd": {
+            "component": "c-base/pedestrianlight",
+            "metadata": {
+                "label": "nerd pedestrian light",
+                "x": 792,
+                "y": 324,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "c-base/statuslight_rhaio": {
+            "component": "c-base/statuslight",
+            "metadata": {
+                "label": "statuslight",
+                "x": 576,
+                "y": 0,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "c-base/statuslight_g7xzl": {
+            "component": "c-base/statuslight",
+            "metadata": {
+                "label": "statuslight",
+                "x": 576,
+                "y": 144,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "c-base/statuslight_b1xhr": {
+            "component": "c-base/statuslight",
+            "metadata": {
+                "label": "statuslight",
+                "x": 576,
+                "y": -144,
+                "width": 72,
+                "height": 72
+            }
+        }
     },
-    "barstatus-c-lab": {
-      "component": "c-base/barstatus-c-lab"
-    },
-    "barstatus-nerd": {
-      "component": "c-base/barstatus-nerd"
-    },
-    "c-beam": {
-      "component": "c-base/c-beam"
-    },
-    "c_leuse": {
-      "component": "c-base/c_leuse"
-    },
-    "ingress-table": {
-      "component": "c-base/ingress-table"
-    },
-    "mechblast": {
-      "component": "c-base/mechblast"
-    },
-    "nerdctrl": {
-      "component": "c-base/nerdctrl"
-    },
-    "partymods": {
-      "component": "c-flo/DetectPartyMods"
-    },
-    "powermon": {
-      "component": "c-base/powermon"
-    },
-    "siri": {
-      "component": "c-base/siri"
-    }
-  },
-  "connections": [
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "barstatus"
-      },
-      "tgt": {
-        "process": "barstatus-bar",
-        "port": "barstatus"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "barstatus"
-      },
-      "tgt": {
-        "process": "barstatus-c-lab",
-        "port": "barstatus"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "barstatus"
-      },
-      "tgt": {
-        "process": "barstatus-nerd",
-        "port": "barstatus"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "openurl1"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "openurl"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "openurl2"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "openurl"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "c_leuse",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "mechblast",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playrandomsound"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "playrandomsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "c_leuse",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "mechblast",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "playsound"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "playsound"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "saytext"
-      },
-      "tgt": {
-        "process": "c_leuse",
-        "port": "saytext"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "saytext"
-      },
-      "tgt": {
-        "process": "mechblast",
-        "port": "saytext"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "saytext"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "saytext"
-      }
-    },
-    {
-      "src": {
-        "process": "c-beam",
-        "port": "saytext"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "saytext"
-      }
-    },
-    {
-      "src": {
-        "process": "ingress-table",
-        "port": "cbase"
-      },
-      "tgt": {
-        "process": "partymods",
-        "port": "state"
-      }
-    },
-    {
-      "src": {
-        "process": "nerdctrl",
-        "port": "openurl"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "openurl"
-      }
-    },
-    {
-      "src": {
-        "process": "partymods",
-        "port": "lights"
-      },
-      "tgt": {
-        "process": "ampel-nerd",
-        "port": "colors"
-      }
-    },
-    {
-      "src": {
-        "process": "siri",
-        "port": "openurl"
-      },
-      "tgt": {
-        "process": "siri",
-        "port": "openurl"
-      }
-    }
-  ],
-  "inports": [],
-  "outports": []
+    "connections": [
+        {
+            "src": {
+                "process": "c-base/nerdctrl_7m8wc",
+                "port": "openurl"
+            },
+            "tgt": {
+                "process": "nerdctrl",
+                "port": "show"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "c-base/barstatus_4z520",
+                "port": "stateful"
+            },
+            "tgt": {
+                "process": "c-base/statuslight_g7xzl",
+                "port": "barstatus"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "c-base/barstatus_4z520",
+                "port": "stateful"
+            },
+            "tgt": {
+                "process": "c-base/statuslight_rhaio",
+                "port": "barstatus"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "c-base/barstatus_4z520",
+                "port": "stateful"
+            },
+            "tgt": {
+                "process": "c-base/statuslight_b1xhr",
+                "port": "barstatus"
+            },
+            "metadata": {}
+        }
+    ]
 }
