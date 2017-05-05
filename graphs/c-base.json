@@ -21,6 +21,9 @@
     "barstatus_switch": {
       "component": "c-base/barstatus"
     },
+    "c-base/togglelights_3r8fy": {
+      "component": "c-base/togglelights"
+    },
     "c_leuse": {
       "component": "c-base/playsound"
     },
@@ -84,6 +87,16 @@
       "tgt": {
         "process": "barstatus_nerdarea",
         "port": "barstatus"
+      }
+    },
+    {
+      "src": {
+        "process": "c-base/togglelights_3r8fy",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerd",
+        "port": "colors"
       }
     },
     {
@@ -212,8 +225,28 @@
         "port": "openurl"
       },
       "tgt": {
+        "process": "c-base/togglelights_3r8fy",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "nerdctrl_switch",
+        "port": "openurl"
+      },
+      "tgt": {
         "process": "nerdctrl",
         "port": "show"
+      }
+    },
+    {
+      "src": {
+        "process": "powermon",
+        "port": "load"
+      },
+      "tgt": {
+        "process": "c-base/togglelights_3r8fy",
+        "port": "in"
       }
     }
   ],
