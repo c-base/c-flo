@@ -1,194 +1,252 @@
 {
-    "caseSensitive": false,
-    "properties": {
-        "name": "default/main",
-        "environment": {
-            "type": "msgflo"
-        },
-        "description": "c-base intranet of things",
-        "icon": "empire"
+  "properties": {
+    "name": "main",
+    "environment": {
+      "type": "msgflo"
+    }
+  },
+  "processes": {
+    "a6301120831b46f1be00fa2cb0bce195.16": {
+      "component": "c-base/ingress-portal"
     },
-    "inports": {},
-    "outports": {},
-    "groups": [],
-    "processes": {
-        "c-base/barstatus_4z520": {
-            "component": "c-base/barstatus",
-            "metadata": {
-                "label": "barstatus",
-                "x": 360,
-                "y": 108,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "c-base/c_out_2at8r": {
-            "component": "c-base/c_out",
-            "metadata": {
-                "label": "c_out",
-                "x": 360,
-                "y": 252,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "c-base/crew_z21s5": {
-            "component": "c-base/crew",
-            "metadata": {
-                "label": "crew",
-                "x": 360,
-                "y": -36,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "c-base/powermon_3abwu": {
-            "component": "c-base/powermon",
-            "metadata": {
-                "label": "powermon",
-                "x": 360,
-                "y": -180,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "c-base/time_xrlls": {
-            "component": "c-base/time",
-            "metadata": {
-                "label": "time",
-                "x": 360,
-                "y": 396,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "a6301120831b46f1be00fa2cb0bce195.16": {
-            "component": "c-base/ingress-portal",
-            "metadata": {
-                "label": "c-base portal",
-                "x": 360,
-                "y": -288,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "nerdctrl": {
-            "component": "c-base/showurl",
-            "metadata": {
-                "label": "nerdctrl",
-                "x": 792,
-                "y": 36,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "siri": {
-            "component": "c-base/showurl",
-            "metadata": {
-                "label": "siri",
-                "x": 792,
-                "y": 180,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "c-base/nerdctrl_7m8wc": {
-            "component": "c-base/nerdctrl",
-            "metadata": {
-                "label": "nerdctrl",
-                "x": 684,
-                "y": 36,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "nerd": {
-            "component": "c-base/pedestrianlight",
-            "metadata": {
-                "label": "nerd pedestrian light",
-                "x": 792,
-                "y": 324,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "c-base/statuslight_rhaio": {
-            "component": "c-base/statuslight",
-            "metadata": {
-                "label": "statuslight",
-                "x": 576,
-                "y": 0,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "c-base/statuslight_g7xzl": {
-            "component": "c-base/statuslight",
-            "metadata": {
-                "label": "statuslight",
-                "x": 576,
-                "y": 144,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "c-base/statuslight_b1xhr": {
-            "component": "c-base/statuslight",
-            "metadata": {
-                "label": "statuslight",
-                "x": 576,
-                "y": -144,
-                "width": 72,
-                "height": 72
-            }
-        }
+    "barstatus_switch": {
+      "component": "c-base/barstatus"
     },
-    "connections": [
-        {
-            "src": {
-                "process": "c-base/nerdctrl_7m8wc",
-                "port": "openurl"
-            },
-            "tgt": {
-                "process": "nerdctrl",
-                "port": "show"
-            },
-            "metadata": {}
-        },
-        {
-            "src": {
-                "process": "c-base/barstatus_4z520",
-                "port": "stateful"
-            },
-            "tgt": {
-                "process": "c-base/statuslight_g7xzl",
-                "port": "barstatus"
-            },
-            "metadata": {}
-        },
-        {
-            "src": {
-                "process": "c-base/barstatus_4z520",
-                "port": "stateful"
-            },
-            "tgt": {
-                "process": "c-base/statuslight_rhaio",
-                "port": "barstatus"
-            },
-            "metadata": {
-                "route": 0
-            }
-        },
-        {
-            "src": {
-                "process": "c-base/barstatus_4z520",
-                "port": "stateful"
-            },
-            "tgt": {
-                "process": "c-base/statuslight_b1xhr",
-                "port": "barstatus"
-            },
-            "metadata": {}
-        }
-    ]
+    "c_out_generator": {
+      "component": "c-base/c_out"
+    },
+    "crew": {
+      "component": "c-base/crew"
+    },
+    "nerdctrl_switch": {
+      "component": "c-base/nerdctrl"
+    },
+    "c_leuse": {
+      "component": "c-base/playsound"
+    },
+    "c_out_output": {
+      "component": "c-base/playsound"
+    },
+    "mechblast": {
+      "component": "c-base/playsound"
+    },
+    "powermon": {
+      "component": "c-base/powermon"
+    },
+    "barstatus_bar": {
+      "component": "c-base/statuslight"
+    },
+    "barstatus_clab": {
+      "component": "c-base/statuslight"
+    },
+    "barstatus_nerdarea": {
+      "component": "c-base/statuslight"
+    },
+    "time": {
+      "component": "c-base/time"
+    },
+    "nerd": {
+      "component": "c-base/pedestrianlight"
+    },
+    "nerdctrl": {
+      "component": "c-base/showurl"
+    },
+    "siri": {
+      "component": "c-base/showurl"
+    }
+  },
+  "connections": [
+    {
+      "src": {
+        "process": "barstatus_switch",
+        "port": "stateful"
+      },
+      "tgt": {
+        "process": "barstatus_bar",
+        "port": "barstatus"
+      }
+    },
+    {
+      "src": {
+        "process": "barstatus_switch",
+        "port": "stateful"
+      },
+      "tgt": {
+        "process": "barstatus_clab",
+        "port": "barstatus"
+      }
+    },
+    {
+      "src": {
+        "process": "barstatus_switch",
+        "port": "stateful"
+      },
+      "tgt": {
+        "process": "barstatus_nerdarea",
+        "port": "barstatus"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext_en"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext_en"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext_en"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "nerdctrl_switch",
+        "port": "openurl"
+      },
+      "tgt": {
+        "process": "nerdctrl",
+        "port": "show"
+      }
+    }
+  ],
+  "inports": [],
+  "outports": []
 }
