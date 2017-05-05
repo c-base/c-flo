@@ -3,6 +3,9 @@ label: station power usage monitoring
 icon: bolt
 inports: {}
 outports:
+  out:
+    queue: system/powermon
+    type: object
   load:
     queue: system/powermon/load
     type: int
