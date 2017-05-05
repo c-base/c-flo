@@ -1,4 +1,4 @@
-component: c-base/mechblast
+component: c-base/playsound
 label: Play sounds
 icon: volume-up
 inports:
