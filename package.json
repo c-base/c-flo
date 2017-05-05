@@ -34,7 +34,7 @@
   "dependencies": {
     "coffee-script": "^1.10.0",
     "ipfs-api": "^14.0.0",
-    "msgflo": "^0.10.16",
+    "msgflo": "^0.10.17",
     "msgflo-nodejs": "^0.10.2",
     "needle": "^1.0.0",
     "noflo": "^0.8.3",
