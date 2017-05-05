@@ -4,5 +4,5 @@ icon: bolt
 inports: {}
 outports:
   load:
-    queue: system/lowermon/load
+    queue: system/powermon/load
     type: int
