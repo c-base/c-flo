@@ -21,6 +21,9 @@
     "barstatus_switch": {
       "component": "c-base/barstatus"
     },
+    "bubbler": {
+      "component": "c-base/panel"
+    },
     "c-base/togglelights_3r8fy": {
       "component": "c-base/togglelights"
     },
@@ -226,6 +229,16 @@
       "tgt": {
         "process": "mechblast",
         "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "farbgeber",
+        "port": "palette"
+      },
+      "tgt": {
+        "process": "bubbler",
+        "port": "palette"
       }
     },
     {
