@@ -36,6 +36,9 @@
     "crew": {
       "component": "c-base/crew"
     },
+    "farbgeber": {
+      "component": "c-base/farbgeber"
+    },
     "mechblast": {
       "component": "c-base/playsound"
     },
