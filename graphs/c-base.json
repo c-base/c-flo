@@ -59,6 +59,9 @@
     },
     "time": {
       "component": "c-base/time"
+    },
+    "weltenbaulab": {
+      "component": "c-base/panel"
     }
   },
   "connections": [
@@ -220,6 +223,16 @@
       "tgt": {
         "process": "mechblast",
         "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "farbgeber",
+        "port": "palette"
+      },
+      "tgt": {
+        "process": "weltenbaulab",
+        "port": "palette"
       }
     },
     {
