@@ -39,6 +39,9 @@
     "farbgeber": {
       "component": "c-base/farbgeber"
     },
+    "he1": {
+      "component": "c-base/showurl"
+    },
     "mechblast": {
       "component": "c-base/playsound"
     },
