@@ -316,6 +316,13 @@
       }
     },
     {
+      "data": true,
+      "tgt": {
+        "process": "farbgeber",
+        "port": "in"
+      }
+    },
+    {
       "src": {
         "process": "echelon",
         "port": "traffic"
