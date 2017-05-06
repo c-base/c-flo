@@ -21,6 +21,9 @@
     "barstatus_switch": {
       "component": "c-base/barstatus"
     },
+    "boardingurl": {
+      "component": "c-base/boardingurl"
+    },
     "bubbler": {
       "component": "c-base/panel"
     },
