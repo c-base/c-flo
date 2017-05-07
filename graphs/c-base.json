@@ -106,6 +106,26 @@
     },
     {
       "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "he1",
+        "port": "show"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "siri",
+        "port": "show"
+      }
+    },
+    {
+      "src": {
         "process": "c-base/togglelights_3r8fy",
         "port": "out"
       },
@@ -232,6 +252,16 @@
       "tgt": {
         "process": "mechblast",
         "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "crew",
+        "port": "boarding"
+      },
+      "tgt": {
+        "process": "boardingurl",
+        "port": "in"
       }
     },
     {
