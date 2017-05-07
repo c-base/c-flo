@@ -5,7 +5,7 @@ import msgflo
 class BoardingUrl(msgflo.Participant):
   def __init__(self, role):
     d = {
-      'component': 'boardingurl',
+      'component': 'c-base/boardingurl',
       'label': 'Generate greeting URL for crew members that are boarding',
       'icon': 'check',
       'inports': [
