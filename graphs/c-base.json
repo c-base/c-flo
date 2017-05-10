@@ -63,6 +63,9 @@
     "powermon": {
       "component": "c-base/powermon"
     },
+    "echelon": {
+      "component": "c-base/echelon"
+    },
     "siri": {
       "component": "c-base/showurl"
     },

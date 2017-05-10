@@ -1,0 +1,8 @@
+component: c-base/echelon
+label: station network traffic monitoring
+icon: wifi
+inports: {}
+outports:
+  traffic:
+    queue: system/echelon/traffic
+    type: object
