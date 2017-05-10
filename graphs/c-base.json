@@ -45,6 +45,9 @@
     "he1": {
       "component": "c-base/showurl"
     },
+    "ingress-data": {
+      "component": "ingress-table/main"
+    },
     "mechblast": {
       "component": "c-base/playsound"
     },
