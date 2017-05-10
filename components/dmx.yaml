@@ -1,0 +1,14 @@
+component: c-base/dmx
+label: station light control
+icon: lightbulb-o
+inports: 
+  set_channels:
+    queue: dmx-#ROLE/state
+    type: object
+outports:
+  fixtures:
+    queue: dmx-#ROLE/fixtures
+    type: object
+  channels:
+    queue: dmx-#ROLE/current_state
+    type: object
