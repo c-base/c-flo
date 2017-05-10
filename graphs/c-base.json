@@ -45,6 +45,9 @@
     "he1": {
       "component": "c-base/showurl"
     },
+    "mainhall": {
+      "component": "c-base/dmx"
+    },
     "mechblast": {
       "component": "c-base/playsound"
     },
