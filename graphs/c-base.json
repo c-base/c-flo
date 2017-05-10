@@ -87,6 +87,13 @@
     "powermon": {
       "component": "c-flo/powermon"
     },
+    "echelon": {
+      "component": "c-base/echelon"
+    },
+    "siri": {
+      "component": "c-base/showurl"
+>>>>>>> Add echelon traffic monitoring
+    },
     "time": {
       "component": "c-flo/time"
     },
