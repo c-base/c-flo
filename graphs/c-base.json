@@ -45,9 +45,6 @@
     "he1": {
       "component": "c-base/showurl"
     },
-    "ingress-data": {
-      "component": "ingress-table/main"
-    },
     "mechblast": {
       "component": "c-base/playsound"
     },
@@ -315,16 +312,6 @@
       "tgt": {
         "process": "c-base/togglelights_3r8fy",
         "port": "in"
-      }
-    },
-    {
-      "src": {
-        "process": "time",
-        "port": "time"
-      },
-      "tgt": {
-        "process": "ingress-data",
-        "port": "fetch"
       }
     }
   ],
