@@ -6,6 +6,9 @@ outports:
   boarding:
     queue: user/boarding
     type: object
+  leaving:
+    queue: user/leaving
+    type: object
   crew:
     queue: c-base/crew
     type: object
