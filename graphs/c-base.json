@@ -24,6 +24,9 @@
     "bubbler": {
       "component": "c-base/panel"
     },
+    "c-base/NetworkBars_m9mm8": {
+      "component": "c-base/NetworkBars"
+    },
     "c-base/togglelights_3r8fy": {
       "component": "c-base/togglelights"
     },
@@ -131,6 +134,16 @@
       "tgt": {
         "process": "siri",
         "port": "show"
+      }
+    },
+    {
+      "src": {
+        "process": "c-base/NetworkBars_m9mm8",
+        "port": "dmx_out"
+      },
+      "tgt": {
+        "process": "mainhall",
+        "port": "set_channels"
       }
     },
     {
@@ -271,6 +284,16 @@
       "tgt": {
         "process": "boardingurl",
         "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "echelon",
+        "port": "traffic"
+      },
+      "tgt": {
+        "process": "c-base/NetworkBars_m9mm8",
+        "port": "traffic_in"
       }
     },
     {
