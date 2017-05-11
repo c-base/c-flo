@@ -48,9 +48,6 @@
     "farbgeber": {
       "component": "c-flo/farbgeber"
     },
-    "he1": {
-      "component": "c-base/mqttwebview"
-    },
     "ingress-data": {
       "component": "ingress-table/data"
     },
@@ -62,6 +59,9 @@
     },
     "mechblast": {
       "component": "c-flo/playsound"
+    },
+    "he1": {
+      "component": "c-base/mqttwebview"
     },
     "nerd": {
       "component": "c-flo/pedestrianlight"
@@ -76,13 +76,16 @@
       "component": "c-flo/powermon"
     },
     "siri": {
-      "component": "c-flo/showurl"
+      "component": "c-base/mqttwebview"
     },
     "time": {
       "component": "c-flo/time"
     },
     "weltenbaulab": {
       "component": "c-flo/panel"
+    },
+    "weltenbaulab_panel": {
+      "component": "c-base/panel"
     }
   },
   "connections": [
@@ -133,7 +136,7 @@
       },
       "tgt": {
         "process": "siri",
-        "port": "show"
+        "port": "open"
       }
     },
     {
