@@ -318,6 +318,36 @@
     },
     {
       "src": {
+        "process": "ingress-data",
+        "port": "floor"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "floor"
+      }
+    },
+    {
+      "src": {
+        "process": "ingress-data",
+        "port": "light"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "light"
+      }
+    },
+    {
+      "src": {
+        "process": "ingress-data",
+        "port": "streets"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "streets"
+      }
+    },
+    {
+      "src": {
         "process": "nerdctrl_switch",
         "port": "openurl"
       },
