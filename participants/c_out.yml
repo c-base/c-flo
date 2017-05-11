@@ -1,4 +1,4 @@
-component: c-base/c_out
+component: c-flo/c_out
 source: 'https://github.com/c-base/c_out'
 label: Generate sounds
 icon: comment

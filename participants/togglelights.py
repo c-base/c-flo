@@ -5,7 +5,7 @@ import msgflo
 class ToggleLights(msgflo.Participant):
   def __init__(self, role):
     d = {
-      'component': 'c-base/togglelights',
+      'component': 'c-flo/togglelights',
       'label': 'Switch traffic light states on every packet',
       'icon': 'toggle-on',
       'inports': [

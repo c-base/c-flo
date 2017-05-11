@@ -1,4 +1,4 @@
-component: c-base/panel
+component: c-flo/panel
 label: Color LED panel
 icon: lightbulb-o
 inports:

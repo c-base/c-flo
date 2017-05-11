@@ -1,4 +1,4 @@
-component: c-base/time
+component: c-flo/time
 label: c-base station time
 icon: clock-o
 inports: {}

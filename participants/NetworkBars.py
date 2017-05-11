@@ -9,7 +9,7 @@ from datetime import timedelta
 class NetworkBars(msgflo.Participant):
   def __init__(self, role):
     d = {
-      'component': 'c-base/NetworkBars',
+      'component': 'c-flo/NetworkBars',
       'label': 'Create bars from traffic stats',
       'icon': 'check',
       'inports': [

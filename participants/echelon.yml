@@ -1,4 +1,4 @@
-component: c-base/echelon
+component: c-flo/echelon
 label: station network traffic monitoring
 icon: wifi
 inports: {}

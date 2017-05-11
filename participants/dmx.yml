@@ -1,4 +1,4 @@
-component: c-base/dmx
+component: c-flo/dmx
 label: station light control
 icon: lightbulb-o
 inports: 

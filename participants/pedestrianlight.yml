@@ -1,4 +1,4 @@
-component: c-base/pedestrianlight
+component: c-flo/pedestrianlight
 label: pedestrian traffic light
 icon: lightbulb-o
 inports:

@@ -78,7 +78,7 @@ module.exports = ->
       artifact += "^ artifact ^ description ^ inports topic ^ outports topic^ \n"
       file.src.forEach (src) ->
         readYaml = grunt.file.readYAML src
-        readYaml.component = readYaml.component.replace 'c-base/', ''
+        readYaml.component = readYaml.component.replace 'c-flo/', ''
         if readYaml.source?
           artifact += "|[[#{readYaml.source}|#{readYaml.component}]] "
         else

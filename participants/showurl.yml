@@ -1,4 +1,4 @@
-component: c-base/showurl
+component: c-flo/showurl
 label: Display web page in a screen
 icon: television
 inports:

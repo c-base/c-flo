@@ -42,7 +42,7 @@
     "noflo-runtime-msgflo": "~0.11.2"
   },
   "msgflo": {
-    "namespace": "c-base",
+    "namespace": "c-flo",
     "handlers": {
       ".yml": "node ./node_modules/.bin/msgflo-register-foreign #FILENAME --role #ROLE --forever=true"
     },

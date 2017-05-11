@@ -1,4 +1,4 @@
-component: c-base/powermon
+component: c-flo/powermon
 label: station power usage monitoring
 icon: bolt
 inports: {}
