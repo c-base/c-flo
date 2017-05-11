@@ -39,11 +39,20 @@
     "crew": {
       "component": "c-base/crew"
     },
+    "echelon": {
+      "component": "c-base/echelon"
+    },
     "farbgeber": {
       "component": "c-base/farbgeber"
     },
     "he1": {
       "component": "c-base/showurl"
+    },
+    "ingress-data": {
+      "component": "ingress-table/data"
+    },
+    "ingress-lights": {
+      "component": "ingress-table/lights"
     },
     "mainhall": {
       "component": "c-base/dmx"
@@ -62,9 +71,6 @@
     },
     "powermon": {
       "component": "c-base/powermon"
-    },
-    "echelon": {
-      "component": "c-base/echelon"
     },
     "siri": {
       "component": "c-base/showurl"
