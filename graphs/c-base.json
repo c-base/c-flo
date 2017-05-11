@@ -49,7 +49,7 @@
       "component": "c-base/farbgeber"
     },
     "he1": {
-      "component": "c-base/showurl"
+      "component": "c-base/mqttwebview"
     },
     "ingress-data": {
       "component": "ingress-table/data"
