@@ -50,8 +50,6 @@
       "NOFLO": "node ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT  --cache true"
     },
     "components": {
-      "c-flo/DetectPartyMods": "#NOFLO",
-      "c-flo/DownloadToIpfs": "#NOFLO",
       "core/Output": "#NOFLO"
     }
   }
