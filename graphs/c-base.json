@@ -63,20 +63,20 @@
     "he1": {
       "component": "c-base/mqttwebview"
     },
+    "siri": {
+      "component": "c-base/mqttwebview"
+    },
+    "nerdctrl-display": {
+      "component": "c-base/mqttwebview"
+    },
     "nerd": {
       "component": "c-flo/pedestrianlight"
-    },
-    "nerdctrl": {
-      "component": "c-flo/showurl"
     },
     "nerdctrl_switch": {
       "component": "c-flo/nerdctrl"
     },
     "powermon": {
       "component": "c-flo/powermon"
-    },
-    "siri": {
-      "component": "c-base/mqttwebview"
     },
     "time": {
       "component": "c-flo/time"
@@ -126,6 +126,16 @@
       },
       "tgt": {
         "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerdctrl-display",
         "port": "open"
       }
     },
@@ -357,16 +367,6 @@
       "tgt": {
         "process": "c-flo/togglelights_3r8fy",
         "port": "in"
-      }
-    },
-    {
-      "src": {
-        "process": "nerdctrl_switch",
-        "port": "openurl"
-      },
-      "tgt": {
-        "process": "nerdctrl",
-        "port": "show"
       }
     },
     {
