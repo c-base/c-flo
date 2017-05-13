@@ -371,6 +371,16 @@
     },
     {
       "src": {
+        "process": "nerdctrl_switch",
+        "port": "openurl"
+      },
+      "tgt": {
+        "process": "nerdctrl-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
         "process": "time",
         "port": "time"
       },
