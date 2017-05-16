@@ -43,9 +43,6 @@
   },
   "msgflo": {
     "namespace": "c-flo",
-    "handlers": {
-      ".yml": "node ./node_modules/.bin/msgflo-register-foreign #FILENAME --role #ROLE --forever=true"
-    },
     "variables": {
       "NOFLO": "node ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT  --cache true"
     },
