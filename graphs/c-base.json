@@ -414,27 +414,7 @@
         "port": "out"
       },
       "tgt": {
-        "process": "c_leuse",
-        "port": "saytext_en"
-      }
-    },
-    {
-      "src": {
-        "process": "station-announcer",
-        "port": "out"
-      },
-      "tgt": {
         "process": "c_out_output",
-        "port": "saytext_en"
-      }
-    },
-    {
-      "src": {
-        "process": "station-announcer",
-        "port": "out"
-      },
-      "tgt": {
-        "process": "mechblast",
         "port": "saytext_en"
       }
     },
