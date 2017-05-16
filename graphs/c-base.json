@@ -90,9 +90,6 @@
     "time": {
       "component": "c-flo/time"
     },
-    "weltenbaulab": {
-      "component": "c-flo/panel"
-    },
     "weltenbaulab_panel": {
       "component": "c-base/panel"
     }
@@ -344,7 +341,7 @@
         "port": "palette"
       },
       "tgt": {
-        "process": "weltenbaulab",
+        "process": "weltenbaulab_panel",
         "port": "palette"
       }
     },
