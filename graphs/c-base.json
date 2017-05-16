@@ -93,6 +93,9 @@
     "time": {
       "component": "c-flo/time"
     },
+    "VisualPaging": {
+      "component": "c-flo/VisualPaging"
+    },
     "weltenbaulab_panel": {
       "component": "c-base/panel"
     }
@@ -281,6 +284,16 @@
     {
       "src": {
         "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "VisualPaging",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
         "port": "saytext_en"
       },
       "tgt": {
@@ -306,6 +319,16 @@
       "tgt": {
         "process": "mechblast",
         "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext_en"
+      },
+      "tgt": {
+        "process": "VisualPaging",
+        "port": "in"
       }
     },
     {
@@ -436,6 +459,36 @@
       "tgt": {
         "process": "station-announcer",
         "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerdctrl-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "siri",
+        "port": "open"
       }
     },
     {
