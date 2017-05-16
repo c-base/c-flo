@@ -24,6 +24,9 @@
     "bubbler": {
       "component": "c-flo/panel"
     },
+    "c-flo/DetectABBA_q53od": {
+      "component": "c-flo/DetectABBA"
+    },
     "c-flo/NetworkBars_m9mm8": {
       "component": "c-flo/NetworkBars"
     },
@@ -38,6 +41,12 @@
     },
     "c_out_output": {
       "component": "c-flo/playsound"
+    },
+    "megablast": {
+      "component": "c-base/music-player"
+    },
+    "core/Output_aqu5o": {
+      "component": "core/Output"
     },
     "crew": {
       "component": "c-flo/crew"
@@ -147,6 +156,16 @@
       "tgt": {
         "process": "siri",
         "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "c-flo/DetectABBA_q53od",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "core/Output_aqu5o",
+        "port": "in"
       }
     },
     {
@@ -357,6 +376,16 @@
       "tgt": {
         "process": "ingress-lights",
         "port": "streets"
+      }
+    },
+    {
+      "src": {
+        "process": "megablast",
+        "port": "current_song"
+      },
+      "tgt": {
+        "process": "c-flo/DetectABBA_q53od",
+        "port": "current_song_in"
       }
     },
     {
