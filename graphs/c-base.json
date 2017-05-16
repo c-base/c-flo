@@ -316,13 +316,6 @@
       }
     },
     {
-      "data": true,
-      "tgt": {
-        "process": "farbgeber",
-        "port": "in"
-      }
-    },
-    {
       "src": {
         "process": "echelon",
         "port": "traffic"
@@ -419,6 +412,13 @@
       },
       "tgt": {
         "process": "c-flo/togglelights_3r8fy",
+        "port": "in"
+      }
+    },
+    {
+      "data": true,
+      "tgt": {
+        "process": "farbgeber",
         "port": "in"
       }
     }
