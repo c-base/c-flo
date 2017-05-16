@@ -12,12 +12,12 @@ class DetectABBA(msgflo.Participant):
     d = {
       'component': 'c-flo/DetectABBA',
       'label': 'Detect if ABBA',
-      'icon': 'toggle-on',
+      'icon': 'star-o',
       'inports': [
-        { 'id': 'current_song_in', 'type': 'object' },
+        { 'id': 'song', 'type': 'object' },
       ],
       'outports': [
-        { 'id': 'out', 'type': 'object' },
+        { 'id': 'out', 'type': 'boolean' },
       ],
     }
     msgflo.Participant.__init__(self, d, role)

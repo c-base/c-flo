@@ -385,7 +385,7 @@
       },
       "tgt": {
         "process": "c-flo/DetectABBA_q53od",
-        "port": "current_song_in"
+        "port": "song"
       }
     },
     {
