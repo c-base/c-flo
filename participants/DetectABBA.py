@@ -4,12 +4,15 @@ sys.path.append(os.path.abspath("."))
 import gevent
 import msgflo
 
+log = logging.getLogger(__name__)
+
 
 class DetectABBA(msgflo.Participant):
   def __init__(self, role):
     d = {
       'component': 'c-flo/DetectABBA',
       'label': 'Detect if ABBA',
+      'icon': 'toggle-on',
       'inports': [
         { 'id': 'current_song_in', 'type': 'object' },
       ],
@@ -20,27 +23,14 @@ class DetectABBA(msgflo.Participant):
     msgflo.Participant.__init__(self, d, role)
 
   def process(self, inport, msg):
-    self.ack(msg)
     current_song = msg.data
     artist = current_song.get('artist', '')
     if artist.lower() == 'abba':
         self.send('out', True)
     else:
         self.send('out', False)
+    self.ack(msg)
 
-
-def main():
-  waiter = gevent.event.AsyncResult()
-  role = sys.argv[1] if len(sys.argv) > 1 else 'repeat'
-  repeater = DetectABBA(role)
-  engine = msgflo.run(repeater, done_cb=waiter.set)
-
-  print "DetectABBA running on %s" % (engine.broker_url)
-  sys.stdout.flush()
-  waiter.wait()
-  print "DetectABBA shutdown."
-  sys.stdout.flush()
 
 if __name__ == '__main__':
-  logging.basicConfig()
-  main()
+  msgflo.main(DetectABBA)
