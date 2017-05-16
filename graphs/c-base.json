@@ -75,6 +75,9 @@
     "siri": {
       "component": "c-base/mqttwebview"
     },
+    "station-announcer": {
+      "component": "station-announcer/StationAnnouncer"
+    },
     "nerdctrl-display": {
       "component": "c-base/mqttwebview"
     },
@@ -407,6 +410,36 @@
     },
     {
       "src": {
+        "process": "station-announcer",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "station-announcer",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "station-announcer",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
         "process": "time",
         "port": "time"
       },
@@ -416,10 +449,27 @@
       }
     },
     {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
+        "process": "station-announcer",
+        "port": "in"
+      }
+    },
+    {
       "data": true,
       "tgt": {
         "process": "farbgeber",
         "port": "in"
+      }
+    },
+    {
+      "data": 2,
+      "tgt": {
+        "process": "station-announcer",
+        "port": "probability"
       }
     }
   ],
