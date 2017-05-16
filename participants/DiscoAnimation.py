@@ -93,7 +93,7 @@ class DiscoAnimation(msgflo.Participant):
                 channels.append({'channel_id': '%s/b' % i, 'value': color[2]})
             color = next(DISCO_COLORS)
             self.send('animation', channels)
-            self.send('colour', list(color))
+            self.send('colours', list(color))
             print "Channels", channels
             gevent.sleep(0.8)
 
