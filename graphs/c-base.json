@@ -371,6 +371,16 @@
       },
       "tgt": {
         "process": "ingress-lights",
+        "port": "floor"
+      }
+    },
+    {
+      "src": {
+        "process": "DiscoAnimation",
+        "port": "colours"
+      },
+      "tgt": {
+        "process": "ingress-lights",
         "port": "streets"
       }
     },
