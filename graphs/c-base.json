@@ -366,6 +366,16 @@
     },
     {
       "src": {
+        "process": "DiscoAnimation",
+        "port": "colours"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "streets"
+      }
+    },
+    {
+      "src": {
         "process": "echelon",
         "port": "traffic"
       },

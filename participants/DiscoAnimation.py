@@ -71,6 +71,7 @@ class DiscoAnimation(msgflo.Participant):
           ],
           'outports': [
             { 'id': 'animation', 'type': 'object' },
+            { 'id': 'colours', 'type': 'array'},
           ],
         }
         self.is_enabled = False
@@ -82,7 +83,7 @@ class DiscoAnimation(msgflo.Participant):
         while self.is_enabled == True:
             print "loop"
             self.tick += 1
-            for i in range(self.tick % 4):
+            for i in range(self.tick % 3):
                 next(DISCO_COLORS)
             channels = []    
             for i in RGB_NAMES:
@@ -90,9 +91,11 @@ class DiscoAnimation(msgflo.Participant):
                 channels.append({'channel_id': '%s/r' % i, 'value': color[0]})
                 channels.append({'channel_id': '%s/g' % i, 'value': color[1]})
                 channels.append({'channel_id': '%s/b' % i, 'value': color[2]})
+            color = next(DISCO_COLORS)
             self.send('animation', channels)
+            self.send('colour', list(color))
             print "Channels", channels
-            gevent.sleep(0.5)
+            gevent.sleep(0.8)
 
     def process(self, inport, msg):
         log.info("Process here, inport is %s" % inport)
