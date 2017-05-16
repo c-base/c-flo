@@ -42,6 +42,9 @@
     "c_out_output": {
       "component": "c-flo/playsound"
     },
+    "DiscoAnimation": {
+      "component": "c-flo/DiscoAnimation"
+    },
     "megablast": {
       "component": "c-base/music-player"
     },
@@ -169,6 +172,16 @@
       "tgt": {
         "process": "core/Output_aqu5o",
         "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "c-flo/DetectABBA_q53od",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "DiscoAnimation",
+        "port": "is_enabled"
       }
     },
     {
@@ -343,6 +356,16 @@
     },
     {
       "src": {
+        "process": "DiscoAnimation",
+        "port": "animation"
+      },
+      "tgt": {
+        "process": "mainhall",
+        "port": "set_channels"
+      }
+    },
+    {
+      "src": {
         "process": "echelon",
         "port": "traffic"
       },
@@ -399,6 +422,16 @@
       "tgt": {
         "process": "ingress-lights",
         "port": "streets"
+      }
+    },
+    {
+      "src": {
+        "process": "mainhall",
+        "port": "channels"
+      },
+      "tgt": {
+        "process": "DiscoAnimation",
+        "port": "channels"
       }
     },
     {
