@@ -6,6 +6,8 @@
 
 c-base is a crashed space station under Berlin that also happens to be one of the oldest hackerspaces. The station has lots of information systems and devices connected using the c-beam MQTT system. c-flo uses MsgFlo and [Flowhub](https://flowhub.io) to make those devices and the connections between them visible. It also allows new connections between devices to be made, either directly, or using simple Python components to convert data in-between.
 
+The aim of c-flo is to make all systems at c-base visible in a single graph, and to foster creativity in how these systems and devices interact.
+
 ## Parts of the system
 
 * [c-beam](https://wiki.c-base.org/dokuwiki/projects:c-beam) information transmission system over MQTT
@@ -15,7 +17,7 @@ c-base is a crashed space station under Berlin that also happens to be one of th
 
 ## Access
 
-The c-flo system is available in c-base member network. You can open the graph with the following URL:
+The c-flo system is available in c-base crew network. You can open the graph with the following URL:
 
 <http://app.flowhub.io#runtime/endpoint?protocol%3Dwebsocket%26address%3Dws%3A%2F%2Fc-flo.cbrp3.c-base.org%3A3569%26id%3Da9dca883-c07f-4cd7-b369-180fa9b52b68>
 
