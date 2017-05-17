@@ -17,9 +17,10 @@ install:
 - sudo make install
 - cd ..
 - npm install
-- pip install -r requirements.pip
+- pip install -r requirements.pip --user
 before_script:
 - mosquitto -d
 - npm install -g grunt-cli
+- export PATH=$PATH:$HOME/.local/bin
 after_script:
 - killall mosquitto
