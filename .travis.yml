@@ -1,8 +1,18 @@
 language: node_js
 node_js:
-- '4.6'
+- '6'
 before_install:
-- npm install -g npm
+- wget http://mosquitto.org/files/source/mosquitto-1.3.1.tar.gz
+install:
+- tar xzf mosquitto-1.3.1.tar.gz
+- cd mosquitto-1.3.1
+- cmake .
+- sudo make install
+- cd ..
+- npm install
+- pip install msgflo
 before_script:
+- mosquitto -d
 - npm install -g grunt-cli
-- sudo apt-get install mosquitto
+after_script:
+- killall mosquitto

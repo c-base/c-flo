@@ -10,8 +10,9 @@ module.exports = ->
 
     yamllint:
       participants: ['participants/*.yml']
+      specs: ['spec/*.yml']
     createMarkup:
-      participants: ['participants/*.yml']
+      participants: ['participants/*.yaml']
 
     # BDD tests on Node.js
     mochaTest:
