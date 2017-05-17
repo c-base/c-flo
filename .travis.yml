@@ -19,7 +19,7 @@ install:
 - npm install
 - pip install -r requirements.pip --user
 before_script:
-- mosquitto -d > /dev/null
+- mosquitto -d 2> /dev/null
 - npm install -g grunt-cli
 - export PATH=$PATH:$HOME/.local/bin
 after_script:
