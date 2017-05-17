@@ -8,3 +8,6 @@ services:
 before_script:
 - npm install -g grunt-cli
 - export PATH=$PATH:$HOME/.local/bin
+env:
+  matrix:
+  - MSGFLO_BROKER=amqp://localhost
