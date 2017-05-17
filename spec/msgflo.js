@@ -7,8 +7,8 @@ const runtime = {
   protocol: "websocket",
   address: "ws://localhost:3335",
   secret: "not-secret-3335",
-  id: "d4a645ae-beeb-4c04-9bb3-4dfb5e063ebe",
-  command: "./node_modules/.bin/msgflo --port=3335 --host=localhost"
+  id: "762ac086-3012-4b20-a7ca-8db6eed21e88",
+  command: "./node_modules/.bin/msgflo --port=3335 --host=localhost --runtime-id=762ac086-3012-4b20-a7ca-8db6eed21e88"
 };
 
 const options = {
