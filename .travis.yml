@@ -1,26 +1,10 @@
 language: node_js
 node_js:
 - '6'
-addons:
-  apt:
-    packages:
-    - pkg-config
-    - cmake
-    - openssl
-    - libc-ares-dev
-before_install:
-- wget http://mosquitto.org/files/source/mosquitto-1.4.11.tar.gz
-install:
-- tar xzf mosquitto-1.4.11.tar.gz
-- cd mosquitto-1.4.11
-- cmake .
-- sudo make install
-- cd ..
+services:
+- rabbitmq
 - npm install
 - pip install -r requirements.pip --user
 before_script:
-- mosquitto -d 2> /dev/null
 - npm install -g grunt-cli
 - export PATH=$PATH:$HOME/.local/bin
-after_script:
-- killall mosquitto
