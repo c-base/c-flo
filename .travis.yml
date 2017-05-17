@@ -5,6 +5,7 @@ node_js:
 - '6'
 services:
 - rabbitmq
+install:
 - npm install
 - pip install -r requirements.pip --user
 before_script:
