@@ -10,7 +10,7 @@ install:
 - sudo make install
 - cd ..
 - npm install
-- pip install msgflo
+- pip install -r requirements.pip
 before_script:
 - mosquitto -d
 - npm install -g grunt-cli
