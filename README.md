@@ -122,6 +122,42 @@ Some examples of dynamic participants:
 * [DetectABBA](https://github.com/c-base/c-flo/blob/master/participants/DetectABBA.py) tells whether a currently playing song is by ABBA
 * [VisualPaging](https://github.com/c-base/c-flo/blob/master/participants/VisualPaging.py) shows current spoken announcements as web pages on connected displays
 
+## Testing Participants
+
+Dynamic participants included in this repository can be included in our test automation setup. Tests are written in [fbp-spec](https://github.com/flowbased/fbp-spec#writing-tests) format and stored as `.yaml` files in the `spec/` folder. For example, here is how we can test the ABBA detector:
+
+```yaml
+name: 'Detecting ABBA'
+topic: c-flo/DetectABBA
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=detect.SONG:IN
+    OUTPORT=detect.OUT:OUT
+    detect(c-flo/DetectABBA)
+cases:
+-
+  name: 'currently playing AC/DC'
+  assertion: 'should return false'
+  inputs:
+    in:
+      artist: 'AC/DC'
+  expect:
+    out:
+      -
+        equals: false
+-
+  name: 'currently playing ABBA'
+  assertion: 'should return true'
+  inputs:
+    in:
+      artist: 'ABBA'
+  expect:
+    out:
+      -
+        equals: true
+```
+
 # Installing & setup
 
     npm install
