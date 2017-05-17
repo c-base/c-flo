@@ -1,6 +1,13 @@
 language: node_js
 node_js:
 - '6'
+addons:
+  apt:
+    packages:
+    - pkg-config
+    - cmake
+    - openssl
+    - libc-ares-dev
 before_install:
 - wget http://mosquitto.org/files/source/mosquitto-1.3.1.tar.gz
 install:
