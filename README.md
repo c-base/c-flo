@@ -23,21 +23,99 @@ The c-flo system is available in c-base crew network. You can open the graph wit
 
 This will download the Flowhub app to your browser and connect directly with the c-flo coordinator.
 
-## Existing Participants
+## Connecting Systems
 
-c-base has several artifacts communicating over the MQTT network. These are represented in MsgFlo-land as "foreign participants" loaded from definitions in the `participants/` folder.
+Each system or device at c-base can be programmed to appear as a node in the c-flo graph by making it a MsgFlo participant. The design principles and how to make systems visible to c-flo are documented below.
 
-To document any missing artifacts, please amend the definitions there. See [participant discovery](https://github.com/msgflo/msgflo#participant-discovery) for format documentation.
+### Design Principles
 
-## Dynamic Participants
+All devices and systems at c-base should interface with the c-beam MQTT network. Optimally this means receiving their input from a MQTT topic, and sending their status or output to another MQTT topic.
 
-Dynamic MsgFlo participants can be defined in any of the [compatible languages](https://github.com/msgflo) and then connected to the graph.
+To maximize interoperability, systems should use their own MQTT topics and not be "hardcoded" to speak with a particular other system. `artifact-name/functionality` is a good naming scheme. For example `display/open_url` for a topic where a screen receives URLs to show, and `display/opened` for a topic where it sends what it is currently displaying.
 
-For example, to start a simple NoFlo participant, run:
+The MQTT topic names should be made so that there can be multiple instances of same system running. So you might have `display1/open` and `display_downstairs/open`.
 
+Connections between systems should be made visually using c-flo.
+
+When needed, Python components can be written as "glue" to convert data from one system to the format wanted by another.
+
+Modifications made to the c-flo network should be committed to this repository.
+
+### Existing Participants
+
+When the c-flo effort started, c-base already had several artifacts communicating over the MQTT network. These are represented in MsgFlo-land as ["foreign participants"](https://msgflo.org/docs/foreign/index.html) loaded from YAML definitions in the `participants/` folder.
+
+To document any missing artifacts, please amend the definitions there. See [participant discovery](https://msgflo.org/docs/communications/index.html) for format documentation.
+
+For example, here is how the Echelon network monitoring system was made to appear in c-flo:
+
+```yaml
+component: c-flo/echelon
+label: station network traffic monitoring
+icon: wifi
+inports: {}
+outports:
+  traffic:
+    queue: system/echelon/traffic
+    type: object
 ```
-./node_modules/.bin/noflo-runtime-msgflo --name Log --graph core/Output --prefetch 1 --broker mqtt://localhost
+
+The foreign participant mechanism is fine for making existing systems appear in c-flo. However, any new artifacts should be made to announce themselves.
+
+### Self-announcing Participants
+
+If you're building a new system that interfaces over c-beam, it is quite easy to make it self-announce itself on c-flo. This is done by periodically sending a [MsgFlo discovery message](https://msgflo.org/docs/communications/index.html) on the `fbp` MQTT topic.
+
+The discovery messages are formatted as JSON and contain the following information:
+
+* Component name (typically the GitHub project name, like `c-base/ingress-table`). There can be multiple devices running the same component
+* Role, the name of the node in the c-flo graph. This is used to distinguish different instances of same system, so `siri` and `he1` can run same software component but are different devices
+* Inports, listing the topics the system listens to
+* Outports, listing the topics the system writes to
+
+For example, here is the discovery message sent by [farbgeber](https://github.com/c-base/farbgeber):
+
+```json
+{
+  "command": "participant",
+    "protocol": "discovery",
+    "payload": {
+      "component": "c-base/farbgeber",
+      "inports": [
+      {
+        "queue": "farbgeber.IN",
+        "type": "bang",
+        "id": "in"
+      }
+      ],
+      "label": "Produce pleasing color palettes",
+      "outports": [
+      {
+        "queue": "farbgeber.PALETTE",
+        "type": "object",
+        "id": "palette"
+      }
+      ],
+      "role": "farbgeber",
+      "id": "farbgeber92490",
+      "icon": "tint"
+    }
+}
 ```
+
+These discovery messages should be sent when the system starts up and connects to the c-base bot network. In addition it should be re-sent roughly once per minute.
+
+There are MsgFlo libraries available for [various programming languages](https://github.com/msgflo) to handle the discovery flow automatically.
+
+### Dynamic Participants
+
+Dynamic participants are started by c-flo itself on-demand. These are typically [msgflo-python](https://github.com/msgflo-python) components used as glue to convert data between other systems or to add dynamic logic to the network.
+
+Some examples of dynamic participants:
+
+* [NetworkBars](https://github.com/c-base/c-flo/blob/master/participants/NetworkBars.py) converts current c-base network traffic to a DMX light visualization
+* [DetectABBA](https://github.com/c-base/c-flo/blob/master/participants/DetectABBA.py) tells whether a currently playing song is by ABBA
+* [VisualPaging](https://github.com/c-base/c-flo/blob/master/participants/VisualPaging.py) shows current spoken announcements as web pages on connected displays
 
 # Installing & setup
 
