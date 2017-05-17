@@ -9,7 +9,7 @@ services:
 - pip install -r requirements.pip --user
 before_script:
 - npm install -g grunt-cli
-- export PATH=$PATH:$HOME/.local/bin
+- export PATH=$PATH:$HOME/.local/bin DEBUG=fbp-spec:*
 env:
   matrix:
   - MSGFLO_BROKER=amqp://localhost
