@@ -16,6 +16,5 @@ const options = {
   fixturetimeout: 20 * 1000
 };
 describe('c-flo participants', function() {
-  console.log('started');
   fbpspec.mocha.run(runtime, './spec', options);
 });
