@@ -1,8 +1,3 @@
-msgflo_nodejs = require 'msgflo-nodejs'
-msgflo = require 'msgflo'
-path = require 'path'
-ipfsd = require 'ipfsd-ctl'
-
 module.exports = ->
   grunt = @
   @initConfig
