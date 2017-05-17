@@ -107,9 +107,14 @@ These discovery messages should be sent when the system starts up and connects t
 
 There are MsgFlo libraries available for [various programming languages](https://github.com/msgflo) to handle the discovery flow automatically.
 
+Some examples of self-announcing participants:
+
+* [mqttwebview URL displayed](https://github.com/c-base/mqttwebview)
+* [Farbgeber client for ESP8266 microcontrollers](https://github.com/c-base/farbgeber/tree/master/esp8266/mqtt_client)
+
 ### Dynamic Participants
 
-Dynamic participants are started by c-flo itself on-demand. These are typically [msgflo-python](https://github.com/msgflo-python) components used as glue to convert data between other systems or to add dynamic logic to the network.
+Dynamic participants are started by c-flo itself on-demand. These are typically [msgflo-python](https://github.com/msgflo/msgflo-python) components used as glue to convert data between other systems or to add dynamic logic to the network.
 
 Some examples of dynamic participants:
 
