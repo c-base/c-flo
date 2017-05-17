@@ -48,9 +48,6 @@
     "megablast": {
       "component": "c-base/music-player"
     },
-    "core/Output_aqu5o": {
-      "component": "core/Output"
-    },
     "crew": {
       "component": "c-flo/crew"
     },
@@ -162,16 +159,6 @@
       "tgt": {
         "process": "siri",
         "port": "open"
-      }
-    },
-    {
-      "src": {
-        "process": "c-flo/DetectABBA_q53od",
-        "port": "out"
-      },
-      "tgt": {
-        "process": "core/Output_aqu5o",
-        "port": "in"
       }
     },
     {
