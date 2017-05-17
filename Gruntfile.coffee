@@ -10,20 +10,15 @@ module.exports = ->
 
     yamllint:
       participants: ['participants/*.yml']
-    updateforeign:
-      participants: ['participants/*.yml']
-    register:
-      participants: ['participants/*.yml']
     createMarkup:
       participants: ['participants/*.yml']
 
     # BDD tests on Node.js
     mochaTest:
       nodejs:
-        src: ['spec/*.coffee']
+        src: ['spec/*.js']
         options:
           reporter: 'spec'
-          require: 'coffee-script/register'
 
   @loadNpmTasks 'grunt-yamllint'
   @loadNpmTasks 'grunt-mocha-test'
