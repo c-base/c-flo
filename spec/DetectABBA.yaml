@@ -1,0 +1,29 @@
+name: 'Detecting ABBA'
+topic: c-flo/DetectABBA
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=detect.SONG:IN
+    OUTPORT=detect.OUT:OUT
+    detect(c-flo/DetectABBA)
+cases:
+-
+  name: 'currently playing AC/DC'
+  assertion: 'should return false'
+  inputs:
+    in:
+      artist: 'AC/DC'
+  expect:
+    out:
+      -
+        equals: false
+-
+  name: 'currently playing ABBA'
+  assertion: 'should return true'
+  inputs:
+    in:
+      artist: 'ABBA'
+  expect:
+    out:
+      -
+        equals: true
