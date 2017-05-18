@@ -7,16 +7,16 @@ fixture:
     OUTPORT=detect.OUT:OUT
     detect(c-flo/DetectABBA)
 cases:
--
-  name: 'currently playing AC/DC'
-  assertion: 'should return false'
-  inputs:
-    in:
-      artist: 'AC/DC'
-  expect:
-    out:
-      -
-        equals: false
+#-
+#  name: 'currently playing AC/DC'
+#  assertion: 'should return false'
+#  inputs:
+#  in:
+#  artist: 'AC/DC'
+#  expect:
+#  out:
+#  -
+#    equals: false
 -
   name: 'currently playing ABBA'
   assertion: 'should return true'
