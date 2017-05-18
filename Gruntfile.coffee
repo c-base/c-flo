@@ -1,8 +1,3 @@
-msgflo_nodejs = require 'msgflo-nodejs'
-msgflo = require 'msgflo'
-path = require 'path'
-ipfsd = require 'ipfsd-ctl'
-
 module.exports = ->
   grunt = @
   @initConfig
@@ -10,67 +5,20 @@ module.exports = ->
 
     yamllint:
       participants: ['participants/*.yml']
-    updateforeign:
-      participants: ['participants/*.yml']
-    register:
-      participants: ['participants/*.yml']
+      specs: ['spec/*.yaml']
     createMarkup:
       participants: ['participants/*.yml']
 
     # BDD tests on Node.js
     mochaTest:
       nodejs:
-        src: ['spec/*.coffee']
+        src: ['spec/*.js']
         options:
           reporter: 'spec'
-          require: 'coffee-script/register'
 
   @loadNpmTasks 'grunt-yamllint'
   @loadNpmTasks 'grunt-mocha-test'
-  @task.registerMultiTask 'updateforeign', ->
-    conf = grunt.file.readJSON 'package.json'
-    foreigns = []
-    @files.forEach (file) ->
-      file.src.forEach (src) ->
-        foreigns.push path.basename src, path.extname src
-    conf.msgflo = {} unless conf.msgflo
-    conf.msgflo.components = {} unless conf.msgflo.components
-    for k, v of conf.msgflo.components
-      delete conf.msgflo.components[k] if v is '#FOREIGN'
-    for f in foreigns
-      conf.msgflo.components["#{conf.name}/#{f}"] = '#FOREIGN'
-    grunt.file.write 'package.json', JSON.stringify(conf, null, 2),
-      encoding: 'utf-8'
 
-  @task.registerMultiTask 'register', ->
-    done = @async()
-    options = @options
-      broker: 'mqtt://localhost'
-    grunt.verbose.writeln "Connecting to MsgFlo broker #{options.broker}"
-    messaging = msgflo_nodejs.transport.getClient options.broker
-    connected = false
-    setTimeout ->
-      return if connected
-      done new Error "Failed to connect to #{options.broker}"
-    , 5000
-    messaging.connect (err) =>
-      return done err if err
-      connected = true
-      defs = []
-      @files.forEach (file) ->
-        file.src.forEach (src) ->
-          def = grunt.file.readYAML src
-          def.id = path.basename src, path.extname src unless def.id
-          def.role = path.basename src, path.extname src unless def.role
-          defs.push msgflo.foreignParticipant.mapPorts def
-      todo = defs.length
-      for def in defs
-        grunt.log.writeln "Registering #{def.role} (#{def.component})"
-        msgflo.foreignParticipant.register messaging, def, (err) ->
-          return done err if err
-          todo--
-          return done() if todo < 1
-  
   @task.registerMultiTask 'createMarkup', ->
     mqttArtifacts = []
     artifact = ""
@@ -112,44 +60,9 @@ module.exports = ->
         artifact +="|\n"
       grunt.log.writeln "#{artifact}"
 
-  daemons = []
-  grunt = @
-  # IPFS daemon control
-  @registerTask 'startIPFS', ->
-    done = @async()
-    ipfsd.disposable
-      'Addresses.API': '/ip4/127.0.0.1/tcp/5001'
-    , (err, node) ->
-      if err
-        grunt.log.error err
-        return done false
-      node.startDaemon (err) ->
-        if err
-          grunt.log.error err
-          return done false
-        grunt.log.writeln "IPFS at #{node.apiAddr} started"
-        daemons.push node
-        done()
-
-  @registerTask 'stopIPFS', ->
-    done = @async()
-    unless daemons.length
-      return done()
-
-    stop = ->
-      return done() if daemons.length < 1
-      d = daemons.shift()
-      returned = false
-      d.stopDaemon (err) ->
-        return if returned
-        returned = true
-        if err
-          grunt.log.error err
-          return done false
-        grunt.log.writeln "IPFS at #{d.apiAddr} stopped"
-        do stop
-
-    do stop
-
-  @registerTask 'test', ['updateforeign', 'yamllint', 'startIPFS', 'mochaTest', 'stopIPFS']
+  @registerTask 'test', [
+    'yamllint'
+    'mochaTest'
+    'createMarkup'
+  ]
   @registerTask 'default', ['test']

@@ -24,19 +24,16 @@
   "homepage": "https://github.com/c-base/c-flo#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "fbp-spec": "^0.2.1",
     "grunt": "^1.0.1",
     "grunt-mocha-test": "^0.13.2",
     "grunt-yamllint": "^0.3.0",
-    "ipfsd-ctl": "^0.20.0",
-    "mocha": "^3.2.0",
-    "noflo-nodejs": "^0.8.1"
+    "mocha": "^3.2.0"
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
-    "ipfs-api": "^14.0.0",
     "msgflo": "^0.10.19",
     "msgflo-nodejs": "^0.10.2",
-    "needle": "^1.0.0",
     "noflo": "^0.8.3",
     "noflo-core": "^0.4.0",
     "noflo-runtime-msgflo": "~0.11.2"

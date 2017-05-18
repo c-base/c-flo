@@ -1,0 +1,19 @@
+name: 'Producing a boarding URL'
+topic: c-flo/boardingurl
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=url.IN:IN
+    OUTPORT=url.OUT:OUT
+    url(c-flo/boardingurl)
+cases:
+-
+  name: 'when bergie is boarding'
+  assertion: 'should return a welcoming message URL'
+  inputs:
+    in:
+      user: 'bergie'
+  expect:
+    out:
+      -
+        equals: 'https://c-beam.cbrp3.c-base.org/welcome/bergie'

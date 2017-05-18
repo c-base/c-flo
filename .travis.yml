@@ -1,8 +1,15 @@
 language: node_js
+dist: trusty
+sudo: false
 node_js:
-- '4.6'
-before_install:
-- npm install -g npm
+- '6'
+services:
+- rabbitmq
+install:
+- npm install
+- pip install -r requirements.pip --user
 before_script:
 - npm install -g grunt-cli
-- sudo apt-get install mosquitto
+env:
+  matrix:
+    - MSGFLO_BROKER=amqp://localhost PATH=$PATH:$HOME/.local/bin
