@@ -158,21 +158,11 @@ cases:
         equals: true
 ```
 
-# Installing & setup
+To run tests locally, `npm install` this project, start up a local mosquitto process, and then:
 
-    npm install
-
-## Examples
-
-Output the time from c-beam time server:
-
-    export MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org
-    ./node_modules/.bin/msgflo-setup graphs/timelogger.fbp --participants --discover --forever --forward stderr,stdout --shell=/bin/bash
-
-Make traffic lights in the downstairs hallway turn green when c-base portal has Ingress party mods, and set up Siri downloader:
-
-    export MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org
-    ./node_modules/.bin/msgflo-setup graphs/c-base-noflo.fbp --participants --discover --forever --forward stderr,stdout --shell=/bin/bash
+```shell
+$ MSGFLO_BROKER=mqtt://localhost npm test
+```
 
 ## create Markup for WIKI
 
