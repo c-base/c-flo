@@ -11,6 +11,16 @@ now = datetime.now(tz)
 recurFrom = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 recurTo = recurFrom + timedelta(days=7)
 
+def clean_event(event):
+    if not event:
+        return event
+    return {
+        'start': currentEvent['start'].isoformat(),
+        'end': currentEvent['end'].isoformat(),
+        'summary': currentEvent['summary'],
+        'location': currentEvent['location'],
+    }
+
 def get_events(url):
     req = urllib2.Request(url)
     res = urllib2.urlopen(req)
@@ -63,18 +73,8 @@ def get_events(url):
             nextEvent = event
             break
     return {
-            'current': {
-                'start': currentEvent['start'].isoformat(),
-                'end': currentEvent['end'].isoformat(),
-                'summary': currentEvent['summary'],
-                'location': currentEvent['location'],
-            },
-            'next': {
-                'start': nextEvent['start'].isoformat(),
-                'end': nextEvent['end'].isoformat(),
-                'summary': nextEvent['summary'],
-                'location': nextEvent['location'],
-            }
+            'current': clean_event(currentEvent),
+            'next': clean_event(nextEvent),
     }
 
 class EventCalendar(msgflo.Participant):
