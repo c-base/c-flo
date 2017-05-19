@@ -1,2 +1,4 @@
 msgflo>=0.0.18
 colour==0.0.5
+icalendar>=3.11.4
+pytz>=2017.2
