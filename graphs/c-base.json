@@ -33,6 +33,9 @@
     "EventCalendar": {
       "component": "c-flo/EventCalendar"
     },
+    "Matelight": {
+      "component": "c-flo/Matelight"
+    },
     "NetworkBars": {
       "component": "c-flo/NetworkBars"
     },
