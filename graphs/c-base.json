@@ -27,6 +27,9 @@
     "DetectABBA": {
       "component": "c-flo/DetectABBA"
     },
+    "DetectCircle": {
+      "component": "c-flo/DetectCircle"
+    },
     "EventCalendar": {
       "component": "c-flo/EventCalendar"
     },
@@ -176,6 +179,16 @@
     },
     {
       "src": {
+        "process": "EventCalendar",
+        "port": "current"
+      },
+      "tgt": {
+        "process": "DetectCircle",
+        "port": "current"
+      }
+    },
+    {
+      "src": {
         "process": "NetworkBars",
         "port": "dmx_out"
       },
@@ -187,6 +200,16 @@
     {
       "src": {
         "process": "togglelights",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "DetectCircle",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "DetectCircle",
         "port": "out"
       },
       "tgt": {
