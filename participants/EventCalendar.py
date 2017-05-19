@@ -15,10 +15,10 @@ def clean_event(event):
     if not event:
         return event
     return {
-        'start': currentEvent['start'].isoformat(),
-        'end': currentEvent['end'].isoformat(),
-        'summary': currentEvent['summary'],
-        'location': currentEvent['location'],
+        'start': event['start'].isoformat(),
+        'end': event['end'].isoformat(),
+        'summary': event['summary'],
+        'location': event['location'],
     }
 
 def get_events(url):
