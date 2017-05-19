@@ -85,8 +85,8 @@ class EventCalendar(msgflo.Participant):
 
   def process(self, inport, msg):
     events = get_events('https://www.c-base.org/calendar/exported/c-base-events.ics')
-    self.send('current', events.current)
-    self.send('next', events.next)
+    self.send('current', events['current'])
+    self.send('next', events['next'])
     self.ack(msg)
 
 if __name__ == '__main__':
