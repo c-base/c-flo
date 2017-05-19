@@ -47,8 +47,8 @@ def get_events(url):
             continue
 
         events.append({
-            'start': start.isoformat(),
-            'end': end.isoformat(),
+            'start': start,
+            'end': end,
             'summary': event.get('summary'),
             'location': event.get('location'),
         })
@@ -63,9 +63,19 @@ def get_events(url):
             nextEvent = event
             break
     return {
-            'current': currentEvent,
-            'next': nextEvent,
+            'current': {
+                'start': currentEvent['start'].isoformat(),
+                'end': currentEvent['end'].isoformat(),
+                'summary': currentEvent['summary'],
+                'location': currentEvent['location'],
+            },
+            'next': {
+                'start': nextEvent['start'].isoformat(),
+                'end': nextEvent['end'].isoformat(),
+                'summary': nextEvent['summary'],
+                'location': nextEvent['location'],
             }
+    }
 
 class EventCalendar(msgflo.Participant):
   def __init__(self, role):
