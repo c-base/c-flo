@@ -27,6 +27,9 @@
     "DetectABBA": {
       "component": "c-flo/DetectABBA"
     },
+    "EventCalendar": {
+      "component": "c-flo/EventCalendar"
+    },
     "NetworkBars": {
       "component": "c-flo/NetworkBars"
     },
@@ -479,6 +482,16 @@
       "tgt": {
         "process": "c_out_output",
         "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
+        "process": "EventCalendar",
+        "port": "in"
       }
     },
     {
