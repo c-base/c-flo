@@ -9,7 +9,7 @@ inports:
     queue: c_out/loop
     type: bang
   saytext:
-    queue: c_out/Julia
+    queue: c_out/announce
     type: string
   saytext_en:
     queue: c_out/announce_en
