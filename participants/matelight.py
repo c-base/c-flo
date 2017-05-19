@@ -12,6 +12,7 @@ import colorsys # for HSV-to-RGB-conversion
 from PIL import Image, GifImagePlugin, ImageSequence, ImageOps
 import time
 import sys
+import urllib
 
 log = logging.getLogger(__name__)
 
@@ -114,7 +115,7 @@ class Matelight(msgflo.Participant):
             self.busy = True
             try:
                 
-                filename = urllib.urlretrieve(msg.data)
+                filename = urllib.urlretrieve(msg.data)[0]
                 gevent.Greenlet.spawn(self.show_gif, filename)
             finally:
                 self.ack(msg)
@@ -122,4 +123,4 @@ class Matelight(msgflo.Participant):
 
 
 if __name__ == '__main__':
-    msgflo.main(DiscoAnimation)
+    msgflo.main(Matelight)
