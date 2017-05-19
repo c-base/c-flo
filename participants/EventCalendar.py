@@ -47,8 +47,8 @@ def get_events(url):
             continue
 
         events.append({
-            'start': start,
-            'end': end,
+            'start': start.isoFormat(),
+            'end': end.isoFormat(),
             'summary': event.get('summary'),
             'location': event.get('location'),
         })
