@@ -19,7 +19,7 @@ class VisualPaging(msgflo.Participant):
     msgflo.Participant.__init__(self, d, role)
 
   def process(self, inport, msg):
-    url = 'https://c-base.github.io/station-announcer/?%s' % urllib.quote(msg.data)
+    url = 'https://c-base.github.io/station-announcer/?%s' % urllib.quote(msg.data.encode('utf-8'))
     self.send('out', url)
     self.ack(msg)
 
