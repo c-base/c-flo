@@ -16,17 +16,13 @@ class ToggleLights(msgflo.Participant):
       ],
     }
     self.state = {
-      'red': 1,
+      'red': 0,
       'yellow': 0,
-      'green': 0,
+      'green': 1,
     }
     msgflo.Participant.__init__(self, d, role)
 
   def process(self, inport, msg):
-    if (self.state['red']):
-      self.state['red'] = 0
-    else:
-      self.state['red'] = 1
     if (self.state['green']):
       self.state['green'] = 0
     else:
