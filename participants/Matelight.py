@@ -18,6 +18,7 @@ log = logging.getLogger(__name__)
 
 HOSTNAME = "matelight.cbrp3.c-base.org"
 UDP_PORT = 1337
+TCP_PORT = 1337
 
 ROWS = 16
 COLS = 40
@@ -34,7 +35,8 @@ class Matelight(msgflo.Participant):
           'label': 'Interface to Matelight',
           'icon': 'television',
           'inports': [
-            { 'id': 'gif_url', 'type': 'string'},
+            { 'id': 'gif_url', 'type': 'string', },
+            { 'id': 'text_string', 'type': 'string', },
           ],
           'outports': [
           ],
@@ -107,19 +109,28 @@ class Matelight(msgflo.Participant):
             gevent.sleep(sleep_time)
         os.unlink = filename
         self.busy = False
+    
+    def sendText(self, msg):
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((HOSTNAME, TCP_PORT))
+        s.send(msg)
         
-
     def process(self, inport, msg):
-        log.info("Matelight gets gif")
-        if not self.busy:
-            self.busy = True
-            try:
-                
-                filename = urllib.urlretrieve(msg.data)[0]
-                gevent.Greenlet.spawn(self.show_gif, filename)
-            finally:
-                self.ack(msg)
-        
+        if inport is 'gif_url':
+            log.info("Matelight gets gif")
+            if not self.busy:
+                self.busy = True
+                try:
+                    filename = urllib.urlretrieve(msg.data)[0]
+                    gevent.Greenlet.spawn(self.show_gif, filename)
+                finally:
+                    self.ack(msg)
+            else:
+                log.info("Matelight is busy")
+        elif inport is 'text_string':
+            log.info("Matelight gets string: %s", msg)
+            sendText(msg)
+            
 
 
 if __name__ == '__main__':
