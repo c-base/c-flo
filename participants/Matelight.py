@@ -32,7 +32,7 @@ class Matelight(msgflo.Participant):
         d = {
           'component': 'c-flo/Matelight',
           'label': 'Interface to Matelight',
-          'icon': 'fire',
+          'icon': 'television',
           'inports': [
             { 'id': 'gif_url', 'type': 'string'},
           ],
