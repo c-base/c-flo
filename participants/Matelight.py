@@ -107,7 +107,7 @@ class Matelight(msgflo.Participant):
             message = self.prepare_message(data, unpack=True, gamma=gamma)
             self.send_array(message, hostname)     
             gevent.sleep(sleep_time)
-        os.unlink = filename
+        os.unlink(filename)
         self.busy = False
     
     def send_text(self, msg):
