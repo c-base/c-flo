@@ -63,6 +63,9 @@
     "echelon": {
       "component": "c-flo/echelon"
     },
+    "farbdmx": {
+      "component": "c-flo/farbdmx"
+    },
     "farbgeber": {
       "component": "c-flo/farbgeber"
     },
@@ -425,12 +428,32 @@
     },
     {
       "src": {
+        "process": "farbdmx",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mainhall",
+        "port": "set_channels"
+      }
+    },
+    {
+      "src": {
         "process": "farbgeber",
         "port": "palette"
       },
       "tgt": {
         "process": "bubbler",
         "port": "palette"
+      }
+    },
+    {
+      "src": {
+        "process": "farbgeber",
+        "port": "palette"
+      },
+      "tgt": {
+        "process": "farbdmx",
+        "port": "in"
       }
     },
     {
