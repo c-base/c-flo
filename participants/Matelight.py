@@ -110,7 +110,7 @@ class Matelight(msgflo.Participant):
         os.unlink = filename
         self.busy = False
     
-    def sendText(self, msg):
+    def send_text(self, msg):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect((HOSTNAME, TCP_PORT))
         s.send(msg)
@@ -129,7 +129,7 @@ class Matelight(msgflo.Participant):
                 log.info("Matelight is busy")
         elif inport is 'text_string':
             log.info("Matelight gets string: %s", msg)
-            sendText(msg)
+            self.send_text(msg.data)
             
 
 
