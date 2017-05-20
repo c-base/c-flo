@@ -129,7 +129,7 @@ class Matelight(msgflo.Participant):
                 log.info("Matelight is busy")
         elif inport is 'text_string':
             log.info("Matelight gets string: %s", msg)
-            self.send_text(msg.data)
+            self.send_text(str(msg.data))
             
 
 
