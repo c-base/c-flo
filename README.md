@@ -43,7 +43,7 @@ Modifications made to the c-flo network should be committed to this repository.
 
 ### Existing Participants
 
-When the c-flo effort started, c-base already had several artifacts communicating over the MQTT network. These are represented in MsgFlo-land as ["foreign participants"](https://msgflo.org/docs/foreign/index.html) loaded from YAML definitions in the `participants/` folder.
+When the c-flo effort started, c-base already had several artifacts communicating over the MQTT network. These are represented in MsgFlo-land as ["foreign participants"](https://msgflo.org/docs/foreign/index.html) loaded from YAML definitions in the `components/` folder.
 
 To document any missing artifacts, please amend the definitions there. See [participant discovery](https://msgflo.org/docs/communications/index.html) for format documentation.
 
@@ -118,9 +118,9 @@ Dynamic participants are started by c-flo itself on-demand. These are typically 
 
 Some examples of dynamic participants:
 
-* [NetworkBars](https://github.com/c-base/c-flo/blob/master/participants/NetworkBars.py) converts current c-base network traffic to a DMX light visualization
-* [DetectABBA](https://github.com/c-base/c-flo/blob/master/participants/DetectABBA.py) tells whether a currently playing song is by ABBA
-* [VisualPaging](https://github.com/c-base/c-flo/blob/master/participants/VisualPaging.py) shows current spoken announcements as web pages on connected displays
+* [NetworkBars](https://github.com/c-base/c-flo/blob/master/components/NetworkBars.py) converts current c-base network traffic to a DMX light visualization
+* [DetectABBA](https://github.com/c-base/c-flo/blob/master/components/DetectABBA.py) tells whether a currently playing song is by ABBA
+* [VisualPaging](https://github.com/c-base/c-flo/blob/master/components/VisualPaging.py) shows current spoken announcements as web pages on connected displays
 
 ## Testing Participants
 

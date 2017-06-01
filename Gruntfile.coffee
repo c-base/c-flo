@@ -4,10 +4,10 @@ module.exports = ->
     pkg: @file.readJSON 'package.json'
 
     yamllint:
-      participants: ['participants/*.yml']
+      participants: ['components/*.yml']
       specs: ['spec/*.yaml']
     createMarkup:
-      participants: ['participants/*.yml']
+      participants: ['components/*.yml']
 
     # BDD tests on Node.js
     mochaTest:
