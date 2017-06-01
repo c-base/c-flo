@@ -6,7 +6,7 @@
   "scripts": {
     "test": "grunt test",
     "postinstall": "./node_modules/.bin/noflo-cache-preheat",
-    "start": "./node_modules/.bin/msgflo --graph graphs/c-base.json --auto-save=true --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600 --ignore ingress-data"
+    "start": "./node_modules/.bin/msgflo --graph graphs/c-base.json --auto-save=true --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600 --ignore ingress-data --componentdir components"
   },
   "repository": {
     "type": "git",
