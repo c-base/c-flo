@@ -32,8 +32,8 @@
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
-    "msgflo": "^0.10.19",
-    "msgflo-nodejs": "^0.10.2",
+    "msgflo": "^0.10.22",
+    "msgflo-nodejs": "^0.10.5",
     "noflo": "^0.8.3",
     "noflo-core": "^0.4.0",
     "noflo-runtime-msgflo": "~0.11.2"
