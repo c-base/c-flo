@@ -1,5 +1,5 @@
 /node_modules/
 npm-debug.log
 fbp.json
-/participants/*.pyc
-/participants/*.swp
+/components/*.pyc
+/components/*.swp
