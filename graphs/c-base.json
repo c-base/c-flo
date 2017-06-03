@@ -615,15 +615,6 @@
         "port": "out"
       },
       "tgt": {
-        "process": "siri",
-        "port": "open"
-      }
-    {
-      "src": {
-        "process": "VisualPaging",
-        "port": "out"
-      },
-      "tgt": {
         "process": "nerdctrl-display",
         "port": "open"
       }
