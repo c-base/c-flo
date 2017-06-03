@@ -384,6 +384,13 @@
       }
     },
     {
+      "data": true,
+      "tgt": {
+        "process": "farbgeber",
+        "port": "in"
+      }
+    },
+    {
       "src": {
         "process": "DiscoAnimation",
         "port": "animation"
