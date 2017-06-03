@@ -19,26 +19,32 @@ RGB_WALL = [
     'dmx-1-185/rgb1',
     'dmx-1-185/rgb2',
     'dmx-1-185/rgb3',
-    # Bar light
-    'dmx-1-211/rgb1',
-    'dmx-1-211/rgb2',
-    'dmx-1-211/rgb3',
-    'dmx-1-211/rgb4',
-    'dmx-1-211/rgb5',
-    'dmx-1-211/rgb6',
-    'dmx-1-211/rgb7',
-    'dmx-1-211/rgb8',
+    # c-gate
+    'dmx-1-55/rgb',
+    'dmx-1-60/rgb',
 ]
 
 RGB_CEILING = [
-    'dmx-1-46/rgb',
-    'dmx-1-60/rgb',
-    'dmx-1-52/rgb',
+    # Ceiling lights
     'dmx-1-37/rgb',
-    'dmx-1-40/rgb',
-    'dmx-1-55/rgb',
-    'dmx-1-49/rgb',
     'dmx-1-43/rgb',
+    'dmx-1-49/rgb',
+    # Half of bar
+    'dmx-1-211/rgb2',
+    'dmx-1-211/rgb4',
+    'dmx-1-211/rgb6',
+    'dmx-1-211/rgb8',
+]
+RGB_CEILING2 = [
+    # Ceiling lights
+    'dmx-1-40/rgb',
+    'dmx-1-46/rgb',
+    'dmx-1-52/rgb',
+    # Half of bar
+    'dmx-1-211/rgb1',
+    'dmx-1-211/rgb3',
+    'dmx-1-211/rgb5',
+    'dmx-1-211/rgb7',
 ]
 
 class farbdmx(msgflo.Participant):
@@ -62,14 +68,18 @@ class farbdmx(msgflo.Participant):
             channels.append({'channel_id': '%s/r' % i, 'value': msg.data['c'][0]})
             channels.append({'channel_id': '%s/g' % i, 'value': msg.data['c'][1]})
             channels.append({'channel_id': '%s/b' % i, 'value': msg.data['c'][2]})
-        for i in RGB_WALL:
-            channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v2'][0]})
-            channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v2'][1]})
-            channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v2'][2]})
         for i in RGB_CEILING:
             channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v1'][0]})
             channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v1'][1]})
             channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v1'][2]})
+        for i in RGB_CEILING2:
+            channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v2'][0]})
+            channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v2'][1]})
+            channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v2'][2]})
+        for i in RGB_WALL:
+            channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v3'][0]})
+            channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v3'][1]})
+            channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v3'][2]})
         self.send('out', channels)
         self.ack(msg)
 
