@@ -84,7 +84,7 @@
     "he1": {
       "component": "c-base/mqttwebview"
     },
-    "roboblast": {
+    "roboblast-display": {
       "component": "c-base/mqttwebview"
     },
     "siri": {
@@ -172,7 +172,7 @@
         "port": "out"
       },
       "tgt": {
-        "process": "roboblast",
+        "process": "roboblast-display",
         "port": "open"
       }
     },
@@ -602,7 +602,7 @@
         "port": "out"
       },
       "tgt": {
-        "process": "roboblast",
+        "process": "roboblast-display",
         "port": "open"
       }
     },
