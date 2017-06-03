@@ -57,6 +57,9 @@
     "megablast": {
       "component": "c-base/music-player"
     },
+    "megablast-display": {
+      "component": "c-base/mqttwebview"
+    },
     "crew": {
       "component": "c-flo/crew"
     },
@@ -153,6 +156,16 @@
       },
       "tgt": {
         "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "megablast-display",
         "port": "open"
       }
     },
@@ -586,6 +599,25 @@
         "port": "open"
       }
     },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "megablast-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "siri",
+        "port": "open"
+      }
     {
       "src": {
         "process": "VisualPaging",
