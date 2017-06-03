@@ -9,6 +9,12 @@ RGB_COLUMNS = [
     'dmx-1-31/rgb',
 ]
 
+RGB_GATE = [
+    # c-gate
+    'dmx-1-55/rgb',
+    'dmx-1-60/rgb',
+]
+
 RGB_WALL = [
     # Stage wall 2
     'dmx-1-185/rgb8',
@@ -19,9 +25,6 @@ RGB_WALL = [
     'dmx-1-185/rgb1',
     'dmx-1-185/rgb2',
     'dmx-1-185/rgb3',
-    # c-gate
-    'dmx-1-55/rgb',
-    'dmx-1-60/rgb',
 ]
 
 RGB_CEILING = [
@@ -80,6 +83,10 @@ class farbdmx(msgflo.Participant):
             channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v3'][0]})
             channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v3'][1]})
             channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v3'][2]})
+        for i in RGB_GATE:
+            channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v4'][0]})
+            channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v4'][1]})
+            channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v4'][2]})
         self.send('out', channels)
         self.ack(msg)
 
