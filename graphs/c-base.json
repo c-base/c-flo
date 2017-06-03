@@ -81,6 +81,9 @@
     "he1": {
       "component": "c-base/mqttwebview"
     },
+    "roboblast": {
+      "component": "c-base/mqttwebview"
+    },
     "siri": {
       "component": "c-base/mqttwebview"
     },
@@ -157,6 +160,16 @@
       },
       "tgt": {
         "process": "nerdctrl-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "roboblast",
         "port": "open"
       }
     },
@@ -557,6 +570,16 @@
       },
       "tgt": {
         "process": "nerdctrl-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "roboblast",
         "port": "open"
       }
     },
