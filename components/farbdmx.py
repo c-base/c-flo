@@ -63,13 +63,13 @@ class farbdmx(msgflo.Participant):
             channels.append({'channel_id': '%s/g' % i, 'value': msg.data['c'][1]})
             channels.append({'channel_id': '%s/b' % i, 'value': msg.data['c'][2]})
         for i in RGB_WALL:
+            channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v2'][0]})
+            channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v2'][1]})
+            channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v2'][2]})
+        for i in RGB_CEILING:
             channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v1'][0]})
             channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v1'][1]})
             channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v1'][2]})
-        for i in RGB_CEILING:
-            channels.append({'channel_id': '%s/r' % i, 'value': msg.data['b'][0]})
-            channels.append({'channel_id': '%s/g' % i, 'value': msg.data['b'][1]})
-            channels.append({'channel_id': '%s/b' % i, 'value': msg.data['b'][2]})
         self.send('out', channels)
         self.ack(msg)
 
