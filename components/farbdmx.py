@@ -32,22 +32,12 @@ RGB_CEILING = [
     'dmx-1-37/rgb',
     'dmx-1-43/rgb',
     'dmx-1-49/rgb',
-    # Half of bar
-    'dmx-1-211/rgb2',
-    'dmx-1-211/rgb4',
-    'dmx-1-211/rgb6',
-    'dmx-1-211/rgb8',
 ]
 RGB_CEILING2 = [
     # Ceiling lights
     'dmx-1-40/rgb',
     'dmx-1-46/rgb',
     'dmx-1-52/rgb',
-    # Half of bar
-    'dmx-1-211/rgb1',
-    'dmx-1-211/rgb3',
-    'dmx-1-211/rgb5',
-    'dmx-1-211/rgb7',
 ]
 
 class farbdmx(msgflo.Participant):
