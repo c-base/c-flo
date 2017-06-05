@@ -81,4 +81,4 @@ class farbdmx(msgflo.Participant):
         self.ack(msg)
 
 if __name__ == '__main__':
-    msgflo.main(DiscoAnimation)
+    msgflo.main(farbdmx)
