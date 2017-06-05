@@ -8,6 +8,10 @@ module.exports = ->
       specs: ['spec/*.yaml']
     createMarkup:
       participants: ['components/*.yml']
+    pylint:
+      options:
+        errorsOnly: true
+      src: ['components/*.py']
 
     # BDD tests on Node.js
     mochaTest:
@@ -17,6 +21,7 @@ module.exports = ->
           reporter: 'spec'
 
   @loadNpmTasks 'grunt-yamllint'
+  @loadNpmTasks 'grunt-pylint'
   @loadNpmTasks 'grunt-mocha-test'
 
   @task.registerMultiTask 'createMarkup', ->
@@ -62,6 +67,7 @@ module.exports = ->
 
   @registerTask 'test', [
     'yamllint'
+    'pylint'
     'mochaTest'
     'createMarkup'
   ]
