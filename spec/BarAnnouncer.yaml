@@ -3,9 +3,9 @@ topic: c-flo/BarAnnouncer
 fixture:
   type: 'fbp'
   data: |
-    INPORT=detect.IN:IN
-    OUTPORT=detect.OUT:OUT
-    detect(c-flo/BarAnnouncer)
+    INPORT=barannouncer.IN:IN
+    OUTPORT=barannouncer.OUT:OUT
+    barannouncer(c-flo/BarAnnouncer)
 cases:
 -
   name: 'bar opening'
