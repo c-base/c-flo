@@ -5,7 +5,7 @@ class DetectCircle(msgflo.Participant):
         d = {
           'component': 'c-flo/DetectCircle',
           'label': 'Blink traffic lights red when there is a circle meeting',
-          'icon': 'fa-hand-paper-o',
+          'icon': 'hand-paper-o',
           'inports': [
             { 'id': 'current', 'type': 'object'},
             { 'id': 'in', 'type': 'object' },
