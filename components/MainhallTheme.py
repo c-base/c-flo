@@ -54,15 +54,16 @@ class MainhallTheme(msgflo.Participant):
                         self.send('out', self.original_channels)
                     self.ack(msg)
             else:
-                if self.theme == msg.data
+                if self.theme == msg.data:
                     self.ack(msg)
                 elif msg.data == 'WHITE':
+                    channels = []
                     for i in RGB_CEILING:
                         channels.append({'channel_id': '%s/r' % i, 'value': 255})
                         channels.append({'channel_id': '%s/g' % i, 'value': 255})
                         channels.append({'channel_id': '%s/b' % i, 'value': 255})
+                    self.send('out', channels)
                     self.ack(msg)
-                else:
         else:
             self.ack(msg)
 
