@@ -39,9 +39,6 @@
     "Matelight": {
       "component": "c-flo/Matelight"
     },
-    "NetworkBars": {
-      "component": "c-flo/NetworkBars"
-    },
     "togglelights": {
       "component": "c-flo/togglelights"
     },
@@ -244,16 +241,6 @@
     },
     {
       "src": {
-        "process": "NetworkBars",
-        "port": "dmx_out"
-      },
-      "tgt": {
-        "process": "DiscoAnimation",
-        "port": "dmx"
-      }
-    },
-    {
-      "src": {
         "process": "togglelights",
         "port": "out"
       },
@@ -450,16 +437,6 @@
       "tgt": {
         "process": "ingress-lights",
         "port": "streets"
-      }
-    },
-    {
-      "src": {
-        "process": "echelon",
-        "port": "traffic"
-      },
-      "tgt": {
-        "process": "NetworkBars",
-        "port": "traffic_in"
       }
     },
     {
