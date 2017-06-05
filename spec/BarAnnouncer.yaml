@@ -1,0 +1,18 @@
+name: 'Announcing bar opening/closing'
+topic: c-flo/BarAnnouncer
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=detect.IN:IN
+    OUTPORT=detect.OUT:OUT
+    detect(c-flo/BarAnnouncer)
+cases:
+-
+  name: 'bar opening'
+  assertion: 'should produce announcement'
+  inputs:
+    in: '19:37 bar opening'
+  expect:
+    out:
+      -
+        equals: 'Bar is opening'
