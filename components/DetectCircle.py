@@ -36,9 +36,9 @@ class DetectCircle(msgflo.Participant):
                 print "Circle event ongoing"
                 self.is_circle = True
                 lights = {
-                        'red': 0,
+                        'red': 1,
                         'yellow': 0,
-                        'green': 1,
+                        'green': 0,
                         }
                 self.send('out', lights)
                 self.ack(msg)
