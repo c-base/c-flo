@@ -1,0 +1,19 @@
+name: 'Mainhall Theme'
+topic: c-flo/MainhallTheme
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=mainhallTheme.THEME:THEME
+    INPORT=mainhallTheme.CHANNELS:CHANNELS
+    OUTPORT=mainhallTheme.OUT:OUT
+    mainhallTheme(c-flo/MainhallTheme)
+cases:
+-
+  name: 'theme white'
+  assertion: 'should display white lights'
+  inputs:
+    theme: 'WHITE'
+  expect:
+    out:
+      -
+        equals: true
