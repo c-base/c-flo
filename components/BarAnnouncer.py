@@ -19,9 +19,9 @@ class BarAnnouncer(msgflo.Participant):
 
   def process(self, inport, msg):
     if msg.data.find('bar opening') != -1:
-      send.send('out', 'Bar is opening')
+      self.send('out', 'Bar is opening')
     if msg.data.find('bar closing') != -1:
-      send.send('out', 'Bar is closing')
+      self.send('out', 'Bar is closing')
     self.ack(msg)
 
 if __name__ == '__main__':
