@@ -37,7 +37,7 @@ class NetworkBars(msgflo.Participant):
     time_passed = curr_time - self.last_time
     # division by zero
     if time_passed.seconds < 1: 
-      time_passed = 1
+      time_passed.seconds = 1
     the_rate = float(curr_val - self.last_val[direction]) / float(time_passed.seconds)
   
   def rate(self, msg, direction):
