@@ -16,15 +16,24 @@ RGB_GATE = [
 ]
 
 RGB_WALL = [
+    # Stage wall 1
+    'dmx-1-159/rgb1',
+    'dmx-1-159/rgb3',
+    'dmx-1-159/rgb2',
+    'dmx-1-159/rgb5',
+    'dmx-1-159/rgb4',
+    'dmx-1-159/rgb7',
+    'dmx-1-159/rgb6',
+    'dmx-1-159/rgb8',
     # Stage wall 2
-    'dmx-1-185/rgb8',
+    'dmx-1-185/rgb1',
+    'dmx-1-185/rgb2',
+    'dmx-1-185/rgb3',
     'dmx-1-185/rgb4',
     'dmx-1-185/rgb5',
     'dmx-1-185/rgb6',
     'dmx-1-185/rgb7',
-    'dmx-1-185/rgb1',
-    'dmx-1-185/rgb2',
-    'dmx-1-185/rgb3',
+    'dmx-1-185/rgb8',
 ]
 
 RGB_CEILING = [
