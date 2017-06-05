@@ -6,6 +6,9 @@
     }
   },
   "processes": {
+    "bar-announcer": {
+      "component": "c-flo/BarAnnouncer"
+    },
     "barstatus_bar": {
       "component": "c-flo/statuslight"
     },
@@ -119,6 +122,26 @@
     }
   },
   "connections": [
+    {
+      "src": {
+        "process": "bar-announcer",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "barstatus_switch",
+        "port": "status"
+      },
+      "tgt": {
+        "process": "bar-announcer",
+        "port": "in"
+      }
+    },
     {
       "src": {
         "process": "barstatus_switch",
