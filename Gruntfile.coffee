@@ -11,6 +11,7 @@ module.exports = ->
     pylint:
       options:
         errorsOnly: true
+        rcfile: '.pylintrc'
       src: ['components/*.py']
 
     # BDD tests on Node.js
