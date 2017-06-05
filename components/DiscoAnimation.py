@@ -68,6 +68,7 @@ class DiscoAnimation(msgflo.Participant):
           'inports': [
             { 'id': 'is_enabled', 'type': 'boolean'},
             { 'id': 'channels', 'type': 'object' },
+            { 'id': 'dmx', 'type': 'object' },
           ],
           'outports': [
             { 'id': 'animation', 'type': 'object' },
@@ -100,6 +101,11 @@ class DiscoAnimation(msgflo.Participant):
     def process(self, inport, msg):
         log.info("Process here, inport is %s" % inport)
         print("Process here, inport is %s" % inport)
+        if inport == 'dmx':
+            # Allow others to write DMX only when we're not doing disco animation
+            if self.is_enabled == False:
+                self.send('animation', msg.data)
+            self.ack(msg)
         if inport == 'channels': 
             # Store the current state of the DMX lights to be restored later.
             if self.is_enabled == False:

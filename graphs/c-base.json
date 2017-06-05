@@ -225,8 +225,8 @@
         "port": "dmx_out"
       },
       "tgt": {
-        "process": "mainhall",
-        "port": "set_channels"
+        "process": "DiscoAnimation",
+        "port": "dmx"
       }
     },
     {
@@ -445,8 +445,8 @@
         "port": "out"
       },
       "tgt": {
-        "process": "mainhall",
-        "port": "set_channels"
+        "process": "DiscoAnimation",
+        "port": "dmx"
       }
     },
     {
