@@ -69,4 +69,4 @@ class MainhallTheme(msgflo.Participant):
 
 
 if __name__ == '__main__':
-    msgflo.main(MainHalltheme)
+    msgflo.main(MainhallTheme)
