@@ -9,11 +9,12 @@ fixture:
     mainhallTheme(c-flo/MainhallTheme)
 cases:
 -
-  name: 'theme white'
-  assertion: 'should display white lights'
+  name: 'theme DMX'
+  assertion: 'should forward the channels'
   inputs:
-    theme: 'WHITE'
+    theme: 'DMX'
+    channels: []
   expect:
     out:
       -
-        equals: true
+        equals: []
