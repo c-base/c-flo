@@ -2,6 +2,8 @@
 
 [MsgFlo](https://msgflo.org) setup for rewiring the [c-base space station](https://c-base.org/).
 
+**Hack weekend**: Join the [reprogramming the hackerspace](http://bergie.iki.fi/blog/msgflo-workshops-cbase-bitraf/) hack weekend at c-base, July 7-9 2017.
+
 ## Introduction
 
 c-base is a crashed space station under Berlin that also happens to be one of the oldest hackerspaces. The station has lots of information systems and devices connected using the c-beam MQTT system. c-flo uses MsgFlo and [Flowhub](https://flowhub.io) to make those devices and the connections between them visible. It also allows new connections between devices to be made, either directly, or using simple Python components to convert data in-between.
