@@ -18,19 +18,19 @@ class OnlineHeatmap(msgflo.Participant):
 
   def generate_color(self, online):
     length = len(online)
-    if length < 5:
+    if length < 3:
       return [0,31,151]
-    if length < 10:
+    if length < 6:
       return [2,126,199]
-    if length < 15:
+    if length < 9:
       return [17,255,243]
-    if length < 20:
+    if length < 12:
       return [162,255,95]
-    if length < 25:
+    if length < 15:
       return [255,251,0]
-    if length < 30:
+    if length < 18:
       return [253,152,0]
-    if length < 35:
+    if length < 21:
       return [250,21,0]
    
     return [128,0,0]
