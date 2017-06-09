@@ -119,9 +119,6 @@
     },
     "VisualPaging": {
       "component": "c-flo/VisualPaging"
-    },
-    "weltenbaulab_panel": {
-      "component": "c-base/panel"
     }
   },
   "connections": [
@@ -503,16 +500,6 @@
       "tgt": {
         "process": "farbdmx",
         "port": "in"
-      }
-    },
-    {
-      "src": {
-        "process": "farbgeber",
-        "port": "palette"
-      },
-      "tgt": {
-        "process": "weltenbaulab_panel",
-        "port": "palette"
       }
     },
     {
