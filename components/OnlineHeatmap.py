@@ -25,7 +25,7 @@ class OnlineHeatmap(msgflo.Participant):
     if length < 9:
       return [17,255,243]
     if length < 12:
-      return [162,255,95]
+      return [29,255,0]
     if length < 15:
       return [255,251,0]
     if length < 18:
