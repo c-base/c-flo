@@ -27,6 +27,12 @@
     "bubbler": {
       "component": "c-flo/panel"
     },
+    "CrewOnline": {
+      "component": "c-flo/CrewOnline"
+    },
+    "OnlineHeatmap": {
+      "component": "c-flo/OnlineHeatmap"
+    },
     "DetectABBA": {
       "component": "c-flo/DetectABBA"
     },
@@ -401,11 +407,41 @@
     },
     {
       "src": {
+        "process": "CrewOnline",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "OnlineHeatmap",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
         "process": "crew",
         "port": "boarding"
       },
       "tgt": {
         "process": "boardingurl",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "crew",
+        "port": "boarding"
+      },
+      "tgt": {
+        "process": "CrewOnline",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "crew",
+        "port": "leaving"
+      },
+      "tgt": {
+        "process": "CrewOnline",
         "port": "in"
       }
     },
@@ -451,8 +487,8 @@
     },
     {
       "src": {
-        "process": "farbgeber",
-        "port": "palette"
+        "process": "OnlineHeatmap",
+        "port": "out"
       },
       "tgt": {
         "process": "bubbler",
