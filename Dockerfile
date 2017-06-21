@@ -6,10 +6,10 @@ EXPOSE 3569
 # Reduce npm install verbosity, overflows Travis CI log view
 ENV NPM_CONFIG_LOGLEVEL warn
 
-RUN mkdir -p /var/app
-WORKDIR /var/app
+RUN mkdir -p /var/c-flo
+WORKDIR /var/c-flo
 
-COPY . /var/app
+COPY . /var/c-flo
 
 # Install msgflo-python
 RUN apt-get update && apt-get install -y \
@@ -22,6 +22,6 @@ RUN pip install -r requirements.pip
 RUN npm install
 
 # Map the volumes
-VOLUME /var/app/graphs /var/app/components /var/app/spec
+VOLUME /var/c-flo/graphs /var/c-flo/components /var/c-flo/spec
 
 CMD npm start
