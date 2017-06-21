@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import urllib
-from beautifulsoup4 import BeautifulSoup
+from bs4 import BeautifulSoup
   
 def available(availability):
   if availability == 'verfuegbar':
