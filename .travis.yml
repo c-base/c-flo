@@ -4,12 +4,8 @@ sudo: false
 node_js:
 - '6'
 services:
-- rabbitmq
-install:
-- npm install
-- pip install -r requirements.pip --user
+- docker
 before_script:
 - npm install -g grunt-cli
-env:
-  matrix:
-    - MSGFLO_BROKER=amqp://localhost PATH=$PATH:$HOME/.local/bin
+- docker-compose up -d
+- pip install -r requirements.pip --user
