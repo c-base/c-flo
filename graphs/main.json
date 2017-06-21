@@ -45,6 +45,9 @@
     "Matelight": {
       "component": "c-flo/Matelight"
     },
+    "Replicator": {
+      "component": "c-flo/Replicator"
+    },
     "togglelights": {
       "component": "c-flo/togglelights"
     },
@@ -589,6 +592,16 @@
       },
       "tgt": {
         "process": "EventCalendar",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
+        "process": "Replicator",
         "port": "in"
       }
     },
