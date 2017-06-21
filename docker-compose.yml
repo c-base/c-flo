@@ -1,0 +1,17 @@
+version: '2'
+services:
+  mqtt:
+    image: ansi/mosquitto
+    container_name: mosquitto
+    ports:
+      - '127.0.0.1:1883:1883'
+    entrypoint: /usr/local/sbin/mosquitto
+  msgflo:
+    build: .
+    container_name: c-flo
+    environment:
+      MSGFLO_BROKER: 'mqtt://mqtt:1883'
+    ports:
+      - '127.0.0.1:3569:3569'
+    links:
+      - mqtt
