@@ -9,9 +9,7 @@ ENV NPM_CONFIG_LOGLEVEL warn
 RUN mkdir -p /var/app
 WORKDIR /var/app
 
-# Install MsgFlo and dependencies
 COPY . /var/app
-RUN npm install
 
 # Install msgflo-python
 RUN apt-get update && apt-get install -y \
@@ -19,6 +17,9 @@ RUN apt-get update && apt-get install -y \
   python-dev \
   python-pip
 RUN pip install -r requirements.txt
+
+# Install MsgFlo and dependencies
+RUN npm install
 
 # Map the volumes
 VOLUME /var/app/graphs /var/app/components /var/app/spec
