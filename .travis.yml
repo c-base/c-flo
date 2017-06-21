@@ -8,3 +8,4 @@ services:
 before_script:
 - npm install -g grunt-cli
 - docker-compose up -d
+- pip install -r requirements.pip --user
