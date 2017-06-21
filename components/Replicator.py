@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import urllib
+import msgflo
 from bs4 import BeautifulSoup
   
 def available(availability):
