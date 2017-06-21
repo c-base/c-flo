@@ -12,13 +12,13 @@ class Replicator(msgflo.Participant):
   def __init__(self, role):
     d = {
       'component': 'c-flo/Replicator',
-      'label': 'Gets the replicator status as json',
+      'label': 'Gets the replicator status',
       'icon': 'tachometer',
       'inports': [
-      	{ 'id': 'in', 'type': 'bang'}
+          { 'id': 'in', 'type': 'bang'}
       ],
       'outports': [
-      	{ 'id': 'out', 'type': 'array'}
+          { 'id': 'out', 'type': 'object'}
       ]
     }
     msgflo.Participant.__init__(self, d, role)
@@ -53,3 +53,6 @@ class Replicator(msgflo.Participant):
 
     self.send('out', dict)
     self.ack(msg)
+
+if __name__ == '__main__':
+  msgflo.main(Replicator)
