@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
   python \
   python-dev \
   python-pip
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.pip
 
 # Install MsgFlo and dependencies
 RUN npm install
