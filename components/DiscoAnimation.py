@@ -109,8 +109,7 @@ class DiscoAnimation(msgflo.Participant):
             # Store the current state of the DMX lights to be restored later.
             if self.is_enabled == False:
                 self.original_channels = []
-                for key, value in msg.data.items():
-                    self.original_channels.append({'channel_id': key, 'value': value})
+                self.original_channels = msg.data
                 self.ack(msg)
         elif inport == 'is_enabled':
             if msg.data == False:

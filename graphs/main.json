@@ -88,7 +88,7 @@
       "component": "ingress-table/lights"
     },
     "mainhall": {
-      "component": "c-flo/dmx"
+      "component": "c-base/dmx"
     },
     "mechblast": {
       "component": "c-flo/playsound"
