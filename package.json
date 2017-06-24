@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
-    "msgflo": "^0.10.24",
+    "msgflo": "^0.10.26",
     "msgflo-nodejs": "^0.10.5",
     "noflo": "^0.8.3",
     "noflo-core": "^0.4.0",
