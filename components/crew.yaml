@@ -1,0 +1,23 @@
+component: c-flo/crew
+label: station crew register
+icon: users
+inports: {}
+outports:
+  boarding:
+    queue: user/boarding
+    type: object
+  leaving:
+    queue: user/leaving
+    type: object
+  crew:
+    queue: c-base/crew
+    type: object
+  members:
+    queue: c-base/crew/members
+    type: int
+  passive:
+    queue: c-base/crew/passive
+    type: int
+  updated:
+    queue: c-base/crew/last_update
+    type: string

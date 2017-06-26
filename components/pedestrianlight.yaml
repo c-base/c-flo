@@ -1,0 +1,8 @@
+component: c-flo/pedestrianlight
+label: pedestrian traffic light
+icon: lightbulb-o
+inports:
+  colors:
+    queue: 'ampel/#ROLE'
+    type: object
+outports: {}
