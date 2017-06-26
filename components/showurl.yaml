@@ -1,0 +1,13 @@
+component: c-flo/showurl
+label: Display web page in a screen
+icon: television
+inports:
+  show:
+    queue: '#ROLE/open'
+    type: string
+    description: HTTP URL available on the member network
+outports:
+  showed:
+    queue: '#ROLE/opened'
+    type: string
+    description: HTTP URL opened by the screen

@@ -1,0 +1,17 @@
+component: c-flo/playsound
+label: Play sounds
+icon: volume-up
+inports:
+  playsound:
+    queue: c_out/play
+    type: string
+  playrandomsound:
+    queue: c_out/loop
+    type: bang
+  saytext:
+    queue: c_out/announce
+    type: string
+  saytext_en:
+    queue: c_out/announce_en
+    type: string
+outports: {}
