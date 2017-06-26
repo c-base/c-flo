@@ -89,29 +89,28 @@ class Farbgeber(msgflo.Participant):
             'label': 'Produce pleasing color palettes',
             'icon': 'tint',
             'inports': [
-                { 'id': 'in', 'type': 'boolean' },
+                { 'id': 'in', 'type': 'object' },
             ],
             'outports': [
                 { 'id': 'palette', 'type': 'object' },
             ],
         }
-        self.enabled = False
+        self.is_enabled = False
         msgflo.Participant.__init__(self, d, role)
 
     def process(self, inport, msg):
         if inport == 'in':
             if msg.data == True:
-                self.enabled = True
+                self.is_enabled = True
+                gevent.Greenlet.spawn(self.loop)
             else:
-                self.enabled = False
+                self.is_enabled = False
         self.ack(msg)
-        gevent.Greenlet.spawn(self.loop)
 
     def loop (self):
-        while True:
-            if self.enabled == True:
-                palette = generate_palette()
-                self.send_palette(palette)
+        while self.is_enabled == True:
+            palette = generate_palette()
+            self.send_palette(palette)
             gevent.sleep(1)
 
     def send_palette(self, palette):

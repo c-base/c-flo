@@ -683,7 +683,10 @@
       }
     },
     {
-      "data": true,
+      "src": {
+	"process": "mainhall",
+	"port": "automode"
+      },
       "tgt": {
         "process": "farbgeber",
         "port": "in"
