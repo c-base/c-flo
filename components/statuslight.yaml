@@ -1,8 +1,0 @@
-component: c-flo/statuslight
-label: bar status light indicating openness
-icon: map-signs
-inports:
-  barstatus:
-    queue: bar/stateful
-    type: string
-outports: {}
