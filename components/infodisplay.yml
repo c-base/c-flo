@@ -1,0 +1,17 @@
+component: msgflo-browser/infodisplay
+label: Show URL on a public screen.
+icon: television
+inports:
+  open:
+    description: URL to be opened
+    type: string
+    queue: '#ROLE.OPEN'
+  urls:
+    description: URL list for rotation
+    type: array
+    queue: '#ROLE.URLS'
+outports:
+  opened:
+    description: The URL that has been opened and is showing.
+    type: string
+    queue: '#ROLE.OPENED'
