@@ -1,0 +1,21 @@
+component: c-base/dmx
+label: station light control
+icon: lightbulb-o
+inports:
+  set_channels:
+    type: object
+    description: set the current light state
+    queue: dmx-mainhall/state
+outports:
+  fixtures:
+    type: object
+    description: light fixtures
+    queue: dmx-mainhall/fixtures
+  channels:
+    type: object
+    description: the current channel state
+    queue: dmx-mainhall/current_state
+  automode:
+    type: boolean
+    description: is the automatic mode enabled
+    queue: dmx-mainhall/automode

@@ -1,0 +1,20 @@
+component: station-announcer/StationAnnouncer
+label: Generate random station announcements at given propability
+icon: space-shuttle
+inports:
+  announce:
+    type: all
+    queue: station-announcer.ANNOUNCE
+  probability:
+    type: all
+    queue: station-announcer.PROBABILITY
+  in:
+    type: all
+    queue: station-announcer.IN
+outports:
+  out:
+    type: all
+    queue: station-announcer.OUT
+  skipped:
+    type: all
+    queue: station-announcer.SKIPPED
