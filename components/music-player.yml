@@ -1,0 +1,9 @@
+component: c-base/music-player
+label: c-base music player
+icon: music
+inports: {}
+outports:
+  current_song:
+    type: object
+    description: JSON object of the current song being played.
+    queue: megablast/current_song
