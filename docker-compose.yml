@@ -17,6 +17,7 @@ services:
     ports:
       - '127.0.0.1:5984:5984'
   msgflo:
+    image: cbase/c-flo
     build: .
     container_name: c-flo
     environment:
