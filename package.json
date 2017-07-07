@@ -45,6 +45,12 @@
       "NOFLO": "node ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT  --cache true"
     },
     "components": {
+      "msgflo-browser/infodisplay": "msgflo-register --role #ROLE:components/infodisplay.yml",
+      "c-base/mqttwebview": "msgflo-register --role #ROLE:components/mqttwebview.yml",
+      "station-announcer/StationAnnouncer": "msgflo-register --role #ROLE:components/StationAnnouncer.yml",
+      "ingress-table/lights": "msgflo-register --role #ROLE:components/lights.yml",
+      "ingress-table/data": "msgflo-register --role #ROLE:components/data.yml",
+      "c-base/dmx": "msgflo-register --role #ROLE:components/dmx.yml",
       "core/Output": "#NOFLO"
     }
   }
