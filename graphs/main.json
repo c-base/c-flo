@@ -84,6 +84,9 @@
     "farbgeber": {
       "component": "c-flo/farbgeber"
     },
+    "hallway-display": {
+      "component": "c-base/c-beam-viewer"
+    },
     "ingress-data": {
       "component": "ingress-table/data"
     },
@@ -182,6 +185,16 @@
       "tgt": {
         "process": "barstatus_nerdarea",
         "port": "barstatus"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "hallway-display",
+        "port": "open"
       }
     },
     {
@@ -632,6 +645,16 @@
       "tgt": {
         "process": "station-announcer",
         "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "hallway-display",
+        "port": "open"
       }
     },
     {

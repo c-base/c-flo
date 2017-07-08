@@ -50,6 +50,7 @@
       "station-announcer/StationAnnouncer": "msgflo-register --role #ROLE:components/StationAnnouncer.yml",
       "ingress-table/lights": "msgflo-register --role #ROLE:components/lights.yml",
       "ingress-table/data": "msgflo-register --role #ROLE:components/data.yml",
+      "c-base/c-beam-viewer": "msgflo-register --role #ROLE:components/c-beam-viewer.yml",
       "c-base/dmx": "msgflo-register --role #ROLE:components/dmx.yml",
       "c-base/music-player": "msgflo-register --role #ROLE:components/music-player.yml",
       "c-base/buttonpanel": "msgflo-register --role #ROLE:components/buttonpanel.yml",

@@ -1,0 +1,13 @@
+component: c-base/c-beam-viewer
+label: Show URL on a public screen.
+icon: tablet
+inports:
+  open:
+    description: URL to be opened
+    type: string
+    queue: '#ROLE/open'
+outports:
+  opened:
+    description: The URL that has been opened and is showing.
+    type: string
+    queue: '#ROLE/opened'
