@@ -526,7 +526,7 @@
         "port": "palette"
       },
       "tgt": {
-        "process": "BigSwitch",
+        "process": "bigswitch",
         "port": "colors"
       }
     },
