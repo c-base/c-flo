@@ -1,0 +1,17 @@
+component: c-base/buttonpanel
+label: 'Ignition button'
+icon: toggle-on
+inports:
+  led:
+    type: boolean
+    queue: c-boom/led
+  vibra:
+    type: boolean
+    queue: c-boom/vibra
+outports:
+  ignition:
+    type: boolean
+    queue: c-boom/ignition
+  start:
+    type: boolean
+    queue: c-boom/start

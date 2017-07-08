@@ -52,6 +52,7 @@
       "ingress-table/data": "msgflo-register --role #ROLE:components/data.yml",
       "c-base/dmx": "msgflo-register --role #ROLE:components/dmx.yml",
       "c-base/music-player": "msgflo-register --role #ROLE:components/music-player.yml",
+      "c-base/buttonpanel": "msgflo-register --role #ROLE:components/buttonpanel.yml",
       "core/Output": "#NOFLO"
     }
   }
