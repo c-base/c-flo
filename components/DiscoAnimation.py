@@ -71,6 +71,7 @@ class DiscoAnimation(msgflo.Participant):
             { 'id': 'dmx', 'type': 'object' },
           ],
           'outports': [
+            { 'id': 'is_enabled', 'type': 'boolean'},
             { 'id': 'animation', 'type': 'object' },
             { 'id': 'colours', 'type': 'array'},
           ],
@@ -112,6 +113,7 @@ class DiscoAnimation(msgflo.Participant):
                 self.original_channels = msg.data
                 self.ack(msg)
         elif inport == 'is_enabled':
+            self.send('is_enabled', msg.data)
             if msg.data == False:
                 if self.is_enabled == True:
                     self.is_enabled = msg.data
