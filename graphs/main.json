@@ -126,6 +126,9 @@
     "time": {
       "component": "c-flo/time"
     },
+    "vacuum": {
+      "component": "c-flo/Vacuum"
+    },
     "VisualPaging": {
       "component": "c-flo/VisualPaging"
     }

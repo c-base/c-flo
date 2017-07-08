@@ -1,0 +1,8 @@
+component: c-flo/Vacuum
+label: station vacuum cleaner
+icon: trash-o
+inports: {}
+outports:
+  on:
+    queue: c-base/vacuum/on
+    type: boolean
