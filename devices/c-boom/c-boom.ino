@@ -59,8 +59,8 @@ void setup() {
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
 
-  nitroPort = engine->addOutPort("nitro", "any", cfg.prefix+cfg.role+"/ignition");
-  bigPort = engine->addOutPort("big", "any", cfg.prefix+cfg.role+"/start");
+  nitroPort = engine->addOutPort("ignition", "any", cfg.prefix+cfg.role+"/ignition");
+  bigPort = engine->addOutPort("start", "any", cfg.prefix+cfg.role+"/start");
   ledPort = engine->addInPort("led", "boolean", cfg.prefix+cfg.role+"/led",
   [](byte *data, int length) -> void {
       const std::string in((char *)data, length);
