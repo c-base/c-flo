@@ -1,0 +1,8 @@
+component: c-flo/time
+label: c-base station time
+icon: clock-o
+inports: {}
+outports:
+  time:
+    queue: info/time
+    type: string
