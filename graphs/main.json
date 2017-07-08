@@ -713,6 +713,16 @@
     },
     {
       "src": {
+        "process": "IgniteMainhall",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c-boom",
+        "port": "vibra"
+      }
+    },
+    {
+      "src": {
         "process": "DiscoAnimation",
         "port": "running"
       },
