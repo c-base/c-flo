@@ -27,6 +27,9 @@
     "bubbler": {
       "component": "c-flo/panel"
     },
+    "c-boom": {
+      "component": "c-base/buttonpanel"
+    },
     "CrewOnline": {
       "component": "c-flo/CrewOnline"
     },
@@ -86,6 +89,9 @@
     },
     "ingress-lights": {
       "component": "ingress-table/lights"
+    },
+    "IgniteMainhall": {
+      "component": "c-flo/IgniteMainhall"
     },
     "mainhall": {
       "component": "c-base/dmx"
@@ -676,6 +682,46 @@
       }
     },
     {
+      "src": {
+        "process": "c-boom",
+        "port": "ignition"
+      },
+      "tgt": {
+        "process": "IgniteMainhall",
+        "port": "ignite"
+      }
+    },
+    {
+      "src": {
+        "process": "c-boom",
+        "port": "start"
+      },
+      "tgt": {
+        "process": "IgniteMainhall",
+        "port": "start"
+      }
+    },
+    {
+      "src": {
+        "process": "IgniteMainhall",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "DiscoAnimation",
+        "port": "is_enabled"
+      }
+    },
+    {
+      "src": {
+        "process": "DiscoAnimation",
+        "port": "is_enabled"
+      },
+      "tgt": {
+        "process": "c-boom",
+        "port": "led"
+      }
+    },
+    {
       "data": true,
       "tgt": {
         "process": "CrewOnline",
@@ -684,8 +730,8 @@
     },
     {
       "src": {
-	"process": "mainhall",
-	"port": "automode"
+        "process": "mainhall",
+        "port": "automode"
       },
       "tgt": {
         "process": "farbgeber",
