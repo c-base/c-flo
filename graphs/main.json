@@ -21,6 +21,9 @@
     "barstatus_switch": {
       "component": "c-flo/barstatus"
     },
+    "bigswitch": {
+      "component": "c-base/BigSwitch"
+    },
     "boardingurl": {
       "component": "c-flo/boardingurl"
     },
@@ -515,6 +518,16 @@
       "tgt": {
         "process": "bubbler",
         "port": "palette"
+      }
+    },
+    {
+      "src": {
+        "process": "farbgeber",
+        "port": "palette"
+      },
+      "tgt": {
+        "process": "BigSwitch",
+        "port": "colors"
       }
     },
     {

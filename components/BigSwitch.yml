@@ -1,0 +1,14 @@
+component: c-base/BigSwitch
+label: 'IP-Lounge big switch'
+icon: bomb
+inports:
+  led:
+    type: boolean
+    queue: button/bigswitch/led
+  colors:
+    type: object
+    queue: button/bigswitch/colors
+outports:
+  state:
+    type: boolean
+    queue: button/bigswitch/on
