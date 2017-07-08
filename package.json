@@ -6,7 +6,7 @@
   "scripts": {
     "test": "grunt test",
     "postinstall": "./node_modules/.bin/noflo-cache-preheat",
-    "start": "./node_modules/.bin/msgflo --graph graphs/main.json --auto-save=true --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600 --ignore ingress-data --componentdir components --wait-timeout 500"
+    "start": "./node_modules/.bin/msgflo --graph graphs/main.json --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600 --ignore bartracker --ignore crewtracker --ignore ingresstracker --ignore stationtracker --componentdir components --wait-timeout 500"
   },
   "repository": {
     "type": "git",
@@ -45,6 +45,13 @@
       "NOFLO": "node ./node_modules/.bin/noflo-runtime-msgflo --name #ROLE --graph #COMPONENT  --cache true"
     },
     "components": {
+      "msgflo-browser/infodisplay": "msgflo-register --role #ROLE:components/infodisplay.yml",
+      "c-base/mqttwebview": "msgflo-register --role #ROLE:components/mqttwebview.yml",
+      "station-announcer/StationAnnouncer": "msgflo-register --role #ROLE:components/StationAnnouncer.yml",
+      "ingress-table/lights": "msgflo-register --role #ROLE:components/lights.yml",
+      "ingress-table/data": "msgflo-register --role #ROLE:components/data.yml",
+      "c-base/dmx": "msgflo-register --role #ROLE:components/dmx.yml",
+      "c-base/music-player": "msgflo-register --role #ROLE:components/music-player.yml",
       "core/Output": "#NOFLO"
     }
   }

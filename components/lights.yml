@@ -1,0 +1,20 @@
+component: ingress-table/lights
+label: Drive the lights on the table
+icon: lightbulb-o
+inports:
+  streets:
+    type: all
+    queue: ingress-lights.STREETS
+  floor:
+    type: all
+    queue: ingress-lights.FLOOR
+  light:
+    type: all
+    queue: ingress-lights.LIGHT
+  animate:
+    type: all
+    queue: ingress-lights.ANIMATE
+outports:
+  shown:
+    type: all
+    queue: ingress-lights.SHOWN
