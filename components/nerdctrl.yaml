@@ -1,8 +1,0 @@
-component: c-flo/nerdctrl
-label: c-base nerd control interface
-icon: gamepad
-inports: {}
-outports:
-  openurl:
-    queue: nerdctrl/open
-    type: string

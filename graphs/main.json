@@ -1,1283 +1,705 @@
 {
-    "caseSensitive": false,
-    "properties": {
-        "name": "main",
-        "environment": {
-            "type": "msgflo"
-        }
+  "properties": {
+    "name": "main",
+    "environment": {
+      "type": "msgflo"
+    }
+  },
+  "processes": {
+    "bar-announcer": {
+      "component": "c-flo/BarAnnouncer"
     },
-    "inports": {},
-    "outports": {},
-    "groups": [],
-    "processes": {
-        "CrewOnline": {
-            "component": "c-flo/CrewOnline",
-            "metadata": {
-                "x": 468,
-                "y": 1044,
-                "width": 72,
-                "height": 72,
-                "label": "CrewOnline"
-            }
-        },
-        "DetectABBA": {
-            "component": "c-flo/DetectABBA",
-            "metadata": {
-                "x": 468,
-                "y": 144,
-                "width": 72,
-                "height": 72,
-                "label": "DetectABBA"
-            }
-        },
-        "DetectCircle": {
-            "component": "c-flo/DetectCircle",
-            "metadata": {
-                "x": 468,
-                "y": 2124,
-                "width": 72,
-                "height": 72,
-                "label": "DetectCircle"
-            }
-        },
-        "DiscoAnimation": {
-            "component": "c-flo/DiscoAnimation",
-            "metadata": {
-                "x": 684,
-                "y": 180,
-                "width": 72,
-                "height": 72,
-                "label": "DiscoAnimation"
-            }
-        },
-        "EventCalendar": {
-            "component": "c-flo/EventCalendar",
-            "metadata": {
-                "x": 252,
-                "y": 2124,
-                "width": 72,
-                "height": 72,
-                "label": "EventCalendar"
-            }
-        },
-        "Matelight": {
-            "component": "c-flo/Matelight",
-            "metadata": {
-                "x": 36,
-                "y": 864,
-                "width": 72,
-                "height": 72,
-                "label": "Matelight"
-            }
-        },
-        "OnlineHeatmap": {
-            "component": "c-flo/OnlineHeatmap",
-            "metadata": {
-                "x": 684,
-                "y": 1044,
-                "width": 72,
-                "height": 72,
-                "label": "OnlineHeatmap"
-            }
-        },
-        "Replicator": {
-            "component": "c-flo/Replicator",
-            "metadata": {
-                "x": 252,
-                "y": 1980,
-                "width": 72,
-                "height": 72,
-                "label": "Replicator"
-            }
-        },
-        "VisualPaging": {
-            "component": "c-flo/VisualPaging",
-            "metadata": {
-                "x": 468,
-                "y": 1548,
-                "width": 72,
-                "height": 72,
-                "label": "VisualPaging"
-            }
-        },
-        "arboretum/door": {
-            "component": "c-base/DoorStatus",
-            "metadata": {
-                "x": 36,
-                "y": 1692,
-                "width": 72,
-                "height": 72,
-                "label": "arboretum/door"
-            }
-        },
-        "arboretumtracker": {
-            "component": "openmct/arboretumtracker",
-            "metadata": {
-                "x": 252,
-                "y": 1692,
-                "width": 72,
-                "height": 72,
-                "label": "arboretumtracker"
-            }
-        },
-        "bar-announcer": {
-            "component": "c-flo/BarAnnouncer",
-            "metadata": {
-                "x": 252,
-                "y": 1548,
-                "width": 72,
-                "height": 72,
-                "label": "bar-announcer"
-            }
-        },
-        "barstatus_bar": {
-            "component": "c-flo/statuslight",
-            "metadata": {
-                "x": 252,
-                "y": 1404,
-                "width": 72,
-                "height": 72,
-                "label": "barstatus_bar"
-            }
-        },
-        "barstatus_clab": {
-            "component": "c-flo/statuslight",
-            "metadata": {
-                "x": 252,
-                "y": 1080,
-                "width": 72,
-                "height": 72,
-                "label": "barstatus_clab"
-            }
-        },
-        "barstatus_nerdarea": {
-            "component": "c-flo/statuslight",
-            "metadata": {
-                "x": 252,
-                "y": 792,
-                "width": 72,
-                "height": 72,
-                "label": "barstatus_nerdarea"
-            }
-        },
-        "barstatus_switch": {
-            "component": "c-flo/barstatus",
-            "metadata": {
-                "x": 36,
-                "y": 720,
-                "width": 72,
-                "height": 72,
-                "label": "barstatus_switch"
-            }
-        },
-        "bartracker": {
-            "component": "openmct/bartracker",
-            "metadata": {
-                "x": 468,
-                "y": 1980,
-                "width": 72,
-                "height": 72,
-                "label": "bartracker"
-            }
-        },
-        "boardingurl": {
-            "component": "c-flo/boardingurl",
-            "metadata": {
-                "x": 468,
-                "y": 900,
-                "width": 72,
-                "height": 72,
-                "label": "boardingurl"
-            }
-        },
-        "bubbler": {
-            "component": "c-flo/panel",
-            "metadata": {
-                "x": 828,
-                "y": 1044,
-                "width": 72,
-                "height": 72,
-                "label": "bubbler"
-            }
-        },
-        "c-boom": {
-            "component": "c-base/buttonpanel",
-            "metadata": {
-                "x": -324,
-                "y": 1368,
-                "width": 72,
-                "height": 72,
-                "label": "c-boom"
-            }
-        },
-        "c_leuse": {
-            "component": "c-flo/playsound",
-            "metadata": {
-                "x": 468,
-                "y": 1260,
-                "width": 72,
-                "height": 72,
-                "label": "c_leuse"
-            }
-        },
-        "c_out_generator": {
-            "component": "c-flo/c_out",
-            "metadata": {
-                "x": 252,
-                "y": 1260,
-                "width": 72,
-                "height": 72,
-                "label": "c_out_generator"
-            }
-        },
-        "c_out_output": {
-            "component": "c-flo/playsound",
-            "metadata": {
-                "x": 468,
-                "y": 1692,
-                "width": 72,
-                "height": 72,
-                "label": "c_out_output"
-            }
-        },
-        "climatetracker": {
-            "component": "openmct/climatetracker",
-            "metadata": {
-                "x": 468,
-                "y": 396,
-                "width": 72,
-                "height": 72,
-                "label": "climatetracker"
-            }
-        },
-        "crew": {
-            "component": "c-flo/crew",
-            "metadata": {
-                "x": 252,
-                "y": 936,
-                "width": 72,
-                "height": 72,
-                "label": "crew"
-            }
-        },
-        "crewtracker": {
-            "component": "openmct/crewtracker",
-            "metadata": {
-                "x": 684,
-                "y": 1188,
-                "width": 72,
-                "height": 72,
-                "label": "crewtracker"
-            }
-        },
-        "echelon": {
-            "component": "c-flo/echelon",
-            "metadata": {
-                "x": 252,
-                "y": 684,
-                "width": 72,
-                "height": 72,
-                "label": "echelon"
-            }
-        },
-        "farbdmx": {
-            "component": "c-flo/farbdmx",
-            "metadata": {
-                "x": 468,
-                "y": 252,
-                "width": 72,
-                "height": 72,
-                "label": "farbdmx"
-            }
-        },
-        "farbgeber": {
-            "component": "c-flo/farbgeber",
-            "metadata": {
-                "x": 252,
-                "y": 252,
-                "width": 72,
-                "height": 72,
-                "label": "farbgeber"
-            }
-        },
-        "ingress-data": {
-            "component": "ingress-table/data",
-            "metadata": {
-                "x": 684,
-                "y": 36,
-                "width": 72,
-                "height": 72,
-                "label": "ingress-data"
-            }
-        },
-        "ingress-lights": {
-            "component": "ingress-table/lights",
-            "metadata": {
-                "x": 828,
-                "y": 180,
-                "width": 72,
-                "height": 72,
-                "label": "ingress-lights"
-            }
-        },
-        "ingresstracker": {
-            "component": "openmct/ingresstracker",
-            "metadata": {
-                "x": 828,
-                "y": 36,
-                "width": 72,
-                "height": 72,
-                "label": "ingresstracker"
-            }
-        },
-        "mainhall": {
-            "component": "c-base/dmx",
-            "metadata": {
-                "x": 36,
-                "y": 180,
-                "width": 72,
-                "height": 72,
-                "label": "mainhall"
-            }
-        },
-        "mechblast": {
-            "component": "c-flo/playsound",
-            "metadata": {
-                "x": 468,
-                "y": 1404,
-                "width": 72,
-                "height": 72,
-                "label": "mechblast"
-            }
-        },
-        "megablast": {
-            "component": "c-base/music-player",
-            "metadata": {
-                "x": 252,
-                "y": 144,
-                "width": 72,
-                "height": 72,
-                "label": "megablast"
-            }
-        },
-        "megablast-display": {
-            "component": "c-base/mqttwebview",
-            "metadata": {
-                "x": 684,
-                "y": 1692,
-                "width": 72,
-                "height": 72,
-                "label": "megablast-display"
-            }
-        },
-        "nerd": {
-            "component": "c-flo/pedestrianlight",
-            "metadata": {
-                "x": 684,
-                "y": 2124,
-                "width": 72,
-                "height": 72,
-                "label": "nerd"
-            }
-        },
-        "nerdctrl_switch": {
-            "component": "c-flo/nerdctrl",
-            "metadata": {
-                "x": 36,
-                "y": 2268,
-                "width": 72,
-                "height": 72,
-                "label": "nerdctrl_switch"
-            }
-        },
-        "powermon": {
-            "component": "c-flo/powermon",
-            "metadata": {
-                "x": 252,
-                "y": 540,
-                "width": 72,
-                "height": 72,
-                "label": "powermon"
-            }
-        },
-        "roboblast-display": {
-            "component": "c-base/mqttwebview",
-            "metadata": {
-                "x": 684,
-                "y": 1548,
-                "width": 72,
-                "height": 72,
-                "label": "roboblast-display"
-            }
-        },
-        "siri": {
-            "component": "c-base/mqttwebview",
-            "metadata": {
-                "x": 684,
-                "y": 1836,
-                "width": 72,
-                "height": 72,
-                "label": "siri"
-            }
-        },
-        "station-announcer": {
-            "component": "station-announcer/StationAnnouncer",
-            "metadata": {
-                "x": 252,
-                "y": 1836,
-                "width": 72,
-                "height": 72,
-                "label": "station-announcer"
-            }
-        },
-        "stationtracker": {
-            "component": "openmct/stationtracker",
-            "metadata": {
-                "x": 468,
-                "y": 684,
-                "width": 72,
-                "height": 72,
-                "label": "stationtracker"
-            }
-        },
-        "time": {
-            "component": "c-flo/time",
-            "metadata": {
-                "x": 108,
-                "y": 1764,
-                "width": 72,
-                "height": 72,
-                "label": "time"
-            }
-        },
-        "togglelights": {
-            "component": "c-flo/togglelights",
-            "metadata": {
-                "x": 252,
-                "y": 2268,
-                "width": 72,
-                "height": 72,
-                "label": "togglelights"
-            }
-        },
-        "workshop": {
-            "component": "c-base/WorkshopSensor",
-            "metadata": {
-                "x": 252,
-                "y": 432,
-                "width": 72,
-                "height": 72,
-                "label": "workshop"
-            }
-        },
-        "c-flo/IgniteMainhall_z8o85": {
-            "component": "c-flo/IgniteMainhall",
-            "metadata": {
-                "label": "IgniteMainhall",
-                "x": 540,
-                "y": 36,
-                "width": 72,
-                "height": 72
-            }
-        }
+    "barstatus_bar": {
+      "component": "c-flo/statuslight"
     },
-    "connections": [
-        {
-            "src": {
-                "process": "CrewOnline",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "OnlineHeatmap",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "CrewOnline",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "crewtracker",
-                "port": "online"
-            }
-        },
-        {
-            "src": {
-                "process": "DetectABBA",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "DiscoAnimation",
-                "port": "is_enabled"
-            }
-        },
-        {
-            "src": {
-                "process": "DetectCircle",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "nerd",
-                "port": "colors"
-            }
-        },
-        {
-            "src": {
-                "process": "DiscoAnimation",
-                "port": "animation"
-            },
-            "tgt": {
-                "process": "mainhall",
-                "port": "set_channels"
-            }
-        },
-        {
-            "src": {
-                "process": "DiscoAnimation",
-                "port": "colours"
-            },
-            "tgt": {
-                "process": "ingress-lights",
-                "port": "floor"
-            }
-        },
-        {
-            "src": {
-                "process": "DiscoAnimation",
-                "port": "colours"
-            },
-            "tgt": {
-                "process": "ingress-lights",
-                "port": "streets"
-            }
-        },
-        {
-            "src": {
-                "process": "EventCalendar",
-                "port": "current"
-            },
-            "tgt": {
-                "process": "DetectCircle",
-                "port": "current"
-            }
-        },
-        {
-            "src": {
-                "process": "OnlineHeatmap",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "bubbler",
-                "port": "palette"
-            }
-        },
-        {
-            "src": {
-                "process": "Replicator",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "bartracker",
-                "port": "replicator_berliner1"
-            }
-        },
-        {
-            "src": {
-                "process": "Replicator",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "bartracker",
-                "port": "replicator_berliner2"
-            }
-        },
-        {
-            "src": {
-                "process": "Replicator",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "bartracker",
-                "port": "replicator_clubmate"
-            }
-        },
-        {
-            "src": {
-                "process": "Replicator",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "bartracker",
-                "port": "replicator_flora"
-            }
-        },
-        {
-            "src": {
-                "process": "Replicator",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "bartracker",
-                "port": "replicator_kraftmalz"
-            }
-        },
-        {
-            "src": {
-                "process": "Replicator",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "bartracker",
-                "port": "replicator_premiumcola"
-            }
-        },
-        {
-            "src": {
-                "process": "Replicator",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "bartracker",
-                "port": "replicator_spezi"
-            }
-        },
-        {
-            "src": {
-                "process": "VisualPaging",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "megablast-display",
-                "port": "open"
-            }
-        },
-        {
-            "src": {
-                "process": "VisualPaging",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "roboblast-display",
-                "port": "open"
-            }
-        },
-        {
-            "src": {
-                "process": "VisualPaging",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "siri",
-                "port": "open"
-            }
-        },
-        {
-            "src": {
-                "process": "arboretum/door",
-                "port": "leftdoor"
-            },
-            "tgt": {
-                "process": "arboretumtracker",
-                "port": "leftdoor"
-            }
-        },
-        {
-            "src": {
-                "process": "arboretum/door",
-                "port": "rightdoor"
-            },
-            "tgt": {
-                "process": "arboretumtracker",
-                "port": "rightdoor"
-            }
-        },
-        {
-            "src": {
-                "process": "bar-announcer",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "c_out_output",
-                "port": "saytext_en"
-            }
-        },
-        {
-            "src": {
-                "process": "barstatus_switch",
-                "port": "stateful"
-            },
-            "tgt": {
-                "process": "barstatus_bar",
-                "port": "barstatus"
-            }
-        },
-        {
-            "src": {
-                "process": "barstatus_switch",
-                "port": "stateful"
-            },
-            "tgt": {
-                "process": "barstatus_clab",
-                "port": "barstatus"
-            }
-        },
-        {
-            "src": {
-                "process": "barstatus_switch",
-                "port": "stateful"
-            },
-            "tgt": {
-                "process": "barstatus_nerdarea",
-                "port": "barstatus"
-            }
-        },
-        {
-            "src": {
-                "process": "barstatus_switch",
-                "port": "stateful"
-            },
-            "tgt": {
-                "process": "bartracker",
-                "port": "open"
-            }
-        },
-        {
-            "src": {
-                "process": "barstatus_switch",
-                "port": "status"
-            },
-            "tgt": {
-                "process": "bar-announcer",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "boardingurl",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "megablast-display",
-                "port": "open"
-            }
-        },
-        {
-            "src": {
-                "process": "boardingurl",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "roboblast-display",
-                "port": "open"
-            }
-        },
-        {
-            "src": {
-                "process": "boardingurl",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "siri",
-                "port": "open"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "playrandomsound"
-            },
-            "tgt": {
-                "process": "c_leuse",
-                "port": "playrandomsound"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "playrandomsound"
-            },
-            "tgt": {
-                "process": "c_out_output",
-                "port": "playrandomsound"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "playrandomsound"
-            },
-            "tgt": {
-                "process": "mechblast",
-                "port": "playrandomsound"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "playsound"
-            },
-            "tgt": {
-                "process": "c_leuse",
-                "port": "playsound"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "playsound"
-            },
-            "tgt": {
-                "process": "c_out_output",
-                "port": "playsound"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "playsound"
-            },
-            "tgt": {
-                "process": "mechblast",
-                "port": "playsound"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext"
-            },
-            "tgt": {
-                "process": "VisualPaging",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext"
-            },
-            "tgt": {
-                "process": "c_leuse",
-                "port": "saytext"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext"
-            },
-            "tgt": {
-                "process": "c_out_output",
-                "port": "saytext"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext"
-            },
-            "tgt": {
-                "process": "mechblast",
-                "port": "saytext"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext_en"
-            },
-            "tgt": {
-                "process": "stationtracker",
-                "port": "announcement"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext_en"
-            },
-            "tgt": {
-                "process": "VisualPaging",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext_en"
-            },
-            "tgt": {
-                "process": "c_leuse",
-                "port": "saytext_en"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext_en"
-            },
-            "tgt": {
-                "process": "c_out_output",
-                "port": "saytext_en"
-            }
-        },
-        {
-            "src": {
-                "process": "c_out_generator",
-                "port": "saytext_en"
-            },
-            "tgt": {
-                "process": "mechblast",
-                "port": "saytext_en"
-            }
-        },
-        {
-            "src": {
-                "process": "crew",
-                "port": "boarding"
-            },
-            "tgt": {
-                "process": "CrewOnline",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "crew",
-                "port": "boarding"
-            },
-            "tgt": {
-                "process": "boardingurl",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "crew",
-                "port": "leaving"
-            },
-            "tgt": {
-                "process": "CrewOnline",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "crew",
-                "port": "members"
-            },
-            "tgt": {
-                "process": "crewtracker",
-                "port": "members"
-            }
-        },
-        {
-            "src": {
-                "process": "crew",
-                "port": "passive"
-            },
-            "tgt": {
-                "process": "crewtracker",
-                "port": "passive"
-            }
-        },
-        {
-            "src": {
-                "process": "echelon",
-                "port": "traffic"
-            },
-            "tgt": {
-                "process": "stationtracker",
-                "port": "ipb_rx"
-            }
-        },
-        {
-            "src": {
-                "process": "echelon",
-                "port": "traffic"
-            },
-            "tgt": {
-                "process": "stationtracker",
-                "port": "ipb_tx"
-            }
-        },
-        {
-            "src": {
-                "process": "echelon",
-                "port": "traffic"
-            },
-            "tgt": {
-                "process": "stationtracker",
-                "port": "kdg_rx"
-            }
-        },
-        {
-            "src": {
-                "process": "echelon",
-                "port": "traffic"
-            },
-            "tgt": {
-                "process": "stationtracker",
-                "port": "kdg_tx"
-            }
-        },
-        {
-            "src": {
-                "process": "farbdmx",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "DiscoAnimation",
-                "port": "dmx"
-            }
-        },
-        {
-            "src": {
-                "process": "farbgeber",
-                "port": "palette"
-            },
-            "tgt": {
-                "process": "farbdmx",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "ingress-data",
-                "port": "floor"
-            },
-            "tgt": {
-                "process": "ingress-lights",
-                "port": "floor"
-            }
-        },
-        {
-            "src": {
-                "process": "ingress-data",
-                "port": "floor"
-            },
-            "tgt": {
-                "process": "ingresstracker",
-                "port": "winning"
-            }
-        },
-        {
-            "src": {
-                "process": "ingress-data",
-                "port": "light"
-            },
-            "tgt": {
-                "process": "ingress-lights",
-                "port": "light"
-            }
-        },
-        {
-            "src": {
-                "process": "ingress-data",
-                "port": "streets"
-            },
-            "tgt": {
-                "process": "ingress-lights",
-                "port": "streets"
-            }
-        },
-        {
-            "src": {
-                "process": "mainhall",
-                "port": "automode"
-            },
-            "tgt": {
-                "process": "farbgeber",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "mainhall",
-                "port": "channels"
-            },
-            "tgt": {
-                "process": "DiscoAnimation",
-                "port": "channels"
-            }
-        },
-        {
-            "src": {
-                "process": "megablast",
-                "port": "current_song"
-            },
-            "tgt": {
-                "process": "DetectABBA",
-                "port": "song"
-            }
-        },
-        {
-            "src": {
-                "process": "nerdctrl_switch",
-                "port": "openurl"
-            },
-            "tgt": {
-                "process": "togglelights",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "powermon",
-                "port": "load"
-            },
-            "tgt": {
-                "process": "stationtracker",
-                "port": "load"
-            }
-        },
-        {
-            "src": {
-                "process": "station-announcer",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "c_out_output",
-                "port": "saytext_en"
-            }
-        },
-        {
-            "src": {
-                "process": "time",
-                "port": "time"
-            },
-            "tgt": {
-                "process": "EventCalendar",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "time",
-                "port": "time"
-            },
-            "tgt": {
-                "process": "Replicator",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "time",
-                "port": "time"
-            },
-            "tgt": {
-                "process": "station-announcer",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "time",
-                "port": "time"
-            },
-            "tgt": {
-                "process": "togglelights",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "togglelights",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "DetectCircle",
-                "port": "in"
-            }
-        },
-        {
-            "src": {
-                "process": "workshop",
-                "port": "humidity"
-            },
-            "tgt": {
-                "process": "climatetracker",
-                "port": "workshop_humidity"
-            }
-        },
-        {
-            "src": {
-                "process": "workshop",
-                "port": "motion"
-            },
-            "tgt": {
-                "process": "stationtracker",
-                "port": "workshop_motion"
-            }
-        },
-        {
-            "src": {
-                "process": "workshop",
-                "port": "sound"
-            },
-            "tgt": {
-                "process": "climatetracker",
-                "port": "workshop_sound"
-            }
-        },
-        {
-            "src": {
-                "process": "workshop",
-                "port": "temperature"
-            },
-            "tgt": {
-                "process": "climatetracker",
-                "port": "workshop_temperature"
-            }
-        },
-        {
-            "src": {
-                "process": "c-boom",
-                "port": "ignition"
-            },
-            "tgt": {
-                "process": "c-flo/IgniteMainhall_z8o85",
-                "port": "ignite"
-            },
-            "metadata": {}
-        },
-        {
-            "src": {
-                "process": "c-boom",
-                "port": "start"
-            },
-            "tgt": {
-                "process": "c-flo/IgniteMainhall_z8o85",
-                "port": "start"
-            },
-            "metadata": {}
-        },
-        {
-            "src": {
-                "process": "c-flo/IgniteMainhall_z8o85",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "DiscoAnimation",
-                "port": "is_enabled"
-            },
-            "metadata": {}
-        },
-        {
-            "data": true,
-            "tgt": {
-                "process": "CrewOnline",
-                "port": "in"
-            }
-        },
-        {
-            "data": 2,
-            "tgt": {
-                "process": "station-announcer",
-                "port": "probability"
-            }
-        }
-    ]
+    "barstatus_clab": {
+      "component": "c-flo/statuslight"
+    },
+    "barstatus_nerdarea": {
+      "component": "c-flo/statuslight"
+    },
+    "barstatus_switch": {
+      "component": "c-flo/barstatus"
+    },
+    "boardingurl": {
+      "component": "c-flo/boardingurl"
+    },
+    "bubbler": {
+      "component": "c-flo/panel"
+    },
+    "CrewOnline": {
+      "component": "c-flo/CrewOnline"
+    },
+    "OnlineHeatmap": {
+      "component": "c-flo/OnlineHeatmap"
+    },
+    "DetectABBA": {
+      "component": "c-flo/DetectABBA"
+    },
+    "DetectCircle": {
+      "component": "c-flo/DetectCircle"
+    },
+    "EventCalendar": {
+      "component": "c-flo/EventCalendar"
+    },
+    "Matelight": {
+      "component": "c-flo/Matelight"
+    },
+    "Replicator": {
+      "component": "c-flo/Replicator"
+    },
+    "togglelights": {
+      "component": "c-flo/togglelights"
+    },
+    "c_leuse": {
+      "component": "c-flo/playsound"
+    },
+    "c_out_generator": {
+      "component": "c-flo/c_out"
+    },
+    "c_out_output": {
+      "component": "c-flo/playsound"
+    },
+    "DiscoAnimation": {
+      "component": "c-flo/DiscoAnimation"
+    },
+    "megablast": {
+      "component": "c-base/music-player"
+    },
+    "megablast-display": {
+      "component": "c-base/mqttwebview"
+    },
+    "crew": {
+      "component": "c-flo/crew"
+    },
+    "echelon": {
+      "component": "c-flo/echelon"
+    },
+    "farbdmx": {
+      "component": "c-flo/farbdmx"
+    },
+    "farbgeber": {
+      "component": "c-flo/farbgeber"
+    },
+    "ingress-data": {
+      "component": "ingress-table/data"
+    },
+    "ingress-lights": {
+      "component": "ingress-table/lights"
+    },
+    "mainhall": {
+      "component": "c-base/dmx"
+    },
+    "mechblast": {
+      "component": "c-flo/playsound"
+    },
+    "he1": {
+      "component": "c-base/mqttwebview"
+    },
+    "roboblast-display": {
+      "component": "c-base/mqttwebview"
+    },
+    "siri": {
+      "component": "c-base/mqttwebview"
+    },
+    "station-announcer": {
+      "component": "station-announcer/StationAnnouncer"
+    },
+    "nerdctrl-display": {
+      "component": "c-base/mqttwebview"
+    },
+    "nerd": {
+      "component": "c-flo/pedestrianlight"
+    },
+    "nerdctrl_switch": {
+      "component": "c-flo/nerdctrl"
+    },
+    "powermon": {
+      "component": "c-flo/powermon"
+    },
+    "time": {
+      "component": "c-flo/time"
+    },
+    "VisualPaging": {
+      "component": "c-flo/VisualPaging"
+    }
+  },
+  "connections": [
+    {
+      "src": {
+        "process": "bar-announcer",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "barstatus_switch",
+        "port": "status"
+      },
+      "tgt": {
+        "process": "bar-announcer",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "barstatus_switch",
+        "port": "stateful"
+      },
+      "tgt": {
+        "process": "barstatus_bar",
+        "port": "barstatus"
+      }
+    },
+    {
+      "src": {
+        "process": "barstatus_switch",
+        "port": "stateful"
+      },
+      "tgt": {
+        "process": "barstatus_clab",
+        "port": "barstatus"
+      }
+    },
+    {
+      "src": {
+        "process": "barstatus_switch",
+        "port": "stateful"
+      },
+      "tgt": {
+        "process": "barstatus_nerdarea",
+        "port": "barstatus"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "megablast-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerdctrl-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "roboblast-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "siri",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "DetectABBA",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "DiscoAnimation",
+        "port": "is_enabled"
+      }
+    },
+    {
+      "src": {
+        "process": "EventCalendar",
+        "port": "current"
+      },
+      "tgt": {
+        "process": "DetectCircle",
+        "port": "current"
+      }
+    },
+    {
+      "src": {
+        "process": "togglelights",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "DetectCircle",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "DetectCircle",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerd",
+        "port": "colors"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playrandomsound"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "playrandomsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "playsound"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "playsound"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "saytext"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext"
+      },
+      "tgt": {
+        "process": "VisualPaging",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext_en"
+      },
+      "tgt": {
+        "process": "c_leuse",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext_en"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext_en"
+      },
+      "tgt": {
+        "process": "mechblast",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "c_out_generator",
+        "port": "saytext_en"
+      },
+      "tgt": {
+        "process": "VisualPaging",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "CrewOnline",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "OnlineHeatmap",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "crew",
+        "port": "boarding"
+      },
+      "tgt": {
+        "process": "boardingurl",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "crew",
+        "port": "boarding"
+      },
+      "tgt": {
+        "process": "CrewOnline",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "crew",
+        "port": "leaving"
+      },
+      "tgt": {
+        "process": "CrewOnline",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "DiscoAnimation",
+        "port": "animation"
+      },
+      "tgt": {
+        "process": "mainhall",
+        "port": "set_channels"
+      }
+    },
+    {
+      "src": {
+        "process": "DiscoAnimation",
+        "port": "colours"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "floor"
+      }
+    },
+    {
+      "src": {
+        "process": "DiscoAnimation",
+        "port": "colours"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "streets"
+      }
+    },
+    {
+      "src": {
+        "process": "farbdmx",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "DiscoAnimation",
+        "port": "dmx"
+      }
+    },
+    {
+      "src": {
+        "process": "OnlineHeatmap",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "bubbler",
+        "port": "palette"
+      }
+    },
+    {
+      "src": {
+        "process": "farbgeber",
+        "port": "palette"
+      },
+      "tgt": {
+        "process": "farbdmx",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "ingress-data",
+        "port": "floor"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "floor"
+      }
+    },
+    {
+      "src": {
+        "process": "ingress-data",
+        "port": "light"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "light"
+      }
+    },
+    {
+      "src": {
+        "process": "ingress-data",
+        "port": "streets"
+      },
+      "tgt": {
+        "process": "ingress-lights",
+        "port": "streets"
+      }
+    },
+    {
+      "src": {
+        "process": "mainhall",
+        "port": "channels"
+      },
+      "tgt": {
+        "process": "DiscoAnimation",
+        "port": "channels"
+      }
+    },
+    {
+      "src": {
+        "process": "megablast",
+        "port": "current_song"
+      },
+      "tgt": {
+        "process": "DetectABBA",
+        "port": "song"
+      }
+    },
+    {
+      "src": {
+        "process": "nerdctrl_switch",
+        "port": "openurl"
+      },
+      "tgt": {
+        "process": "togglelights",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "nerdctrl_switch",
+        "port": "openurl"
+      },
+      "tgt": {
+        "process": "nerdctrl-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "station-announcer",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
+        "process": "EventCalendar",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
+        "process": "Replicator",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
+        "process": "togglelights",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
+        "process": "station-announcer",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "megablast-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerdctrl-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "roboblast-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "siri",
+        "port": "open"
+      }
+    },
+    {
+      "data": true,
+      "tgt": {
+        "process": "CrewOnline",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+	"process": "mainhall",
+	"port": "automode"
+      },
+      "tgt": {
+        "process": "farbgeber",
+        "port": "in"
+      }
+    },
+    {
+      "data": 2,
+      "tgt": {
+        "process": "station-announcer",
+        "port": "probability"
+      }
+    }
+  ],
+  "inports": [],
+  "outports": []
 }

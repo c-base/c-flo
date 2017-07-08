@@ -1,9 +1,0 @@
-component: c-flo/panel
-label: Color LED panel
-icon: lightbulb-o
-inports:
-  palette:
-    queue: 'panel/#ROLE'
-    type: object
-    description: Farbgeber-style palette to display
-outports: {}
