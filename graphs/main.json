@@ -48,6 +48,9 @@
     "EventCalendar": {
       "component": "c-flo/EventCalendar"
     },
+    "MainhallGate": {
+      "component": "c-flo/Gate"
+    },
     "Matelight": {
       "component": "c-flo/Matelight"
     },
@@ -476,6 +479,26 @@
         "port": "animation"
       },
       "tgt": {
+        "process": "MainhallGate",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "MainhallGate",
+        "port": "is_open"
+      },
+      "tgt": {
+        "process": "bigswitch",
+        "port": "led"
+      }
+    },
+    {
+      "src": {
+        "process": "MainhallGate",
+        "port": "out"
+      },
+      "tgt": {
         "process": "mainhall",
         "port": "set_channels"
       }
@@ -528,6 +551,16 @@
       "tgt": {
         "process": "bigswitch",
         "port": "colors"
+      }
+    },
+    {
+      "src": {
+        "process": "bigswitch",
+        "port": "state"
+      },
+      "tgt": {
+        "process": "MainhallGate",
+        "port": "open"
       }
     },
     {
@@ -778,10 +811,7 @@
       }
     },
     {
-      "src": {
-        "process": "mainhall",
-        "port": "automode"
-      },
+      "data": true,
       "tgt": {
         "process": "farbgeber",
         "port": "in"
