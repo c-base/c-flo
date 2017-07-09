@@ -8,6 +8,7 @@
 #include <PubSubClient.h>
 #include <Msgflo.h>
 
+#include "./config.h"
 
 struct Config {
   const String prefix = "c-base/";
@@ -17,7 +18,7 @@ struct Config {
   //const int buttonPin = D5;
 
   const char *wifiSsid = WIFI_SSID;
-  const char *wifiPassword = "WIFI_PASSWORD";
+  const char *wifiPassword = WIFI_PASSWORD;
 
   const char *mqttHost = "c-beam.cbrp3.c-base.org";
   const int mqttPort = 1883;
@@ -37,7 +38,8 @@ long nextMessage = 0;
 
 void reconnect() {
   // Loop until we're reconnected
-  while (!mqttClient.connected()) {
+  
+  if (!mqttClient.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
 
@@ -51,11 +53,12 @@ void reconnect() {
         // TODO: check for statechange. If changed, send right away. Else only send every 3 seconds or so
       while(mqttClient.connected()) {
         if (millis() > nextMessage) {
-          Serial.printf("Sending alive msg");
+          Serial.println("Sending alive msg");
           //const bool pressed = digitalRead(cfg.buttonPin);
           mqttClient.publish(topic, "true");
           nextMessage += 5000;
         }
+        yield(); // make sure ESP8266 networking gets runtime
       }
     } else {
       Serial.print("failed, rc=");
@@ -69,7 +72,7 @@ void reconnect() {
 
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   delay(100); 
   Serial.println();
   Serial.println();
