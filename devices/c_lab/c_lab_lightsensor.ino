@@ -5,24 +5,23 @@
 
 #include <PubSubClient.h>
 #include <Msgflo.h>
+#include "./config.h"
 
 
 struct Config {
   const String prefix = "c-base.org/";
   const String role = "c-lab";
 
-  const int ledPin = LED_BUILTIN;
   const int buttonPin = D5;
 
-  const char *wifiSsid = "c-base-public";
-  const char *wifiPassword = NULL;
+  const char *wifiSsid = WIFI_SSID;
+  const char *wifiPassword = WIFI_PASSWORD;
 
-  const char *mqttHost = "test.mosquitto.org";
+  const char *mqttHost = "c-beam.cbrp3.c-base.org";
   const int mqttPort = 1883;
 
   const char *mqttUsername = NULL;
   const char *mqttPassword = NULL;
-  const char *ADC = "A0";
 } cfg;
 
 WiFiClient wifiClient;
@@ -57,12 +56,9 @@ void setup() {
 
   c_base_light = engine->addOutPort("penis", "any", cfg.prefix+cfg.role+"/light/");
 
-  Serial.printf("Led pin: %d\r\n", cfg.ledPin);
   Serial.printf("Button pin: %d\r\n", cfg.buttonPin);
 
   pinMode(cfg.buttonPin, INPUT);
-  pinMode(cfg.ledPin, OUTPUT);
-  pinMode(cfg.LED, OUTPUT);
   pinMode(A0, INPUT);
 }
 
