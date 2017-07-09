@@ -36,6 +36,9 @@
     "c-lab-display": {
       "component": "c-base/mqttwebview"
     },
+    "c-leuse-display": {
+      "component": "c-base/mqttwebview"
+    },
     "CrewOnline": {
       "component": "c-flo/CrewOnline"
     },
@@ -235,6 +238,16 @@
       },
       "tgt": {
         "process": "c-lab-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c-leuse-display",
         "port": "open"
       }
     },
@@ -785,6 +798,16 @@
       },
       "tgt": {
         "process": "c-lab-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c-leuse-display",
         "port": "open"
       }
     },
