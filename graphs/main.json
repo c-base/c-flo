@@ -152,10 +152,10 @@
     },
     "VisualPaging": {
       "component": "c-flo/VisualPaging"
-    }
+    },
     "weltenbau-display": {
       "component": "c-base/mqttwebview"
-    },
+    }
   },
   "connections": [
     {
