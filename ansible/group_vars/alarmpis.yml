@@ -1,0 +1,6 @@
+---
+# Variables listed here are applicable to only archlinuxarm.org systems
+
+domain: production.docurance.com
+django_settings_module: config.settings.production
+ansible_ssh_user: pi

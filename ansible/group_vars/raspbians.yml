@@ -1,0 +1,6 @@
+---
+# Variables listed here are applicable to only raspbian systems
+
+project_root: /home/pi/mqttwebview
+repository: https://github.com/c-base/mqttwebview.git
+ansible_ssh_user: pi
