@@ -818,7 +818,7 @@
       }
     },
     {
-      "data": 2,
+      "data": 5,
       "tgt": {
         "process": "station-announcer",
         "port": "probability"
