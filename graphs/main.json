@@ -33,6 +33,9 @@
     "c-boom": {
       "component": "c-base/buttonpanel"
     },
+    "c-lab-display": {
+      "component": "c-base/mqttwebview"
+    },
     "CrewOnline": {
       "component": "c-flo/CrewOnline"
     },
@@ -78,6 +81,9 @@
     "megablast-display": {
       "component": "c-base/mqttwebview"
     },
+    "nerdarea-display": {
+      "component": "c-base/mqttwebview"
+    },
     "crew": {
       "component": "c-flo/crew"
     },
@@ -120,6 +126,12 @@
     "station-announcer": {
       "component": "station-announcer/StationAnnouncer"
     },
+    "soundlab-display": {
+      "component": "c-base/mqttwebview"
+    },
+    "mainhall-display": {
+      "component": "c-base/mqttwebview"
+    },
     "nerdctrl-display": {
       "component": "c-base/mqttwebview"
     },
@@ -141,6 +153,9 @@
     "VisualPaging": {
       "component": "c-flo/VisualPaging"
     }
+    "weltenbau-display": {
+      "component": "c-base/mqttwebview"
+    },
   },
   "connections": [
     {
@@ -210,6 +225,56 @@
       },
       "tgt": {
         "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c-lab-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mainhall-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerdarea-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "soundlab-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "weltenbau-display",
         "port": "open"
       }
     },
@@ -710,6 +775,56 @@
       },
       "tgt": {
         "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c-lab-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mainhall-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerdarea-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "soundlab-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "weltenbau-display",
         "port": "open"
       }
     },
