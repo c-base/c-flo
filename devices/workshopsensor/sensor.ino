@@ -139,7 +139,7 @@ void loop() {
     nextEnvCheck += 30000;
   }
 
-  if (millis() > nextMotionCheck) {
+  if (connected && millis() > nextMotionCheck) {
     // Read motion sensor
     latestPirState = digitalRead(cfg.pinMotion);
     if (latestPirState == HIGH) {
