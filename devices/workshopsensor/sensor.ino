@@ -111,7 +111,7 @@ void loop() {
     }
     sum >>= 5;
     soundPort->send(String(sum));
-    nextSoundCheck += 100;
+    nextSoundCheck += 10000;
   }
 
   if (millis() > nextEnvCheck) {
