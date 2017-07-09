@@ -28,7 +28,7 @@ class Gate(msgflo.Participant):
       return
 
     if self.is_open:
-      self.send(out, msg.data)
+      self.send('out', msg.data)
     self.ack(msg)
 
 if __name__ == '__main__':
