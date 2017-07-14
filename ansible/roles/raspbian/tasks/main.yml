@@ -51,7 +51,10 @@
     - Restart lightdm
 
 - name: Download git repo
-  git: repo={{ repository }} dest={{ project_root }}
+  git:
+    repo: "{{ repository }}"
+    dest: "{{ project_root }}"
+    version: master
   args:
     accept_hostkey: yes
   notify:
