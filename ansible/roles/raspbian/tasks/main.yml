@@ -27,11 +27,13 @@
   alternatives:
     name: x-window-manager
     path: /usr/bin/i3
+  tags: config
 
 - name: Enable lightdm service
   become: yes
   become_user: root
   service: name=lightdm state=started enabled=yes
+  tags: config
 
 - name: Upload lightdm config file.
   become: yes
@@ -39,16 +41,18 @@
   template: src=lightdm.conf dest=/etc/lightdm/lightdm.conf mode=0644
   notify:
     - Restart lightdm
+  tags: config
 
 - name: Create directory for i3 config
   become: yes
   file: path=/home/pi/.i3 state=directory owner=pi
-  tags: i3
+  tags: i3,config
 
 - name: Upload i3 config file.
   template: src=i3config.conf dest=/home/{{ ansible_ssh_user }}/.i3/config mode=0644
   notify:
     - Restart lightdm
+  tags: config
 
 - name: Download git repo
   git:
@@ -59,16 +63,19 @@
     accept_hostkey: yes
   notify:
         - Restart lightdm
-  tags: git
+  tags: git, config
   register: git
 
 - name: Install pip requirements
   pip:
     requirements: "{{ project_root }}/requirements.txt"
+    executable: pip3
     state: present
     extra_args: --user
+  tags: config
 
 - name: Upload config.py file.
   template: src=config.py dest=/home/{{ ansible_ssh_user }}/mqttwebview/config.py mode=0644
   notify:
     - Restart lightdm
+  tags: config
