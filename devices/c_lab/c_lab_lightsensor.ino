@@ -55,7 +55,7 @@ void setup() {
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
 
-  c_base_light = engine->addOutPort("light", "boolean", cfg.prefix+cfg.role+"/light");
+  c_base_light = engine->addOutPort("light", "int", cfg.prefix+cfg.role+"/light");
 
   Serial.printf("Light sensor pin: %d\r\n", cfg.lightPin);
 
