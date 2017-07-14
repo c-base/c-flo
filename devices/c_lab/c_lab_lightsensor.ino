@@ -40,6 +40,7 @@ void setup() {
   Serial.println();
   Serial.println();
 
+  WiFi.mode(WIFI_STA);
   Serial.printf("Configuring wifi: %s\r\n", cfg.wifiSsid);
   WiFi.begin(cfg.wifiSsid, cfg.wifiPassword);
 
