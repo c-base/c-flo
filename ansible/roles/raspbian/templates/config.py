@@ -1,29 +1,37 @@
 from uuid import getnode
 
-important_urls = [
-    "http://c-beam.cbrp3.c-base.org/he1display",
-]
+important_urls = [{% for important_url in important_urls %}
+    "{{ important_url }}",
+{% endfor %}]
 
-urls = [
-  "http://www.c-base.org",
-  "http://logbuch.c-base.org/",
-  "http://c-beam.cbrp3.c-base.org/events",
-  "https://c-beam.cbrp3.c-base.org/c-base-map",
-  "http://cbag3.c-base.org/artefact",
-  "https://c-beam.cbrp3.c-base.org/missions",
-  "https://c-beam.cbrp3.c-base.org/weather",
-  "http://c-beam.cbrp3.c-base.org/bvg",
-  "http://c-beam.cbrp3.c-base.org/nerdctrl",
-#  "https://c-beam.cbrp3.c-base.org/rickshaw/examples/fixed.html",
-  "https://c-beam.cbrp3.c-base.org/sensors",
-  "https://c-beam.cbrp3.c-base.org/ceitloch",
-#  "http://visibletweets.com/#query=@cbase&animation=2",
-  "https://c-beam.cbrp3.c-base.org/reddit",
-  "http://vimeo.com/cbase/videos",
-  "https://wiki.c-base.org/dokuwiki/",
-  "https://github.com/c-base/meta/issues",
-  "http://app.flowhub.io#runtime/endpoint?protocol%3Dwebsocket%26address%3Dws%3A%2F%2Fc-flo.cbrp3.c-base.org%3A3569%26id%3Da9dca883-c07f-4cd7-b369-180fa9b52b68",
-]
+urls = [{% for url in urls %}
+    "{{ url }}",
+{% endfor %}]
+
+#important_urls = [
+#    "http://c-beam.cbrp3.c-base.org/he1display",
+#]
+#
+#urls = [
+#  "http://www.c-base.org",
+#  "http://logbuch.c-base.org/",
+#  "http://c-beam.cbrp3.c-base.org/events",
+#  "https://c-beam.cbrp3.c-base.org/c-base-map",
+#  "http://cbag3.c-base.org/artefact",
+#  "https://c-beam.cbrp3.c-base.org/missions",
+#  "https://c-beam.cbrp3.c-base.org/weather",
+#  "http://c-beam.cbrp3.c-base.org/bvg",
+#  "http://c-beam.cbrp3.c-base.org/nerdctrl",
+##  "https://c-beam.cbrp3.c-base.org/rickshaw/examples/fixed.html",
+#  "https://c-beam.cbrp3.c-base.org/sensors",
+#  "https://c-beam.cbrp3.c-base.org/ceitloch",
+##  "http://visibletweets.com/#query=@cbase&animation=2",
+#  "https://c-beam.cbrp3.c-base.org/reddit",
+#  "http://vimeo.com/cbase/videos",
+#  "https://wiki.c-base.org/dokuwiki/",
+#  "https://github.com/c-base/meta/issues",
+# "http://app.flowhub.io#runtime/endpoint?protocol%3Dwebsocket%26address%3Dws%3A%2F%2Fc-flo.cbrp3.c-base.org%3A3569%26id%3Da9dca883-c07f-4cd7-b369-180fa9b52b68",
+#]
 
 mqtt_client_id = "{{ ansible_nodename }}"
 mqtt_client_name = "{{ ansible_nodename }}"
