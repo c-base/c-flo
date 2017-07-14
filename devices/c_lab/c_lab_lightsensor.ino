@@ -80,8 +80,7 @@ void loop() {
 
   // TODO: check for statechange. If changed, send right away. Else only send every 3 seconds or so
   if (millis() > nextButtonCheck) {
-
-    nextButtonCheck += 500;
+    nextButtonCheck += 30000;
     int x = analogRead(cfg.lightPin);
     c_base_light->send(String(x));
   }
