@@ -63,7 +63,10 @@
   register: git
 
 - name: Install pip requirements
-  shell: pip3 install --user pywebview paho-mqtt validators
+  pip:
+    requirements: "{{ project_root }}/requirements.txt"
+    state: present
+    extra_args: --user
 
 - name: Upload config.py file.
   template: src=config.py dest=/home/{{ ansible_ssh_user }}/mqttwebview/config.py mode=0644
