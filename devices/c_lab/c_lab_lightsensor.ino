@@ -9,10 +9,10 @@
 
 
 struct Config {
-  const String prefix = "c-base.org/";
+  const String prefix = "sensor/";
   const String role = "c-lab";
 
-  const int buttonPin = D5;
+  const int lightPin = A0;
 
   const char *wifiSsid = WIFI_SSID;
   const char *wifiPassword = WIFI_PASSWORD;
@@ -31,7 +31,7 @@ msgflo::Engine *engine;
 msgflo::OutPort *c_base_light;
 long nextButtonCheck = 0;
 
-auto participant = msgflo::Participant("iot/Button", cfg.role);
+auto participant = msgflo::Participant("c-base/clabsensor", cfg.role);
 
 void setup() {
   Serial.begin(115200);
@@ -40,11 +40,12 @@ void setup() {
   Serial.println();
   Serial.println();
 
+  WiFi.mode(WIFI_STA);
   Serial.printf("Configuring wifi: %s\r\n", cfg.wifiSsid);
   WiFi.begin(cfg.wifiSsid, cfg.wifiPassword);
 
   // Provide a Font Awesome (http://fontawesome.io/icons/) icon for the component
-  participant.icon = "toggle-on";
+  participant.icon = "eye";
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
@@ -54,12 +55,11 @@ void setup() {
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
 
-  c_base_light = engine->addOutPort("penis", "any", cfg.prefix+cfg.role+"/light/");
+  c_base_light = engine->addOutPort("light", "int", cfg.prefix+cfg.role+"/light");
 
-  Serial.printf("Button pin: %d\r\n", cfg.buttonPin);
+  Serial.printf("Light sensor pin: %d\r\n", cfg.lightPin);
 
-  pinMode(cfg.buttonPin, INPUT);
-  pinMode(A0, INPUT);
+  pinMode(cfg.lightPin, INPUT);
 }
 
 void loop() {
@@ -80,9 +80,8 @@ void loop() {
 
   // TODO: check for statechange. If changed, send right away. Else only send every 3 seconds or so
   if (millis() > nextButtonCheck) {
-
-    nextButtonCheck += 500;
-    int x = analogRead(A0);
+    nextButtonCheck += 30000;
+    int x = analogRead(cfg.lightPin);
     c_base_light->send(String(x));
   }
 }

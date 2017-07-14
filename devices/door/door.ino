@@ -99,6 +99,6 @@ void loop() {
     
     rightdoorPort->send(rightdoorpressed ? "true" : "false");
     leftdoorPort->send(leftdoorpressed ? "true" : "false");
-    nextButtonCheck += 1000;
+    nextButtonCheck += 5000;
   }
 }
