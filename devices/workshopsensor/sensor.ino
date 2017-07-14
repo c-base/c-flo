@@ -89,7 +89,7 @@ void setup() {
   tempPort = engine->addOutPort("temperature", "number", cfg.prefix+cfg.role+"/temperature");
   humPort = engine->addOutPort("humidity", "number", cfg.prefix+cfg.role+"/humidity");
   gravityPort = engine->addOutPort("gravity", "array", cfg.prefix+cfg.role+"/gravity");
-  motionPort = engine->addOutPort("motion", "number", cfg.prefix+cfg.role+"/motion");
+  motionPort = engine->addOutPort("motion", "int", cfg.prefix+cfg.role+"/motion");
 
   Serial.printf("Sound pin: %d\r\n", cfg.pinAdc);
 }

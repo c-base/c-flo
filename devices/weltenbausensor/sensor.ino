@@ -78,7 +78,7 @@ void setup() {
 
   tempPort = engine->addOutPort("temperature", "number", cfg.prefix+cfg.role+"/temperature");
   humPort = engine->addOutPort("humidity", "number", cfg.prefix+cfg.role+"/humidity");
-  motionPort = engine->addOutPort("motion", "number", cfg.prefix+cfg.role+"/motion");
+  motionPort = engine->addOutPort("motion", "int", cfg.prefix+cfg.role+"/motion");
 }
 
 void loop() {
