@@ -9,6 +9,10 @@ before_script:
 - npm install -g grunt-cli
 - docker-compose up -d
 - pip install -r requirements.pip --user
+- pip install ansible-lint --user
+script:
+- npm test
+- ansible-lint ansible/c-flo.yml
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
   docker push cbase/c-flo; fi
