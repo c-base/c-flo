@@ -9,10 +9,10 @@
 
 
 struct Config {
-  const String prefix = "c-base.org/";
+  const String prefix = "sensor/";
   const String role = "c-lab";
 
-  const int buttonPin = D5;
+  const int lightPin = A0;
 
   const char *wifiSsid = WIFI_SSID;
   const char *wifiPassword = WIFI_PASSWORD;
@@ -31,7 +31,7 @@ msgflo::Engine *engine;
 msgflo::OutPort *c_base_light;
 long nextButtonCheck = 0;
 
-auto participant = msgflo::Participant("iot/Button", cfg.role);
+auto participant = msgflo::Participant("c-base/clabsensor", cfg.role);
 
 void setup() {
   Serial.begin(115200);
@@ -57,10 +57,9 @@ void setup() {
 
   c_base_light = engine->addOutPort("penis", "any", cfg.prefix+cfg.role+"/light/");
 
-  Serial.printf("Button pin: %d\r\n", cfg.buttonPin);
+  Serial.printf("Light sensor pin: %d\r\n", cfg.lightPin);
 
-  pinMode(cfg.buttonPin, INPUT);
-  pinMode(A0, INPUT);
+  pinMode(cfg.lightPin, INPUT);
 }
 
 void loop() {
@@ -83,7 +82,7 @@ void loop() {
   if (millis() > nextButtonCheck) {
 
     nextButtonCheck += 500;
-    int x = analogRead(A0);
+    int x = analogRead(cfg.lightPin);
     c_base_light->send(String(x));
   }
 }
