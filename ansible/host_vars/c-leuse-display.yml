@@ -3,11 +3,8 @@ important_urls:
     - "http://c-beam.cbrp3.c-base.org/he1display"
 
 urls: 
-    - "http://openmct.cbrp3.c-base.org/index.html#/browse/mine/019a072e-f3ca-4d10-93d0-4027631baea6?view=layout"
     - "http://c-beam.cbrp3.c-base.org/events"
     - "https://c-beam.cbrp3.c-base.org/weather"
-    - "http://openmct.cbrp3.c-base.org/index.html#/browse/mine/9f398f6a-5afc-4301-85f9-8d2bf03886a3?view=plot"
     - "https://c-beam.cbrp3.c-base.org/sensors"
     - "https://c-beam.cbrp3.c-base.org/ceitloch"
-    - "http://openmct.cbrp3.c-base.org/index.html#/browse/mine/b358cd1c-7b59-4e84-9d8c-d1a584a9ef86?view=layout"
     - "https://c-beam.cbrp3.c-base.org/reddit"
