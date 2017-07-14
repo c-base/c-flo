@@ -26,6 +26,7 @@ struct Config {
 
   const int pinAdc = A0;
   const int pinMotion = 14;
+  const int numReadings = 10;
 
   const char *wifiSsid = WIFI_SSID;
   const char *wifiPassword = WIFI_PASSWORD;
@@ -50,14 +51,20 @@ auto participant = msgflo::Participant("c-base/WorkshopSensor", cfg.role);
 long nextMotionCheck = 0;
 long nextSoundCheck = 0;
 long nextEnvCheck = 0;
-int pirState = LOW;
 int latestPirState = LOW;
+int readings[cfg.numReadings];
+int readIndex = 0;
+int total = 0;
+int average = 0;
 
 void setup() {
   Serial.begin(115200);
   dht.begin();
   accelemeter.init();
   pinMode(cfg.pinMotion, INPUT);
+  for (int thisReading = 0; thisReading < cfg.numReadings; thisReading++) {
+    readings[thisReading] = 0;
+  }
   delay(100);
   Serial.println();
   Serial.println();
@@ -82,7 +89,7 @@ void setup() {
   tempPort = engine->addOutPort("temperature", "number", cfg.prefix+cfg.role+"/temperature");
   humPort = engine->addOutPort("humidity", "number", cfg.prefix+cfg.role+"/humidity");
   gravityPort = engine->addOutPort("gravity", "array", cfg.prefix+cfg.role+"/gravity");
-  motionPort = engine->addOutPort("motion", "boolean", cfg.prefix+cfg.role+"/motion");
+  motionPort = engine->addOutPort("motion", "number", cfg.prefix+cfg.role+"/motion");
 
   Serial.printf("Sound pin: %d\r\n", cfg.pinAdc);
 }
@@ -142,21 +149,16 @@ void loop() {
 
   if (connected && millis() > nextMotionCheck) {
     // Read motion sensor
-    latestPirState = digitalRead(cfg.pinMotion);
-    if (latestPirState == HIGH) {
-      if (pirState == LOW) {
-        Serial.println("Motion detected!");
-        motionPort->send("true");
-        pirState = HIGH;
-      }
-    } else {
-      if (pirState == HIGH) {
-        Serial.println("Motion ended!");
-        motionPort->send("false");
-        pirState = LOW;
-      }
+    total = total - readings[readIndex];
+    readings[readIndex] = digitalRead(cfg.pinMotion);
+    total = total + readings[readIndex];
+    average = total / cfg.numReadings;
+    motionPort->send(average);
+    readIndex = readIndex + 1;
+    if (readIndex >= cfg.numReadings) {
+      readIndex = 0;
     }
-    nextMotionCheck += 10;
+    nextMotionCheck += 1000;
   }
 }
 
