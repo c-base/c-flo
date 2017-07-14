@@ -6,6 +6,11 @@ module.exports = ->
     yamllint:
       participants: ['components/*.yml']
       specs: ['spec/*.yaml']
+      ansible: [
+        'ansible/*.yml'
+        'ansible/**/*.yml'
+        'ansible/**/**/*.yml'
+      ]
     createMarkup:
       participants: ['components/*.yml']
     pylint:
