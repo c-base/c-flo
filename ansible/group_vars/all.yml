@@ -5,4 +5,5 @@ ansible_ssh_private_key: deploy.pem
 project_name: mqttwebview
 repository: https://github.com/c-base/mqttwebview.git
 email_host: c-mail.c-base.org
+msgflo_role: "{{ ansible_nodename }}"
 

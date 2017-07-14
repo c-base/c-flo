@@ -45,16 +45,21 @@
 
 - name: Create directory for i3 config
   become: yes
-  file: path=/home/pi/.i3 state=directory owner=pi
+  become_user: root
+  file: path=/home/{{ display_user }}/.i3 state=directory owner={{ display_user }}
   tags: i3,config
 
 - name: Upload i3 config file.
-  template: src=i3config.conf dest=/home/{{ ansible_ssh_user }}/.i3/config mode=0644
+  become: yes
+  become_user: root
+  template: src=i3config.conf dest=/home/{{ display_user }}/.i3/config mode=0644
   notify:
     - Restart lightdm
   tags: config
 
 - name: Download git repo
+  become: yes
+  become_user: "{{ display_user }}"
   git:
     repo: "{{ repository }}"
     dest: "{{ project_root }}"
@@ -67,15 +72,19 @@
   register: git
 
 - name: Install pip requirements
+  become: yes
+  become_user: "{{ display_user }}"
   pip:
     requirements: "{{ project_root }}/requirements.txt"
     executable: pip3
     state: present
     extra_args: --user
-  tags: config
+  tags: pip
 
 - name: Upload config.py file.
-  template: src=config.py dest=/home/{{ ansible_ssh_user }}/mqttwebview/config.py mode=0644
+  become: yes
+  become_user: root
+  template: src=config.py dest=/home/{{ display_user }}/mqttwebview/config.py mode=0644 owner={{ display_user }}
   notify:
     - Restart lightdm
   tags: config
