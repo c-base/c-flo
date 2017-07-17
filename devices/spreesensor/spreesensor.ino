@@ -3,6 +3,7 @@
 #include <WiFiClient.h>
 #include <WiFiClientSecure.h>
 #include <ESP8266WiFi.h>
+#include <ArduinoJson.h>
 
 // MsgFlo communications
 #include <PubSubClient.h>
@@ -20,10 +21,8 @@ struct Config {
   const String prefix = "c-base/";
   const String role = "spreesensor";
 
-  const int pinMotion = D0;
-
-  const char *wifiSsid = "xxx";
-  const char *wifiPassword = "yyy";
+  const char *wifiSsid = "c-base-botnet";
+  const char *wifiPassword = "xxxxxxx";
 
   const char *mqttHost = "c-beam.cbrp3.c-base.org";
   const int mqttPort = 1883;
@@ -38,7 +37,7 @@ msgflo::Engine *engine;
 msgflo::OutPort *tempPort;
 
 auto participant = msgflo::Participant("c-base/SpreeSensor", cfg.role);
-long nextTempCheck = 0;
+long nextTempCheck = 5000;
 
 
 void setup() {
@@ -54,6 +53,8 @@ void setup() {
 
   // Provide a Font Awesome (http://fontawesome.io/icons/) icon for the component
   participant.icon = "microchip";
+  participant.label = "Spree temperature sensor";
+
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
@@ -108,7 +109,7 @@ void loop() {
     Serial.println(result);
     tempPort->send(result);
     
-    nextTempCheck = millis() + 5000;
+    nextTempCheck += 5000;
   }
   
 }
