@@ -17,7 +17,7 @@ class Gate(msgflo.Participant):
         { 'id': 'is_open', 'type': 'boolean' },
       ],
     }
-    self.is_open = True
+    self.is_open = False
     msgflo.Participant.__init__(self, d, role)
 
   def process(self, inport, msg):
