@@ -32,7 +32,11 @@ msgflo::Engine *engine;
 msgflo::OutPort *rightdoorPort;
 msgflo::OutPort *leftdoorPort;
 msgflo::InPort *ledPort;
-long nextButtonCheck = 0;
+long nextDoorCheck = 0;
+int rightDoorState = LOW;
+int leftDoorState = LOW;
+int latestRightDoorState = LOW;
+int latestLeftDoorState = LOW;
 
 auto participant = msgflo::Participant("c-base/DoorStatus", cfg.role);
 
@@ -48,7 +52,7 @@ void setup() {
   WiFi.begin(cfg.wifiSsid, cfg.wifiPassword);
 
   // Provide a Font Awesome (http://fontawesome.io/icons/) icon for the component
-  participant.icon = "toggle-on";
+  participant.icon = "sign-out";
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
@@ -92,13 +96,31 @@ void loop() {
     }
   }
 
-  // TODO: check for statechange. If changed, send right away. Else only send every 3 seconds or so
-  if (millis() > nextButtonCheck) {
-    const bool rightdoorpressed = digitalRead(cfg.rightdoorPin);
-    const bool leftdoorpressed = digitalRead(cfg.leftdoorPin);
-    
-    rightdoorPort->send(rightdoorpressed ? "true" : "false");
-    leftdoorPort->send(leftdoorpressed ? "true" : "false");
-    nextButtonCheck += 5000;
+  if (connected && millis() > nextDoorCheck) {
+    latestRightDoorState = digitalRead(cfg.rightdoorPin);
+    latestLeftDoorState = digitalRead(cfg.leftdoorPin);
+    if (latestRightDoorState == HIGH) {
+      if (rightDoorState == LOW) {
+        rightdoorPort->send("true");
+        rightDoorState = HIGH;
+      }
+    } else {
+      if (rightDoorState == HIGH) {
+        rightdoorPort->send("false");
+        rightDoorState = LOW;
+      }
+    }
+    if (latestLeftDoorState == HIGH) {
+      if (leftDoorState == LOW) {
+        leftdoorPort->send("true");
+        leftDoorState = HIGH;
+      }
+    } else {
+      if (leftDoorState == HIGH) {
+        leftdoorPort->send("false");
+        leftDoorState = LOW;
+      }
+    }
+    nextDoorCheck += 100;
   }
 }
