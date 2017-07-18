@@ -21,7 +21,7 @@ getHumidity = (weather) ->
 
 Participant = (client, role) ->
   station = null
-  lastFetch = null
+  lastMetar = null
   definition =
     id: role
     component: 'c-flo/AirportWeather'
@@ -81,14 +81,14 @@ Participant = (client, role) ->
       return callback 'error', new Error "No weather station provided"
     getWeather station, (err, weather) ->
       return callback 'error', err if err
-      if weather.time is lastFetch
+      if weather.metar is lastMetar
         # Send only when there is new METAR
         callback 'skipped', null, weather
         return
       participant.send 'pressure', weather.altimeterInHpa
       participant.send 'humidity', getHumidity weather
       participant.send 'metar', weather.metar
-      lastFetch = weather.time
+      lastMetar = weather.metar
       callback 'temperature', null, weather.temperature
 
   participant = new msgflo.participant.Participant client, definition, process, role
