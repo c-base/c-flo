@@ -2,7 +2,7 @@
 
 [MsgFlo](https://msgflo.org) setup for rewiring the [c-base space station](https://c-base.org/).
 
-**Hack weekend**: Join the [reprogramming the hackerspace](http://bergie.iki.fi/blog/msgflo-workshops-cbase-bitraf/) hack weekend at c-base, July 7-9 2017.
+**Hack weekend**: [Reprogramming the hackerspace](http://bergie.iki.fi/blog/msgflo-workshops-cbase-bitraf/) hack weekend was held at c-base, July 7-9 2017. [Read about it](http://bergie.iki.fi/blog/flowhub-iot-workshop-c-base/).
 
 ## Introduction
 
