@@ -88,3 +88,17 @@
   notify:
     - Restart lightdm
   tags: config
+  
+- name: Create cronjob to restart mqttwebview
+  become: yes
+  become_user: root
+  cron:
+      name: restart mqttwebview
+      weekday: "*"
+      minute: 0
+      hour: "*"
+      user: root
+      job: "/usr/sbin/service lightdm restart"
+      cron_file: ansible_restart_mqttwebview
+  tags: config
+  
