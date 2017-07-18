@@ -1,5 +1,4 @@
-//#include "config.h"
-
+#include "config.h"
 #include <WiFiClient.h>
 #include <WiFiClientSecure.h>
 #include <ESP8266WiFi.h>
@@ -21,8 +20,14 @@ struct Config {
   const String prefix = "c-base/";
   const String role = "spreesensor";
 
-  const char *wifiSsid = "c-base-botnet";
-  const char *wifiPassword = "xxxxxxx";
+  // To safely configure WIFI_SSID and WIFI_PASSWORD, create a new tab in the Arduino IDE
+  // (drop-down menu on the top right of the editor), name if config.h and add the following 
+  // two lines to the newly created file:
+  // #define WIFI_SSID "<put your SSID here>"
+  // #define WIFI_PASSWORD "<put your WIFI PASSWORD here>"
+  
+  const char *wifiSsid = WIFI_SSID;
+  const char *wifiPassword = WIFI_PASSWORD;
 
   const char *mqttHost = "c-beam.cbrp3.c-base.org";
   const int mqttPort = 1883;
@@ -37,7 +42,7 @@ msgflo::Engine *engine;
 msgflo::OutPort *tempPort;
 
 auto participant = msgflo::Participant("c-base/SpreeSensor", cfg.role);
-long nextTempCheck = 5000;
+long nextTempCheck = 30000;
 
 
 void setup() {
@@ -52,8 +57,8 @@ void setup() {
   WiFi.begin(cfg.wifiSsid, cfg.wifiPassword);
 
   // Provide a Font Awesome (http://fontawesome.io/icons/) icon for the component
-  participant.icon = "microchip";
-  participant.label = "Spree temperature sensor";
+  participant.icon = "ship";
+  participant.label = "Spree sensor";
 
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
@@ -101,15 +106,17 @@ void loop() {
     }
   }
 
-  if (connected && millis() > nextTempCheck) {
+  if (connected && (millis() > nextTempCheck)) {
     // Read temp sensor
     dtostrf(getTemperature(), 6, 2, result); // Leave room for too large numbers!
-    Serial.println("temp = ");
-
+    Serial.print("millis = ");
+    Serial.println(millis());
+    
+    Serial.print("temp = ");
     Serial.println(result);
     tempPort->send(result);
     
-    nextTempCheck += 5000;
+    nextTempCheck += 30000;
   }
   
 }
