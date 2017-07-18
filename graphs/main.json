@@ -948,7 +948,7 @@
       "data": "EDDT",
       "tgt": {
         "process": "aiportweather",
-        "port" "icao"
+        "port": "icao"
       }
     },
     {
