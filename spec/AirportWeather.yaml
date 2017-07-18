@@ -1,0 +1,22 @@
+name: 'Fetching airport weather'
+topic: c-flo/AirportWeather
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=airportweather.ICAO:ICAO
+    INPORT=airportweather.FETCH:FETCH
+    OUTPORT=airportweather.TEMPERATURE:TEMPERATURE
+    OUTPORT=airportweather.HUMIDITY:HUMIDITY
+    airportweather(c-flo/AirportWeather)
+cases:
+-
+  name: 'fetching TXL weather'
+  assertion: 'should return temperature and humidity'
+  inputs:
+    icao: 'EDDT'
+    fetch: true
+  expect:
+    temperature:
+      type: 'number'
+    humidity:
+      type: 'number'
