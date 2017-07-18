@@ -213,8 +213,8 @@
     },
     {
       "src": {
-        "process": "boardingurl",
-        "port": "out"
+        "process": "he1",
+        "port": "opened"
       },
       "tgt": {
         "process": "hallway-display",
@@ -769,16 +769,6 @@
       "tgt": {
         "process": "station-announcer",
         "port": "in"
-      }
-    },
-    {
-      "src": {
-        "process": "VisualPaging",
-        "port": "out"
-      },
-      "tgt": {
-        "process": "hallway-display",
-        "port": "open"
       }
     },
     {
