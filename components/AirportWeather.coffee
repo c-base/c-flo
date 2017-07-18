@@ -23,7 +23,7 @@ Participant = (client, role) ->
   station = null
   definition =
     id: role
-    component: 'AirportWeather'
+    component: 'c-flo/AirportWeather'
     icon: 'plane'
     label: 'Fetch weather data for an airport'
     inports: [

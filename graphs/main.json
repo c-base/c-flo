@@ -6,6 +6,9 @@
     }
   },
   "processes": {
+    "airportweather" {
+      "component": "c-flo/AirportWeather"
+    },
     "bar-announcer": {
       "component": "c-flo/BarAnnouncer"
     },
@@ -737,6 +740,16 @@
         "port": "time"
       },
       "tgt": {
+        "process": "airportweather",
+        "port": "fetch"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
         "process": "EventCalendar",
         "port": "in"
       }
@@ -929,6 +942,13 @@
       "tgt": {
         "process": "c-boom",
         "port": "led"
+      }
+    },
+    {
+      "data": "EDDT",
+      "tgt": {
+        "process": "aiportweather",
+        "port" "icao"
       }
     },
     {
