@@ -6,7 +6,7 @@
     }
   },
   "processes": {
-    "airportweather" {
+    "airportweather": {
       "component": "c-flo/AirportWeather"
     },
     "bar-announcer": {
