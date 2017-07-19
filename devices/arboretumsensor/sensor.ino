@@ -18,6 +18,7 @@
 DHT_Unified dht(DHTPIN, DHTTYPE);
 
 // Pressure sensor
+#include <Wire.h>
 #include <Adafruit_BMP085.h>
 Adafruit_BMP085 bmp;
 
@@ -59,7 +60,8 @@ int latestPirState = LOW;
 void setup() {
   Serial.begin(115200);
   dht.begin();
-  if (!bmp.begin()) {
+  Wire.begin(4, 5);
+  if (!bmp.begin(1)) {
     Serial.println("Could not find a valid BMP085 sensor, check wiring!");
     bmpOk = false;
   }
