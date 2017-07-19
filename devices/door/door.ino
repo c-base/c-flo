@@ -33,6 +33,7 @@ msgflo::OutPort *rightdoorPort;
 msgflo::OutPort *leftdoorPort;
 msgflo::InPort *ledPort;
 long nextDoorCheck = 0;
+long nextDoorSend = 60000;
 int rightDoorState = LOW;
 int leftDoorState = LOW;
 int latestRightDoorState = LOW;
@@ -103,24 +104,33 @@ void loop() {
       if (rightDoorState == LOW) {
         rightdoorPort->send("true");
         rightDoorState = HIGH;
+        nextDoorSend += 60000;
       }
     } else {
       if (rightDoorState == HIGH) {
         rightdoorPort->send("false");
         rightDoorState = LOW;
+        nextDoorSend += 60000;
       }
     }
     if (latestLeftDoorState == HIGH) {
       if (leftDoorState == LOW) {
         leftdoorPort->send("true");
         leftDoorState = HIGH;
+        nextDoorSend += 60000;
       }
     } else {
       if (leftDoorState == HIGH) {
         leftdoorPort->send("false");
         leftDoorState = LOW;
+        nextDoorSend += 60000;
       }
     }
     nextDoorCheck += 100;
+  }
+  if (connected && millis() > nextDoorSend) {
+    rightdoorPort->send(rightDoorState ? "true" : "false");
+    leftdoorPort->send(leftDoorState ? "true" : "false");
+    nextDoorSend += 60000;
   }
 }
