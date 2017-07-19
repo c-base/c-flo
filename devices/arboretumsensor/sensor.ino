@@ -27,6 +27,7 @@ struct Config {
 
   const int pinAdc = A0;
   const int pinMotion = 12;
+  const int pinLed = 2;
 
   const char *wifiSsid = WIFI_SSID;
   const char *wifiPassword = WIFI_PASSWORD;
@@ -63,6 +64,7 @@ void setup() {
     bmpOk = false;
   }
   pinMode(cfg.pinMotion, INPUT);
+  pinMode(cfg.pinLed, OUTPUT);
   delay(100);
   Serial.println();
   Serial.println();
@@ -146,12 +148,14 @@ void loop() {
     // Read motion sensor
     latestPirState = digitalRead(cfg.pinMotion);
     if (latestPirState == HIGH) {
+      digitalWrite(cfg.pinLed, LOW);
       if (pirState == LOW) {
         Serial.println("Motion detected!");
         motionPort->send("true");
         pirState = HIGH;
       }
     } else {
+      digitalWrite(cfg.pinLed, HIGH);
       if (pirState == HIGH) {
         Serial.println("Motion ended!");
         motionPort->send("false");
