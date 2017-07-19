@@ -114,12 +114,7 @@ void loop() {
 
   if (millis() > nextSoundCheck) {
     // Read sound sensor
-    long sum = 0;
-    for(int i=0; i<32; i++)
-    {
-      sum += analogRead(cfg.pinAdc);
-    }
-    sum >>= 5;
+    long sum = analogRead(cfg.pinAdc);
     soundPort->send(String(sum));
     nextSoundCheck += 10000;
   }
