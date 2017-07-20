@@ -50,6 +50,7 @@ msgflo::OutPort *motionPort;
 auto participant = msgflo::Participant("c-base/WorkshopSensor", cfg.role);
 const int numReadings = 1000;
 long nextMotionCheck = 0;
+long nextMotionSend = 0;
 long nextSoundCheck = 0;
 long nextEnvCheck = 0;
 int readings[numReadings];
