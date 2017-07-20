@@ -157,7 +157,11 @@ void loop() {
     average = ((float) total / numReadings);
     if (average != prevAverage && millis() > nextMotionSend) {
       Serial.printf("PIR state is %d (total %d), latest value %d\r\n", average, total, readings[readIndex]);
-      motionPort->send(String(average));
+      if (average < 0.4) {
+        motionPort->send("0.00");
+      } else {
+        motionPort->send(String(average));
+      }
       prevAverage = average;
       nextMotionSend += 5000;
     }
