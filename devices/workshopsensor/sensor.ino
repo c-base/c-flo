@@ -57,7 +57,6 @@ int readings[numReadings];
 int readIndex = 0;
 int total = 0;
 float average = 0;
-float prevAverage = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -155,15 +154,14 @@ void loop() {
     readings[readIndex] = digitalRead(cfg.pinMotion);
     total = total + readings[readIndex];
     average = ((float) total / numReadings);
-    if (average != prevAverage && millis() > nextMotionSend) {
+    if (millis() > nextMotionSend) {
       Serial.printf("PIR state is %d (total %d), latest value %d\r\n", average, total, readings[readIndex]);
       if (average < 0.4) {
         motionPort->send("0.00");
       } else {
         motionPort->send(String(average));
       }
-      prevAverage = average;
-      nextMotionSend += 5000;
+      nextMotionSend += 10000;
     }
     readIndex = readIndex + 1;
     if (readIndex >= numReadings) {
