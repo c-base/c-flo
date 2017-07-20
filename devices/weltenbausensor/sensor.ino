@@ -1,4 +1,4 @@
-#include "config.h"
+#include "wificonfig.h"
 
 #include <WiFiClient.h>
 #include <WiFiClientSecure.h>
