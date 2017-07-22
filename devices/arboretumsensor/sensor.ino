@@ -164,7 +164,9 @@ void loop() {
     soundReadings[readIndex] = analogRead(cfg.pinAdc);
     soundTotal = soundTotal + soundReadings[readIndex];
     soundAverage = ((float) soundTotal / numReadings);
-    soundPort->send(String(soundAverage));
+    if (millis() > nextMotionSend) {
+      soundPort->send(String(soundAverage));
+    }
 
     readIndex = readIndex + 1;
     if (readIndex >= numReadings) {
