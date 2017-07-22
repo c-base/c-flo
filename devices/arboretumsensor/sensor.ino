@@ -53,13 +53,15 @@ auto participant = msgflo::Participant("c-base/ArboretumSensor", cfg.role);
 const int numReadings = 1000;
 long nextMotionCheck = 0;
 long nextMotionSend = 0;
-long nextSoundCheck = 0;
 long nextEnvCheck = 0;
 bool bmpOk = true;
-int readings[numReadings];
 int readIndex = 0;
-int total = 0;
-float average = 0;
+int pirReadings[numReadings];
+int pirTotal = 0;
+float pirAverage = 0;
+int soundReadings[numReadings];
+int soundTotal = 0;
+float soundAverage = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -72,7 +74,8 @@ void setup() {
   pinMode(cfg.pinMotion, INPUT);
   pinMode(cfg.pinLed, OUTPUT);
   for (int thisReading = 0; thisReading < numReadings; thisReading++) {
-    readings[thisReading] = 0;
+    pirReadings[thisReading] = 0;
+    soundReadings[thisReading] = 0;
   }
   delay(100);
   Serial.println();
@@ -119,13 +122,6 @@ void loop() {
     }
   }
 
-  if (millis() > nextSoundCheck) {
-    // Read sound sensor
-    long sum = analogRead(cfg.pinAdc);
-    soundPort->send(String(sum));
-    nextSoundCheck += 10000;
-  }
-
   if (millis() > nextEnvCheck) {
     // Read DHT
     sensors_event_t event;
@@ -148,21 +144,28 @@ void loop() {
     nextEnvCheck += 30000;
   }
 
-  if (connected && millis() > nextMotionCheck) {
+  if (millis() > nextMotionCheck) {
     // Read motion sensor
-    total = total - readings[readIndex];
-    readings[readIndex] = digitalRead(cfg.pinMotion);
-    total = total + readings[readIndex];
-    average = ((float) total / numReadings);
+    pirTotal = pirTotal - pirReadings[readIndex];
+    pirReadings[readIndex] = digitalRead(cfg.pinMotion);
+    pirTotal = pirTotal + pirReadings[readIndex];
+    pirAverage = ((float) pirTotal / numReadings);
     if (millis() > nextMotionSend) {
-      Serial.printf("PIR state is %d (total %d), latest value %d\r\n", average, total, readings[readIndex]);
-      if (average < 0.80) {
+      Serial.printf("PIR state is %d (total %d), latest value %d\r\n", pirAverage, pirTotal, pirReadings[readIndex]);
+      if (pirAverage < 0.80) {
         motionPort->send("0.00");
       } else {
-        motionPort->send(String(average));
+        motionPort->send(String(pirAverage));
       }
       nextMotionSend += 10000;
     }
+    // Read sound sensor
+    soundTotal = soundTotal - soundReadings[readIndex];
+    soundReadings[readIndex] = analogRead(cfg.pinAdc);
+    soundTotal = soundTotal + soundReadings[readIndex];
+    soundAverage = ((float) soundTotal / numReadings);
+    soundPort->send(String(soundAverage));
+
     readIndex = readIndex + 1;
     if (readIndex >= numReadings) {
       readIndex = 0;
