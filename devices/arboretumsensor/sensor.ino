@@ -50,12 +50,16 @@ msgflo::OutPort *pressurePort;
 msgflo::OutPort *motionPort;
 
 auto participant = msgflo::Participant("c-base/ArboretumSensor", cfg.role);
+const int numReadings = 1000;
 long nextMotionCheck = 0;
+long nextMotionSend = 0;
 long nextSoundCheck = 0;
 long nextEnvCheck = 0;
 bool bmpOk = true;
-int pirState = LOW;
-int latestPirState = LOW;
+int readings[numReadings];
+int readIndex = 0;
+int total = 0;
+float average = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -67,6 +71,9 @@ void setup() {
   }
   pinMode(cfg.pinMotion, INPUT);
   pinMode(cfg.pinLed, OUTPUT);
+  for (int thisReading = 0; thisReading < numReadings; thisReading++) {
+    readings[thisReading] = 0;
+  }
   delay(100);
   Serial.println();
   Serial.println();
@@ -143,21 +150,22 @@ void loop() {
 
   if (connected && millis() > nextMotionCheck) {
     // Read motion sensor
-    latestPirState = digitalRead(cfg.pinMotion);
-    if (latestPirState == HIGH) {
-      digitalWrite(cfg.pinLed, LOW);
-      if (pirState == LOW) {
-        Serial.println("Motion detected!");
-        motionPort->send("true");
-        pirState = HIGH;
+    total = total - readings[readIndex];
+    readings[readIndex] = digitalRead(cfg.pinMotion);
+    total = total + readings[readIndex];
+    average = ((float) total / numReadings);
+    if (millis() > nextMotionSend) {
+      Serial.printf("PIR state is %d (total %d), latest value %d\r\n", average, total, readings[readIndex]);
+      if (average < 0.80) {
+        motionPort->send("0.00");
+      } else {
+        motionPort->send(String(average));
       }
-    } else {
-      digitalWrite(cfg.pinLed, HIGH);
-      if (pirState == HIGH) {
-        Serial.println("Motion ended!");
-        motionPort->send("false");
-        pirState = LOW;
-      }
+      nextMotionSend += 10000;
+    }
+    readIndex = readIndex + 1;
+    if (readIndex >= numReadings) {
+      readIndex = 0;
     }
     nextMotionCheck += 10;
   }
