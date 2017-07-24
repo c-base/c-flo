@@ -150,6 +150,11 @@ void loop() {
     pirReadings[readIndex] = digitalRead(cfg.pinMotion);
     pirTotal = pirTotal + pirReadings[readIndex];
     pirAverage = ((float) pirTotal / numReadings);
+    // Read sound sensor
+    soundTotal = soundTotal - soundReadings[readIndex];
+    soundReadings[readIndex] = analogRead(cfg.pinAdc);
+    soundTotal = soundTotal + soundReadings[readIndex];
+    soundAverage = ((float) soundTotal / numReadings);
     if (millis() > nextMotionSend) {
       Serial.printf("PIR state is %d (total %d), latest value %d\r\n", pirAverage, pirTotal, pirReadings[readIndex]);
       if (pirAverage < 0.80) {
@@ -157,15 +162,10 @@ void loop() {
       } else {
         motionPort->send(String(pirAverage));
       }
+      if (millis() > nextMotionSend) {
+        soundPort->send(String(soundAverage));
+      }
       nextMotionSend += 10000;
-    }
-    // Read sound sensor
-    soundTotal = soundTotal - soundReadings[readIndex];
-    soundReadings[readIndex] = analogRead(cfg.pinAdc);
-    soundTotal = soundTotal + soundReadings[readIndex];
-    soundAverage = ((float) soundTotal / numReadings);
-    if (millis() > nextMotionSend) {
-      soundPort->send(String(soundAverage));
     }
 
     readIndex = readIndex + 1;
