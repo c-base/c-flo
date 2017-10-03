@@ -1,0 +1,44 @@
+version: '2'
+services:
+  mqtt:
+    image: ansi/raspberrypi3-mosquitto
+    container_name: c-beam
+    ports:
+      - '1883:1883'
+    entrypoint: /usr/local/sbin/mosquitto
+  influxdb:
+    image: hypriot/rpi-influxdb
+    container_name: c-base-influxdb
+    ports:
+      - '127.0.0.1:8086:8086'
+  couchdb:
+    image: rpidocker/rpi-couchdb
+    container_name: c-base-couchdb
+    ports:
+      - '127.0.0.1:5984:5984'
+  msgflo:
+    image: cbase/raspberrypi3-c-flo
+    build:
+      context: .
+      dockerfile: Dockerfile-raspberrypi3
+    container_name: c-flo
+    environment:
+      MSGFLO_BROKER: 'mqtt://mqtt:1883'
+    ports:
+      - '127.0.0.1:3569:3569'
+    links:
+      - mqtt
+  openmct:
+    image: cbase/raspberrypi3-cbeam-telemetry-server
+    container_name: c-base-openmct
+    entrypoint: node config/c-base.js
+    environment:
+      MSGFLO_BROKER: 'mqtt://mqtt:1883'
+      INFLUX_HOST: influxdb
+    ports:
+      - '127.0.0.1:8080:8080'
+      - '127.0.0.1:8082:8082'
+    links:
+      - influxdb
+      - couchdb
+      - mqtt
