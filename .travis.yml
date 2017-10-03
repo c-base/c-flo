@@ -11,7 +11,9 @@ before_script:
 - pip install ansible-lint --user
 # Prepare cross-compiling environment if targeting ARM
 - if [ "$TARGET" == "raspberrypi3" ]; then docker run --rm --privileged multiarch/qemu-user-static:register --reset; fi
-# Build Docker image and start the whole service
+# Build the Docker image
+- docker build -t $DOCKER_IMAGE -f $DOCKER_FILE .
+# Start the whole service
 - docker-compose up -d
 script:
 - npm test
@@ -25,5 +27,5 @@ env:
   - secure: auipDdT1cXyVXzNW9vJoy2lAzHfpbS1+NWLtt4NDDHqaie05K1L5HlHMIz7+degl1SfJdaBsdwsIfSOrvaSbf3BZMwFA2t6OITFRD+MrB4ZZgxxK/GQ488c4TEXoyPC3wrR3qVI/wPZ28p7ShaAxTRhdtUvDq2s0FLa0HRWn7xRE7csnHDAbfnzkVf4e4XR7FQId5QH4wlmDfneegA8PHtcv0xWLSMYr0VTlFiAruoF3quO5tUpKDD8kDxsN6aRGijuZxJ8TnTKcqKcC2Awj0/YdIUdsv92l+MJODWnooZFX4WcYh7+kPnCpyLt5HU6ZgAPKkxSTvQdxOkLjO2NVn9s93TFDd7exDSm0vewVB5jefxuQzVHsikc3DYfL0Ast0WmnT1KeK1biQIgq07l5LJjAhZEx46omW24o2tUYU8qhoJWkh+hmVOwqj9VOZAQYrjLAZPX1g7Xg1cn9LSTDKum1k5bgNdgW2WpzYTR/LU9q0jFfANwsfApdcsEFZF6/mB4CTripwfH1fb7JZ+B/Ylw68cqY5KTidGLOJG29766Yai3iN60LkMHClv73rkVVoQ9akuS2OIS+x4cXMlyqyYt95NmTo7xUW2np2nBhQSFOm+HxTWjq8FFyvUDKbrJw2lsjdxKTpw7EW22GQ4kCVbqbM/RVcQ5pqaG7rM6ee5U=
 matrix:
   include:
-  - env: TARGET=x86 DOCKER_IMAGE=cbase/c-flo
-  - env: TARGET=raspberrypi3 DOCKER_IMAGE=cbase/raspberrypi3-c-flo COMPOSE_FILE=docker-compose-raspberrypi3.yml
+  - env: TARGET=x86 DOCKER_IMAGE=cbase/c-flo DOCKER_FILE=Dockerfile
+  - env: TARGET=raspberrypi3 DOCKER_IMAGE=cbase/raspberrypi3-c-flo COMPOSE_FILE=docker-compose-raspberrypi3.yml DOCKER_FILE=Dockerfile-raspberrypi3
