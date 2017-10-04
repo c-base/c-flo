@@ -25,4 +25,8 @@ RUN npm install
 # Map the volumes
 VOLUME /var/c-flo/graphs /var/c-flo/components /var/c-flo/spec
 
+# Ensure that runtime is working
+HEALTHCHECK --interval=5m --timeout=3s \
+  CMD ./node_modules/.bin/fbp-protocol-healthcheck ws://127.0.0.1:3569
+
 CMD npm start

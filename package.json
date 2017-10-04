@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
+    "fbp-protocol-healthcheck": "^1.0.0",
     "metar": "^1.0.0",
     "metar-taf": "0.0.2",
     "msgflo": "^0.10.27",
