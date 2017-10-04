@@ -31,5 +31,5 @@ env:
 matrix:
   include:
   - env: TARGET=x86 DOCKER_IMAGE=cbase/c-flo DOCKER_FILE=Dockerfile
-  - env: TARGET=raspberrypi3 DOCKER_IMAGE=cbase/raspberrypi3-c-flo COMPOSE_FILE=docker-compose-raspberrypi3.yml DOCKER_FILE=Dockerfile-raspberrypi3 DEBUG="fbp-spec:*"
+  - env: TARGET=raspberrypi3 DOCKER_IMAGE=cbase/raspberrypi3-c-flo COMPOSE_FILE=docker-compose-raspberrypi3.yml DOCKER_FILE=Dockerfile-raspberrypi3
     sudo: true
