@@ -27,8 +27,8 @@ class OnlineHeatmap(msgflo.Participant):
     gradient = list(cold.range_to(hot, 22))
     
     if length >= 22:
-        # More than this is always hot
-        selected = gradient[-1]
+        # More than this is always hot dark red
+        return [128,0,0]
     else:
         selected = gradient[length - 1]
 
