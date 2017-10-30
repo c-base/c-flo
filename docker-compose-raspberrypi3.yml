@@ -25,6 +25,16 @@ services:
       - '127.0.0.1:3569:3569'
     links:
       - mqtt
+  msgflo_foreign:
+    image: cbase/c-flo
+    container_name: c-flo-foreign
+    environment:
+      MSGFLO_BROKER: 'mqtt://mqtt:1883'
+    ports:
+      - '127.0.0.1:3569:3569'
+    links:
+      - mqtt
+    entrypoint: npm run foreign
   openmct:
     image: cbase/raspberrypi3-cbeam-telemetry-server
     container_name: c-base-openmct
