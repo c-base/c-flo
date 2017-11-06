@@ -38,7 +38,7 @@
     "metar": "^1.0.0",
     "metar-taf": "0.0.2",
     "msgflo": "^0.11.0",
-    "msgflo-nodejs": "^0.10.5",
+    "msgflo-nodejs": "^0.11.1",
     "noflo": "^0.8.3",
     "noflo-core": "^0.4.0",
     "noflo-runtime-msgflo": "~0.11.2"
