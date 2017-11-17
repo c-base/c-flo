@@ -13,11 +13,6 @@ module.exports = ->
       ]
     createMarkup:
       participants: ['components/*.yml']
-    pylint:
-      options:
-        errorsOnly: true
-        rcfile: '.pylintrc'
-      src: ['components/*.py']
 
     # BDD tests on Node.js
     mochaTest:
@@ -27,7 +22,6 @@ module.exports = ->
           reporter: 'spec'
 
   @loadNpmTasks 'grunt-yamllint'
-  @loadNpmTasks 'grunt-pylint'
   @loadNpmTasks 'grunt-mocha-test'
 
   @task.registerMultiTask 'createMarkup', ->
@@ -73,7 +67,6 @@ module.exports = ->
 
   @registerTask 'test', [
     'yamllint'
-    'pylint'
     'mochaTest'
     'createMarkup'
   ]

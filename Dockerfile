@@ -9,10 +9,8 @@ ENV NODE_ENV production
 
 RUN mkdir -p /var/c-flo
 
-# Install msgflo-python, freetype, jpeg and z-libs used for Pillow (Python Imaging Library), Python2 is needed for grunt-pylint from package.json.
+# Install msgflo-python, freetype, jpeg and z-libs used for Pillow (Python Imaging Library)
 RUN apt-get update && apt-get install -y \
-  python \
-  python-pip \
   python3 \
   python3-dev \
   python3-pip \
