@@ -8,16 +8,24 @@ ENV NPM_CONFIG_LOGLEVEL warn
 ENV NODE_ENV production
 
 RUN mkdir -p /var/c-flo
+
+# Install msgflo-python, freetype, jpeg and z-libs used for Pillow (Python Imaging Library)
+RUN apt-get update && apt-get install -y \
+  python3 \
+  python3-dev \
+  python3-pip \
+  libjpeg-dev \
+  zlib1g-dev \
+  libfreetype6 \
+  libfreetype6-dev
+  
+WORKDIR /
+COPY ./requirements.pip /
+RUN pip3 install -r /requirements.pip ; rm -f /requirements.pip
+
 WORKDIR /var/c-flo
 
 COPY . /var/c-flo
-
-# Install msgflo-python
-RUN apt-get update && apt-get install -y \
-  python \
-  python-dev \
-  python-pip
-RUN pip install -r requirements.pip
 
 # Install MsgFlo and dependencies
 RUN npm install

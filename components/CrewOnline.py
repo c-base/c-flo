@@ -1,6 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
 import msgflo
-import urllib, json
+import urllib.request
+import json
 
 class CrewOnline(msgflo.Participant):
   def __init__(self, role):
@@ -19,7 +21,7 @@ class CrewOnline(msgflo.Participant):
 
   def process(self, inport, msg):
     url = "https://c-beam.cbrp3.c-base.org/mechblast_json"
-    response = urllib.urlopen(url)
+    response = urllib.request.urlopen(url)
     data = json.loads(response.read())
     self.send('out', data["userlist"])
     self.ack(msg)
