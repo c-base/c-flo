@@ -1,4 +1,4 @@
-#include "config.h"
+#include "wificonfig.h"
 
 #include <WiFiClient.h>
 #include <WiFiClientSecure.h>
@@ -21,6 +21,7 @@ struct Config {
   const String role = "weltenbausensor";
 
   const int pinMotion = D0;
+  const int numReadings = 10;
 
   const char *wifiSsid = WIFI_SSID;
   const char *wifiPassword = WIFI_PASSWORD;
@@ -40,15 +41,22 @@ msgflo::OutPort *humPort;
 msgflo::OutPort *motionPort;
 
 auto participant = msgflo::Participant("c-base/WeltenbauSensor", cfg.role);
+const int numReadings = 1000;
 long nextMotionCheck = 0;
+long nextMotionSend = 0;
 long nextEnvCheck = 0;
-int pirState = LOW;
-int latestPirState = LOW;
+int readings[numReadings];
+int readIndex = 0;
+int total = 0;
+float average = 0;
 
 void setup() {
   Serial.begin(115200);
   dht.begin();
   pinMode(cfg.pinMotion, INPUT);
+  for (int thisReading = 0; thisReading < numReadings; thisReading++) {
+    readings[thisReading] = 0;
+  }
   delay(100);
   Serial.println();
   Serial.println();
@@ -71,7 +79,7 @@ void setup() {
 
   tempPort = engine->addOutPort("temperature", "number", cfg.prefix+cfg.role+"/temperature");
   humPort = engine->addOutPort("humidity", "number", cfg.prefix+cfg.role+"/humidity");
-  motionPort = engine->addOutPort("motion", "boolean", cfg.prefix+cfg.role+"/motion");
+  motionPort = engine->addOutPort("motion", "float", cfg.prefix+cfg.role+"/motion");
 }
 
 void loop() {
@@ -108,19 +116,22 @@ void loop() {
 
   if (connected && millis() > nextMotionCheck) {
     // Read motion sensor
-    latestPirState = digitalRead(cfg.pinMotion);
-    if (latestPirState == HIGH) {
-      if (pirState == LOW) {
-        Serial.println("Motion detected!");
-        motionPort->send("true");
-        pirState = HIGH;
+    total = total - readings[readIndex];
+    readings[readIndex] = digitalRead(cfg.pinMotion);
+    total = total + readings[readIndex];
+    average = ((float) total / numReadings);
+    if (millis() > nextMotionSend) {
+      Serial.printf("PIR state is %d (total %d), latest value %d\r\n", average, total, readings[readIndex]);
+      if (average < 0.80) {
+        motionPort->send("0.00");
+      } else {
+        motionPort->send(String(average));
       }
-    } else {
-      if (pirState == HIGH) {
-        Serial.println("Motion ended!");
-        motionPort->send("false");
-        pirState = LOW;
-      }
+      nextMotionSend += 10000;
+    }
+    readIndex = readIndex + 1;
+    if (readIndex >= numReadings) {
+      readIndex = 0;
     }
     nextMotionCheck += 10;
   }

@@ -13,21 +13,15 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>
-#define DHTPIN            14
+#define DHTPIN            D5
 #define DHTTYPE           DHT22
 DHT_Unified dht(DHTPIN, DHTTYPE);
 
-// Pressure sensor
-#include <Wire.h>
-#include <Adafruit_BMP085.h>
-Adafruit_BMP085 bmp;
-
 struct Config {
   const String prefix = "sensor/";
-  const String role = "arboretum";
+  const String role = "soundlab";
 
   const int pinAdc = A0;
-  const int pinMotion = 12;
   const int pinLed = 2;
 
   const char *wifiSsid = WIFI_SSID;
@@ -46,19 +40,14 @@ msgflo::Engine *engine;
 msgflo::OutPort *soundPort;
 msgflo::OutPort *tempPort;
 msgflo::OutPort *humPort;
-msgflo::OutPort *pressurePort;
-msgflo::OutPort *motionPort;
+msgflo::InPort *ledPort;
 
-auto participant = msgflo::Participant("c-base/ArboretumSensor", cfg.role);
+auto participant = msgflo::Participant("c-base/SoundlabSensor", cfg.role);
 const int numReadings = 1000;
-long nextMotionCheck = 0;
-long nextMotionSend = 0;
+long nextSoundCheck = 0;
+long nextSoundSend = 0;
 long nextEnvCheck = 0;
-bool bmpOk = true;
 int readIndex = 0;
-int pirReadings[numReadings];
-int pirTotal = 0;
-float pirAverage = 0;
 int soundReadings[numReadings];
 int soundTotal = 0;
 float soundAverage = 0;
@@ -66,15 +55,7 @@ float soundAverage = 0;
 void setup() {
   Serial.begin(115200);
   dht.begin();
-  Wire.begin(4, 5);
-  if (!bmp.begin(1)) {
-    Serial.println("Could not find a valid BMP085 sensor, check wiring!");
-    bmpOk = false;
-  }
-  pinMode(cfg.pinMotion, INPUT);
-  pinMode(cfg.pinLed, OUTPUT);
   for (int thisReading = 0; thisReading < numReadings; thisReading++) {
-    pirReadings[thisReading] = 0;
     soundReadings[thisReading] = 0;
   }
   delay(100);
@@ -87,7 +68,7 @@ void setup() {
   WiFi.begin(cfg.wifiSsid, cfg.wifiPassword);
 
   // Provide a Font Awesome (http://fontawesome.io/icons/) icon for the component
-  participant.icon = "tree";
+  participant.icon = "soundcloud";
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
@@ -100,10 +81,16 @@ void setup() {
   soundPort = engine->addOutPort("sound", "number", cfg.prefix+cfg.role+"/sound");
   tempPort = engine->addOutPort("temperature", "number", cfg.prefix+cfg.role+"/temperature");
   humPort = engine->addOutPort("humidity", "number", cfg.prefix+cfg.role+"/humidity");
-  pressurePort = engine->addOutPort("pressure", "number", cfg.prefix+cfg.role+"/pressure");
-  motionPort = engine->addOutPort("motion", "boolean", cfg.prefix+cfg.role+"/motion");
+  ledPort = engine->addInPort("led", "boolean", cfg.prefix+cfg.role+"/led",
+  [](byte *data, int length) -> void {
+      const std::string in((char *)data, length);
+      const boolean on = (in == "1" || in == "true");
+      digitalWrite(cfg.pinLed, on);
+  });
 
+  Serial.printf("Led pin: %d\r\n", cfg.pinLed);
   Serial.printf("Sound pin: %d\r\n", cfg.pinAdc);
+  pinMode(cfg.pinLed, OUTPUT);
 }
 
 void loop() {
@@ -127,51 +114,33 @@ void loop() {
     sensors_event_t event;
     dht.temperature().getEvent(&event);
     if (!isnan(event.temperature)) {
+      Serial.printf("Sending temperature %d\r\n", event.temperature);
       tempPort->send(String(event.temperature));
+    } else {
+      Serial.println("DHT returned NaN");
     }
     dht.humidity().getEvent(&event);
     if (!isnan(event.relative_humidity)) {
       humPort->send(String(event.relative_humidity));
     }
-
-    // Read pressure
-    if (bmpOk) {
-      pressurePort->send(String(bmp.readPressure()));
-    } else {
-      Serial.println("No pressure sensor found, skipping measurement");
-    }
-
     nextEnvCheck += 30000;
   }
 
-  if (millis() > nextMotionCheck) {
-    // Read motion sensor
-    pirTotal = pirTotal - pirReadings[readIndex];
-    pirReadings[readIndex] = digitalRead(cfg.pinMotion);
-    pirTotal = pirTotal + pirReadings[readIndex];
-    pirAverage = ((float) pirTotal / numReadings);
+  if (millis() > nextSoundCheck) {
     // Read sound sensor
     soundTotal = soundTotal - soundReadings[readIndex];
     soundReadings[readIndex] = analogRead(cfg.pinAdc);
     soundTotal = soundTotal + soundReadings[readIndex];
     soundAverage = ((float) soundTotal / numReadings);
-    if (millis() > nextMotionSend) {
-      Serial.printf("PIR state is %d (total %d), latest value %d\r\n", pirAverage, pirTotal, pirReadings[readIndex]);
-      if (pirAverage < 0.80) {
-        motionPort->send("0.00");
-      } else {
-        motionPort->send(String(pirAverage));
-      }
-      if (millis() > nextMotionSend) {
-        soundPort->send(String(soundAverage));
-      }
-      nextMotionSend += 10000;
+    if (millis() > nextSoundSend) {
+      soundPort->send(String(soundAverage));
+      nextSoundSend += 10000;
     }
 
     readIndex = readIndex + 1;
     if (readIndex >= numReadings) {
       readIndex = 0;
     }
-    nextMotionCheck += 10;
+    nextSoundCheck += 10;
   }
 }

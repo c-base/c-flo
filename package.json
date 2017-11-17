@@ -6,7 +6,8 @@
   "scripts": {
     "test": "grunt test",
     "postinstall": "./node_modules/.bin/noflo-cache-preheat",
-    "start": "./node_modules/.bin/msgflo --graph graphs/main.json --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600 --ignore bartracker --ignore crewtracker --ignore ingresstracker --ignore stationtracker --componentdir components --wait-timeout 500"
+    "start": "msgflo --componentdir components --graph graphs/main.json --runtime-id=a9dca883-c07f-4cd7-b369-180fa9b52b68 --ping-interval=600 --host=c-flo.cbrp3.c-base.org --wait-timeout 1200 --ignore barstatus_bar --ignore barstatus_clab --ignore barstatus_nerdarea --ignore barstatus_switch --ignore bubbler --ignore c_leuse --ignore c_out_generator --ignore c_out_output --ignore crew --ignore mainhall --ignore mechblast --ignore nerd --ignore nerdctrl_switch --ignore powermon --ignore echelon --ignore time --ignore vacuum --ignore siri --ignore megablast-display --ignore roboblast-display --ignore ingress-lights --ignore ingress-data --ignore station-announcer --ignore c-boom --ignore megablast --ignore he1 --ignore nerdctrl-display --ignore hallway-display --ignore bigswitch --ignore c-lab-display --ignore mainhall-display --ignore nerdarea-display --ignore soundlab-display --ignore weltenbau-display --ignore c-leuse-display",
+    "foreign": "msgflo-register --role barstatus_bar:components/statuslight.yml --role barstatus_clab:components/statuslight.yml --role barstatus_nerdarea:components/statuslight.yml --role barstatus_switch:components/barstatus.yml --role bubbler:components/panel.yml --role c_leuse:components/playsound.yml --role c_out_generator:components/c_out.yml --role c_out_output:components/playsound.yml --role crew:components/crew.yml --role mainhall:components/dmx.yml --role mechblast:components/playsound.yml --role nerd:components/pedestrianlight.yml --role nerdctrl_switch:components/nerdctrl.yml --role powermon:components/powermon.yml --role echelon:components/echelon.yml --role time:components/time.yml --role vacuum:components/Vacuum.yml --role c-boom:components/buttonpanel.yml --role megablast-display:components/mqttwebview.yml --role he1:components/mqttwebview.yml --role roboblast-display:components/mqttwebview.yml --role siri:components/mqttwebview.yml --role nerdctrl-display:components/mqttwebview.yml --role hallway-display:components/c-beam-viewer.yml --role bigswitch:components/BigSwitch.yml --role c-lab-display:components/mqttwebview.yml --role mainhall-display:components/mqttwebview.yml --role nerdarea-display:components/mqttwebview.yml --role soundlab-display:components/mqttwebview.yml --role weltenbau-display:components/mqttwebview.yml --role c-leuse-display:components/mqttwebview.yml"
   },
   "repository": {
     "type": "git",
@@ -24,22 +25,23 @@
   "homepage": "https://github.com/c-base/c-flo#readme",
   "devDependencies": {
     "chai": "^4.0.2",
-    "fbp-spec": "^0.2.1",
+    "fbp-spec": "^0.5.0",
     "grunt": "^1.0.1",
     "grunt-mocha-test": "^0.13.2",
     "grunt-pylint": "^1.3.1",
     "grunt-yamllint": "^0.3.0",
-    "mocha": "^3.2.0"
+    "mocha": "^4.0.0"
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
+    "fbp-protocol-healthcheck": "^1.0.0",
     "metar": "^1.0.0",
     "metar-taf": "0.0.2",
-    "msgflo": "^0.10.27",
-    "msgflo-nodejs": "^0.10.5",
-    "noflo": "^0.8.3",
-    "noflo-core": "^0.4.0",
-    "noflo-runtime-msgflo": "~0.11.2"
+    "msgflo": "^0.11.0",
+    "msgflo-nodejs": "^0.11.1",
+    "noflo": "^1.0.0",
+    "noflo-core": "^0.5.0",
+    "noflo-runtime-msgflo": "~0.12.0"
   },
   "msgflo": {
     "namespace": "c-flo",
