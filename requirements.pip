@@ -1,4 +1,4 @@
-msgflo>=0.2.0
+msgflo>=0.2.2
 colour==0.1.4
 icalendar>=3.11.4
 pytz>=2017.3

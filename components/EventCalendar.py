@@ -1,4 +1,4 @@
-import urllib2
+import urllib.request
 import icalendar
 import json
 from datetime import datetime, date, timedelta
@@ -22,8 +22,8 @@ def clean_event(event):
     }
 
 def get_events(url):
-    req = urllib2.Request(url)
-    res = urllib2.urlopen(req)
+    req = urllib.request.Request(url)
+    res = urllib.request.urlopen(req)
     data = res.read()
     cal = icalendar.Calendar.from_ical(data)
     events = []
