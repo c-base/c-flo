@@ -9,14 +9,14 @@ import msgflo
 import gevent
 
 def generate_terminal_output(palette):
-    print palette['time_value']
-    print "base_color ", palette['base_color'].hex
-    print "baseColorVariant1 ", palette['base_color_variant_1'].hex
-    print "baseColorVariant2 ", palette['base_color_variant_2'].hex
-    print "baseColorVariant3 ", palette['base_color_variant_3'].hex
-    print "baseColorVariant4 ", palette['base_color_variant_4'].hex
-    print "contrast_color ", palette['contrast_color'].hex
-    print "###################################"
+    print(palette['time_value'])
+    print("base_color ", palette['base_color'].hex)
+    print("baseColorVariant1 ", palette['base_color_variant_1'].hex)
+    print("baseColorVariant2 ", palette['base_color_variant_2'].hex)
+    print("baseColorVariant3 ", palette['base_color_variant_3'].hex)
+    print("baseColorVariant4 ", palette['base_color_variant_4'].hex)
+    print("contrast_color ", palette['contrast_color'].hex)
+    print("###################################")
 
 def generate_html_output(palette):
     time_value = palette['time_value']
@@ -133,5 +133,5 @@ class Farbgeber(msgflo.Participant):
         self.send('palette', data)
 
 if __name__ == "__main__":
-    print "Zentrale Farbgebeeinheit"
+    print("Zentrale Farbgebeeinheit")
     msgflo.main(Farbgeber)

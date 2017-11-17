@@ -74,10 +74,10 @@ def main():
   repeater = NetworkBars(role)
   engine = msgflo.run(repeater, done_cb=waiter.set)
 
-  print "Repeat running on %s" % (engine.broker_url)
+  print("Repeat running on %s" % (engine.broker_url))
   sys.stdout.flush()
   waiter.wait()
-  print "Shutdown"
+  print("Shutdown")
   sys.stdout.flush()
 
 if __name__ == '__main__':

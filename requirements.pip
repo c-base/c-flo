@@ -1,6 +1,6 @@
-msgflo>=0.1.1
-colour==0.0.5
+msgflo>=0.2.0
+colour==0.1.4
 icalendar>=3.11.4
-pytz>=2017.2
+pytz>=2017.3
 Pillow>=4.1.1
 beautifulsoup4>=4.6.0

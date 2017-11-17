@@ -83,7 +83,7 @@ class DiscoAnimation(msgflo.Participant):
 
     def loop(self):
         while self.is_enabled == True:
-            print "loop"
+            print("loop")
             self.tick += 1
             for i in range(self.tick % 3):
                 next(DISCO_COLORS)
@@ -96,7 +96,7 @@ class DiscoAnimation(msgflo.Participant):
             color = next(DISCO_COLORS)
             self.send('animation', channels)
             self.send('colours', list(color))
-            print "Channels", channels
+            print("Channels", channels)
             gevent.sleep(0.8)
 
     def process(self, inport, msg):

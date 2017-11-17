@@ -86,7 +86,7 @@ class Matelight(msgflo.Participant):
             c = frame.convert("RGBA")
             sleep_time = img.info['duration'] / 1000.0
             
-            # print img.info['background'], img.info['transparency']
+            # print(img.info['background'], img.info['transparency'])
             try:
                 if img.info['background'] != img.info['transparency']:
                     last_frame.paste(c, c)
