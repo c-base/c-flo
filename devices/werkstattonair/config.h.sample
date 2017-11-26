@@ -1,0 +1,8 @@
+// rename this file to config.h and enter the correct WiFi password below.
+#ifndef WIFI_SSID
+#define WIFI_SSID "c-base-botnet"
+#endif
+
+#ifndef WIFI_PASSWORD
+#define WIFI_PASSWORD "xxxxxxxxxx"
+#endif
