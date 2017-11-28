@@ -1,6 +1,6 @@
 ---
 important_urls: 
-    - "http://openmct.cbrp3.c-base.org/index.html#/browse/mine/ac791bd1-30b9-4e0a-9b53-878a877a6ee1/599980fb-74e5-4dbf-a4a5-c39db01d1a1b"
+    - "http://openmct.cbrp3.c-base.org/index.html#/browse/mine/ac791bd1-30b9-4e0a-9b53-878a877a6ee1/599980fb-74e5-4dbf-a4a5-c39db01d1a1b?hideTree=true&hideInspector=true"
 
 urls: 
     - "https://c-beam.cbrp3.c-base.org/sensors"
