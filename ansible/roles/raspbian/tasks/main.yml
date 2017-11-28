@@ -20,6 +20,7 @@
     - libwebkitgtk-3.0-dev
     - git-core
     - python3-pip
+    - chromium-browser
 
 - name: Select i3 as default window manager
   become: yes
@@ -100,5 +101,13 @@
       user: root
       job: "/usr/sbin/service lightdm restart"
       cron_file: ansible_restart_mqttwebview
+  tags: config
+
+- name: Upload run_chromium.sh file
+  become: yes
+  become_user: root
+  template: src=run_chromium.sh dest=/home/{{ display_user }}/run_chromium.sh mode=0744 owner={{ display_user }}
+  notify:
+    - Restart lightdm
   tags: config
 
