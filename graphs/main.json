@@ -120,7 +120,7 @@
     "mechblast": {
       "component": "c-flo/playsound"
     },
-    "he1": {
+    "he1-terminal": {
       "component": "c-base/infodisplay"
     },
     "roboblast-display": {
@@ -216,7 +216,7 @@
     },
     {
       "src": {
-        "process": "he1",
+        "process": "he1-terminal",
         "port": "opened"
       },
       "tgt": {
@@ -230,7 +230,7 @@
         "port": "out"
       },
       "tgt": {
-        "process": "he1",
+        "process": "he1-terminal",
         "port": "open"
       }
     },
@@ -790,7 +790,7 @@
         "port": "out"
       },
       "tgt": {
-        "process": "he1",
+        "process": "he1-terminal",
         "port": "open"
       }
     },
