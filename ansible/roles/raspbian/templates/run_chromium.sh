@@ -8,7 +8,7 @@
     fi
 
     sleep 2
-    chromium-browser --kiosk \
+    chromium-browser --kiosk --no-first-run \
         --home-page "http://c-flo/infodisplay/?msgflo_role={{ ansible_hostname }}&{% for url in urls%}msgflo_urls={{ url|urlencode }}&{% endfor %}" \
         --disk-cache-dir=/dev/null --disk-cache-size=52428800
 # done
