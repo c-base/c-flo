@@ -1,13 +1,13 @@
 ---
 important_urls: 
-    - "http://c-beam.cbrp3.c-base.org/he1display"
+    - "https://c-beam.cbrp3.c-base.org/he1display"
 
 urls: 
-    - "http://c-beam.cbrp3.c-base.org/events"
+    - "https://c-beam.cbrp3.c-base.org/events"
     - "https://c-beam.cbrp3.c-base.org/c-base-map"
     - "https://c-beam.cbrp3.c-base.org/weather"
     - "https://c-beam.cbrp3.c-base.org/sensors"
     - "https://c-beam.cbrp3.c-base.org/reddit"
-    - "http://c-beam.cbrp3.c-base.org/bvg"
+    - "https://c-beam.cbrp3.c-base.org/bvg"
     
 msgflo_role: "he1"

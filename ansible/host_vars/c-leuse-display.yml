@@ -1,9 +1,6 @@
 ---
 important_urls: 
-    - "http://c-beam.cbrp3.c-base.org/he1display"
+    - "https://c-beam.cbrp3.c-base.org/he1display"
 
 urls: 
-    - "http://c-beam.cbrp3.c-base.org/events"
-    - "https://c-beam.cbrp3.c-base.org/weather"
-    - "https://c-beam.cbrp3.c-base.org/sensors"
-    - "https://c-beam.cbrp3.c-base.org/reddit"
+    - "https://c-beam.cbrp3.c-base.org/events"
