@@ -18,7 +18,6 @@ urls:
     - "https://c-beam.cbrp3.c-base.org/reddit"
     - "http://vimeo.com/cbase/videos"
     - "https://wiki.c-base.org/dokuwiki/"
-    - "http://app.flowhub.io#runtime/endpoint?protocol%3Dwebsocket%26address%3Dws%3A%2F%2Fc-flo.cbrp3.c-base.org%3A3569%26id%3Da9dca883-c07f-4cd7-b369-180fa9b52b68"
 
 ansible_ssh_user: uk
 display_user: siri
