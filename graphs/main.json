@@ -37,10 +37,10 @@
       "component": "c-base/buttonpanel"
     },
     "c-lab-display": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     },
     "c-leuse-display": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     },
     "CrewOnline": {
       "component": "c-flo/CrewOnline"
@@ -88,7 +88,7 @@
       "component": "c-base/mqttwebview"
     },
     "nerdarea-display": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     },
     "crew": {
       "component": "c-flo/crew"
@@ -121,22 +121,22 @@
       "component": "c-flo/playsound"
     },
     "he1": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     },
     "roboblast-display": {
       "component": "c-base/mqttwebview"
     },
     "siri": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     },
     "station-announcer": {
       "component": "station-announcer/StationAnnouncer"
     },
     "soundlab-display": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     },
     "mainhall-display": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     },
     "nerdctrl-display": {
       "component": "c-base/mqttwebview"
@@ -160,7 +160,7 @@
       "component": "c-flo/VisualPaging"
     },
     "weltenbau-display": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     }
   },
   "connections": [
