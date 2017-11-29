@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import urllib
+import urllib.request
 import msgflo
 from bs4 import BeautifulSoup
   
@@ -27,7 +27,7 @@ class Replicator(msgflo.Participant):
   def process(self, inport, msg):
 
     url = 'http://replicator.cbrp3.c-base.org/status'
-    response = urllib.urlopen(url)
+    response = urllib.request.urlopen(url)
     data = response.read()
     soup = BeautifulSoup(data, "html.parser")
     table = soup.find_all('table')[0]
