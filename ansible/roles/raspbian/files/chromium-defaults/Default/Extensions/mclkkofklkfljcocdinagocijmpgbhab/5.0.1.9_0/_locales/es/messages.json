@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Ignorar"
+   },
+   "guide_set_shortcut": {
+      "message": "Abre la página de configuración de extensiones de Chrome. Desplázate hacia abajo hasta el final de la página y haz clic en Combinaciones de teclas"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Borra tu diccionario personal en"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Más información"
+   },
+   "inputtool_description": {
+      "message": "Las Herramientas de introducción de texto te permiten escribir en el idioma que quieras."
+   },
+   "inputtool_extension_options": {
+      "message": "Opciones de extensiones"
+   },
+   "inputtool_google_account": {
+      "message": "Configuración de la cuenta de Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Ocultar teclado"
+   },
+   "inputtool_learn_more": {
+      "message": "Más información"
+   },
+   "inputtool_manage": {
+      "message": "Para administrar extensiones, haz clic en el menú de herramientas TOOL_IMAGE y selecciona \"Herramientas RIGHT_ARROW Extensiones\"."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Si seleccionas un teclado virtual, puedes mostrar u ocultar el teclado en pantalla con esta opción."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Mostrar teclado en pantalla:"
+   },
+   "inputtool_options_title": {
+      "message": "Opciones de extensiones de Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Añadir herramientas de introducción de texto"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Herramientas de introducción de texto seleccionadas"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Configuración en proceso..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Ajustes de combinaciones de teclas"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Mostrar teclado en pantalla"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Mostrar barra de estado"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Mostrar teclado"
+   },
+   "inputtool_sign_in": {
+      "message": "Iniciar sesión"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Has iniciado sesión como"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Inicia sesión para guardar tu configuración y el diccionario personal en la web y disfrutar de una experiencia de introducción de texto personalizada en cualquier ordenador. Podrás introducir texto con mejor calidad."
+   },
+   "inputtool_sign_out": {
+      "message": "Cerrar sesión"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "La barra de estado es la pequeña ventana flotante que utilizan los métodos de introducción de pinyin, wubi, cangjie, zhuyin y cantonés para chino para alternar entre el modo chino e inglés, los signos de puntuación chinos o ingleses y el teclado alfanumérico de ancho completo o de ancho medio. Esta opción aparecerá cuando hayas seleccionado uno de estos métodos de introducción."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Mostrar barra de estado:"
+   },
+   "inputtool_title": {
+      "message": "Herramientas de introducción de texto de Google"
+   },
+   "inputtool_title_short": {
+      "message": "Herramientas de introducción de texto"
+   },
+   "inputtool_turnoff": {
+      "message": "Desactivar"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Esta opción hace referencia a los métodos de introducción. Al seleccionar esta opción, las palabras que hayas introducido y las cadenas originales asociadas se guardarán y se sincronizarán en el servidor de Google como tu diccionario personal. Estas se utilizarán para mejorar la precisión de la conversión. Si desactivas esta opción, ya no se guardará el texto que introduzcas en el servidor de Google. Ten en cuenta que el diccionario personal que se ha almacenado en el servidor de Google no se borrará si desactivas esta opción."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sincronizar diccionario personal:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sincronizar diccionario personal (recomendado)"
+   },
+   "never_show": {
+      "message": "No volver a mostrar"
+   },
+   "revert_last_input_tool": {
+      "message": "Restablecer última herramienta de introducción de texto"
+   },
+   "select_next_input_tool": {
+      "message": "Seleccionar siguiente herramienta de introducción de texto"
+   },
+   "shortcut_notification": {
+      "message": "No se admiten las combinaciones de teclas heredadas. Debes sustituirlas por las estándar de la extensión"
+   },
+   "shortcut_video": {
+      "message": "Demostración"
+   },
+   "toggle_input_tool": {
+      "message": "Alternar herramienta de introducción de texto actual"
+   },
+   "use_legacy_version": {
+      "message": "Usar versión heredada"
+   }
+}

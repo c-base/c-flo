@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Ignorera"
+   },
+   "guide_set_shortcut": {
+      "message": "Öppna inställningssidan för Chrome-tillägget. Rulla ned till slutet av sidan och klicka på Kortkommandon"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Rensa din egen ordlista på"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Läs mer"
+   },
+   "inputtool_description": {
+      "message": "Med inmatningsverktygen kan du skriva med det alfabet du vill."
+   },
+   "inputtool_extension_options": {
+      "message": "Tilläggsalternativ"
+   },
+   "inputtool_google_account": {
+      "message": "Inställningar för Google-konto."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Dölj tangentbord"
+   },
+   "inputtool_learn_more": {
+      "message": "Läs mer"
+   },
+   "inputtool_manage": {
+      "message": "Om du vill hantera tillägg klickar du på skiftnyckelmenyn TOOL_IMAGE och väljer Verktyg RIGHT_ARROW Tillägg."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Om du väljer ett virtuellt tangentbord visar eller döljer du skärmtangentbordet med hjälp av det här alternativet."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Visa skärmtangentbordet:"
+   },
+   "inputtool_options_title": {
+      "message": "Alternativ för Chrome-tillägg"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Lägg till inmatningsverktyg"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Valda inmatningsverktyg"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Inloggning pågår ..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Inställningar för kortkommandon"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Visa skärmtangentbordet"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Visa statusfältet"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Visa tangentbord"
+   },
+   "inputtool_sign_in": {
+      "message": "Logga in"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Inloggad som"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Logga in om du vill spara dina inställningar och din egen ordlista på webben och ta del av anpassade inmatningsfunktioner på vilken dator som helst. Indatakvaliteten förbättras."
+   },
+   "inputtool_sign_out": {
+      "message": "Logga ut"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Statusfältet är det lilla flytande fönstret som används av för de kinesiska inmatningsmetoderna pinyin, wubi, cangjie, zhuyin och kantonensiska IME för att byta till läget kinesiska/engelska, kinesisk/engelsk interpunktion och alfanumerisk helbredd/halvbredd. Det visas när du har valt någon av dessa IME."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Visa statusfältet:"
+   },
+   "inputtool_title": {
+      "message": "Google Inmatningsverktyg"
+   },
+   "inputtool_title_short": {
+      "message": "Inmatningsverktyg"
+   },
+   "inputtool_turnoff": {
+      "message": "Inaktivera"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Detta gäller IME. När du väljer det här alternativet sparas de ord som du anger och de tillhörande källsträngarna och de synkroniseras på Googles server som din egen ordlista. Den används för att förbättra exaktheten för konverteringar. Om du avmarkerar det här alternativet slutar vi spara indata från dig på Googles server. Observera att din egen ordlista som har sparats på Googles server inte rensas om du avmarkerar det här alternativet."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Synkronisera egen ordlista:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Synkronisera egen ordlista (rekommenderas)"
+   },
+   "never_show": {
+      "message": "Visa aldrig igen"
+   },
+   "revert_last_input_tool": {
+      "message": "Återställ föregående inmatningsverktyg"
+   },
+   "select_next_input_tool": {
+      "message": "Välj nästa inmatningsverktyg"
+   },
+   "shortcut_notification": {
+      "message": "Det finns inget stöd för utfasade kortkommandon. Ersätt med standarkommandon från tillägget"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Aktivera eller inaktivera aktuellt inmatningsverktyg"
+   },
+   "use_legacy_version": {
+      "message": "Använd den utfasade versionen"
+   }
+}

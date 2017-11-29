@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Ignorar"
+   },
+   "guide_set_shortcut": {
+      "message": "Abre la página de configuración de la extensión de Chrome. Deslízate hacia abajo hasta el final de la pantalla y, luego, haz clic en \"Combinaciones de teclas\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Borrar el diccionario personal en la"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Más información"
+   },
+   "inputtool_description": {
+      "message": "Las Herramientas de captura de texto te permiten escribir en el idioma que desees."
+   },
+   "inputtool_extension_options": {
+      "message": "Opciones de las extensiones"
+   },
+   "inputtool_google_account": {
+      "message": "Configuración de la cuenta de Google"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Ocultar teclado"
+   },
+   "inputtool_learn_more": {
+      "message": "Más información"
+   },
+   "inputtool_manage": {
+      "message": "Para administrar las extensiones, haz clic en el ícono de llave inglesa TOOL_IMAGE y selecciona Herramientas RIGHT_ARROW Extensiones."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Si seleccionas un teclado virtual, puedes mostrar u ocultar el teclado en pantalla con esta opción."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Mostrar el teclado en pantalla:"
+   },
+   "inputtool_options_title": {
+      "message": "Opciones de las extensiones de Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Agregar herramientas de entrada de texto"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Herramientas de entrada de texto seleccionadas"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Configuración en proceso…"
+   },
+   "inputtool_shortcut_option": {
+      "message": "Configuración de combinaciones de teclas"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Mostrar el teclado en pantalla"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Mostrar la barra de estado"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Mostrar teclado"
+   },
+   "inputtool_sign_in": {
+      "message": "Acceder"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Accediste como"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Accede y podrás guardar la configuración y el diccionario personal en la Web, e ingresar texto de forma personalizada en cualquier computadora, además de disfrutar de una mejor calidad."
+   },
+   "inputtool_sign_out": {
+      "message": "Salir"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "La barra de estado es la ventana pequeña flotante que utilizan los IME para chino de Pinyin, Wubi, Cangjie, Zhuyin y cantonés para alternar entre el modo chino e inglés, los signos de puntuación chinos e ingleses, y el teclado alfanumérico de ancho completo y de ancho medio. La barra aparecerá cuando selecciones uno de estos IME."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Mostrar la barra de estado:"
+   },
+   "inputtool_title": {
+      "message": "Herramientas de captura de texto de Google"
+   },
+   "inputtool_title_short": {
+      "message": "Herramientas de captura de texto"
+   },
+   "inputtool_turnoff": {
+      "message": "Desactivar"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Esta opción está relacionada con los IME. Si la seleccionas, las palabras que ingresaste y las unidades originales asociadas se guardarán y sincronizarán en el servidor de Google como tu diccionario personal, a fin de mejorar la precisión de la conversión. Si quitas la marca de esta opción, el texto que ingreses dejará de guardarse en el servidor de Google, pero el diccionario personal almacenado no se borrará."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sincronizar diccionario personal:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sincronizar diccionario personal (recomendado)"
+   },
+   "never_show": {
+      "message": "No mostrar de nuevo"
+   },
+   "revert_last_input_tool": {
+      "message": "Volver a la última herramienta de captura de texto"
+   },
+   "select_next_input_tool": {
+      "message": "Seleccionar la siguiente herramienta de captura de texto"
+   },
+   "shortcut_notification": {
+      "message": "Las combinaciones de teclas heredadas no son compatibles. Se reemplazarán por las combinaciones estándares de la extensión."
+   },
+   "shortcut_video": {
+      "message": "Demostración"
+   },
+   "toggle_input_tool": {
+      "message": "Activar la herramienta de captura de texto actual"
+   },
+   "use_legacy_version": {
+      "message": "Usar la versión heredada"
+   }
+}

@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Klikni za za\u010Detek celozaslonski ure"
+   },
+   "description": {
+      "message": "Zagotavlja uporabno orodno vrstico uro in neobvezno celozaslonski uro."
+   },
+   "name": {
+      "message": "Ura"
+   }
+}

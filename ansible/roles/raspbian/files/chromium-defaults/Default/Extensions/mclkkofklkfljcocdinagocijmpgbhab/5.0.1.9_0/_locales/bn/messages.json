@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "খারিজ করুন"
+   },
+   "guide_set_shortcut": {
+      "message": "Chrome এক্সটেনশান সেটিং পৃষ্ঠা খুলুন৷ পৃষ্ঠার নীচের দিকের শেষ অংশ পর্যন্ত স্ক্রোল করুন, তারপর \"কীবোর্ড শর্টকাটগুলি\" এ ক্লিক করুন"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "এতে আপনার ব্যক্তিগত অভিধান সাফ করুন"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "আরো জানুন"
+   },
+   "inputtool_description": {
+      "message": "ইনপুট সরঞ্জাম আপনাকে আপনার পছন্দের ভাষায় টাইপ করতে দেয়৷"
+   },
+   "inputtool_extension_options": {
+      "message": "এক্সটেনশান বিকল্পগুলি"
+   },
+   "inputtool_google_account": {
+      "message": "Google অ্যাকাউন্ট সেটিংস।"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "কীবোর্ড লুকান"
+   },
+   "inputtool_learn_more": {
+      "message": "আরো জানুন"
+   },
+   "inputtool_manage": {
+      "message": "এক্সটেনশনগুলি পরিচালনা করতে, রেঞ্চ TOOL_IMAGE মেনুটি ক্লিক করে সরঞ্জামসমূহ RIGHT_ARROW এক্সটেনশনগুলি নির্বাচন করুন৷"
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "আপনি ভার্চুয়াল কীবোর্ড নির্বাচন করলে, এই বিকল্পের সাহায্যে অন-স্ক্রিন কীবোর্ড দেখাতে বা লুকাতে পারবেন।"
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "অন-স্ক্রিন কীবোর্ড দেখান:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome এক্সটেনশন বিকল্পসমূহ"
+   },
+   "inputtool_select_inputtools": {
+      "message": "ইনপুট সরঞ্জাম জুড়ুন"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "নির্বাচিত ইনপুট সরঞ্জাম"
+   },
+   "inputtool_setup_in_process": {
+      "message": "সেট আপ প্রক্রিয়ায় রয়েছে..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "কীবোর্ড শর্টকার্টের সেটিংস"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "অন-স্ক্রীন কীবোর্ড প্রদর্শন করুন"
+   },
+   "inputtool_show_status_bar": {
+      "message": "স্থিতি দন্ড প্রদর্শন করুন"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "কীবোর্ড প্রদর্শন করুন"
+   },
+   "inputtool_sign_in": {
+      "message": "সাইন ইন"
+   },
+   "inputtool_sign_in_as": {
+      "message": "হিসাবে সাইন ইন করুন"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "ওয়েবে আপনার সেটিংস এবং ব্যক্তিগত অভিধান সংরক্ষণ এবং যেকোনো কম্পিউটারে ব্যক্তিগতকৃত ইনপুট অভিজ্ঞতা প্রাপ্ত করতে সাইন ইন করুন। আপনি ভাল মানের ইনপুট পাবেন।"
+   },
+   "inputtool_sign_out": {
+      "message": "সাইন আউট করুন"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "চাইনিজ/ইংরেজি মোড, চাইনিজ/ইংরেজি যতিচিহ্ন, এবং সম্পূর্ণ-প্রস্থ/অর্ধ-প্রস্থ বর্ণসাংখ্যিকে স্যুইচ করতে ছোট ফ্লোটিং উইন্ডো হিসাবে স্থিতি দণ্ড Chinese Pinyin, Wubi, Cangjie, Zhuyin, এবং Cantonese IMEগুলির দ্বারা ব্যবহৃত হয়। আপনি এইসব IME'র মধ্যে একটি নির্বাচন করলে এটি দেখতে পাবেন।"
+   },
+   "inputtool_status_bar_span": {
+      "message": "স্থিতি দণ্ড দেখান:"
+   },
+   "inputtool_title": {
+      "message": "Google ইনপুট সরঞ্জাম"
+   },
+   "inputtool_title_short": {
+      "message": "ইনপুট সরঞ্জামগুলি"
+   },
+   "inputtool_turnoff": {
+      "message": "বন্ধ করুন"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "এটি IME-গুলির জন্য। এটি নির্বাচন করা হলে, আপনি যে শব্দগুলি লিখেছেন ও সংশ্লিষ্ট উৎস স্ট্রিংগুলি আপনার ব্যক্তিগত অভিধান হিসাবে Google-এর সার্ভারে সংরক্ষণ এবং সিঙ্ক্রোনাইজ হবে। এটি রূপান্তর নির্ভুলতা উন্নত করতে ব্যবহার করা হবে। আপনি এটিকে অনির্বাচন করলে, আমরা Google-এর সার্ভারে আপনার ইনপুট সংরক্ষণ বন্ধ করে দেব। মনে রাখবেন যদি আপনি এই বিকল্পটি অনির্বাচন করেন তাহলে Google-এর সার্ভারে ইতিমধ্যেই সংরক্ষিত থাকা আপনার ব্যক্তিগত অভিধান সাফ করা হবে না।"
+   },
+   "inputtool_user_dict_span": {
+      "message": "ব্যক্তিগত অভিধান সিঙ্ক্রোনাইজ করুন:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "ব্যক্তিগত অভিধান সিঙ্ক্রোনাইজ করুন (প্রস্তাবিত)"
+   },
+   "never_show": {
+      "message": "আর কখনোই দেখাবেন না"
+   },
+   "revert_last_input_tool": {
+      "message": "শেষ ইনপুট সরঞ্জামে প্রত্যাবর্তন করুন"
+   },
+   "select_next_input_tool": {
+      "message": "পরবর্তী ইনপুট সরঞ্জাম নির্বাচন করুন"
+   },
+   "shortcut_notification": {
+      "message": "লেগাসি কীবোর্ড শর্টকাটগুলি সমর্থন করে না৷ এক্সটেনশান স্ট্যান্ডার্ড শর্টকাটগুলি দিয়ে প্রতিস্থাপন করুন"
+   },
+   "shortcut_video": {
+      "message": "ডেমো"
+   },
+   "toggle_input_tool": {
+      "message": "বর্তমান ইনপুট সরঞ্জাম টগল করুন"
+   },
+   "use_legacy_version": {
+      "message": "লেগাসি সংস্করণ ব্যবহার করুন"
+   }
+}

@@ -1,0 +1,1 @@
+(function() {var b=window.localStorage;window.onload=function(){document.getElementById("extNotifyDiv").addEventListener("optChange",function(){var a={};a.is_12_hour_mode="true"===b.is_12_hour_mode;a.cext_badge_bgcolor=b.cext_badge_bgcolor;a.cext_badge_icon_filename=b.cext_badge_icon_filename;chrome.extension.sendRequest(a)},!1)};})();

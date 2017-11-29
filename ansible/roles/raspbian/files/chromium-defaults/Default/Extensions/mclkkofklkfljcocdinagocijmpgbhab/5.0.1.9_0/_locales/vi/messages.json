@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Loại bỏ"
+   },
+   "guide_set_shortcut": {
+      "message": "Mở trang cài đặt tiện ích của Chrome. Cuộn xuống cuối trang rồi nhấp vào \"Phím tắt\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Xóa từ điển cá nhân của bạn tại"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Tìm hiểu thêm"
+   },
+   "inputtool_description": {
+      "message": "Công cụ nhập liệu cho phép bạn nhập bằng ngôn ngữ bạn muốn."
+   },
+   "inputtool_extension_options": {
+      "message": "Tùy chọn tiện ích"
+   },
+   "inputtool_google_account": {
+      "message": "Cài đặt tài khoản Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Ẩn bàn phím"
+   },
+   "inputtool_learn_more": {
+      "message": "Tìm hiểu thêm"
+   },
+   "inputtool_manage": {
+      "message": "Để quản lý tiện ích, nhấp vào menu cờ lê TOOL_IMAGE và chọn Công cụ RIGHT_ARROW Tiện ích."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Nếu bạn chọn bàn phím ảo, bạn có thể thiển thị hoặc ẩn bàn phím ảo bằng tùy chọn này."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Hiển thị bàn phím ảo:"
+   },
+   "inputtool_options_title": {
+      "message": "Tùy chọn tiện ích Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Thêm công cụ nhập liệu"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Các công cụ nhập liệu được chọn"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Đang thiết lập..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Cài đặt phím tắt"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Hiển thị bàn phím ảo"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Hiển thị thanh trạng thái"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Hiển thị bàn phím"
+   },
+   "inputtool_sign_in": {
+      "message": "Đăng nhập"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Đã đăng nhập với tên"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Hãy đăng nhập để lưu cài đặt và từ điển cá nhân của bạn vào web để có trải nghiệm nhập được cá nhân hóa trên bất kỳ máy tính nào. Bạn có sẽ có chất lượng nhập tốt hơn."
+   },
+   "inputtool_sign_out": {
+      "message": "Đăng xuất"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Thanh trạng thái là cửa sổ nổi nhỏ được IME tiếng Hoa Pin Yin, Wubi, Cangjie, Chú âm và Canton sử dụng để chuyển đổi chế độ tiếng Trung/tiếng Anh, dấu câu tiếng Trung/tiếng Anh và chữ số toàn chiều rộng/nửa chiều rộng. Bạn sẽ nhìn thấy thanh này khi bạn đã chọn một trong các IME này."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Hiển thị thanh trạng thái:"
+   },
+   "inputtool_title": {
+      "message": "Công cụ nhập liệu của Google"
+   },
+   "inputtool_title_short": {
+      "message": "Công cụ nhập"
+   },
+   "inputtool_turnoff": {
+      "message": "Tắt"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Mục dành cho IME. Bằng việc chọn mục này, các từ mà bạn đã nhập và các chuỗi nguồn liên quan sẽ được lưu và đồng bộ hóa trên máy chủ của Google ở dạng từ điển cá nhân của bạn. Từ điển này sẽ được dùng để cải thiện độ chính xác trong chuyển đổi. Nếu bạn bỏ chọn tùy chọn này, bạn sẽ dừng lưu dữ liệu nhập trên máy chủ của Google. Xin lưu ý là từ điển cá nhân của bạn mà đã được lưu trữ trên máy chủ của Google sẽ không bị xóa nếu bạn bỏ chọn tùy chọn này."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Đồng bộ hóa từ điển cá nhân:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Đồng bộ hóa từ điển cá nhân (khuyến nghị)"
+   },
+   "never_show": {
+      "message": "Không bao giờ hiển thị lại"
+   },
+   "revert_last_input_tool": {
+      "message": "Hoàn nguyên Công cụ nhập liệu cuối cùng"
+   },
+   "select_next_input_tool": {
+      "message": "Chọn Công cụ nhập liệu tiếp theo"
+   },
+   "shortcut_notification": {
+      "message": "Không hỗ trợ các phím tắt cũ. Thay thế bằng các phím tắt tiêu chuẩn mở rộng"
+   },
+   "shortcut_video": {
+      "message": "Bản trình diễn"
+   },
+   "toggle_input_tool": {
+      "message": "Chuyển đổi Công cụ nhập liệu hiện tại"
+   },
+   "use_legacy_version": {
+      "message": "Sử dụng phiên bản cũ"
+   }
+}

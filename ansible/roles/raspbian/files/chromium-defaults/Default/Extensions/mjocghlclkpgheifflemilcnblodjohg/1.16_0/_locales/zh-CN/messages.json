@@ -1,0 +1,11 @@
+{
+    "action_title": {
+        "message": "点击开始全屏时钟"
+    },
+    "description": {
+        "message": "提供了一个有用的工具栏上的时钟和可选的全屏时钟。"
+    },
+    "name": {
+        "message": "时钟"
+    }
+}

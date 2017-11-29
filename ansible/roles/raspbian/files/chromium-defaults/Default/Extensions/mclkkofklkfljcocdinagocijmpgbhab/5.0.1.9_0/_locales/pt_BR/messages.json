@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Dispensar"
+   },
+   "guide_set_shortcut": {
+      "message": "Abra a página de configurações das Extensões do Chrome. Role até o final da página e clique em \"Atalhos do teclado\"."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Remova seu dicionário pessoal nas"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Saiba mais"
+   },
+   "inputtool_description": {
+      "message": "As Ferramentas de inserção de texto permitem que você digite no idioma da sua escolha."
+   },
+   "inputtool_extension_options": {
+      "message": "Opções de extensão"
+   },
+   "inputtool_google_account": {
+      "message": "Configurações da Conta do Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Ocultar teclado"
+   },
+   "inputtool_learn_more": {
+      "message": "Saiba mais"
+   },
+   "inputtool_manage": {
+      "message": "Para gerenciar extensões, clique no menu TOOL_IMAGE de chave inglesa e selecione Ferramentas de Extensões RIGHT_ARROW."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Se você selecionar um teclado virtual, pode mostrar ou ocultar o teclado na tela usando esta opção."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Mostrar teclado na tela:"
+   },
+   "inputtool_options_title": {
+      "message": "Opções de extensão do Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Adicionar ferramentas de inserção de texto"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Ferramentas de inserção de texto selecionadas"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Configuração em andamento..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Configurações de atalhos do teclado"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Mostrar teclado na tela"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Mostrar barra de status"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Mostrar teclado"
+   },
+   "inputtool_sign_in": {
+      "message": "Fazer login"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Conectado como"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Faça login para salvar suas configurações e seu dicionário pessoal na Web. Assim, você terá uma experiência de entrada personalizada em qualquer computador, bem como uma qualidade melhor de entrada."
+   },
+   "inputtool_sign_out": {
+      "message": "Sair"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Barra de status é a pequena janela flutuante usada por IMEs (editores de método de entrada, na sigla em inglês) Pinyin, Wubi, Cangjie, Zhuyin e cantonês para chinês. Essa barra de status tem a finalidade de alternar entre os modos chinês/inglês, pontuações em chinês/inglês e caracteres alfanuméricos de largura total/meia largura. Você verá a barra de status quando tiver selecionado um desses IMES."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Mostrar barra de status:"
+   },
+   "inputtool_title": {
+      "message": "Ferramentas de inserção de texto do Google"
+   },
+   "inputtool_title_short": {
+      "message": "Ferramentas de inserção de texto"
+   },
+   "inputtool_turnoff": {
+      "message": "Desativar"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Item destinado a IMEs (editores de método de entrada, na sigla em inglês). Se esta opção for selecionada, as palavras que você digitou e as strings de origem associadas serão salvas e sincronizadas no servidor do Google como seu dicionário pessoal. Esses dados serão usados para melhorar a precisão da conversão. Se você desmarcar esta opção, deixaremos de salvar sua entrada no servidor do Google. No entanto, seu dicionário pessoal, que foi armazenado no servidor do Google, não será removido se esta opção for desmarcada."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sincronizar dicionário pessoal:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sincronizar dicionário pessoal (recomendado)"
+   },
+   "never_show": {
+      "message": "Não mostrar novamente"
+   },
+   "revert_last_input_tool": {
+      "message": "Voltar para a última Ferramenta de inserção de texto"
+   },
+   "select_next_input_tool": {
+      "message": "Selecionar próxima Ferramenta de inserção de texto"
+   },
+   "shortcut_notification": {
+      "message": "Os atalhos do teclado legados não são compatíveis. Substitua-os pelos atalhos padrão da extensão."
+   },
+   "shortcut_video": {
+      "message": "Demonstração"
+   },
+   "toggle_input_tool": {
+      "message": "Ativar ou desativar a Ferramenta de inserção de texto atual"
+   },
+   "use_legacy_version": {
+      "message": "Usar a versão legada"
+   }
+}

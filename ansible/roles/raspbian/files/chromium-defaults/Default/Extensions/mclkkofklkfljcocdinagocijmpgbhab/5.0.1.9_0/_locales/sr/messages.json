@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Одбаци"
+   },
+   "guide_set_shortcut": {
+      "message": "Отворите страницу подешавања додатка за Chrome. Померите надоле до краја странице и кликните на „Тастерске пречице“"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Обришите лични речник у"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Сазнајте више"
+   },
+   "inputtool_description": {
+      "message": "Алатке за унос текста вам омогућавају да куцате на жељеном језику."
+   },
+   "inputtool_extension_options": {
+      "message": "Опције додатака"
+   },
+   "inputtool_google_account": {
+      "message": "подешавањима Google налога."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Сакриј тастатуру"
+   },
+   "inputtool_learn_more": {
+      "message": "Сазнајте више"
+   },
+   "inputtool_manage": {
+      "message": "Да бисте управљали додацима, кликните на мени француског кључа TOOL_IMAGE и изаберите Алатке RIGHT_ARROW Додаци."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Ако изаберете виртуелну тастатуру, можете да прикажете или сакријете тастатуру на екрану помоћу ове опције."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Прикажи тастатуру на екрану:"
+   },
+   "inputtool_options_title": {
+      "message": "Опције Chrome додатака"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Додајте алатке за унос"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Изабране алатке за унос"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Подешавање је у току..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Подешавања тастерских пречица"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Прикажи тастатуру на екрану"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Прикажи статусну траку"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Прикажи тастатуру"
+   },
+   "inputtool_sign_in": {
+      "message": "Пријави ме"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Пријављен/а као"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Пријавите се да бисте сачували подешавања и лични речник на вебу и имали персонализовани доживљај уноса на било ком рачунару. Добићете квалитетнији унос."
+   },
+   "inputtool_sign_out": {
+      "message": "Одјави ме"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Статусна трака је мали плутајући прозор који користе IME-ови кинески пинјин, вуби, чангчије, џујин и кантонски IME за пребацивање са кинеског на енглески режим, са кинеских на енглеске знакове интерпункције и са целих алфанумеричких знакова на половичне алфанумеричке знакове и обрнуто. Видећете је када будете изабрали неки од ових IME-ова."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Прикажи статусну траку:"
+   },
+   "inputtool_title": {
+      "message": "Google алатке за унос текста"
+   },
+   "inputtool_title_short": {
+      "message": "Алатке за унос текста"
+   },
+   "inputtool_turnoff": {
+      "message": "Искључи"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Ово је за IME-ове. Ако изаберете ово, сачуваћемо и синхронизоваћемо на Google-овом серверу речи које сте унели и повезане низове на изворном језику као лични речник. Користићемо их да бисмо побољшали прецизност конверзије. Ако опозовете избор ове опције, престаћемо да чувамо уносе на Google-овом серверу. Имајте на уму да нећемо обрисати лични речник који је сачуван на Google-овом серверу ако опозовете избор ове опције."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Синхронизуј лични речник:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Синхронизуј лични речник (препоручено)"
+   },
+   "never_show": {
+      "message": "Никад не приказуј поново"
+   },
+   "revert_last_input_tool": {
+      "message": "Враћа претходну алатку за унос"
+   },
+   "select_next_input_tool": {
+      "message": "Бира следећу алатку за унос"
+   },
+   "shortcut_notification": {
+      "message": "Застареле тастерске пречице нису подржане. Замените их стандардним пречицама за додатак"
+   },
+   "shortcut_video": {
+      "message": "Демонстрација"
+   },
+   "toggle_input_tool": {
+      "message": "Укључује/искључује тренутну алатку за унос"
+   },
+   "use_legacy_version": {
+      "message": "Користи застарелу верзију"
+   }
+}

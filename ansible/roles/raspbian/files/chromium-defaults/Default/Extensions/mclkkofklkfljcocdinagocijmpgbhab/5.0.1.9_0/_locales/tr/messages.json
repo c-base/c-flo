@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Kapat"
+   },
+   "guide_set_shortcut": {
+      "message": "Chrome uzantısı ayar sayfasını açın. Sayfanın en altına gidin ve \"Klavye kısayolları\"nı tıklayın"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Kişisel sözlüğünüzü şu adreste temizleyin:"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Daha fazla bilgi edinin"
+   },
+   "inputtool_description": {
+      "message": "Harf Çevirme Aracı istediğiniz dilde yazmanıza olanak sağlar."
+   },
+   "inputtool_extension_options": {
+      "message": "Uzantı Seçenekleri"
+   },
+   "inputtool_google_account": {
+      "message": "Google Hesabı Ayarları"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Klavyeyi Gizle"
+   },
+   "inputtool_learn_more": {
+      "message": "Daha fazla bilgi edinin"
+   },
+   "inputtool_manage": {
+      "message": "Uzantıları yönetmek için ingiliz anatharı TOOL_IMAGE menüsünü tıklayın ve  Araçlar RIGHT_ARROW Uzantılar'ı seçin."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Sanal bir klavye seçerseniz bu seçeneği kullanarak dokunmatik klavyeyi görüntüleyebilir veya gizleyebilirsiniz."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Dokunmatik klavyeyi göster:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome uzantı seçenekleri"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Harf Çevirme Aracı ekleyin"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Seçilen Harf Çevirme Aracı"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Kurulum devam ediyor..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Klavye Kısayolu Ayarları"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Dokunmatik klavyeyi göster"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Durum çubuğunu göster"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Klavyeyi Göster"
+   },
+   "inputtool_sign_in": {
+      "message": "Oturum aç"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Oturum açık:"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Ayarlarınızı ve kişisel sözlüğünüzü web'e kaydetmek ve tüm bilgisayarlarda kişiselleştirilmiş giriş deneyimi elde etmek için oturum açın. Giriş kaliteniz daha iyi olacaktır."
+   },
+   "inputtool_sign_out": {
+      "message": "Çıkış yap"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Durum çubuğu Çince Pinyin, Wubi, Kanji, Zhuyin ve Kantonca IME'leri tarafından Çince/İngilizce modu, Çince/İngilizce noktalama işaretleri ve tam/yarım genişlikte alfasayısal karakterler arasında geçiş yapmak için kullanılan kayan bir penceredir. Bu IME'lerden birini seçtiğinizde bu çubuğu görürsünüz."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Durum çubuğunu göster:"
+   },
+   "inputtool_title": {
+      "message": "Google Harf Çevirme Aracı"
+   },
+   "inputtool_title_short": {
+      "message": "Harf Çevirme Aracı"
+   },
+   "inputtool_turnoff": {
+      "message": "Kapat"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Bu özellik IME'ler içindir. Bunu seçtiğinizde, girdiğiniz kelimeler ve ilişkilendirilen kaynak dizeler Google'ın sunucularına kişisel sözlüğünüz olarak kaydedilir ve senkronize edilir. Bu özellik, dönüşüm doğruluğunu iyileştirmek için kullanılır. Bu seçeneğin işaretini kaldırırsanız girişlerinizi Google'ın sunucularına kaydetmeyi durdururuz. Bu seçeneğin işaretini kaldırdığınızda Google'ın sunucularında depolanmış olan kişisel sözlüğünüzün temizlenmeyeceğini unutmayın."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Kişisel sözlüğü senkronize edin:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Kişisel sözlüğü senkronize et (önerilir)"
+   },
+   "never_show": {
+      "message": "Bir daha gösterme"
+   },
+   "revert_last_input_tool": {
+      "message": "Son Giriş Aracı'na geri dön"
+   },
+   "select_next_input_tool": {
+      "message": "Sonraki Giriş Aracı'nı seç"
+   },
+   "shortcut_notification": {
+      "message": "Eski klavye kısayolları desteklenmiyor. Standart kısayolların genişletilmiş sürümüyle değiştirin"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Geçerli Giriş Aracı'nı değiştir"
+   },
+   "use_legacy_version": {
+      "message": "Eski sürümü kullan"
+   }
+}

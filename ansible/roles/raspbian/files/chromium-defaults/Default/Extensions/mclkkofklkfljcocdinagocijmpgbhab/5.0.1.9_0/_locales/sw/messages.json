@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Ondoa"
+   },
+   "guide_set_shortcut": {
+      "message": "Fungua ukurasa wa mipangilio ya kiendelezi cha Chrome. Nenda hadi mwisho wa ukurasa kisha ubofye \"Mikato ya kibodi\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Futa kamusi yako binafsi katika"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Pata maelezo zaidi"
+   },
+   "inputtool_description": {
+      "message": "Zana za Kuingiza hukuruhusu kuchapa katika lugha unayoichagua."
+   },
+   "inputtool_extension_options": {
+      "message": "Chaguo za Viendelezi"
+   },
+   "inputtool_google_account": {
+      "message": "Mipangilio ya Akaunti ya Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Ficha Kibodi"
+   },
+   "inputtool_learn_more": {
+      "message": "Pata maelezo zaidi"
+   },
+   "inputtool_manage": {
+      "message": "Ili kudhibiti viendelezi. bofya menyu ya spana malaya ya TOOL_IMAGE na uchague Viendelezi vya RIGHT_ARROW Zana."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Ukichagua kibodi pepe, unaweza kuonyesha au kuficha kibodi ya skrini kwa chaguo hili."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Onyesha kibodi ya skrini:"
+   },
+   "inputtool_options_title": {
+      "message": "Chaguo za viendelezi vya Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Ongeza Zana za Kuingiza"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Zana za Kuingiza Zilizochaguliwa"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Usanidi unaendelea..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Mipangilio ya Mikato ya Kibodi"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Onyesha kibodi ya skrini"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Onyesha sehemu ya kuonyesha hali"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Onyesha Kibodi"
+   },
+   "inputtool_sign_in": {
+      "message": "Ingia katika akaunti"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Umeingia katika akaunti kama"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Ingia katika akaunti ili uhifadhi mipangilio yako na kamusi binafsi kwenye wavuti na upate mbinu ya kuingiza data iliyogeuzwa ikufae kwenye kompyuta yoyote. Utapata ubora mzuri wa uingizaji data."
+   },
+   "inputtool_sign_out": {
+      "message": "Ondoka kwenye akaunti"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Sehemu ya kuonyesha hali ni dirisha dogo linaloelea linalotumika na Programu Inayotambua Mbinu za Kuingiza Data (IME) ya Kichina Pinyin, Wubi, Cangjie, Zhuyin, na Kikantoni ili kubadili kati ya hali za Kichina/Kiingereza, uafikishaji wa Kichina/Kiingereza, na nambari na herufi za upana kamili na nusu upana. Utaiona utakapochagua moja ya IME hizi."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Onyesha sehemu ya kuonyesha hali:"
+   },
+   "inputtool_title": {
+      "message": "Zana za Google za Kuingiza Data"
+   },
+   "inputtool_title_short": {
+      "message": "Zana za Kuingiza Data"
+   },
+   "inputtool_turnoff": {
+      "message": "Zima"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Hii ni kwa ajili ya Programu Inayotambua Mbinu za Kuingiza Data (IME). Kwa kuchagua hili, maneno ambayo umeingiza na mifuatano ya chanzo inayohusiana itahifadhiwa na kusawazishwa kwenye seva za Google kama kamusi yako binafsi. Itatumika kuboresha usahihi wa ubadilishaji. Ukiacha kuteua katika sanduku tiki, tutaacha kuhifadhi maingizo yako kwenye seva ya Google. Kumbuka kuwa kamusi yako binafsi iliyohifadhiwa kwenye seva za Google haitaondolewa ikiwa utaondoa uteuzi huu."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sawazisha kamusi binafsi:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sawazisha kamusi binafsi (inapendekezwa)"
+   },
+   "never_show": {
+      "message": "Usiwahi kuonyesha tena"
+   },
+   "revert_last_input_tool": {
+      "message": "Rejesha Zana ya Kuingiza Data iliyotangulia"
+   },
+   "select_next_input_tool": {
+      "message": "Chagua Zana ya Kuingiza Data inayofuata"
+   },
+   "shortcut_notification": {
+      "message": "Haiwezi kutumia mikato ya kibodi iliyopitwa na wakati. Ibadilishe ili uweke kiendelezi cha mikato chaguo-msingi"
+   },
+   "shortcut_video": {
+      "message": "Onyesho"
+   },
+   "toggle_input_tool": {
+      "message": "Geuza Zana ya Kuingiza Data iliyopo"
+   },
+   "use_legacy_version": {
+      "message": "Tumia toleo lililopitwa na wakati"
+   }
+}

@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "닫기"
+   },
+   "guide_set_shortcut": {
+      "message": "Chrome 확장 프로그램 설정 페이지를 엽니다. 페이지 끝까지 스크롤한 다음 '키보드 단축키'를 클릭합니다."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "다음 링크를 클릭하여 개인 사전 삭제"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "자세히 알아보기"
+   },
+   "inputtool_description": {
+      "message": "입력기를 사용하여 원하는 언어로 입력할 수 있습니다."
+   },
+   "inputtool_extension_options": {
+      "message": "확장 프로그램 옵션"
+   },
+   "inputtool_google_account": {
+      "message": "Google 계정 설정"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "키보드 숨기기"
+   },
+   "inputtool_learn_more": {
+      "message": "자세히 알아보기"
+   },
+   "inputtool_manage": {
+      "message": "확장 프로그램을 관리하려면 공구모양 TOOL_IMAGE 메뉴를 클릭한 다음 도구 RIGHT_ARROW 확장 프로그램을 선택하세요."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "가상 키보드를 선택하면 이 옵션을 사용하여 터치 키보드를 표시하거나 숨길 수 있습니다."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "터치 키보드 표시:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome 확장 프로그램 옵션"
+   },
+   "inputtool_select_inputtools": {
+      "message": "입력 도구 추가"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "선택한 입력 도구"
+   },
+   "inputtool_setup_in_process": {
+      "message": "설정 중..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "키보드 단축키 설정"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "터치 키보드 표시"
+   },
+   "inputtool_show_status_bar": {
+      "message": "상태 표시줄 표시"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "키보드 표시"
+   },
+   "inputtool_sign_in": {
+      "message": "로그인"
+   },
+   "inputtool_sign_in_as": {
+      "message": "로그인 계정:"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "설정 및 개인 사전을 웹에 저장하고 어느 컴퓨터에서나 맞춤설정된 입력 환경을 이용하려면 로그인하세요. 입력 품질이 향상됩니다."
+   },
+   "inputtool_sign_out": {
+      "message": "로그아웃"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "상태 표시줄은 중국어/영어 모드, 중국어/영어 구두점, 전자/반자 영숫자를 전환하기 위해 중국어 병음, Wubi, 창힐, 주음, 광둥어 IME에 사용되는 플로팅 창이며 이러한 IME 중 하나를 선택한 경우에 표시됩니다."
+   },
+   "inputtool_status_bar_span": {
+      "message": "상태 표시줄 표시:"
+   },
+   "inputtool_title": {
+      "message": "Google 입력기"
+   },
+   "inputtool_title_short": {
+      "message": "입력기"
+   },
+   "inputtool_turnoff": {
+      "message": "사용 안함"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "IME에 사용됩니다. 이 옵션을 선택하면 입력한 단어 및 연관된 원본 문자열이 Google 서버에 개인 사전으로 저장되고 동기화되며 IME의 정확성이 개선됩니다. 이 옵션을 선택 취소하면 입력 사항이 더 이상 Google 서버에 저장되지 않습니다. 하지만 이 옵션을 선택 취소해도 Google 서버에 저장된 개인 사전은 삭제되지 않습니다."
+   },
+   "inputtool_user_dict_span": {
+      "message": "개인 사전 동기화:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "개인 사전 동기화(권장)"
+   },
+   "never_show": {
+      "message": "다시 표시 안함"
+   },
+   "revert_last_input_tool": {
+      "message": "마지막 입력 도구 되돌리기"
+   },
+   "select_next_input_tool": {
+      "message": "다음 입력 도구 선택"
+   },
+   "shortcut_notification": {
+      "message": "이전 키보드 단축키를 지원하지 않습니다. 확장 프로그램 표준 단축키로 교체합니다."
+   },
+   "shortcut_video": {
+      "message": "데모 모드"
+   },
+   "toggle_input_tool": {
+      "message": "현재 입력 도구 전환"
+   },
+   "use_legacy_version": {
+      "message": "이전 버전 사용"
+   }
+}

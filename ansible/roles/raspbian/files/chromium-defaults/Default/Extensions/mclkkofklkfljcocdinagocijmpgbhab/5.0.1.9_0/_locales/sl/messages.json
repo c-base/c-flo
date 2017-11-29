@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Opusti"
+   },
+   "guide_set_shortcut": {
+      "message": "Odprite stran z nastavitvami razširitve za Chrome. Pomaknite se navzdol do konca strani in nato kliknite »Bližnjične tipke«."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Izbrišite osebni slovar v"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Več o tem"
+   },
+   "inputtool_description": {
+      "message": "Orodja za vnos besedila omogočajo vnašanje v jeziku, ki ga izberete."
+   },
+   "inputtool_extension_options": {
+      "message": "Možnosti razširitev"
+   },
+   "inputtool_google_account": {
+      "message": "nastavitvah Google Računa."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Skrij tipkovnico"
+   },
+   "inputtool_learn_more": {
+      "message": "Več o tem"
+   },
+   "inputtool_manage": {
+      "message": "Za upravljanje razširitev kliknite meni s ključem TOOL_IMAGE in izberite Orodja RIGHT_ARROW Razširitve."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Če izberete navidezno tipkovnico, lahko s to možnostjo prikažete ali skrijete zaslonsko tipkovnico."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Pokaži zaslonsko tipkovnico:"
+   },
+   "inputtool_options_title": {
+      "message": "Možnosti razširitev za Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Dodajanje orodij za vnos"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Izbrana orodja za vnos"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Poteka nastavitev ..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Nastavitve bližnjičnih tipk"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Pokaži zaslonsko tipkovnico"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Pokaži vrstico stanja"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Pokaži tipkovnico"
+   },
+   "inputtool_sign_in": {
+      "message": "Prijava"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Prijavljen kot"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Prijavite se, da v spletu shranite nastavitve in osebni slovar ter si v poljubnem računalniku zagotovite prilagojeno doživetje vnosa. S tem boste izboljšali kakovost vnosa."
+   },
+   "inputtool_sign_out": {
+      "message": "Odjava"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Vrstica stanja je majhno plavajoče okno, ki se v urejevalnikih načina vnosa za kitajski pinjin, vubi, cangči, žujin in kantonščino uporablja za preklop med kitajskim in angleškim načinom, med kitajskimi in angleškimi ločili ter med alfanumeričnimi znaki polne in polovične širine. Prikazana bo, če izberete enega od teh urejevalnikov načina vnosa."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Pokaži vrstico stanja:"
+   },
+   "inputtool_title": {
+      "message": "Google Orodja za vnos besedila"
+   },
+   "inputtool_title_short": {
+      "message": "Orodja za vnos besedila"
+   },
+   "inputtool_turnoff": {
+      "message": "Izklopi"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "To je za urejevalnike načina vnosa. Z izbiro tega bodo besede, ki jih vnesete, in povezani izvorni nizi shranjeni in sinhronizirani v Googlovem strežniku kot vaš osebni slovar. Uporabili ga bomo za izboljšanje natančnosti pretvorbe. Če to možnost počistite, vaših vnosov ne bomo več shranjevali v Googlovem strežniku. Upoštevajte, da vaš osebni slovar, shranjen v Googlovem strežniku, ne bo izbrisan, če počistite to možnost."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sinhroniziranje osebnega slovarja:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sinhroniziranje osebnega slovarja (priporočeno)"
+   },
+   "never_show": {
+      "message": "Tega ne prikaži več"
+   },
+   "revert_last_input_tool": {
+      "message": "Razveljavitev zadnjega orodja za vnos besedila"
+   },
+   "select_next_input_tool": {
+      "message": "Izbira naslednjega orodja za vnos besedila"
+   },
+   "shortcut_notification": {
+      "message": "Starejše bližnjične tipke niso podprte. Zamenjajte jih z običajnimi bližnjičnimi tipkami razširitve."
+   },
+   "shortcut_video": {
+      "message": "Predstavitvena različica"
+   },
+   "toggle_input_tool": {
+      "message": "Preklop trenutnega orodja za vnos besedila"
+   },
+   "use_legacy_version": {
+      "message": "Uporaba starejše različice"
+   }
+}

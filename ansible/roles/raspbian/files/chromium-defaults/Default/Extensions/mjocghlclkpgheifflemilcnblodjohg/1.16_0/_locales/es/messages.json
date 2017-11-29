@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Haga clic para iniciar el reloj en pantalla completa"
+   },
+   "description": {
+      "message": "Ofrece un reloj de la barra de herramientas \u00FAtiles y un reloj en pantalla completa opcional."
+   },
+   "name": {
+      "message": "Reloj"
+   }
+}

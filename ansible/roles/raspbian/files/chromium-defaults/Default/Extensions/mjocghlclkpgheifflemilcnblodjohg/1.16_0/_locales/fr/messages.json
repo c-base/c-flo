@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Cliquez ici pour d\u00E9marrer l'horloge en plein \u00E9cran"
+   },
+   "description": {
+      "message": "Fournit une horloge barre d'outils utiles et en option l'horloge en plein \u00E9cran."
+   },
+   "name": {
+      "message": "Horloge"
+   }
+}

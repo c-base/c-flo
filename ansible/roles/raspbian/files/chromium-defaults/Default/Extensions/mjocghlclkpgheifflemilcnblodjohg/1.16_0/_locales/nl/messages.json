@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Klik om fullscreen klok te starten"
+   },
+   "description": {
+      "message": "Biedt een nuttige toolbar klok en de optionele fullscreen klok."
+   },
+   "name": {
+      "message": "Klok"
+   }
+}

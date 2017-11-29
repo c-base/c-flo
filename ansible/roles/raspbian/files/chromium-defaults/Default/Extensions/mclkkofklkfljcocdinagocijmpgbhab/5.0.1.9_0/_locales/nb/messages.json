@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Fjern"
+   },
+   "guide_set_shortcut": {
+      "message": "Åpne innstillingssiden for Chrome-utvidelsen. Rull til nederst på siden og klikk på «Hurtigtaster»"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Tøm den personlige ordlisten på"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Finn ut mer"
+   },
+   "inputtool_description": {
+      "message": "Med Inndataverktøy kan du skrive på hvilket som helst språk."
+   },
+   "inputtool_extension_options": {
+      "message": "Alternativer for utvidelser"
+   },
+   "inputtool_google_account": {
+      "message": "Innstillinger for Google-kontoen."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Skjul tastatur"
+   },
+   "inputtool_learn_more": {
+      "message": "Finn ut mer"
+   },
+   "inputtool_manage": {
+      "message": "Du kan administrere utvidelser ved å klikke på klikke på TOOL_IMAGE skiftenøkkelmenyen og velge Verktøy RIGHT_ARROW Utvidelser."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Hvis du velger et virtuelt tastatur, kan du vise eller skjule skjermtastaturet via dette alternativet."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Vis skjermtastaturet:"
+   },
+   "inputtool_options_title": {
+      "message": "Alternativer for Chrome-utvidelser"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Legg til inndataverktøy"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Valgte inndataverktøy"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Konfigurering pågår …"
+   },
+   "inputtool_shortcut_option": {
+      "message": "Innstillinger for hurtigtaster"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Vis skjermtastaturet"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Vis statusfeltet"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Vis tastatur"
+   },
+   "inputtool_sign_in": {
+      "message": "Logg på"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Logget på som"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Logg på for å lagre innstillingene og den personlige ordlisten din på nettet, og få en personlig tilpasset inndataopplevelse på alle datamaskiner. Du får bedre inndatakvalitet."
+   },
+   "inputtool_sign_out": {
+      "message": "Logg av"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Statusfeltet er det lille flytende vinduet som brukes av IME-er for kinesisk pinyin, wubi, cangjie, zhuyin og kantonesisk for å bytte mellom kinesisk/engelsk modus, kinesisk/engelsk tegnsetting og alfanumerisk hel- og halvbredde. Du ser dette når du har valgt en av disse IME-ene."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Vis statusfeltet:"
+   },
+   "inputtool_title": {
+      "message": "Google Inndataverktøy"
+   },
+   "inputtool_title_short": {
+      "message": "Inndataverktøy"
+   },
+   "inputtool_turnoff": {
+      "message": "Slå av"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Dette er for IME-er. Ved å velge dette lagres og synkroniseres ordene du har skrevet inn, samt tilknyttede kildestrenger, på Googles tjener som din personlige ordliste. Denne brukes til å forbedre nøyaktigheten på konverteringer. Hvis du fjerner avmerkingen, slutter vi å lagre inndataene dine på Googles tjener. Merk at den personlige ordlisten som er lagret på Googles tjener ikke tømmes hvis du velger bort dette alternativet."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Synkroniser den personlige ordlisten:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Synkroniser den personlige ordlisten (anbefales)"
+   },
+   "never_show": {
+      "message": "Vis aldri dette igjen"
+   },
+   "revert_last_input_tool": {
+      "message": "Gå tilbake til det siste inndataverktøyet"
+   },
+   "select_next_input_tool": {
+      "message": "Velg det neste inndataverktøyet"
+   },
+   "shortcut_notification": {
+      "message": "Eldre hurtigtaster støttes ikke. Erstatt dem med standardhurtigtastene for utvidelsen"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Slå av/på det nåværende inndataverktøyet"
+   },
+   "use_legacy_version": {
+      "message": "Bruk den eldre versjonen"
+   }
+}

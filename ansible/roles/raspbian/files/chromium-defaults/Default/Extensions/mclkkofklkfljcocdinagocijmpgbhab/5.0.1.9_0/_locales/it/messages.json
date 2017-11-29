@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Chiudi"
+   },
+   "guide_set_shortcut": {
+      "message": "Apri la pagina delle impostazioni dell'estensione di Chrome. Scorri fino alla fine, quindi fai clic su \"Scorciatoie da tastiera\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Cancella il tuo dizionario personale all'indirizzo"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Ulteriori informazioni"
+   },
+   "inputtool_description": {
+      "message": "Strumenti di immissione ti consente di digitare nella lingua che preferisci."
+   },
+   "inputtool_extension_options": {
+      "message": "Opzioni estensione"
+   },
+   "inputtool_google_account": {
+      "message": "Impostazioni account Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Nascondi tastiera"
+   },
+   "inputtool_learn_more": {
+      "message": "Ulteriori informazioni"
+   },
+   "inputtool_manage": {
+      "message": "Per gestire le estensioni, fai clic sul menu Strumenti TOOL_IMAGE e seleziona Strumenti RIGHT_ARROW Estensioni."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Se selezioni una tastiera virtuale puoi visualizzare o nascondere la tastiera sullo schermo utilizzando questa opzione."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Mostra tastiera sullo schermo:"
+   },
+   "inputtool_options_title": {
+      "message": "Opzioni estensione Google Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Aggiungi strumenti di immissione"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Strumenti di immissione selezionati"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Configurazione in corso..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Impostazioni scorciatoie da tastiera"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Mostra tastiera sullo schermo"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Mostra barra di stato"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Mostra tastiera"
+   },
+   "inputtool_sign_in": {
+      "message": "Accedi"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Accesso eseguito come"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Esegui l'accesso per salvare le tue impostazioni e il tuo dizionario personale sul Web e per poter avere un'esperienza di immissione personalizzata su qualsiasi computer. Potrai beneficiare di una migliore qualità di immissione."
+   },
+   "inputtool_sign_out": {
+      "message": "Esci"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "La barra di stato è la piccola finestra mobile utilizzata dagli IME relativi a Cinese pinyin, Wubi, Cangjie, Zhuyin e Cantonese per alternare modalità cinese/inglese, punteggiatura cinese/inglese e valori alfanumerici a larghezza intera/metà larghezza. La barra viene visualizzata quando selezioni uno di questi IME."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Mostra barra di stato:"
+   },
+   "inputtool_title": {
+      "message": "Google Strumenti di immissione"
+   },
+   "inputtool_title_short": {
+      "message": "Strumenti di immissione"
+   },
+   "inputtool_turnoff": {
+      "message": "Disattiva"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Questa opzione riguarda gli IME. Se selezioni questa opzione, le parole inserite e le stringhe di origine associate verranno salvate e sincronizzate sul server di Google come tuo dizionario personale, che verrà utilizzato per migliorare la precisione della conversione. Se deselezioni questa opzione non salveremo più le tue immissioni sul server di Google. Tieni presente che il tuo dizionario personale memorizzato sul server di Google non viene cancellato se deselezioni questa opzione."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sincronizza dizionario personale:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sincronizza dizionario personale (operazione consigliata)"
+   },
+   "never_show": {
+      "message": "Non mostrare più"
+   },
+   "revert_last_input_tool": {
+      "message": "Ripristina ultimo strumento di immissione"
+   },
+   "select_next_input_tool": {
+      "message": "Seleziona strumento di immissione successivo"
+   },
+   "shortcut_notification": {
+      "message": "Scorciatoie da tastiera precedenti non supportate. Sostituisci con scorciatoie standard dell'estensione"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Attiva/disattiva strumento di immissione corrente"
+   },
+   "use_legacy_version": {
+      "message": "Utilizza versione precedente"
+   }
+}

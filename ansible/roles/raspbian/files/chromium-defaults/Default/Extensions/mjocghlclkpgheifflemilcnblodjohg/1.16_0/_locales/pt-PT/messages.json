@@ -1,0 +1,11 @@
+{
+    "action_title": {
+        "message": "Clique para iniciar relógio fullscreen"
+    },
+    "description": {
+        "message": "Fornece um relógio da barra de ferramentas úteis e relógio fullscreen opcional."
+    },
+    "name": {
+        "message": "Relógio"
+    }
+}

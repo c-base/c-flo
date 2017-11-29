@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Закрити"
+   },
+   "guide_set_shortcut": {
+      "message": "Відкрийте сторінку налаштувань розширення Chrome. Прокрутіть сторінку вниз і натисніть \"Комбінації клавіш\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Щоб очистити свій особистий словник, перейдіть у"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Докладніше"
+   },
+   "inputtool_description": {
+      "message": "За допомогою Способів введення можна вводити текст будь-якою мовою."
+   },
+   "inputtool_extension_options": {
+      "message": "Параметри розширень"
+   },
+   "inputtool_google_account": {
+      "message": "Налаштування облікового запису Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Сховати клавіатуру"
+   },
+   "inputtool_learn_more": {
+      "message": "Докладніше"
+   },
+   "inputtool_manage": {
+      "message": "Щоб керувати розширеннями, відкрийте меню інструментів TOOL_IMAGE і виберіть \"Інструменти\" RIGHT_ARROW \"Розширення\"."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "За допомогою цієї опції можна показувати чи ховати екранну клавіатуру (якщо ви активували її раніше)."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Показати екранну клавіатуру."
+   },
+   "inputtool_options_title": {
+      "message": "Параметри розширень Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Додати інструменти вводу"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Вибрані інструменти вводу"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Виконується налаштування…"
+   },
+   "inputtool_shortcut_option": {
+      "message": "Налаштування комбінацій клавіш"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Показувати екранну клавіатуру"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Показувати рядок стану"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Показати клавіатуру"
+   },
+   "inputtool_sign_in": {
+      "message": "Увійти"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Ви ввійшли як"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Увійдіть, щоб зберегти свої налаштування й особистий словник в Інтернеті, мати власні налаштування на будь-якому комп’ютері та користуватись усіма функціями."
+   },
+   "inputtool_sign_out": {
+      "message": "Вийти"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Рядок стану – це невелике плаваюче вікно, яке використовується редакторами IME для стандартів піньїнь, вубі, цанцзе, чжуїнь і кантонського діалекту китайської мови, щоб переключатися між китайською й англійською мовами, розділовими знаками та буквено-цифровими символами повної чи половинної ширини. Він з’являється, якщо вибрати один із цих редакторів IME."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Показати рядок стану."
+   },
+   "inputtool_title": {
+      "message": "Google Способи введення"
+   },
+   "inputtool_title_short": {
+      "message": "Способи введення"
+   },
+   "inputtool_turnoff": {
+      "message": "Вимкнути"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Це опція для редакторів IME. Якщо її ввімкнути, введені вами слова й пов’язані рядки джерела тексту зберігаються та синхронізуються як ваш особистий словник на сервері Google. Також їх буде використано для покращення точності перетворень. Якщо вимкнути цю опцію, введений текст більше не зберігатиметься на сервері Google. Проте така дія не видалить ваш особистий словник, раніше збережений на сервері Google."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Синхронізувати особистий словник."
+   },
+   "inputtool_user_dictionary": {
+      "message": "Синхронізувати особистий словник (рекомендовано)"
+   },
+   "never_show": {
+      "message": "Більше не показувати"
+   },
+   "revert_last_input_tool": {
+      "message": "Повернути попередній інструмент введення"
+   },
+   "select_next_input_tool": {
+      "message": "Вибрати наступний інструмент введення"
+   },
+   "shortcut_notification": {
+      "message": "Застарілі комбінації клавіш не підтримується. Їх замінено стандартними комбінаціями клавіш розширення"
+   },
+   "shortcut_video": {
+      "message": "Демо-версія"
+   },
+   "toggle_input_tool": {
+      "message": "Перемкнути поточний інструмент введення"
+   },
+   "use_legacy_version": {
+      "message": "Використовувати застарілу версію"
+   }
+}

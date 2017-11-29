@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "關閉"
+   },
+   "guide_set_shortcut": {
+      "message": "開啟 Chrome 擴充功能設定頁面，然後向下捲動至頁面底部並點選 [鍵盤快速鍵]"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "前往以下位置清除您的個人字典："
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "瞭解詳情"
+   },
+   "inputtool_description": {
+      "message": "輸入工具可選擇輸入語言。"
+   },
+   "inputtool_extension_options": {
+      "message": "擴充功能選項"
+   },
+   "inputtool_google_account": {
+      "message": "Google 帳戶設定。"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "隱藏鍵盤"
+   },
+   "inputtool_learn_more": {
+      "message": "瞭解詳情"
+   },
+   "inputtool_manage": {
+      "message": "如要管理擴充功能，請按一下扳手 TOOL_IMAGE 選單，然後依序選取 [工具] RIGHT_ARROW [擴充功能]。"
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "如果您選取虛擬鍵盤，可以使用這個選項切換顯示及隱藏螢幕小鍵盤。"
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "顯示螢幕小鍵盤："
+   },
+   "inputtool_options_title": {
+      "message": "Chrome 擴充功能選項"
+   },
+   "inputtool_select_inputtools": {
+      "message": "新增輸入工具"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "選取的輸入工具"
+   },
+   "inputtool_setup_in_process": {
+      "message": "設定中..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "鍵盤快速鍵設定"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "顯示螢幕小鍵盤"
+   },
+   "inputtool_show_status_bar": {
+      "message": "顯示狀態列"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "顯示鍵盤"
+   },
+   "inputtool_sign_in": {
+      "message": "登入"
+   },
+   "inputtool_sign_in_as": {
+      "message": "目前登入的帳戶是"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "登入帳戶即可將您的設定和個人字典儲存在網路上，方便您在所有電腦上擁有個人化的輸入體驗，讓您享受更好的輸入品質。"
+   },
+   "inputtool_sign_out": {
+      "message": "登出"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "狀態列是一個小型浮動視窗，專供中文拼音、五筆、倉頡、注音和粵語輸入法編輯器的使用者切換中文/英文模式、中文/英文標點符號和全形/半形英數字元。如果您選取以上其中一種輸入法編輯器，就會看到狀態列。"
+   },
+   "inputtool_status_bar_span": {
+      "message": "顯示狀態列："
+   },
+   "inputtool_title": {
+      "message": "Google 輸入工具"
+   },
+   "inputtool_title_short": {
+      "message": "輸入工具"
+   },
+   "inputtool_turnoff": {
+      "message": "關閉"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "這個選項適用於輸入法編輯器。只要選取這個選項，您輸入的字詞和關聯的來源字串就會儲存在 Google 的伺服器上，並持續進行同步處理，成為您的個人字典。此外，系統會藉此改善轉換精確度。如果您取消勾選這個選項，我們就不會繼續將您輸入的字詞儲存在 Google 的伺服器上。請注意，取消勾選這個選項後，您先前儲存在 Google 伺服器上的個人字典並不會遭到清除。"
+   },
+   "inputtool_user_dict_span": {
+      "message": "同步處理個人字典："
+   },
+   "inputtool_user_dictionary": {
+      "message": "同步處理個人字典 (建議)"
+   },
+   "never_show": {
+      "message": "不要再顯示"
+   },
+   "revert_last_input_tool": {
+      "message": "還原上一個輸入工具"
+   },
+   "select_next_input_tool": {
+      "message": "選取下一個輸入工具"
+   },
+   "shortcut_notification": {
+      "message": "不支援舊版鍵盤快速鍵，請改用擴充功能標準快速鍵"
+   },
+   "shortcut_video": {
+      "message": "示範影片"
+   },
+   "toggle_input_tool": {
+      "message": "切換目前輸入工具"
+   },
+   "use_legacy_version": {
+      "message": "使用舊版本"
+   }
+}

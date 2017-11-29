@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Loobu"
+   },
+   "guide_set_shortcut": {
+      "message": "Avage Chrome'i laienduse seadete leht. Kerige lehe lõppu ja klõpsake valikul „Klaviatuuri otseteed”"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Kustutage isiklik sõnastik seadetes"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Lisateave"
+   },
+   "inputtool_description": {
+      "message": "Sisendtööriistadega saate sisestada teile sobivas keeles."
+   },
+   "inputtool_extension_options": {
+      "message": "Laienduse valikud"
+   },
+   "inputtool_google_account": {
+      "message": "Google'i konto seaded."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Peida klaviatuur"
+   },
+   "inputtool_learn_more": {
+      "message": "Lisateave"
+   },
+   "inputtool_manage": {
+      "message": "Laienduste haldamiseks klõpsake mutrivõtmemenüül TOOL_IMAGE ja valige Tööriistad RIGHT_ARROW Laiendused."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Kui valite virtuaalse klaviatuuri, siis saate selle valikuga ekraanil kuvatava klaviatuuri kuvada või peita."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Ekraanil kuvatava klaviatuuri kuvamine."
+   },
+   "inputtool_options_title": {
+      "message": "Chrome'i laienduse valikud"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Sisendtööriistade lisamine"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Valitud sisendtööriistad"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Seadistamine on pooleli ..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Klaviatuuri otseteede seaded"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Näita ekraanil kuvatavat klaviatuuri"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Kuva olekuriba"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Näita klaviatuuri"
+   },
+   "inputtool_sign_in": {
+      "message": "Sisselogimine"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Sisse logitud kasutajanimega"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Logige sisse, et salvestada seaded ja isiklik sõnastik veebi ning kasutada igas arvutis isikupärastatud sisendit. Sellega saavutate sisendi parema kvaliteedi."
+   },
+   "inputtool_sign_out": {
+      "message": "Väljalogimine"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Olekuriba on väike ujuv aken, mida kasutavad hiina pinyini, wubi, cangjie, zhuyini ja kantoni IME-d, et vahetada hiina/inglise keele režiimi, hiina/inglise keele kirjavahemärke ja täieliku laiusega / pooliku laiusega tärke. Näete seda siis, kui olete valinud ühe nendest IME-dest."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Olekuriba kuvamine."
+   },
+   "inputtool_title": {
+      "message": "Google'i sisestustööriistad"
+   },
+   "inputtool_title_short": {
+      "message": "Sisestustööriistad"
+   },
+   "inputtool_turnoff": {
+      "message": "Lülita välja"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "See on IME-de jaoks. Kui teete selle valiku, siis sisestatud sõnad ja seotud lähtestringid salvestatakse ning sünkroonitakse Google'i serveris teie isikliku sõnastikuna. Seda kasutatakse teisendamistäpsuse parandamiseks. Kui tühistate selle valiku, siis sisendit enam Google'i serverisse ei salvestata. Pange tähele, et valiku tühistamisel ei kustutata Google'i serverisse salvestatud isiklikku sõnastikku."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Isikliku sõnastiku sünkroonimine."
+   },
+   "inputtool_user_dictionary": {
+      "message": "Isikliku sõnastiku sünkroonimine (soovitatav)"
+   },
+   "never_show": {
+      "message": "Ära kuva enam kunagi"
+   },
+   "revert_last_input_tool": {
+      "message": "Ennista eelmine sisendtööriist"
+   },
+   "select_next_input_tool": {
+      "message": "Vali järgmine sisendtööriist"
+   },
+   "shortcut_notification": {
+      "message": "Pärandversiooni klaviatuuri otseteid ei toetata. Asendage laienduse standardotseteedega"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Vaheta praegust sisendtööriista"
+   },
+   "use_legacy_version": {
+      "message": "Pärandversiooni kasutamine"
+   }
+}

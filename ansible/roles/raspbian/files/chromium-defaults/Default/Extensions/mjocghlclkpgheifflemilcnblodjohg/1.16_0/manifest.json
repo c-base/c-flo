@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon_19.png",
+      "default_title": "__MSG_action_title__"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "http://enjoy.your-clock.com/ext-options*", "http://enjoy.your-clock.com/thanks*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "homepage_url": "http://enjoy.your-clock.com/?s=ext_page_link",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFvkkjosMWlhAUT3LoatCFpa/ZFiJ8KmbC7+FJfm5cYfHsn9Zi4FamUbCTgQLwXohWR8pcyQmTIgvltkl1Ie2/3xQfVTMxE7HYX86oBQP8nHIx5SbnOa4IWd0C/f37uxuln/8bym8QHiDux1YRx/YviTUmK3sGDpVHCbZQ2fWb7wIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "options_page": "options.html",
+   "permissions": [ "contextMenus", "notifications", "idle", "chrome://favicon/", "http://enjoy.your-clock.com/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.16",
+   "web_accessible_resources": [ "icon_128.png", "toolbar_icons/1_1.png", "toolbar_icons/1_2.png", "toolbar_icons/1_3.png", "toolbar_icons/1_4.png", "toolbar_icons/1_5.png", "toolbar_icons/1_6.png", "toolbar_icons/1_7.png", "toolbar_icons/1_8.png", "toolbar_icons/1_9.png", "toolbar_icons/1_10.png", "toolbar_icons/1_11.png", "toolbar_icons/2_1.png", "toolbar_icons/2_2.png", "toolbar_icons/2_3.png", "toolbar_icons/2_4.png", "toolbar_icons/2_5.png", "toolbar_icons/2_6.png", "toolbar_icons/2_7.png", "toolbar_icons/2_8.png", "toolbar_icons/2_9.png", "toolbar_icons/2_10.png", "toolbar_icons/2_11.png" ]
+}

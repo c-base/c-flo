@@ -1,0 +1,11 @@
+{
+    "action_title": {
+        "message": "Klikk for å starte fullskjerm klokke"
+    },
+    "description": {
+        "message": "Gir en nyttig verktøylinje klokke og tilleggsutstyr fullskjerm klokke."
+    },
+    "name": {
+        "message": "Clock"
+    }
+}

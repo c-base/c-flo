@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Luk"
+   },
+   "guide_set_shortcut": {
+      "message": "Åbn siden med indstillinger for Chrome-udvidelser. Rul ned til bunden af siden, og klik på \"Tastaturgenveje\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Ryd din personlige ordbog ved at gå til"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Få flere oplysninger"
+   },
+   "inputtool_description": {
+      "message": "Med Indtastningsværktøj kan du skrive på det sprog, du vil."
+   },
+   "inputtool_extension_options": {
+      "message": "Valgmuligheder for udvidelser"
+   },
+   "inputtool_google_account": {
+      "message": "Google-kontoindstillinger."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Skjul tastaturet"
+   },
+   "inputtool_learn_more": {
+      "message": "Få flere oplysninger"
+   },
+   "inputtool_manage": {
+      "message": "Du kan administrere udvidelser ved at klikke på skruenøglemenuen TOOL_IMAGE og vælge Værktøjer RIGHT_ARROW Udvidelser."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Hvis du vælger et virtuelt tastatur, kan du vise eller skjule tastaturet på skærmen ved hjælp af denne indstilling."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Vis skærmtastatur:"
+   },
+   "inputtool_options_title": {
+      "message": "Valgmuligheder for Chrome-udvidelsen"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Tilføj indtastningsværktøj"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Udvalgte indtastningsværktøj"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Der foretages konfiguration..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Indstillinger for tastaturgenveje"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Vis skærmtastatur"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Vis statuslinje"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Vis tastaturet"
+   },
+   "inputtool_sign_in": {
+      "message": "Log ind"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Logget ind som"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Log ind for at gemme dine indstillinger og din personlige ordbog på nettet, og få en tilpasset indtastningsoplevelse på enhver computer. Du vil samtidig opleve en bedre indtastningskvalitet."
+   },
+   "inputtool_sign_out": {
+      "message": "Log ud"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Statuslinjen er det lille flydende vindue, der anvendes af IME'er til kinesisk pinyin, wubi, cangjie, zhuyin og kantonesisk til at skifte mellem kinesisk/engelsk tilstand, kinesisk/engelsk tegnsætning og alfanumeriske tegn i fuld bredde/halv bredde. Du vil se statuslinjen, når du har valgt et af ​​disse IME'er."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Vis statuslinje:"
+   },
+   "inputtool_title": {
+      "message": "Google Indtastningsværktøj"
+   },
+   "inputtool_title_short": {
+      "message": "Indtastningsværktøj"
+   },
+   "inputtool_turnoff": {
+      "message": "Slå fra"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Denne oplysning gælder for brugere af IME'er. Hvis du vælger denne indstilling, vil de ord, du har indtastet og de tilhørende kildestrenge blive gemt og synkroniseret med Googles server i form af din personlige ordbog. De vil blive brugt til at forbedre omdannelsesnøjagtigheden. Hvis du fjerner markeringen af denne indstilling, vil vi stoppe med at gemme dine indtastninger på Googles server. Bemærk, at din personlige ordbog, der er blevet gemt på Googles server, ikke vil blive ryddet, hvis du fjerner markeringen af ​​denne indstilling."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Synkroniser personlig ordbog:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Synkroniser personlig ordbog (anbefales)"
+   },
+   "never_show": {
+      "message": "Vis aldrig igen"
+   },
+   "revert_last_input_tool": {
+      "message": "Gå tilbage til forrige Indtastningsværktøj"
+   },
+   "select_next_input_tool": {
+      "message": "Vælg næste Indtastningsværktøj"
+   },
+   "shortcut_notification": {
+      "message": "Ældre tastaturgenveje understøttes ikke. De erstattes med standardgenvejene for udvidelsen"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Skift det nuværende Indtastningsværktøj"
+   },
+   "use_legacy_version": {
+      "message": "Brug den ældre version"
+   }
+}

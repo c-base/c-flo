@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Zamknij"
+   },
+   "guide_set_shortcut": {
+      "message": "Otwórz stronę ustawień rozszerzenia Chrome. Przewiń w dół do końca strony i kliknij „Skróty klawiszowe”."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Wyczyść słownik osobisty w"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Więcej informacji"
+   },
+   "inputtool_description": {
+      "message": "Narzędzia Google do wprowadzania tekstu umożliwiają pisanie w wybranym języku."
+   },
+   "inputtool_extension_options": {
+      "message": "Opcje rozszerzeń"
+   },
+   "inputtool_google_account": {
+      "message": "ustawieniach konta Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Ukryj klawiaturę"
+   },
+   "inputtool_learn_more": {
+      "message": "Więcej informacji"
+   },
+   "inputtool_manage": {
+      "message": "Aby zarządzać rozszerzeniami, kliknij menu klucza TOOL_IMAGE i wybierz Narzędzia RIGHT_ARROW Rozszerzenia."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Jeśli wybierzesz klawiaturę wirtualną, ta opcja pozwoli Ci wyświetlić lub ukryć klawiaturę ekranową."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Pokaż klawiaturę ekranową:"
+   },
+   "inputtool_options_title": {
+      "message": "Opcje rozszerzeń Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Dodaj narzędzia do wprowadzania tekstu"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Wybrane narzędzia do wprowadzania tekstu"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Konfiguruję..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Ustawienia skrótów klawiszowych"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Pokaż klawiaturę ekranową"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Pokaż pasek stanu"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Pokaż klawiaturę"
+   },
+   "inputtool_sign_in": {
+      "message": "Zaloguj się"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Zalogowany jako"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Zaloguj się, by zapisać swoje ustawienia i słownik osobisty w sieci. Pozwoli Ci to korzystać z dostosowanej metody wprowadzania na dowolnym komputerze i pisać z większą dokładnością."
+   },
+   "inputtool_sign_out": {
+      "message": "Wyloguj się"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Pasek stanu to małe pływające okienko używane przez edytory metody wprowadzania pinyin, wubi, Cangjie, zhuyin i kantoński dla języka chińskiego do przełączania między trybami chińskim i angielskim, interpunkcją chińską i angielską oraz znakami alfanumerycznymi o pełnej i połówkowej szerokości. Zobaczysz go, gdy wybierzesz jeden z tych edytorów."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Pokaż pasek stanu:"
+   },
+   "inputtool_title": {
+      "message": "Narzędzia Google do wprowadzania tekstu"
+   },
+   "inputtool_title_short": {
+      "message": "Narzędzia do wprowadzania tekstu"
+   },
+   "inputtool_turnoff": {
+      "message": "Wyłącz"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Dotyczy edytorów IME. Po wybraniu tej opcji wpisane słowa i powiązane ciągi źródłowe będą zapisywane i synchronizowane na serwerze Google jako Twój słownik osobisty. Będzie on używany do poprawienia dokładności konwersji. Uwaga: jeśli odznaczysz tę opcję, przestaniemy zapisywać na serwerze Google to, co piszesz, ale zapisany na nim Twój osobisty słownik nie zostanie wyczyszczony."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Synchronizuj słownik osobisty:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Synchronizuj słownik osobisty (zalecane)"
+   },
+   "never_show": {
+      "message": "Nie pokazuj więcej"
+   },
+   "revert_last_input_tool": {
+      "message": "Wróć do poprzedniego narzędzia do wprowadzania tekstu"
+   },
+   "select_next_input_tool": {
+      "message": "Wybierz następne narzędzie do wprowadzania tekstu"
+   },
+   "shortcut_notification": {
+      "message": "Starsze skróty klawiszowe nie są obsługiwane. Zamiast nich działają standardowe skróty rozszerzeń"
+   },
+   "shortcut_video": {
+      "message": "Wersja demonstracyjna"
+   },
+   "toggle_input_tool": {
+      "message": "Włącz/wyłącz obecne narzędzie do wprowadzania tekstu"
+   },
+   "use_legacy_version": {
+      "message": "Użyj starszej wersji"
+   }
+}

@@ -1,0 +1,9 @@
+{
+  "program": {
+    "portable": {
+      "pnacl-translate": {
+        "url": "https://www.gstatic.com/inputtools/nacl/3.8.0.1/decoder.pexe"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "38": "image/producticon_48px_active.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_inputtool_title__"
+   },
+   "commands": {
+      "next": {
+         "description": "__MSG_select_next_input_tool__",
+         "suggested_key": {
+            "default": "Alt+Shift+N"
+         }
+      },
+      "revert": {
+         "description": "__MSG_revert_last_input_tool__",
+         "suggested_key": {
+            "default": "Alt+Shift+R"
+         }
+      },
+      "toggle": {
+         "description": "__MSG_toggle_input_tool__",
+         "suggested_key": {
+            "default": "Alt+Shift+T"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "chext_loader.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   }, {
+      "js": [ "chext_inject.js" ],
+      "matches": [ "https://www.googleapis.com/auth/imesync*" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_inputtool_description__",
+   "devtools_page": "devtools.html",
+   "icons": {
+      "128": "image/producticon_48px_active.png",
+      "16": "image/producticon_48px_active.png",
+      "32": "image/producticon_48px_active.png",
+      "48": "image/producticon_48px_active.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDyVJtDU94PQL2SoZD4PChh0duiZBRE98pMeJL3LPpM68nN6fw+NBfXA6wlhqRHGB/6Bgx1nIXG0Hjyvwv8hj/S1atFpdNhzmvR3GRhvEjGng+L8A67OP1HuzwiXpEdYBSaI0R6qOgxEWgH72oKQyNdDOxXRDGCR99CtiJe5MpO0QIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "31",
+   "name": "__MSG_inputtool_title__",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "webNavigation", "unlimitedStorage", "https://dl.google.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.0.1.9",
+   "web_accessible_resources": [ "*" ]
+}

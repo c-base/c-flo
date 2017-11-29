@@ -1,0 +1,1 @@
+(function() { google.elements.keyboard.loadme({id:"en_dvorak",title:"English Dvorak",mappings:{",c":{"":"`1234567890[]',.pyfgcrl/=\\aoeuidhtns-;qjkxbmwvz"},"s,sc":{"":'~!@#$%^&*(){}"<>PYFGCRL?+|AOEUIDHTNS_:QJKXBMWVZ'},"l,cl":{"":"`1234567890[]',.PYFGCRL/=\\AOEUIDHTNS-;QJKXBMWVZ"},"sl,scl":{"":'~!@#$%^&*(){}"<>pyfgcrl?+|aoeuidhtns_:qjkxbmwvz'}}}); })()

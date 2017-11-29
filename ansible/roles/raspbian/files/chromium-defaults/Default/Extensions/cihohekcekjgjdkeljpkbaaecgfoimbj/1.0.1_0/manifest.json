@@ -1,0 +1,43 @@
+{
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3zHuWjXjBkdh3yNUEoeKcquKYa/C2JL0jbKjy4GZa2Usy2fd6f9mmkS81fqGv/b60SE8Aj96MzR8rF8C+d3Qf+SHGAlpl0lmZ9aQcjEQ6n9s2qw3QEndZLPwl6xvnAU3dYN4TxOBCRojt/NBkXRajc+tfKUHaBFijvensBoqMUQIDAQAB",
+   "name": "Mac OS X Simple Theme",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 40, 40, 40 ],
+         "frame": [ 163, 163, 163 ],
+         "frame_inactive": [ 200, 200, 200 ],
+         "ntp_background": [ 238, 238, 238 ],
+         "ntp_header": [ 200, 200, 200 ],
+         "ntp_link": [ 250, 250, 250 ],
+         "ntp_section": [ 245, 245, 245 ],
+         "ntp_section_link": [ 68, 68, 68 ],
+         "ntp_section_text": [ 116, 116, 116 ],
+         "ntp_text": [ 20, 20, 20 ],
+         "tab_background_text": [ 23, 23, 23 ],
+         "tab_text": [ 0, 0, 0 ],
+         "toolbar": [ 235, 235, 235 ],
+         "toolbar_text": [ 100, 100, 100 ]
+      },
+      "images": {
+         "theme_button_background": "images/button.png",
+         "theme_frame": "images/frame.png",
+         "theme_frame_incognito": "images/frame_incog.png",
+         "theme_ntp_background": "images/bg.png",
+         "theme_tab_background": "images/tab.png",
+         "theme_tab_background_incognito": "images/tab_incog.png",
+         "theme_toolbar": "images/toolbar.png"
+      },
+      "properties": {
+         "ntp_background_alignment": "left top",
+         "ntp_background_repeat": "repeat-x",
+         "ntp_logo_alternate": 1
+      },
+      "tints": {
+         "buttons": [ 0.6, 0, 0.5 ],
+         "frame_inactive": [ 0.5, 0.5, 0.5 ],
+         "frame_incognito_inactive": [ 0.6, 0.0, 0.5 ]
+      }
+   },
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}

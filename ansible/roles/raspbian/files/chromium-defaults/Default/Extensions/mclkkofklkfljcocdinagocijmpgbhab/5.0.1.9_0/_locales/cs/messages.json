@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Zavřít"
+   },
+   "guide_set_shortcut": {
+      "message": "Otevřete stránku s nastavením rozšíření pro Chrome. Přejděte na konec stránky a klikněte na Klávesové zkratky."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Vlastní slovník lze vymazat na adrese"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Další informace"
+   },
+   "inputtool_description": {
+      "message": "Nástroje pro zadávání textu umožňují psát v jazyce podle vašeho výběru."
+   },
+   "inputtool_extension_options": {
+      "message": "Možnosti rozšíření"
+   },
+   "inputtool_google_account": {
+      "message": "Nastavení účtu Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Skrýt klávesnici"
+   },
+   "inputtool_learn_more": {
+      "message": "Další informace"
+   },
+   "inputtool_manage": {
+      "message": "Správa rozšíření. Klikněte na nabídku Nástroje TOOL_IMAGE a zvolte možnosti Nástroje RIGHT_ARROW Rozšíření."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Pokud vyberete softwarovou klávesnici, můžete ji pomocí této možnosti zobrazit na obrazovce (nebo ji skrýt)."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Zobrazit softwarovou klávesnici:"
+   },
+   "inputtool_options_title": {
+      "message": "Možnosti rozšíření prohlížeče Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Přidat nástroje pro zadávání textu"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Vybrané nástroje pro zadávání textu"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Nastavování..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Nastavení klávesových zkratek"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Zobrazit softwarovou klávesnici"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Zobrazit stavový řádek"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Zobrazit klávesnici"
+   },
+   "inputtool_sign_in": {
+      "message": "Přihlásit se"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Jste přihlášeni jako"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Po přihlášení si budete moci uložit nastavení a vlastní slovník na web, aby bylo možné personalizovat prostředí pro zadávání textu na libovolném počítači. Prostředí pro zadávání pak bude kvalitnější."
+   },
+   "inputtool_sign_out": {
+      "message": "Odhlásit se"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Stavový řádek je malé plovoucí okno využívané editory IME pro čínský pchin-jin, wu-pi, čchang-ťie, ču-jin a kantonštinu. Umožňuje přepínat mezi režimem čínštiny a angličtiny, čínskou a anglickou interpunkcí a plnou nebo poloviční šířkou čísel a písmen. Stavový řádek se zobrazí, když některý z těchto editorů vyberete."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Zobrazit stavový řádek:"
+   },
+   "inputtool_title": {
+      "message": "Nástroje pro zadávání textu Google"
+   },
+   "inputtool_title_short": {
+      "message": "Nástroje pro zadávání textu"
+   },
+   "inputtool_turnoff": {
+      "message": "Vypnout"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Tato možnost je určena pro editory IME. Po zaškrtnutí tohoto políčka budou ukládána zadaná slova i související zdrojové textové řetězce a budou synchronizována na serveru Google jako váš vlastní slovník. Slovník bude využit ke zlepšování přesnosti konverze. Jestliže zaškrtnutí políčka zrušíte, ukládání zadaných dat na serveru Google bude ukončeno. Vlastní slovník uložený na serveru Google se tímto krokem nevymaže."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Synchronizovat vlastní slovník:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Synchronizovat vlastní slovník (doporučeno)"
+   },
+   "never_show": {
+      "message": "Toto oznámení již nezobrazovat"
+   },
+   "revert_last_input_tool": {
+      "message": "Vrátit předchozí nástroj pro zadávání textu"
+   },
+   "select_next_input_tool": {
+      "message": "Vybrat další nástroj pro zadávání textu"
+   },
+   "shortcut_notification": {
+      "message": "Starší klávesové zkratky nejsou podporovány. Budou nahrazeny standardními zkratkami rozšíření."
+   },
+   "shortcut_video": {
+      "message": "Ukázka"
+   },
+   "toggle_input_tool": {
+      "message": "Přepnout aktuální nástroj pro zadávání textu"
+   },
+   "use_legacy_version": {
+      "message": "Použít starší verzi"
+   }
+}

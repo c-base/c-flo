@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "છોડી દો"
+   },
+   "guide_set_shortcut": {
+      "message": "Chrome એક્સટેન્શન સેટિંગ પૃષ્ઠ ખોલો. પૃષ્ઠના અંત સુધી સ્ક્રોલ કરો અને પછી \"કીબોર્ડ શૉર્ટકટ્સ\" ક્લિક કરો"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "આ પર તમારા વ્યક્તિગત શબ્દકોશને સાફ કરો"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "વધુ જાણો"
+   },
+   "inputtool_description": {
+      "message": "ઇનપુટ સાધનોથી તમે તમારી પસંદની ભાષામાં લખી શકો છો."
+   },
+   "inputtool_extension_options": {
+      "message": "એક્સ્ટેંશન વિકલ્પો"
+   },
+   "inputtool_google_account": {
+      "message": "Google એકાઉન્ટ સેટિંગ્સ"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "કીબોર્ડ છુપાવો"
+   },
+   "inputtool_learn_more": {
+      "message": "વધુ જાણો"
+   },
+   "inputtool_manage": {
+      "message": "એક્સ્ટેંશન્સ મેનેજ કરવા માટે, સાધનો TOOL_IMAGE મેનુને ક્લિક કરો અને સાધનો RIGHT_ARROW એક્સ્ટેંશન્સને પસંદ કરો."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "જો તમે કોઈ વર્ચ્યુઅલ કીબોર્ડ પસંદ કરો છો, તો તમે આ વિકલ્પ દ્વારા ઑન-સ્ક્રીન કીબોર્ડને બતાવી અથવા છુપાવી શકો છો."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "ઑન-સ્ક્રીન કીબોર્ડ બતાવો:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome એક્સ્ટેંશન વિકલ્પો "
+   },
+   "inputtool_select_inputtools": {
+      "message": "ઇનપુટ સાધનો ઉમેરો"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "પસંદ કરેલા ઇનપુટ સાધનો"
+   },
+   "inputtool_setup_in_process": {
+      "message": "સેટ અપની પ્રક્રિયા ચાલુ છે..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "કીબોર્ડ શૉર્ટકટ સેટિંગ્સ"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "ઑન-સ્ક્રીન કીબોર્ડ બતાવો"
+   },
+   "inputtool_show_status_bar": {
+      "message": "સ્થિતિ બાર બતાવો"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "કીબોર્ડ બતાવો"
+   },
+   "inputtool_sign_in": {
+      "message": "સાઇન ઇન કરો"
+   },
+   "inputtool_sign_in_as": {
+      "message": "આના તરીકે સાઇન ઇન કર્યું"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "વેબ પર તમારી સેટિંગ્સ અને વ્યક્તિગત શબ્દકોશને સાચવવા અને કોઈપણ કમ્પ્યુટર પર વ્યક્તિગત કરેલ ઇનપુટ અનુભવ મેળવવા માટે સાઇન ઇન કરો. તમને વધુ સારી ઇનપુટ ગુણવત્તા મળશે."
+   },
+   "inputtool_sign_out": {
+      "message": "સાઇન આઉટ કરો"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "સ્થિતિ બાર એ ચાઇનીઝ/અંગ્રેજી મોડ, ચાઇનીઝ/અંગ્રેજી વિરામચિહ્નો અને પૂર્ણ-પહોળાઈ/અર્ધ-પહોળાઈ આલ્ફાન્યૂમરિક પર સ્વિચ કરવા માટે ચાઇનીઝ પિનયિન, વુબી, કેન્જી, ઝુયિન અને કેન્ટોનીઝ IME દ્વારા ઉપયોગમાં લેવાતી એક નાની ફ્લોટિંગ વિંડો છે. જ્યારે તમે આ IME માંની એકને પસંદ કરી હોય ત્યારે તમે તેને જોશો."
+   },
+   "inputtool_status_bar_span": {
+      "message": "સ્થિતિ બાર બતાવો:"
+   },
+   "inputtool_title": {
+      "message": "Google ઇનપુટ સાધનો"
+   },
+   "inputtool_title_short": {
+      "message": "ઇનપુટ સાધનો"
+   },
+   "inputtool_turnoff": {
+      "message": "બંધ કરો"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "આ IME માટે છે. આને પસંદ કરીને, તમે દાખલ કરેલા શબ્દો અને સંકળાયેલ સ્રોત સ્ટ્રિંગ્સને સાચવવામાં આવશે અને તમારા વ્યક્તિગત શબ્દકોશ તરીકે Google ના સર્વર પર સમન્વયિત કરવામાં આવશે. તેનો ઉપયોગ રૂપાંતરણ ચોકસાઈને બહેતર બનાવવા માટે કરવામાં આવશે. જો તમે આને અનચેક કરો છો, તો અમે Google ના સર્વર પર તમારા ઇનપુટને સાચવવાનું બંધ કરીશું. નોંધ કરો કે જો તમે આ વિકલ્પને અનચેક કરો છો તો Google ના સર્વર પર સંગ્રહિત કરવામાં આવેલા તમારા વ્યક્તિગત શબ્દકોશને સાફ કરવામાં આવશે નહીં."
+   },
+   "inputtool_user_dict_span": {
+      "message": "વ્યક્તિગત શબ્દકોશને સમન્વયિત કરો:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "વ્યક્તિગત શબ્દકોશને સમન્વયિત કરો (ભલામણ કરેલ)"
+   },
+   "never_show": {
+      "message": "ફરીથી ક્યારેય બતાવશો નહીં"
+   },
+   "revert_last_input_tool": {
+      "message": "પાછલા ઇનપુટ સાધન પર પાછા ફરો"
+   },
+   "select_next_input_tool": {
+      "message": "આગલું ઇનપુટ સાધન પસંદ કરો"
+   },
+   "shortcut_notification": {
+      "message": "લેગેસી કીબોર્ડ શૉર્ટકટ્સનું સમર્થન કરતું નથી. એક્સટેન્શન માનક શૉર્ટકટ્સ સાથે બદલો"
+   },
+   "shortcut_video": {
+      "message": "ડેમો"
+   },
+   "toggle_input_tool": {
+      "message": "વર્તમાન ઇનપુટ સાધનને ટૉગલ કરો"
+   },
+   "use_legacy_version": {
+      "message": "લેગેસી સંસ્કરણનો ઉપયોગ કરો"
+   }
+}

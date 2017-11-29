@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Negeren"
+   },
+   "guide_set_shortcut": {
+      "message": "Open de pagina met instellingen voor de Chrome-extensie. Scrol omlaag op de pagina en klik op Sneltoetsen."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Wis je persoonlijke woordenboek via je"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Meer informatie"
+   },
+   "inputtool_description": {
+      "message": "Met Transcript kun je typen in de door jou gewenste taal."
+   },
+   "inputtool_extension_options": {
+      "message": "Opties voor extensies"
+   },
+   "inputtool_google_account": {
+      "message": "Google-accountinstellingen."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Toetsenbord verbergen"
+   },
+   "inputtool_learn_more": {
+      "message": "Meer informatie"
+   },
+   "inputtool_manage": {
+      "message": "Klik op het menu 'Gereedschap' TOOL_IMAGE en selecteer 'Extra' RIGHT_ARROW 'Extensies' om extensies te beheren."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Als je een virtueel toetsenbord selecteert, kun je het schermtoetsenbord met deze optie weergeven of verbergen."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Schermtoetsenbord weergeven:"
+   },
+   "inputtool_options_title": {
+      "message": "Opties voor Chrome-extensies"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Invoertools toevoegen"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Geselecteerde invoertools"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Bezig met instellen..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Instellingen voor sneltoetsen"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Schermtoetsenbord weergeven"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Statusbalk weergeven"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Toetsenbord weergeven"
+   },
+   "inputtool_sign_in": {
+      "message": "Inloggen"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Ingelogd als"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Log in om je instellingen en persoonlijke woordenboek online op te slaan en op elke computer te profiteren van een gepersonaliseerde invoerervaring. Zo kun je veel gemakkelijker tekst invoeren."
+   },
+   "inputtool_sign_out": {
+      "message": "Uitloggen"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "De statusbalk is het kleine zwevende venster dat wordt gebruikt door IME's voor Chinees Pinyin, Wubi, Cangjie, Zhuyin, en Kantonees om te schakelen tussen de Chinese/Engelse modus, Chinese/Engelse interpunctie en alfanumerieke tekens met volledige/halve breedte. Je krijgt de statusbalk te zien als je een van deze IME's hebt geselecteerd."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Statusbalk weergeven:"
+   },
+   "inputtool_title": {
+      "message": "Google Transcript"
+   },
+   "inputtool_title_short": {
+      "message": "Transcript"
+   },
+   "inputtool_turnoff": {
+      "message": "Uitschakelen"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Deze optie is bedoeld voor IME's. Als je deze optie selecteert, worden de woorden die je hebt ingevoerd en de bijbehorende brontekenreeksen opgeslagen en gesynchroniseerd op de server van Google als je persoonlijke woordenboek. Dit wordt gebruikt om de nauwkeurigheid van de omzetting te verbeteren. Als je het vinkje bij deze optie verwijdert, slaan we je invoer niet meer op de server van Google op. Houd er rekening mee dat je persoonlijke woordenboek dat is opgeslagen op de server van Google, niet wordt gewist als je het vinkje uit dit selectievakje verwijdert."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Persoonlijk woordenboek synchroniseren:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Persoonlijk woordenboek synchroniseren (aanbevolen)"
+   },
+   "never_show": {
+      "message": "Nooit meer weergeven"
+   },
+   "revert_last_input_tool": {
+      "message": "Laatste invoertool terugzetten"
+   },
+   "select_next_input_tool": {
+      "message": "Volgende invoertool selecteren"
+   },
+   "shortcut_notification": {
+      "message": "Geen ondersteuning voor verouderde sneltoetsen. Vervangen door standaardsneltoetsen voor de extensie."
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Huidige invoertool in-/uitschakelen"
+   },
+   "use_legacy_version": {
+      "message": "De verouderde versie gebruiken"
+   }
+}

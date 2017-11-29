@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Fermer"
+   },
+   "guide_set_shortcut": {
+      "message": "Ouvrez la page des paramètres de l'extension Chrome. Faites défiler la page jusqu'en bas, puis cliquez sur \"Raccourcis clavier\"."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Effacez votre dictionnaire personnel en accédant aux"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "En savoir plus"
+   },
+   "inputtool_description": {
+      "message": "Outils de saisie vous permet de saisir du texte dans la langue de votre choix."
+   },
+   "inputtool_extension_options": {
+      "message": "Options d'extension"
+   },
+   "inputtool_google_account": {
+      "message": "Paramètres de compte Google"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Masquer le clavier"
+   },
+   "inputtool_learn_more": {
+      "message": "En savoir plus"
+   },
+   "inputtool_manage": {
+      "message": "Pour gérer les extensions, cliquez sur le menu clé à molette TOOL_IMAGE, puis sélectionnez Outils RIGHT_ARROW Extensions."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Si vous sélectionnez un clavier virtuel, cette option vous permet d'afficher ou de masquer le clavier à l'écran."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Afficher le clavier à l'écran :"
+   },
+   "inputtool_options_title": {
+      "message": "Options d'extension Google Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Ajouter des outils de saisie"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Outils de saisie sélectionnés"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Configuration en cours…"
+   },
+   "inputtool_shortcut_option": {
+      "message": "Paramètres des raccourcis clavier"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Afficher le clavier à l'écran"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Afficher la barre d'état"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Afficher le clavier"
+   },
+   "inputtool_sign_in": {
+      "message": "Connexion"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Connecté en tant que"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Connectez-vous pour enregistrer vos paramètres et votre dictionnaire personnel sur le Web afin de bénéficier d'une expérience de saisie personnalisée, et ce quel que soit l'ordinateur utilisé. Vous obtiendrez ainsi une meilleure qualité de saisie."
+   },
+   "inputtool_sign_out": {
+      "message": "Déconnexion"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "La barre d'état est la petite fenêtre flottante utilisée par les éditeurs de mode de saisie (IME) en chinois, pinyin, wubi, cangjie, zhuyin et cantonais pour basculer entre les modes chinois/anglais, les ponctuations chinoise/anglaise et les caractères alphanumériques demi largeur/pleine largeur. Elle s'affiche lorsque vous sélectionnez l'un de ces IME."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Afficher la barre d'état :"
+   },
+   "inputtool_title": {
+      "message": "Google Outils de saisie"
+   },
+   "inputtool_title_short": {
+      "message": "Outils de saisie"
+   },
+   "inputtool_turnoff": {
+      "message": "Désactiver"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Concerne les éditeurs de mode de saisie (IME). Si vous sélectionnez cette option, les mots que vous avez saisis et les chaînes source associées sont enregistrés et synchronisés sur le serveur Google afin de constituer votre dictionnaire personnel. Ce dernier vous permet d'améliorer la précision de la conversion. Si vous désélectionnez cette option, nous n'enregistrons plus vos données sur le serveur Google, mais votre dictionnaire personnel n'est pas supprimé."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Synchroniser le dictionnaire personnel :"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Synchroniser le dictionnaire personnel (recommandé)"
+   },
+   "never_show": {
+      "message": "Ne plus afficher"
+   },
+   "revert_last_input_tool": {
+      "message": "Rétablir le dernier outil de saisie"
+   },
+   "select_next_input_tool": {
+      "message": "Sélectionner l'outil de saisie suivant"
+   },
+   "shortcut_notification": {
+      "message": "Aucun ancien raccourci clavier. Remplacer par les raccourcis standards de l'extension"
+   },
+   "shortcut_video": {
+      "message": "Démo"
+   },
+   "toggle_input_tool": {
+      "message": "Activer/désactiver l'outil de saisie actuel"
+   },
+   "use_legacy_version": {
+      "message": "Utiliser l'ancienne version"
+   }
+}

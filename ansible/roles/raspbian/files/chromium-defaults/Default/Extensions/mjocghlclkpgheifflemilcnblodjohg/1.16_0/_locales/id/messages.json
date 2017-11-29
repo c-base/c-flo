@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Klik untuk memulai jam fullscreen"
+   },
+   "description": {
+      "message": "Menyediakan jam toolbar yang berguna dan jam fullscreen opsional."
+   },
+   "name": {
+      "message": "Jam"
+   }
+}

@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Tutup"
+   },
+   "guide_set_shortcut": {
+      "message": "Buka laman setelan ekstensi Chrome. Gulir ke bawah ke akhir laman, lalu klik \"Pintasan keyboard\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Hapus kamus pribadi Anda di"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Pelajari lebih lanjut"
+   },
+   "inputtool_description": {
+      "message": "Input Tools memungkinkan Anda mengetik menggunakan bahasa pilihan Anda."
+   },
+   "inputtool_extension_options": {
+      "message": "Opsi Ekstensi"
+   },
+   "inputtool_google_account": {
+      "message": "Setelan Akun Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Sembunyikan Keyboard"
+   },
+   "inputtool_learn_more": {
+      "message": "Pelajari lebih lanjut"
+   },
+   "inputtool_manage": {
+      "message": "Untuk mengelola ekstensi. klik menu kunci inggris TOOL_IMAGE dan pilih Alat RIGHT_ARROW Ekstensi."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Jika Anda memilih keyboard virtual, Anda dapat menampilkan atau menyembunyikan keyboard di layar menggunakan opsi ini."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Tampilkan keyboard di layar:"
+   },
+   "inputtool_options_title": {
+      "message": "Opsi ekstensi Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Menambahkan Alat Masukan"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Alat Masukan Terpilih"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Penyiapan sedang berlangsung..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Setelan Pintasan Keyboard"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Tampilkan keyboard di layar"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Tampilkan bilah status"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Tampilkan Keyboard"
+   },
+   "inputtool_sign_in": {
+      "message": "Masuk"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Masuk sebagai"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Masuklah untuk menyimpan setelan dan kamus pribadi Anda di web, lalu dapatkan pengalaman input terpersonalisasi di komputer mana pun. Anda akan mendapatkan kualitas input yang lebih baik."
+   },
+   "inputtool_sign_out": {
+      "message": "Keluar"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Bilah status adalah jendela kecil mengambang yang digunakan oleh IME Wubi, Cangjie, Zhuyin, Kanton, dan Pinyin China untuk beralih antara mode China/Inggris, tanda baca China/Inggris, dan alfanumerik lebar penuh/setengah. Anda akan melihatnya jika telah memilih salah satu IME ini."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Tampilkan bilah status:"
+   },
+   "inputtool_title": {
+      "message": "Google Input Tools"
+   },
+   "inputtool_title_short": {
+      "message": "Input Tools"
+   },
+   "inputtool_turnoff": {
+      "message": "Matikan"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Opsi ini ialah untuk IME. Jika dipilih, kata yang dimasukkan dan string sumber yang terkait akan disimpan dan disinkronkan di server Google sebagai kamus pribadi Anda. Kamus ini akan digunakan untuk meningkatkan akurasi konversi. Jika Anda menghapus centang ini, kami akan berhenti menyimpan masukan Anda di server Google. Perhatikan bahwa kamus pribadi yang telah disimpan di server Google tidak akan dihapus jika Anda menghapus centang opsi ini."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sinkronkan kamus pribadi:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sinkronkan kamus pribadi (disarankan)"
+   },
+   "never_show": {
+      "message": "Jangan tampilkan lagi"
+   },
+   "revert_last_input_tool": {
+      "message": "Kembalikan Alat Masukan terakhir"
+   },
+   "select_next_input_tool": {
+      "message": "Pilih Alat Masukan berikutnya"
+   },
+   "shortcut_notification": {
+      "message": "Tidak mendukung pintasan keyboard lawas. Ganti dengan pintasan standar ekstensi"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Alihkan Alat Masukan saat ini"
+   },
+   "use_legacy_version": {
+      "message": "Gunakan versi lawas"
+   }
+}

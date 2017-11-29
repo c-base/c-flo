@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "ปิด"
+   },
+   "guide_set_shortcut": {
+      "message": "เปิดหน้าการตั้งค่าส่วนขยาย Chrome เลื่อนลงจนสุดหน้าเว็บ จากนั้นคลิก \"แป้นพิมพ์ลัด\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "ล้างพจนานุกรมส่วนตัวที่"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "เรียนรู้เพิ่มเติม"
+   },
+   "inputtool_description": {
+      "message": "เครื่องมือป้อนข้อมูลช่วยให้คุณพิมพ์ในภาษาที่ต้องการได้"
+   },
+   "inputtool_extension_options": {
+      "message": "ตัวเลือกส่วนขยาย"
+   },
+   "inputtool_google_account": {
+      "message": "การตั้งค่าบัญชี Google"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "ซ่อนแป้นพิมพ์"
+   },
+   "inputtool_learn_more": {
+      "message": "เรียนรู้เพิ่มเติม"
+   },
+   "inputtool_manage": {
+      "message": "หากต้องการจัดการส่วนขยาย ให้คลิกที่เมนูเครื่องมือ TOOL_IMAGE แล้วเลือก \"เครื่องมือ\" RIGHT_ARROW \"ส่วนขยาย\""
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "หากคุณเลือกแป้นพิมพ์เสมือน คุณสามารถแสดงหรือซ่อนแป้นพิมพ์บนหน้าจอด้วยตัวเลือกนี้"
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "แสดงแป้นพิมพ์บนหน้าจอ:"
+   },
+   "inputtool_options_title": {
+      "message": "ตัวเลือกส่วนขยายของ Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "เพิ่มเครื่องมือป้อนข้อมูล"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "เครื่องมือป้อนข้อมูลที่เลือก"
+   },
+   "inputtool_setup_in_process": {
+      "message": "อยู่ระหว่างการตั้งค่า..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "การตั้งค่าแป้นพิมพ์ลัด"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "แสดงแป้นพิมพ์บนหน้าจอ"
+   },
+   "inputtool_show_status_bar": {
+      "message": "แสดงแถบสถานะ"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "แสดงแป้นพิมพ์"
+   },
+   "inputtool_sign_in": {
+      "message": "ลงชื่อเข้าใช้"
+   },
+   "inputtool_sign_in_as": {
+      "message": "ลงชื่อเข้าใช้ในฐานะ"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "ลงชื่อเข้าใช้เพื่อบันทึกการตั้งค่าและพจนานุกรมส่วนตัวของคุณไปยังเว็บ และรับประสบการณ์การป้อนข้อมูลในแบบของคุณบนคอมพิวเตอร์ทุกเครื่อง การป้อนข้อมูลของคุณจะมีคุณภาพยิ่งขึ้น"
+   },
+   "inputtool_sign_out": {
+      "message": "ออกจากระบบ"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "แถบสถานะคือหน้าต่างแบบลอยขนาดเล็กที่ใช้โดย IME ภาษาจีนแบบพินอิน, Wubi, Cangjie, จู้อิน และจีนกวางตุ้ง เพื่อสลับโหมดจีน/อังกฤษ เครื่องหมายวรรคตอนจีน/อังกฤษ และตัวอักษรผสมตัวเลขแบบเต็ม/ครึ่งความกว้าง โดยคุณจะเห็นเมื่อเลือก IME เหล่านี้รายการใดรายการหนึ่ง"
+   },
+   "inputtool_status_bar_span": {
+      "message": "แสดงแถบสถานะ"
+   },
+   "inputtool_title": {
+      "message": "Google เครื่องมือป้อนข้อมูล"
+   },
+   "inputtool_title_short": {
+      "message": "เครื่องมือป้อนข้อมูล"
+   },
+   "inputtool_turnoff": {
+      "message": "ปิด"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "นี่เป็นการดำเนินการสำหรับ IME ด้วยการเลือกตัวเลือกนี้ คำที่คุณป้อนและสตริงต้นฉบับที่เชื่อมโยงจะได้รับการบันทึกและซิงค์บนเซิร์ฟเวอร์ของ Google ให้เป็นพจนานุกรมส่วนตัวของคุณ โดยจะถูกนำมาใช้เพื่อปรับปรุงความถูกต้องของการแปลง หากคุณยกเลิกการทำเครื่องหมายตัวเลือกนี้ เราจะหยุดการบันทึกข้อมูลที่คุณป้อนบนเซิร์ฟเวอร์ของ Google โปรดทราบว่าพจนานุกรมส่วนตัวที่เก็บไว้บนเซิร์ฟเวอร์ของ Google จะไม่ถูกล้างหากคุณยกเลิกการทำเครื่องหมายตัวเลือกนี้"
+   },
+   "inputtool_user_dict_span": {
+      "message": "ซิงค์ข้อมูลพจนานุกรมส่วนตัว:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "ซิงค์ข้อมูลพจนานุกรมส่วนตัว (แนะนำ)"
+   },
+   "never_show": {
+      "message": "ไม่ต้องแสดงอีก"
+   },
+   "revert_last_input_tool": {
+      "message": "เปลี่ยนกลับเป็นเครื่องมือป้อนข้อมูลล่าสุด"
+   },
+   "select_next_input_tool": {
+      "message": "เลือกเครื่องมือป้อนข้อมูลถัดไป"
+   },
+   "shortcut_notification": {
+      "message": "ไม่สนับสนุนแป้นพิมพ์ลัดแบบเดิม แทนที่ด้วยแป้นพิมพ์ลัดมาตรฐานที่เป็นส่วนขยาย"
+   },
+   "shortcut_video": {
+      "message": "สาธิต"
+   },
+   "toggle_input_tool": {
+      "message": "สลับเครื่องมือป้อนข้อมูลปัจจุบัน"
+   },
+   "use_legacy_version": {
+      "message": "ใช้เวอร์ชันเดิม"
+   }
+}

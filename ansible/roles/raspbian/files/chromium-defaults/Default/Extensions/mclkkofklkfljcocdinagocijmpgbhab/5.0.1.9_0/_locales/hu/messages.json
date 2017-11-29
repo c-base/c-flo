@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Elvetés"
+   },
+   "guide_set_shortcut": {
+      "message": "Nyissa meg a Chrome-bővítmények beállításainak oldalát. Görgessen le az oldal aljáig, majd kattintson a „Billentyűparancsok” lehetőségre"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Törölje a személyes szótárat itt:"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "További információ"
+   },
+   "inputtool_description": {
+      "message": "A Beviteli Eszközöknek köszönhetően az Ön által választott nyelven gépelhet."
+   },
+   "inputtool_extension_options": {
+      "message": "Bővítménybeállítások"
+   },
+   "inputtool_google_account": {
+      "message": "Google-fiók beállításai"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Billentyűzet elrejtése"
+   },
+   "inputtool_learn_more": {
+      "message": "További információ"
+   },
+   "inputtool_manage": {
+      "message": "A bővítmények kezeléséhez kattintson a csavarkulcs (TOOL_IMAGE) menüelemre, és válassza az \"Eszközök\" RIGHT_ARROW \"Bővítmények\" lehetőséget."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Ha a virtuális billentyűzetet választja, akkor megjelenítheti vagy elrejtheti a képernyő-billentyűzetet ezzel a lehetőséggel."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "A képernyő-billentyűzet megjelenítése:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome bővítménybeállítások"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Beviteli eszközök hozzáadása"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Kiválasztott beviteli eszközök"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Beállítás folyamatban..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Billentyűparancs-beállítások"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "A képernyő-billentyűzet megjelenítése"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Az állapotsor megjelenítése"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Billentyűzet megjelenítése"
+   },
+   "inputtool_sign_in": {
+      "message": "Bejelentkezés"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Bejelentkezve mint"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Jelentkezzen be beállításai és személyes szótára mentéséhez az interneten, így személyre szabott beviteli élményre tesz szert bármilyen számítógépen. Ez jobb beviteli minőséget fog eredményezni."
+   },
+   "inputtool_sign_out": {
+      "message": "Kijelentkezés"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Az állapotsor az a kis lebegő ablak, amelyet a kínai pinjin, wubi, cangjie, zhuyin és kantoni IME használ a kínai/angol mód, a kínai/angol írásjelek és teljes-/félszélességű alfanumerikus karakterek közötti váltásra. Akkor fog megjelenni, ha már kiválasztott egy ilyen IME-t."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Az állapotsor megjelenítése:"
+   },
+   "inputtool_title": {
+      "message": "Google Beviteli Eszközök"
+   },
+   "inputtool_title_short": {
+      "message": "Beviteli Eszközök"
+   },
+   "inputtool_turnoff": {
+      "message": "Kikapcsolás"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Ez az IME-khez szükséges. A lehetőség kiválasztásával a beírt szavakat és az azokhoz kapcsolódó forráskarakterláncokat menti, és szinkronizálja a személyes szótárával a Google szerverén. Ezt a konverziós pontosság javítására fogjuk használni. Ha nem jelöli be ezt a lehetőséget, nem fogjuk folytatni a bevitel mentését a Google szerverén. Érdemes tudni, hogy a Google szerverén tárolt személyes szótára attól nem törlődik, ha megszünteti a lehetőség bejelölését."
+   },
+   "inputtool_user_dict_span": {
+      "message": "A személyes szótár szinkronizálása:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "A személyes szótár szinkronizálása (ajánlott)"
+   },
+   "never_show": {
+      "message": "Ne jelenjen meg újra"
+   },
+   "revert_last_input_tool": {
+      "message": "Visszatérés a legutóbbi beviteli eszközhöz"
+   },
+   "select_next_input_tool": {
+      "message": "Következő beviteli eszköz kiválasztása"
+   },
+   "shortcut_notification": {
+      "message": "A régebbi billentyűparancsok nem támogatottak. Helyettük az alapértelmezett billentyűparancsok használhatók"
+   },
+   "shortcut_video": {
+      "message": "Demó"
+   },
+   "toggle_input_tool": {
+      "message": "A jelenlegi beviteli eszköz be- vagy kikapcsolása"
+   },
+   "use_legacy_version": {
+      "message": "A régebbi verzió használata"
+   }
+}

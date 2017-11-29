@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "खारिज करें"
+   },
+   "guide_set_shortcut": {
+      "message": "Chrome एक्सटेंशन सेटिंग पृष्ठ खोलें. पृष्ठ की समाप्ति तक नीचे स्क्रॉल करें, फिर \"कीबोर्ड शॉर्टकट\" क्लिक करें"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "यहां अपना व्यक्तिगत शब्दकोश साफ़ करें"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "और जानें"
+   },
+   "inputtool_description": {
+      "message": "इनपुट डिवाइस आपको अपनी पसंद की भाषा में लिखने देते हैं."
+   },
+   "inputtool_extension_options": {
+      "message": "एक्सटेंशन विकल्प"
+   },
+   "inputtool_google_account": {
+      "message": "Google खाता सेटिंग"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "कीबोर्ड छिपाएं"
+   },
+   "inputtool_learn_more": {
+      "message": "और जानें"
+   },
+   "inputtool_manage": {
+      "message": "एक्‍सटेंशन प्रबंधित करने के लिए. पाना TOOL_IMAGE मेनू क्लिक करें और टूल RIGHT_ARROW एक्‍सटेंशन को चुनें."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "यदि आप वर्चुअल कीबोर्ड चुनते हैं, तो आप इस विकल्प द्वारा ऑन-स्क्रीन कीबोर्ड को दिखा या छिपा सकते हैं."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "ऑन-स्क्रीन कीबोर्ड दिखाएं:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome एक्‍सटेंशन विकल्‍प"
+   },
+   "inputtool_select_inputtools": {
+      "message": "इनपुट टूल जोड़ें"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "चयनित इनपुट डिवाइस"
+   },
+   "inputtool_setup_in_process": {
+      "message": "सेट अप होना प्रोसेस में है..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "कीबोर्ड शॉर्टकट सेटिंग"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "ऑन-स्क्रीन कीबोर्ड दिखाएं"
+   },
+   "inputtool_show_status_bar": {
+      "message": "स्थिति बार दिखाएं"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "कीबोर्ड दिखाएं"
+   },
+   "inputtool_sign_in": {
+      "message": "प्रवेश करें"
+   },
+   "inputtool_sign_in_as": {
+      "message": "इस रूप में प्रवेश किया हुआ"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "वेब पर अपनी सेटिंग और व्यक्तिगत शब्दकोश सहेजने के लिए प्रवेश करें और किसी भी कंप्यूटर पर वैयक्तिकृत इनपुट अनुभव प्राप्त करें. आपको बेहतर इनपुट गुणवत्ता प्राप्त होगी."
+   },
+   "inputtool_sign_out": {
+      "message": "प्रस्थान करें"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "स्थिति बार एक छोटी फ़्लोटिंग विंडो होती है, जिसे चीनी/अंग्रेज़ी मोड, चीनी/अंग्रेज़ी विराम चिह्न, और पूर्ण-चौड़ाई/अर्ध-चौड़ाई वाले अल्फ़ान्यूमेरिक पर स्विच करने के लिए चीनी पिनयिन, वुबी, कांग्जी, ज़ूयिन, और कैंटोनीज़ IME द्वारा उपयोग किया जाता है. आपके द्वारा इन IME में से कोई एक चुनने के बाद, आप इसे देख सकेंगे."
+   },
+   "inputtool_status_bar_span": {
+      "message": "स्थिति बार दिखाएं:"
+   },
+   "inputtool_title": {
+      "message": "Google इनपुट उपकरण"
+   },
+   "inputtool_title_short": {
+      "message": "इनपुट डिवाइस"
+   },
+   "inputtool_turnoff": {
+      "message": "बंद करें"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "यह IME के लिए है. इसे चुनने से, आपके द्वारा डाले गए शब्द और संबद्ध स्रोत स्ट्रिंग सहेज ली जाएंगी और Google के सर्वर पर आपके व्यक्तिगत शब्दकोश के रूप में समन्वयित कर दी जाएंगी. इसका उपयोग रूपांतरण सटीकता में सुधार लाने के लिए किया जाएगा. यदि आप इसे अनचेक करते हैं, तो हम Google के सर्वर पर आपके इनपुट सहेजना रोक देंगे. ध्यान रखें कि यदि आप इस विकल्प को अनचेक करते हैं, तो Google के सर्वर पर संग्रहीत आपका व्यक्तिगत शब्दकोश साफ़ नहीं किया जाएगा."
+   },
+   "inputtool_user_dict_span": {
+      "message": "व्यक्तिगत शब्दकोश समन्वयित करें:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "व्यक्तिगत शब्दकोश समन्वयित करें (सुझाये गये) "
+   },
+   "never_show": {
+      "message": "फिर ‍कभी न दिखाएं"
+   },
+   "revert_last_input_tool": {
+      "message": "पिछले इनपुट टूल को वापस लाएं"
+   },
+   "select_next_input_tool": {
+      "message": "अगला इनपुट टूल चुनें"
+   },
+   "shortcut_notification": {
+      "message": "विरासती कीबोर्ड शॉर्टकट के लिए समर्थन नहीं है. एक्सटेंशन मानक शॉर्टकट से बदलें"
+   },
+   "shortcut_video": {
+      "message": "डेमो"
+   },
+   "toggle_input_tool": {
+      "message": "वर्तमान इनपुट टूल को टॉगल करें"
+   },
+   "use_legacy_version": {
+      "message": "विरासती वर्शन का उपयोग करें"
+   }
+}

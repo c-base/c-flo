@@ -106,7 +106,19 @@
   tags: config
   
 - name: Load cacert root certs
+  become: Yes
+  become_user: "{{ display_user }}"
   shell: curl -k -o "cacert-root.crt" "http://www.cacert.org/certs/root.crt" && curl -k -o "cacert-class3.crt" "http://www.cacert.org/certs/class3.crt" && certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "CAcert.org" -i cacert-root.crt && certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "CAcert.org Class 3" -i cacert-class3.crt
+  args:
+      chdir: /home/{{ display_user }}
+
+- name: Upload chromium defaults.
+#  copy: src=chromium-defaults/ dest=/home/{{ display_user }}/chromium-defaults directory_mode=yes
+  become: yes
+  become_user: root
+  synchronize:
+    src: chromium-defaults/
+    dest: /home/{{ display_user }}/chromium-defaults
 
 - name: Upload run_chromium.sh file
   become: yes
@@ -114,5 +126,6 @@
   template: src=run_chromium.sh dest=/home/{{ display_user }}/run_chromium.sh mode=0744 owner={{ display_user }}
   notify:
     - Restart lightdm
-  tags: config
+  tags: config,bla
+  
 

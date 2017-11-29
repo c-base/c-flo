@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "తీసివేయి"
+   },
+   "guide_set_shortcut": {
+      "message": "Chrome పొడిగింపు సెట్టింగ్ పేజీని తెరవండి. పేజీ దిగువకు స్క్రోల్ చేసి, ఆపై \"కీబోర్డ్ సత్వరమార్గాలు\" క్లిక్ చేయండి"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "మీ వ్యక్తిగత నిఘంటువును ఇందులో క్లియర్ చేయండి"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "మరింత తెలుసుకోండి"
+   },
+   "inputtool_description": {
+      "message": "ఇన్‌పుట్ సాధనాలు మీరు కోరుకునే భాషలో టైప్ చేయడానికి మిమ్మల్ని అనుమతిస్తాయి."
+   },
+   "inputtool_extension_options": {
+      "message": "పొడిగింపు ఎంపికలు"
+   },
+   "inputtool_google_account": {
+      "message": "Google ఖాతా సెట్టింగ్‌లు."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "కీబోర్డ్‌ను దాచు"
+   },
+   "inputtool_learn_more": {
+      "message": "మరింత తెలుసుకోండి"
+   },
+   "inputtool_manage": {
+      "message": "పొడిగింపులను నిర్వహించడానికి. రెంచ్ TOOL_IMAGE మెనుని క్లిక్ చేయండి మరియు ఉపకరణాలు RIGHT_ARROW పొడిగింపులను ఎంచుకోండి."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "మీరు వర్చువల్ కీబోర్డ్‌ను ఎంచుకుంటే, ఈ ఎంపిక ద్వారా ఆన్-స్క్రీన్ కీబోర్డ్‌ను చూపవచ్చు లేదా దాచవచ్చు."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "ఆన్-స్క్రీన్ కీబోర్డ్‌ను చూపు:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome పొడిగింపు ఎంపికలు"
+   },
+   "inputtool_select_inputtools": {
+      "message": "ఇన్‌పుట్ సాధనాలను జోడించండి"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "ఎంచుకున్న ఇన్‌పుట్ సాధనాలు"
+   },
+   "inputtool_setup_in_process": {
+      "message": "సెటప్ ప్రాసెస్‌లో ఉంది..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "కీబోర్డ్ సత్వరమార్గ సెట్టింగ్‌లు"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "ఆన్-స్క్రీన్ కీబోర్డ్‌ను చూపు"
+   },
+   "inputtool_show_status_bar": {
+      "message": "స్థితి బార్‌ను చూపు"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "కీబోర్డ్‌ను చూపు"
+   },
+   "inputtool_sign_in": {
+      "message": "సైన్ ఇన్ చేయండి"
+   },
+   "inputtool_sign_in_as": {
+      "message": "ఇలా సైన్ ఇన్ చేసారు"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "మీ సెట్టింగ్‌లు మరియు వ్యక్తిగత నిఘంటువును వెబ్‌కు సేవ్ చేయడానికి మరియు ఏ కంప్యూటర్‌లో అయినా వ్యక్తిగతీకరించిన ఇన్‌పుట్ అనుభవాన్ని పొందడానికి సైన్ ఇన్ చేయండి. మీరు మెరుగైన ఇన్‌పుట్ నాణ్యతను పొందుతారు."
+   },
+   "inputtool_sign_out": {
+      "message": "సైన్ అవుట్ చేయండి"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "స్థితి బార్ అనేది చైనీస్/ఆంగ్లం మోడ్, చైనీస్/ఆంగ్లం విరామ చిహ్నాలు మరియు పూర్తి-వెడల్పు/అర్ధ-వెడల్పు అక్షర సంఖ్యాత్మకం మధ్య మారడానికి చైనీస్ పిన్యిన్, వుబీ, కాంగ్జీ, జుయిన్ మరియు కాంటోనీస్ IMEలు ఉపయోగించే చిన్న ఫ్లోటింగ్ విండో. మీరు ఈ IMEల్లో ఒకదాన్ని ఎంచుకున్నప్పుడు ఇది మీకు కనిపిస్తుంది."
+   },
+   "inputtool_status_bar_span": {
+      "message": "స్థితి బార్‌ను చూపు:"
+   },
+   "inputtool_title": {
+      "message": "Google ఇన్‌పుట్ సాధనాలు"
+   },
+   "inputtool_title_short": {
+      "message": "ఇన్‌పుట్ సాధనాలు"
+   },
+   "inputtool_turnoff": {
+      "message": "ఆఫ్ చేయండి"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "ఇది IMEల కోసం రూపొందించబడింది. దీన్ని ఎంచుకోవడం ద్వారా, మీరు నమోదు చేసిన పదాలు మరియు అనుబంధిత మూలం స్ట్రింగ్‌లు మీ వ్యక్తిగత నిఘంటువుగా Google సర్వర్‌లో సేవ్ చేయబడతాయి మరియు సమకాలీకరించబడతాయి. ఇది మార్పిడి యొక్క ఖచ్చితత్వాన్ని మెరుగుపరచడానికి ఉపయోగించబడుతుంది. మీరు దీని ఎంపికను తీసివేస్తే, మేము Google సర్వర్‌లో మీ ఇన్‌పుట్‌ను సేవ్ చేయడాన్ని ఆపివేస్తాము. మీరు ఈ ఎంపికను తీసివేస్తే, Google సర్వర్‌లో నిల్వ అయిన మీ వ్యక్తిగత నిఘంటువు క్లియర్ చేయబడదని గుర్తుంచుకోండి."
+   },
+   "inputtool_user_dict_span": {
+      "message": "వ్యక్తిగత నిఘంటువును సమకాలీకరించు:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "వ్యక్తిగత నిఘంటువును సమకాలీకరించు (సిఫార్సు చేయబడింది)"
+   },
+   "never_show": {
+      "message": "ఎప్పటికీ మళ్లీ చూపవద్దు"
+   },
+   "revert_last_input_tool": {
+      "message": "తిరిగి గత ఇన్‌పుట్ సాధానానికి మారడానికి"
+   },
+   "select_next_input_tool": {
+      "message": "తదుపరి ఇన్‌పుట్ సాధనం ఎంచుకోవడానికి"
+   },
+   "shortcut_notification": {
+      "message": "లెగసీ కీబోర్డ్ సత్వరమార్గాలకు మద్దతు ఇవ్వదు. పొడిగింపు ప్రామాణిక సత్వరమార్గాలతో భర్తీ చేయండి"
+   },
+   "shortcut_video": {
+      "message": "డెమో"
+   },
+   "toggle_input_tool": {
+      "message": "ప్రస్తుత ఇన్‌పుట్ సాధనాన్ని టోగుల్ చేయడానికి"
+   },
+   "use_legacy_version": {
+      "message": "లెగసీ సంస్కరణను ఉపయోగించు"
+   }
+}

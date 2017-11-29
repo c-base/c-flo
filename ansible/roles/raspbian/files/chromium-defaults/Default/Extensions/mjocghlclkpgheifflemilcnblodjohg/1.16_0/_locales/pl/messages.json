@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Kliknij, aby uruchomi\u0107 tryb pe\u0142noekranowy zegar"
+   },
+   "description": {
+      "message": "Zawiera przydatne zegar paska narz\u0119dzi i opcjonalnie fullscreen zegara."
+   },
+   "name": {
+      "message": "Zegar"
+   }
+}

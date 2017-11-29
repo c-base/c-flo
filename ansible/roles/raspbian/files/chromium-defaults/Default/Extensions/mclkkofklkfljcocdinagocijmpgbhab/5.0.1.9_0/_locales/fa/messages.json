@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "نپذیرفتن"
+   },
+   "guide_set_shortcut": {
+      "message": "صفحه تنظیم افزونه Chrome را باز کنید. به پایین صفحه بروید، سپس روی «میان‌برهای صفحه‌کلید» کلیک کنید"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "واژه‌نامه شخصی‌تان را اینجا پاک کنید"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "بیشتر بدانید"
+   },
+   "inputtool_description": {
+      "message": "ابزارهای ورودی به شما اجازه می‌دهند به زبان انتخابی‌تان تایپ کنید."
+   },
+   "inputtool_extension_options": {
+      "message": "گزینه‌های برنامهٔ افزودنی"
+   },
+   "inputtool_google_account": {
+      "message": "تنظیمات حساب Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "پنهان کردن صفحه‌کلید"
+   },
+   "inputtool_learn_more": {
+      "message": "بیشتر بدانید"
+   },
+   "inputtool_manage": {
+      "message": "برای مدیریت افزونه‌ها. با کلیک بر روی منوی TOOL_IMAGE و انتخاب ابزارها RIGHT_ARROW برنامه‌های افزودنی را انتخاب کنید."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "اگر یک صفحه‌کلید مجازی را انتخاب کنید، می‌توانید با این گزینه صفحه‌کلید روی صفحه را نمایش دهید یا پنهان کنید."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "نمایش صفحه‌کلید روی صفحه:"
+   },
+   "inputtool_options_title": {
+      "message": "گزینه‌های برنامهٔ افزودنی Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "افزودن ابزارهای ورودی"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "ابزارهای ورودی منتخب"
+   },
+   "inputtool_setup_in_process": {
+      "message": "راه‌اندازی در حال انجام است..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "تنظیمات میان‌بر صفحه‌کلید"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "نمایش صفحه‌کلید روی صفحه"
+   },
+   "inputtool_show_status_bar": {
+      "message": "نمایش نوار وضعیت"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "نمایش صفحه‌کلید"
+   },
+   "inputtool_sign_in": {
+      "message": "ورود به سیستم"
+   },
+   "inputtool_sign_in_as": {
+      "message": "ورود به سیستم به‌عنوان"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "برای ذخیره تنظیمات و واژه‌نامه شخصی‌تان در وب و به دست آوردن تجربه ورودی شخصی شده در هر رایانه‌ای، به سیستم وارد شوید. کیفیت ورودی بهتری دریافت خواهید کرد."
+   },
+   "inputtool_sign_out": {
+      "message": "خروج از سیستم"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "نوار وضعیت یک پنجره شناور کوچک است که توسط ویرایشگرهای IME چینی پین‌یین، ووبی، کانجی، ژویین و کانتونی جهت تغییر حالت چینی/انگلیسی، علائم سجاوندی چینی/انگلیسی و الفبا عددی تمام پهنا/نیم پهنا به کار می‌رود. با انتخاب یکی از این ویرایشگرهای IME این نوار را مشاهده خواهید کرد."
+   },
+   "inputtool_status_bar_span": {
+      "message": "نمایش نوار وضعیت:"
+   },
+   "inputtool_title": {
+      "message": "ابزار ورودی Google"
+   },
+   "inputtool_title_short": {
+      "message": "ابزارهای ورودی"
+   },
+   "inputtool_turnoff": {
+      "message": "خاموش کردن"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "این گزینه برای ویرایشگرهای IME است. با انتخاب آن، کلماتی که وارد کرده‌اید و رشته‌های منبع مربوطه در سرور Google به عنوان واژه‌نامه شخصی شما ذخیره و همگام‌سازی می‌شوند. این قابلیت برای بهبود دقت مکالمات استفاده می‌شود. اگر این گزینه را لغو انتخاب کنید، ذخیره کردن ورودی شما در سرور Google را متوقف خواهیم کرد. توجه داشته باشید که واژه‌نامه شخصی شما که در سرور Google ذخیره شده است با لغو انتخاب این گزینه پاک نخواهد شد."
+   },
+   "inputtool_user_dict_span": {
+      "message": "همگام‌سازی واژه‌نامه شخصی:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "همگام‌سازی واژه‌نامه شخصی (توصیه می‌شود)"
+   },
+   "never_show": {
+      "message": "دیگر هرگز نشان داده نشود"
+   },
+   "revert_last_input_tool": {
+      "message": "برگرداندن آخرین ابزار ورودی"
+   },
+   "select_next_input_tool": {
+      "message": "انتخاب ابزار ورودی بعدی"
+   },
+   "shortcut_notification": {
+      "message": "میان‌برهای صفحه‌کلید قدیمی پشتیبانی نمی‌شود. با میان‌برهای استاندارد افزونه جایگزین می‌شود"
+   },
+   "shortcut_video": {
+      "message": "پخش نمایشی"
+   },
+   "toggle_input_tool": {
+      "message": "تغییر ابزار ورودی فعلی"
+   },
+   "use_legacy_version": {
+      "message": "استفاده از نسخه قدیمی"
+   }
+}

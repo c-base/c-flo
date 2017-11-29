@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Dismiss"
+   },
+   "guide_set_shortcut": {
+      "message": "Open Chrome extension setting page. Scroll down the end of page then click \"Keyboard shortcuts\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Clear your personal dictionary at"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Learn more"
+   },
+   "inputtool_description": {
+      "message": "Input Tools lets you type in the language of your choice."
+   },
+   "inputtool_extension_options": {
+      "message": "Extension Options"
+   },
+   "inputtool_google_account": {
+      "message": "Google Account Settings."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Hide Keyboard"
+   },
+   "inputtool_learn_more": {
+      "message": "Learn more"
+   },
+   "inputtool_manage": {
+      "message": "To manage extensions. click the wrench TOOL_IMAGE menu and select Tools RIGHT_ARROW Extensions."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "If you select a virtual keyboard, you can show or hide the on-screen keyboard by this option."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Show on-screen keyboard:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome extension options"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Add Input Tools"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Selected Input Tools"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Set up in process..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Keyboard Shortcut Settings"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Show on-screen keyboard"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Show status bar"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Show Keyboard"
+   },
+   "inputtool_sign_in": {
+      "message": "Sign in"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Signed in as"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Sign in to save your settings and personal dictionary to the web and obtain personalized input experience on any computer. You'll get better input quality."
+   },
+   "inputtool_sign_out": {
+      "message": "Sign out"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Status bar is the small floating window used by Chinese Pinyin, Wubi, Cangjie, Zhuyin, and Cantonese IMEs to switch Chinese/English mode, Chinese/English punctuations, and full-wdith/half-width alphanumeric. You will see it when you have selected one of these IMEs."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Show status bar:"
+   },
+   "inputtool_title": {
+      "message": "Google Input Tools"
+   },
+   "inputtool_title_short": {
+      "message": "Input Tools"
+   },
+   "inputtool_turnoff": {
+      "message": "Turn off"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "This is for IMEs. By selecting this, the words you have entered and the associated source strings will be saved and synchronized on Google's server as your personal dictionary. It will be used to improve the conversion accuracy. If you uncheck this, we will stop saving your input on Google's server. Note that your personal dictionary that has been stored on Google's server will not be cleared if you uncheck this option."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Synchronize personal dictionary:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Synchronize personal dictionary (recommended)"
+   },
+   "never_show": {
+      "message": "Never show again"
+   },
+   "revert_last_input_tool": {
+      "message": "Revert last Input Tool"
+   },
+   "select_next_input_tool": {
+      "message": "Select next Input Tool"
+   },
+   "shortcut_notification": {
+      "message": "Not support legacy keyboard shortcuts. Replace with extension standard shortcuts"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Toggle current Input Tool"
+   },
+   "use_legacy_version": {
+      "message": "Use the legacy version"
+   }
+}

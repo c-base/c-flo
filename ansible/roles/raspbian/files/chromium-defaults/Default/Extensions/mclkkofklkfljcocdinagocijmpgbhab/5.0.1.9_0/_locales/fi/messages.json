@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Hylkää"
+   },
+   "guide_set_shortcut": {
+      "message": "Avaa Chrome-laajennuksen asetussivu. Vieritä sivun alaosaan ja valitse Pikanäppäimet."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Tyhjennä oma sanakirja klikkaamalla linkkiä"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Lisätietoja"
+   },
+   "inputtool_description": {
+      "message": "Input Tools -työkaluilla voit kirjoittaa haluamallasi kielellä."
+   },
+   "inputtool_extension_options": {
+      "message": "Laajennusasetukset"
+   },
+   "inputtool_google_account": {
+      "message": "Google-tilin asetukset."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Piilota näppäimistö"
+   },
+   "inputtool_learn_more": {
+      "message": "Lisätietoja"
+   },
+   "inputtool_manage": {
+      "message": "Voit hallinnoida laajennuksia klikkaamalla jakoavainvalikkoa TOOL_IMAGE ja valitsemalla Työkalut RIGHT_ARROW Laajennukset."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Jos valitset virtuaalisen näppäimistön, voit ottaa ruutunäppäimistön käyttöön tai piilottaa sen tämän valinnan avulla."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Näytä ruutunäppäimistö"
+   },
+   "inputtool_options_title": {
+      "message": "Chromen laajennusasetukset"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Lisää syöttötyökaluja"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Valitut syöttötyökalut"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Asetuksia määritetään…"
+   },
+   "inputtool_shortcut_option": {
+      "message": "Pikanäppäimien asetukset"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Näytä ruutunäppäimistö"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Näytä tilarivi"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Näytä näppäimistö"
+   },
+   "inputtool_sign_in": {
+      "message": "Kirjaudu sisään"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Kirjautunut käyttäjänä"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Kirjautumalla sisään voit tallentaa asetuksesi ja oman sanakirjasi verkkoon sekä käyttää muokattua syöttökokemusta millä tahansa tietokoneella. Syöttötavan laatu paranee."
+   },
+   "inputtool_sign_out": {
+      "message": "Kirjaudu ulos"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Tilarivi on pinyin-, wubi-, cangjie-, zhuyin- ja kantoninkiinan muotojen IME:issä käytettävä pieni kelluva ikkuna, jonka avulla voidaan vaihtaa kiina- ja englanti-tilan, kiinan ja englannin välimerkkien sekä täysleveän ja puolileveän aakkosnumeerisen tilan välillä. Näet tilarivin, jos käytössä on yksi näistä IME:istä."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Näytä tilarivi:"
+   },
+   "inputtool_title": {
+      "message": "Google Input Tools"
+   },
+   "inputtool_title_short": {
+      "message": "Input Tools"
+   },
+   "inputtool_turnoff": {
+      "message": "Poista käytöstä"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Tämä koskee IME:itä. Jos valitset tämän, kirjoittamasi sanat ja niihin liittyvät lähdekielen ilmaukset tallennetaan ja synkronoidaan Googlen palvelimelle omana sanakirjanasi. Sanakirjan avulla parannetaan muunnoksen tarkkuutta. Jos poistat valinnan, syötteitäsi ei tallenneta Googlen palvelimelle. Huomaa, että Googlen palvelimelle tallennettua omaa sanakirjaasi ei poisteta, jos poistat tämän valinnan."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Synkronoi oma sanakirja:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Synkronoi oma sanakirja (suositellaan)"
+   },
+   "never_show": {
+      "message": "Älä näytä uudelleen"
+   },
+   "revert_last_input_tool": {
+      "message": "Palauta edellinen syöttötyökalu käyttöön"
+   },
+   "select_next_input_tool": {
+      "message": "Valitse seuraava syöttötyökalu"
+   },
+   "shortcut_notification": {
+      "message": "Vanhoja pikanäppäimiä ei tueta. Ne korvataan laajennuksen vakiopikanäppäimillä."
+   },
+   "shortcut_video": {
+      "message": "Esittely"
+   },
+   "toggle_input_tool": {
+      "message": "Ota nykyinen syöttötyökalu käyttöön tai poista se käytöstä"
+   },
+   "use_legacy_version": {
+      "message": "Käytä vanhaa versiota"
+   }
+}

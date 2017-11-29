@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "डिसमिस करा"
+   },
+   "guide_set_shortcut": {
+      "message": "Chrome विस्तार सेटिंग पृष्ठ उघडा. पृष्ठाच्या शेवटपर्यन्त खाली स्क्रोल करा त्यानंतर ''कीबोर्ड शॉर्टकट'' क्लिक करा."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "येथे आपला वैयक्तिक शब्दकोश साफ करा"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "अधिक जाणून घ्या"
+   },
+   "inputtool_description": {
+      "message": "इनपुट साधने आपल्याला आपल्या आवडीच्या भाषेमध्ये टाइप करू देतात."
+   },
+   "inputtool_extension_options": {
+      "message": "विस्तार पर्याय"
+   },
+   "inputtool_google_account": {
+      "message": "Google खाते सेटिंग्ज"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "कीबोर्ड लपवा"
+   },
+   "inputtool_learn_more": {
+      "message": "अधिक जाणून घ्या"
+   },
+   "inputtool_manage": {
+      "message": "विस्तार व्यवस्थापित करण्यासाठी. पाना TOOL_IMAGE मेनू क्लिक करा आणि साधने RIGHT_ARROW विस्तार निवडा."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "आपण एक व्हर्च्युअल कीबोर्ड निवडल्यास, आपण या पर्यायाद्वारे ऑन--स्क्रीन कीबोर्ड दर्शवू किंवा लपवू शकता."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "ऑन-स्‍क्रीन कीबोर्ड दर्शवा."
+   },
+   "inputtool_options_title": {
+      "message": "Chrome विस्तार पर्याय"
+   },
+   "inputtool_select_inputtools": {
+      "message": "इनपुट साधने जोडा"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "निवडलेली इनपुट साधने"
+   },
+   "inputtool_setup_in_process": {
+      "message": "प्रक्रियेत सेट करा..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "कीबोर्ड शॉर्टकट सेटिंग्ज"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "ऑन-स्‍क्रीन कीबोर्ड दर्शवा"
+   },
+   "inputtool_show_status_bar": {
+      "message": "स्थिती पट्टिका दर्शवा"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "कीबोर्ड दर्शवा"
+   },
+   "inputtool_sign_in": {
+      "message": "साइन इन करा"
+   },
+   "inputtool_sign_in_as": {
+      "message": "म्हणून साइन इन केले"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "वेबवर आपल्या सेटिंग्ज आणि वैयक्तिक शब्दकोश जतन करण्यासाठी आणि कोणत्याही संगणकावर वैयक्तिकृत इनपुट अनुभव मिळविण्यासाठी साइन इन करा. आपल्याला उत्कृष्ट इनपुट गुणवत्ता मिळेल."
+   },
+   "inputtool_sign_out": {
+      "message": "साइन आउट करा"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "स्थिती पट्टिका ही चीनी/इंग्रजी मोड, चीनी/इंग्रजी विरामचिन्हे आणि पूर्ण-रुंदी/अर्ध-रुंदी अक्षरांकावर स्विच करण्यासाठी चीनी पिनयिन, वुबी, कॅन्गजी, झुयिन आणि कॅटोनीस IME द्वारे वापरली जाणारी लहान बदलती विंडो आहे. आपण या IME पैकी एक निवडल्यास आपल्याला ती दिसेल."
+   },
+   "inputtool_status_bar_span": {
+      "message": "स्थिती पट्टिका दर्शवा:"
+   },
+   "inputtool_title": {
+      "message": "Google इनपुट साधने"
+   },
+   "inputtool_title_short": {
+      "message": "इनपुट साधने"
+   },
+   "inputtool_turnoff": {
+      "message": "बंद करा"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "हे IME साठी आहे. हे निवडून, आपण प्रविष्ट केलेले शब्द आणि संबद्ध असलेल्या स्रोत स्ट्रिंग जतन केल्या जातील आणि आपला वैयक्तिक शब्दकोश म्हणून Google च्या सर्व्हरवर संकालित केल्या जातील. याचा वापर संभाषण अचुकता सुधारण्यासाठी केला जाईल. आपण हे अनचेक केल्यास, आम्ही Google च्या सर्व्हरवर आपले इनपुट जतन करणे थांबवू. लक्षात ठेवा आपण हा पर्याय अनचेक केल्यास Google च्या सर्व्हरवर संचयित केलेला आपला वैयक्तिक शब्दकोश साफ केला जाणार नाही."
+   },
+   "inputtool_user_dict_span": {
+      "message": "वैयक्तिक शब्दकोश संकालित करा:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "वैयक्तिक शब्दकोश संकालित करा (शिफारस केलेले)"
+   },
+   "never_show": {
+      "message": "पुन्हा कधीही दर्शवू नका"
+   },
+   "revert_last_input_tool": {
+      "message": "अंतिम इनपुट साधन परत करा"
+   },
+   "select_next_input_tool": {
+      "message": "पुढील इनपुट साधन निवडा"
+   },
+   "shortcut_notification": {
+      "message": "परंपरागत कीबोर्ड शॉर्टकटला समर्थन देत नाही. विस्तार मानक शॉर्टकटसह पुनर्स्थित करा"
+   },
+   "shortcut_video": {
+      "message": "डेमो"
+   },
+   "toggle_input_tool": {
+      "message": "वर्तमान इनपुट साधन टॉगल करा"
+   },
+   "use_legacy_version": {
+      "message": "परंपरागत आवृत्ती वापरा"
+   }
+}

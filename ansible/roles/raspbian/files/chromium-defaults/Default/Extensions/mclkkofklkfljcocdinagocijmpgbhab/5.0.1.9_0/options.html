@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='chext_common.css' type='text/css' />
+    <link rel='stylesheet' href='chext_scrollbar.css' type='text/css' />
+    <link rel='stylesheet' href='chext_inputtoolsbin.css' type='text/css' />
+  </head>
+  <body style="margin:0;font-family:Arial, Sans Serif;">
+    <div class='head'>
+      <div class="main">
+        <h1>
+          <img src='image/google_logo_41.png' alt='' class='chext-google-logo' />
+          <span id='INPUTTOOL_TITLE_SHORT' class='chext-inputtool-title'>Input Tools</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="row bold">
+        <span id="INPUTTOOL_SIGN_IN_GUIDE">Sign in to save your settings and
+          personal dictionary to
+          the web and obtain personalized input
+          experience on any computer.
+          You'll get better input quality.
+        </span>
+        <span id="INPUTTOOL_SIGN_IN_AS">
+          Sign in as XXX@gmail.com.
+        </span>
+        <span id="INPUTTOOL_CLEAR_DICTIONARY">Clear your personal dictionary at
+        </span>&nbsp;
+        <a id="INPUTTOOL_GOOGLE_ACCOUNT" target="_blank"
+           href='https://www.google.com/settings/account'>Google Account Settings.</a>
+        &nbsp;
+        <a href="#" id="INPUTTOOL_LEARN_MORE">learn more</a>
+      </div>
+      <div class="row">
+        <button id="INPUTTOOL_SIGN_IN" class="kd-button kd-button-action">Sign in</button>
+        <button id="INPUTTOOL_SIGN_OUT" class="kd-button" style="display:none">Sign out
+        </button>
+      </div>
+      <div class="row">
+        <input id="userDictCheckbox" type="checkbox" />
+        <span id='INPUTTOOL_USER_DICTIONARY'>Synchronize user dictionary (recommended)</span>
+        <br />
+        <input id="onScreenKeyboardCheckbox" type="checkbox" />
+        <span id='INPUTTOOL_SHOW_ON_SCREEN_KEYBOARD'>Show on-screen keyboard</span>
+        <br />
+        <input id="statusBarCheckbox" type="checkbox" />
+        <span id='INPUTTOOL_SHOW_STATUS_BAR'>Show status bar!</span>
+      </div>
+      <div class="chext-separator"></div>
+      <div class="row" style="display:none">
+        <input id="enableContextAware" type="checkbox" />
+        <span id="INPUTTOOLS_ENABLE_CONTEXT_AWARE">
+          Enable context aware input suggestions (recommended)
+          &nbsp;&nbsp;
+          <a href="#" id="INPUTTOOL_CONTEXT_AWARE_LEARN_MORE">learn more</a>
+        </span>
+      </div>
+      <div class="chext-separator" style="display:none"></div>
+      <div class="chext-options">
+        <div class="chext-selection">
+          <h3 id='inputtool_select_inputtools' class='chext-selection-title'>
+          </h3>
+          <div id='inputtools' class='chext-inputtools-tree'></div>
+        </div>
+        <div class="chext-select-remove">
+          <div id='select_remove' class='chext-select-remove-control'></div>
+        </div>
+        <div class="chext-selected">
+          <h3 id='inputtool_selected_inputtools' class='chext-selected-title'>
+          </h3>
+          <div id='selected' class='chext-selected-tree'></div>
+          <div id='up_down' class='chext-up-down-control'></div>
+        </div>
+      </div>
+    </div>
+  <div class="desc" id="learnMoreDesc">
+    <p class="row">
+      <span class="bold" id="INPUTTOOL_USER_DICT_SPAN">Synchronize user dictionary:</span>
+      &nbsp;
+      <span id="INPUTTOOL_USER_DICT_DESC">
+        This is for IMEs. By selecting this,
+        the words you have entered and the associated source strings will be saved
+        and synchronized on Google’s server as your personal dictionary. It
+        will be used to improve the conversion accuracy. If you uncheck this, we will
+        stop saving your input on Google’s server. Note that your personal
+        dictionary that has been stored on Google’s server will not be
+        cleared if you uncheck this option.
+      </span>
+      <br/><br/>
+      <span class="bold" id="INPUTTOOL_ON_SCREEN_KEYBOARD_SPAN">Show on-screen keyboard:</span>
+      &nbsp;
+      <span id="INPUTTOOL_ON_SCREEN_KEYBOARD_DESC">
+        If you select a virtual keyboard, you can
+        show or hide the on-screen keyboard by this option. But you can input
+        native script without looking the keyboard layout.
+      </span>
+      <br/><br/>
+      <span class="bold" id="INPUTTOOL_STATUS_BAR_SPAN">Show status bar:</span>
+      &nbsp;
+      <span id="INPUTTOOL_STATUS_BAR_DESC">
+          Status bar is the small floating window used by
+          Chinese Pinyin, Wubi, Cangjie, Zhuyin, and Cantonese IMEs to switch
+          Chinese/English mode, Chinese/English punctuations, and
+          full-wdith/half-width alphanumeric. You will see it when you have
+          selected one of these IMEs.
+      </span>
+     </p>
+      <button id="learnMoreDescCancelBtn" class="kd-button" style="position: relative;bottom: -100px;">Cancel</button>
+  </div>
+    <script type='text/javascript' src='languagedisplay.js'></script>
+    <script type='text/javascript' src='chext_options.js'></script>
+  </body>
+</html>

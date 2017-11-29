@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Klepn\u011Bte na tla\u010D\u00EDtko pro spu\u0161t\u011Bn\u00ED fullscreen hodin"
+   },
+   "description": {
+      "message": "Poskytuje u\u017Eite\u010Dn\u00FD panel n\u00E1stroj\u016F hodiny a hodiny voliteln\u00FD fullscreen."
+   },
+   "name": {
+      "message": "Hodiny"
+   }
+}

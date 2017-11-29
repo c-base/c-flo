@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Klicka f\u00F6r att starta fullscreen klocka"
+   },
+   "description": {
+      "message": "Ger ett bra verktygsf\u00E4lt klocka och valfria fullscreen klocka."
+   },
+   "name": {
+      "message": "Klocka"
+   }
+}

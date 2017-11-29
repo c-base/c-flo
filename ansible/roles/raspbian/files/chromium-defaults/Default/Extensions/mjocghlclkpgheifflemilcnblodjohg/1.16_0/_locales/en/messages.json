@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Click to start fullscreen clock"
+   },
+   "description": {
+      "message": "This extension gives you a handy toolbar clock with easy access to a bigger fullscreen clock whenever you might need it."
+   },
+   "name": {
+      "message": "Clock"
+   }
+}

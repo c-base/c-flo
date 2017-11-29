@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Ketepikan"
+   },
+   "guide_set_shortcut": {
+      "message": "Buka halaman tetapan sambungan Chrome. Tatal ke bawah ke penghujung halaman, kemudian klik \"Pintasan papan kekunci\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Kosongkan kamus peribadi anda di"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Ketahui lebih lanjut"
+   },
+   "inputtool_description": {
+      "message": "Alat Input membolehkan anda menaip dalam bahasa pilihan anda."
+   },
+   "inputtool_extension_options": {
+      "message": "Pilihan Sambungan"
+   },
+   "inputtool_google_account": {
+      "message": "Tetapan Akaun Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Sembunyikan Papan Kekunci"
+   },
+   "inputtool_learn_more": {
+      "message": "Ketahui lebih lanjut"
+   },
+   "inputtool_manage": {
+      "message": "Untuk menguruskan sambungan, klik menu sepana TOOL_IMAGE dan pilih Sambungan RIGHT_ARROW Alat."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Jika anda memilih papan kekunci maya, anda boleh memaparkan atau menyembunyikan papan kekunci pada skrin melalui pilihan ini."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Paparkan papan kekunci pada skrin:"
+   },
+   "inputtool_options_title": {
+      "message": "Pilihan sambungan Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Tambah Alat Input"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Alat Input Dipilih"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Penyediaan dalam proses ..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Tetapan Pintasan Papan Kekunci"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Paparkan papan kekunci pada skrin"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Paparkan bar status"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Tunjukkan Papan Kekunci"
+   },
+   "inputtool_sign_in": {
+      "message": "Log masuk"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Dilog masuk sebagai"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Log masuk untuk menyimpan tetapan dan kamus peribadi anda pada web dan mendapatkan pengalaman masukan peribadi pada mana-mana komputer. Anda akan mendapat kualiti masukan yang lebih baik."
+   },
+   "inputtool_sign_out": {
+      "message": "Log keluar"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Bar status ialah tetingkap kecil yang terapung yang digunakan oleh IME Cina Pinyin, Wubi, Cangjie, Zhuyin dan Kantonis untuk menukar mod Cina/Inggeris, sebutan Cina/Inggeris dan abjad angka lebar penuh/separa lebar. Anda akan melihatnya apabila anda memilih salah satu IME ini."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Paparkan bar status:"
+   },
+   "inputtool_title": {
+      "message": "Alat Input Google"
+   },
+   "inputtool_title_short": {
+      "message": "Alat Input"
+   },
+   "inputtool_turnoff": {
+      "message": "Matikan"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Perkara ini untuk IME. Dengan menandai pilihan ini, perkataan yang telah dimasukkan dan rentetan sumber berkaitan akan disimpan dan disegerakkan pada pelayan Google sebagai kamus peribadi anda. Perkataan ini akan digunakan untuk meningkatkan ketepatan penukaran. Jika anda tidak menandai pilihan ini, kami akan berhenti menyimpan masukan anda pada pelayan Google. Ambil perhatikan bahawa kamus peribadi anda yang telah disimpan pada pelayan Google tidak akan dikosongkan jika anda tidak menandai pilihan ini."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Segerakkan kamus peribadi:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Segerakkan kamus peribadi (disyorkan)"
+   },
+   "never_show": {
+      "message": "Jangan tunjukkan lagi"
+   },
+   "revert_last_input_tool": {
+      "message": "Berbalik kepada Alat Input terdahulu"
+   },
+   "select_next_input_tool": {
+      "message": "Pilih Alat Input seterusnya"
+   },
+   "shortcut_notification": {
+      "message": "Tidak menyokong pintasan papan kekunci lama. Gantikan dengan pintasan standard sambungan"
+   },
+   "shortcut_video": {
+      "message": "Tunjuk cara"
+   },
+   "toggle_input_tool": {
+      "message": "Togol Alat Input semasa"
+   },
+   "use_legacy_version": {
+      "message": "Gunakan versi lama"
+   }
+}

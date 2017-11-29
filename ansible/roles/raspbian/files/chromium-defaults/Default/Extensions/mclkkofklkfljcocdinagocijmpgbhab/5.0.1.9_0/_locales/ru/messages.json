@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Закрыть"
+   },
+   "guide_set_shortcut": {
+      "message": "Откройте настройки расширения Chrome и внизу страницы выберите \"Быстрые клавиши\"."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Очистить персональный словарь можно в"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Подробнее…"
+   },
+   "inputtool_description": {
+      "message": "Способы ввода текста поддерживают выбор языка."
+   },
+   "inputtool_extension_options": {
+      "message": "Параметры расширений"
+   },
+   "inputtool_google_account": {
+      "message": "настройках аккаунта Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Скрыть клавиатуру"
+   },
+   "inputtool_learn_more": {
+      "message": "Подробнее…"
+   },
+   "inputtool_manage": {
+      "message": "Чтобы управлять расширениями, перейдите в меню инструментов TOOL_IMAGE и выберите пункты \"Инструменты\" RIGHT_ARROW \"Расширения\"."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Эта функция позволяет показывать или скрывать экранную клавиатуру."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Показывать экранную клавиатуру:"
+   },
+   "inputtool_options_title": {
+      "message": "Параметры расширений Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Добавление способов ввода"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Выбранные способы ввода"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Настройка…"
+   },
+   "inputtool_shortcut_option": {
+      "message": "Настройки быстрых клавиш"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Показывать экранную клавиатуру"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Показывать строку состояния"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Показать клавиатуру"
+   },
+   "inputtool_sign_in": {
+      "message": "Войти в аккаунт"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Выполнен вход под именем"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Войдите в аккаунт, чтобы сохранить свои настройки и персональный словарь в Интернете, а также пользоваться привычным способом ввода на любом компьютере."
+   },
+   "inputtool_sign_out": {
+      "message": "Выйти"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Строка состояния – это небольшое плавающее окно, используемое в РМВ китайского языка (пиньинь, Wubi, Cangjie, чжуинь, кантонский диалект) для переключения на латинские символы и знаки пунктуации, а также полноширинные и полуширинные формы. Строка состояния появляется при выборе одного из этих РМВ."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Показывать строку состояния:"
+   },
+   "inputtool_title": {
+      "message": "Способы ввода текста"
+   },
+   "inputtool_title_short": {
+      "message": "Способы ввода текста"
+   },
+   "inputtool_turnoff": {
+      "message": "Отключить"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Если установить этот флажок для РМВ, введенные вами слова и связанные с ними исходные строки будут сохранены на сервере Google и синхронизированы с вашим персональным словарем. Это позволит улучшить точность перевода одних символов в другие. Если снять этот флажок, вводимые данные перестанут сохраняться на сервере, однако персональный словарь не будет удален."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Синхронизировать персональный словарь:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Синхронизировать персональный словарь (рекомендуется)"
+   },
+   "never_show": {
+      "message": "Больше не показывать"
+   },
+   "revert_last_input_tool": {
+      "message": "Вернуть предыдущий способ ввода"
+   },
+   "select_next_input_tool": {
+      "message": "Выбрать следующий способ ввода"
+   },
+   "shortcut_notification": {
+      "message": "Устаревшие быстрые клавиши. Используйте стандартные комбинации расширения."
+   },
+   "shortcut_video": {
+      "message": "Посмотреть видео"
+   },
+   "toggle_input_tool": {
+      "message": "Включить/выключить текущий способ ввода"
+   },
+   "use_legacy_version": {
+      "message": "Использовать старую версию"
+   }
+}

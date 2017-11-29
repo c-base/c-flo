@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "閉じる"
+   },
+   "guide_set_shortcut": {
+      "message": "Chrome 拡張機能の設定ページを開きます。ページの一番下までスクロールして [キーボード ショートカット] をクリックしてください"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "ユーザー辞書を消去します:"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "詳細"
+   },
+   "inputtool_description": {
+      "message": "入力ツールを使用すると選択した言語で入力できます。"
+   },
+   "inputtool_extension_options": {
+      "message": "拡張機能のオプション"
+   },
+   "inputtool_google_account": {
+      "message": "Google アカウント設定"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "キーボードを非表示にする"
+   },
+   "inputtool_learn_more": {
+      "message": "詳細"
+   },
+   "inputtool_manage": {
+      "message": "拡張機能を管理するには、レンチ TOOL_IMAGE メニューをクリックして [ツール] RIGHT_ARROW [拡張機能] を選択してください。"
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "仮想キーボードを選択している場合は、このオプションにより、画面キーボードの表示と非表示を切り替えることができます。"
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "画面キーボードを表示:"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome 拡張機能のオプション"
+   },
+   "inputtool_select_inputtools": {
+      "message": "入力ツールを追加"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "選択した入力ツール"
+   },
+   "inputtool_setup_in_process": {
+      "message": "ログインしています..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "キーボード ショートカットの設定"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "画面キーボードを表示する"
+   },
+   "inputtool_show_status_bar": {
+      "message": "ステータスバーを表示する"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "キーボードを表示する"
+   },
+   "inputtool_sign_in": {
+      "message": "ログイン"
+   },
+   "inputtool_sign_in_as": {
+      "message": "ログイン アカウント"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "自分の設定とユーザー辞書をウェブに保存して、どのパソコンでも自分の入力設定を使用できるようにするにはログインします。これで入力操作が快適になります。"
+   },
+   "inputtool_sign_out": {
+      "message": "ログアウト"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "ステータスバーは、中国語/英語のモード、中国語/英語の句読点、全角/半角の英数字を切り替えるための小さなフローティング ウィンドウで、中国語（ピンイン、五筆、倉頡、注音）、広東語の IME で使用されます。これらいずれかの IME を選択すると、このステータスバーが表示されます。"
+   },
+   "inputtool_status_bar_span": {
+      "message": "ステータスバーを表示:"
+   },
+   "inputtool_title": {
+      "message": "Google 入力ツール"
+   },
+   "inputtool_title_short": {
+      "message": "入力ツール"
+   },
+   "inputtool_turnoff": {
+      "message": "オフにする"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "IME 文字入力に対応しています。このチェックボックスをオンにすると、入力した文字や関連付けられたソース文字列はユーザー辞書として Google のサーバーに保存、同期されます。これにより、文字入力変換の精度が向上します。このチェックボックスをオフにすると、入力内容は Google のサーバーに保存、同期されなくなります。Google のサーバーに保存済みのユーザー辞書については、このチェックボックスをオフにしても消去されません。"
+   },
+   "inputtool_user_dict_span": {
+      "message": "ユーザー辞書を同期:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "ユーザー辞書を同期する（推奨）"
+   },
+   "never_show": {
+      "message": "次回から表示しない"
+   },
+   "revert_last_input_tool": {
+      "message": "最後の入力ツールを元に戻す"
+   },
+   "select_next_input_tool": {
+      "message": "次の入力ツールを選択"
+   },
+   "shortcut_notification": {
+      "message": "以前のキーボード ショートカットには対応していません。拡張機能の標準ショートカットに変更されました"
+   },
+   "shortcut_video": {
+      "message": "デモ"
+   },
+   "toggle_input_tool": {
+      "message": "現在の入力ツールを切り替え"
+   },
+   "use_legacy_version": {
+      "message": "以前のバージョンを使用"
+   }
+}

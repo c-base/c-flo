@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Napsauta K\u00E4ynnist\u00E4 fullscreen kello"
+   },
+   "description": {
+      "message": "Tarjoaa hy\u00F6dyllinen ty\u00F6kalurivi kellon ja vapaaehtoinen fullscreen kellon."
+   },
+   "name": {
+      "message": "Kello"
+   }
+}

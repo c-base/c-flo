@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Ignora"
+   },
+   "guide_set_shortcut": {
+      "message": "Obriu la pàgina de configuració de l'extensió de Chrome. Desplaceu-vos fins al final i feu clic a Tecles de drecera."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Podeu esborrar el diccionari personal a la"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Més informació"
+   },
+   "inputtool_description": {
+      "message": "Eines d'introducció de text us permet escriure en l'idioma que trieu."
+   },
+   "inputtool_extension_options": {
+      "message": "Opcions d'extensió"
+   },
+   "inputtool_google_account": {
+      "message": "configuració del compte de Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Amaga el teclat"
+   },
+   "inputtool_learn_more": {
+      "message": "Més informació"
+   },
+   "inputtool_manage": {
+      "message": "Per gestionar les extensions, feu clic al menú d'opcions TOOL_IMAGE i seleccioneu Eines RIGHT_ARROW Extensions."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "si seleccioneu un teclat virtual, podeu mostrar-lo o amagar-lo a la pantalla amb aquesta opció."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Mostra el teclat en pantalla:"
+   },
+   "inputtool_options_title": {
+      "message": "Opcions d'extensió de Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Afegiu eines d'introducció de text"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Eines d'introducció de text seleccionades"
+   },
+   "inputtool_setup_in_process": {
+      "message": "S'està configurant..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Configuració de les tecles de drecera"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Mostra el teclat en pantalla"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Mostra la barra d'estat"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Mostra el teclat"
+   },
+   "inputtool_sign_in": {
+      "message": "Inicia la sessió"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Heu iniciat la sessió com a"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Inicieu la sessió per desar la vostra configuració i el vostre diccionari personal al web i per obtenir una experiència d'introducció de text personalitzada en qualsevol ordinador. D'aquesta manera, millorarà la qualitat de la introducció de text."
+   },
+   "inputtool_sign_out": {
+      "message": "Tanca la sessió"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "la barra d'estat és la finestreta flotant que es fa servir per als IME xinesos de pinyin, wubi, cangjie i zhuyin per canviar entre els modes xinès i anglès, entre la puntuació xinesa i anglesa i entre els caràcters alfanumèrics d'amplada completa o de mitja amplada. La veureu si seleccioneu un d'aquests IME."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Mostra la barra d'estat:"
+   },
+   "inputtool_title": {
+      "message": "Eines d'introducció de text de Google"
+   },
+   "inputtool_title_short": {
+      "message": "Eines d'introducció de text"
+   },
+   "inputtool_turnoff": {
+      "message": "Desactiva"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "aquesta opció està dirigida als IME. Si la seleccioneu, les paraules que hàgiu introduïu i les cadenes originals que s'hi associïn es desaran i se sincronitzaran al servidor de Google com a diccionari personal. Posteriorment, s'utilitzarà aquesta informació per millorar la precisió de la conversió. Si anul·leu la selecció d'aquesta casella, deixarem de desar el text que introduïu al servidor de Google. Tingueu en compte que, encara que anul·leu la selecció d'aquesta casella, el diccionari personal que hi hagi emmagatzemat al servidor de Google no s'esborrarà."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sincronitza el diccionari personal:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sincronitza el diccionari personal (recomanat)"
+   },
+   "never_show": {
+      "message": "No ho tornis a mostrar"
+   },
+   "revert_last_input_tool": {
+      "message": "Torna a la darrera eina d'introducció de text"
+   },
+   "select_next_input_tool": {
+      "message": "Selecciona l'eina d'introducció de text següent"
+   },
+   "shortcut_notification": {
+      "message": "No s'admeten les tecles de drecera antigues. Substituïu-les per les dreceres estàndard de l'extensió."
+   },
+   "shortcut_video": {
+      "message": "Demostració"
+   },
+   "toggle_input_tool": {
+      "message": "Activa o desactiva l'eina d'introducció de text actual"
+   },
+   "use_legacy_version": {
+      "message": "Utilitza la versió antiga"
+   }
+}

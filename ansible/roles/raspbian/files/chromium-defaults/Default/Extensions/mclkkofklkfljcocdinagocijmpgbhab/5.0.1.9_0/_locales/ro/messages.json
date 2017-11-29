@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Renunțați"
+   },
+   "guide_set_shortcut": {
+      "message": "Deschideți pagina cu setări ale extensiei Chrome. Derulați la finalul paginii, apoi dați clic pe „Comenzi rapide de la tastatură”."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Șterge dicționarul personal în"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Află mai multe"
+   },
+   "inputtool_description": {
+      "message": "Cu extensia Instrumente pentru introducere de text poți să introduci text în limba dorită."
+   },
+   "inputtool_extension_options": {
+      "message": "Opțiuni pentru extensii"
+   },
+   "inputtool_google_account": {
+      "message": "Setările Contului Google."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Ascundeți tastatura"
+   },
+   "inputtool_learn_more": {
+      "message": "Află mai multe"
+   },
+   "inputtool_manage": {
+      "message": "Pentru a gestiona extensiile, dă clic pe meniul cheie TOOL_IMAGE și selectează Instrumente RIGHT_ARROW Extensii."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Dacă selectezi o tastatură virtuală, cu această opțiune poți afișa sau ascunde tastatura de pe ecran."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Afișează tastatura pe ecran:"
+   },
+   "inputtool_options_title": {
+      "message": "Opțiuni pentru extensiile Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Adaugă Instrumente de introducere a textului"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Instrumente de introducere de text selectate:"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Se configurează..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Setări pentru comenzi rapide de la tastatură"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Afișează tastatura pe ecran"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Afișează bara de stare"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Afișați tastatura"
+   },
+   "inputtool_sign_in": {
+      "message": "Conectează-te"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Conectat(ă) ca"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Conectează-te pentru a salva setările și dicționarul personal pe web și pentru a beneficia de o experiență personalizată de introducere a textului pe orice computer. Vei obține o calitate superioară de introducere a textului."
+   },
+   "inputtool_sign_out": {
+      "message": "Deconectează-te"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Bara de stare este mica fereastră flotantă folosită de instrumentele IME pentru chineză Pinyin, Wubi, Cangjie, Zhuyin și cantoneză, pentru a comuta între modul pentru chineză/pentru engleză, între punctuația pentru chineză/pentru engleză și între caracterele alfanumerice cu lățime completă/pe jumătate de lățime. Se va afișa când selectezi unul dintre aceste instrumente IME."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Afișează bara de stare:"
+   },
+   "inputtool_title": {
+      "message": "Google Instrumente de introducere text"
+   },
+   "inputtool_title_short": {
+      "message": "Instrumente de introducere a textului"
+   },
+   "inputtool_turnoff": {
+      "message": "Dezactivează"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Această opțiune se aplică pentru instrumentele IME. Dacă o selectezi, cuvintele introduse și șirurile sursă asociate vor fi salvate și sincronizate pe serverul Google ca dicționarul tău personal. Se va folosi pentru a îmbunătăți acuratețea conversiei. Dacă debifezi această opțiune, nu vom mai salva pe serverul Google textul introdus. Reține că dicționarul personal salvat pe serverul Google nu va fi șters dacă debifezi această opțiune."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sincronizează dicționarul personal:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sincronizează dicționarul personal (recomandat)"
+   },
+   "never_show": {
+      "message": "Nu mai afișa niciodată"
+   },
+   "revert_last_input_tool": {
+      "message": "Reveniți la ultimul instrument de introducere de text"
+   },
+   "select_next_input_tool": {
+      "message": "Selectați următorul instrument de introducere de text"
+   },
+   "shortcut_notification": {
+      "message": "Nu se acceptă comenzi rapide de la tastatură vechi. Înlocuiți-le cu comenzile rapide standard ale extensiei."
+   },
+   "shortcut_video": {
+      "message": "Versiune demonstrativă"
+   },
+   "toggle_input_tool": {
+      "message": "Activați/Dezactivați instrumentul de introducere de text actual"
+   },
+   "use_legacy_version": {
+      "message": "Folosiți versiunea veche"
+   }
+}

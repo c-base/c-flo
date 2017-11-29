@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Fare clic per avviare l'orologio a tutto schermo"
+   },
+   "description": {
+      "message": "Fornisce un orologio utile barra degli strumenti e opzionale orologio a schermo intero."
+   },
+   "name": {
+      "message": "Orologio"
+   }
+}

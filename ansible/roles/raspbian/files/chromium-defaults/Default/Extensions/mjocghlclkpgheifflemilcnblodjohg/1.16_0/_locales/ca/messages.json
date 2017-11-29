@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Feu clic per iniciar el rellotge en pantalla completa"
+   },
+   "description": {
+      "message": "Ofereix un rellotge de la barra d'eines \u00FAtils i un rellotge en pantalla completa opcional."
+   },
+   "name": {
+      "message": "Rellotge"
+   }
+}

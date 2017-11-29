@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Odbaci"
+   },
+   "guide_set_shortcut": {
+      "message": "Otvorite stranicu postavki Chromeova proširenja. Pomičite se do dna stranice, a zatim  kliknite opciju \"Tipkovni prečaci\"."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Izbrišite osobni rječnik u"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Saznajte više"
+   },
+   "inputtool_description": {
+      "message": "Alati za unos teksta omogućuju vam pisanje na jeziku po vašem izboru."
+   },
+   "inputtool_extension_options": {
+      "message": "Opcije proširenja"
+   },
+   "inputtool_google_account": {
+      "message": "postavkama Google računa."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Sakrij tipkovnicu"
+   },
+   "inputtool_learn_more": {
+      "message": "Saznajte više"
+   },
+   "inputtool_manage": {
+      "message": "Za upravljanje proširenjima kliknite izbornik francuskog ključa TOOL_IMAGE i odaberite Alati RIGHT_ARROW Proširenja."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Ako odaberete virtualnu tipkovnicu, možete prikazati ili sakriti tipkovnicu na zaslonu pomoću te opcije."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Prikaži tipkovnicu na zaslonu:"
+   },
+   "inputtool_options_title": {
+      "message": "Opcije proširenja za preglednik Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Dodavanje alata za unos teksta"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Odabrani alati za unos teksta"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Postavljanje u tijeku..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Postavke tipkovnih prečaca"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Prikaži tipkovnicu na zaslonu"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Prikaži traku statusa"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Prikaži tipkovnicu"
+   },
+   "inputtool_sign_in": {
+      "message": "Prijava"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Prijavljen kao"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Prijavite se da biste spremili svoje postavke i osobni rječnik na web te pristupili svojem prilagođenom unosu na bilo kojem računalu. Poboljšat ćete kvalitetu unosa."
+   },
+   "inputtool_sign_out": {
+      "message": "Odjava"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Traka statusa mali je lebdeći prozor kojim se koriste kineski pinyin, wubi, cangjie, zhuyin i kantonski IME-ovi za međusobno izmjenjivanje kineskog i engleskog načina, kineske i engleske interpunkcije te alfanumeričkih znakova pune širine i polovice širine. Prikazat će se kada odaberete jedan od tih IME-ova."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Prikaži traku statusa:"
+   },
+   "inputtool_title": {
+      "message": "Google alati za unos teksta"
+   },
+   "inputtool_title_short": {
+      "message": "Alati za unos teksta"
+   },
+   "inputtool_turnoff": {
+      "message": "Isključi"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Odnosi se na IME-ove. Ako odaberete tu opciju, riječi koje unesete i s njima povezani izvorni nizovi spremit će se i sinkronizirati na Googleovu poslužitelju kao vaš osobni rječnik. Upotrebljavat će se za poboljšavanje točnosti pretvorbe. Ako poništite tu opciju, prestat ćemo spremati vaše unose na Googleov poslužitelj. Napominjemo da se vaš osobni rječnik koji je pohranjen na Googleovu poslužitelju neće izbrisati ako poništite tu opciju."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sinkroniziraj osobni rječnik:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sinkroniziraj osobni rječnik (preporučeno)"
+   },
+   "never_show": {
+      "message": "Ne prikazuj više nikad"
+   },
+   "revert_last_input_tool": {
+      "message": "Vraćanje na posljednji alat za unos"
+   },
+   "select_next_input_tool": {
+      "message": "Odabir sljedećeg alata za unos"
+   },
+   "shortcut_notification": {
+      "message": "Stari tipkovni prečaci nisu podržani. Zamijenite ih standardnim prečacima proširenja"
+   },
+   "shortcut_video": {
+      "message": "Demonstracija"
+   },
+   "toggle_input_tool": {
+      "message": "Uključivanje/isključivanje trenutačnog alata za unos"
+   },
+   "use_legacy_version": {
+      "message": "Upotreba stare verzije"
+   }
+}

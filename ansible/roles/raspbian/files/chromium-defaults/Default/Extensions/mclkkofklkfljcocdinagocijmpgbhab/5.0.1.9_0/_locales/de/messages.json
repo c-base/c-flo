@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Schließen"
+   },
+   "guide_set_shortcut": {
+      "message": "Öffnen Sie die Einstellungen für Chrome-Erweiterungen. Scrollen Sie nach unten zum Ende der Seite und klicken Sie auf \"Tastenkombinationen\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Löschen Sie Ihr persönliches Wörterbuch in den"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Weitere Informationen"
+   },
+   "inputtool_description": {
+      "message": "Mit Input Tools können Sie Text in einer beliebigen Sprache eingeben."
+   },
+   "inputtool_extension_options": {
+      "message": "Erweiterungsoptionen"
+   },
+   "inputtool_google_account": {
+      "message": "Google-Kontoeinstellungen."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Tastatur ausblenden"
+   },
+   "inputtool_learn_more": {
+      "message": "Weitere Informationen"
+   },
+   "inputtool_manage": {
+      "message": "Klicken Sie zum Verwalten von Erweiterungen auf das Schraubenschlüssel-Menü TOOL_IMAGE und wählen Sie \"Tools\" RIGHT_ARROW \"Erweiterungen\"."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Wenn Sie eine virtuelle Tastatur auswählen, können Sie die Bildschirmtastatur mit dieser Option ein- bzw. ausblenden."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Bildschirmtastatur anzeigen:"
+   },
+   "inputtool_options_title": {
+      "message": "Optionen für Chrome-Erweiterungen"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Eingabetools hinzufügen"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Ausgewählte Eingabetools"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Einrichtung wird durchgeführt..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Einstellungen für Tastenkombinationen"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Bildschirmtastatur anzeigen"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Statusleiste anzeigen"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Tastatur anzeigen"
+   },
+   "inputtool_sign_in": {
+      "message": "Anmelden"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Angemeldet als"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Melden Sie sich an, um Ihre Einstellungen und Ihr persönliches Wörterbuch im Web zu speichern und das Eingabeverhalten für jeden Computer zu personalisieren. Die Qualität des Eingabeverhaltens verbessert sich hierdurch."
+   },
+   "inputtool_sign_out": {
+      "message": "Abmelden"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Die Statusleiste ist das kleine unverankerte Fenster, das in den Chinesisch-IMEs für Pinyin, Wubi, Cangjie, Zhuyin und Kantonesisch für das Umschalten zwischen dem chinesischen und englischen Modus, chinesischen/englischen Satzzeichen und alphanumerischen Zeichen mit voller bzw. halber Breite verwendet wird. Sie wird angezeigt, wenn Sie eine dieser IMEs ausgewählt haben."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Statusleiste anzeigen:"
+   },
+   "inputtool_title": {
+      "message": "Google Input Tools"
+   },
+   "inputtool_title_short": {
+      "message": "Input Tools"
+   },
+   "inputtool_turnoff": {
+      "message": "Deaktivieren"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Diese Option ist für IMEs vorgesehen. Wenn Sie sie auswählen, werden die von Ihnen eingegebenen Wörter und die zugehörigen Quell-Strings als Ihr persönliches Wörterbuch auf dem Google-Server gespeichert und synchronisiert. Das Wörterbuch wird zur Verbesserung der Umwandlungsgenauigkeit herangezogen. Wenn Sie die Option deaktivieren, werden Ihre Eingaben nicht mehr auf dem Google-Server gespeichert. Ihr auf dem Google-Server gespeichertes persönliches Wörterbuch wird jedoch nicht gelöscht, wenn Sie die Option deaktivieren."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Persönliches Wörterbuch synchronisieren:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Persönliches Wörterbuch synchronisieren (empfohlen)"
+   },
+   "never_show": {
+      "message": "Nicht mehr anzeigen"
+   },
+   "revert_last_input_tool": {
+      "message": "Zurück zu letztem Eingabetool"
+   },
+   "select_next_input_tool": {
+      "message": "Nächstes Eingabetool auswählen"
+   },
+   "shortcut_notification": {
+      "message": "Alte Tastenkombinationen werden nicht unterstützt. Bitte verwenden Sie stattdessen die Erweiterungs-Standardtastenkombinationen"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "Aktuelles Eingabetool aktivieren/deaktivieren"
+   },
+   "use_legacy_version": {
+      "message": "Alte Version verwenden"
+   }
+}

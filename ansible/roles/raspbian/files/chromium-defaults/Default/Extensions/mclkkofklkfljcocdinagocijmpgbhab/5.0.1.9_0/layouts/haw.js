@@ -1,0 +1,1 @@
+(function() { google.elements.keyboard.loadme({id:"haw",title:"\u02bb\u014clelo Hawai\u02bbi",mappings:{",c":{"":"{{\u02bb}}1234567890-=qwertyuiop[]\\asdfghjkl\u0304'zxcvbnm,./"},"s,sc":{"":'~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>?'},"l,cl":{"":"`1234567890-=QWERTYUIOP[]\\ASDFGHJKL;'ZXCVBNM,./"},"sl,scl":{"":'~!@#$%^&*()_+qwertyuiop{}|asdfghjkl:"zxcvbnm<>?'}}}); })()

@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "关闭"
+   },
+   "guide_set_shortcut": {
+      "message": "打开 Chrome 扩展程序设置页面。滚动到页面底部，然后点击“键盘快捷键”"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "在以下位置清除您的个人字典："
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "了解详情"
+   },
+   "inputtool_description": {
+      "message": "输入工具可让您以自己选择的语言输入文字。"
+   },
+   "inputtool_extension_options": {
+      "message": "扩展程序选项"
+   },
+   "inputtool_google_account": {
+      "message": "Google帐户设置。"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "隐藏键盘"
+   },
+   "inputtool_learn_more": {
+      "message": "了解详情"
+   },
+   "inputtool_manage": {
+      "message": "要管理扩展程序，请先点击扳手 TOOL_IMAGE 菜单，然后依次选择“工具”RIGHT_ARROW“扩展程序”。"
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "选择虚拟键盘后，您可以通过此选项显示或隐藏屏幕键盘。"
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "显示屏幕键盘："
+   },
+   "inputtool_options_title": {
+      "message": "Chrome 浏览器扩展程序选项"
+   },
+   "inputtool_select_inputtools": {
+      "message": "添加输入工具"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "所选输入工具"
+   },
+   "inputtool_setup_in_process": {
+      "message": "正在设置…"
+   },
+   "inputtool_shortcut_option": {
+      "message": "键盘快捷键设置"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "显示屏幕键盘"
+   },
+   "inputtool_show_status_bar": {
+      "message": "显示状态栏"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "显示键盘"
+   },
+   "inputtool_sign_in": {
+      "message": "登录"
+   },
+   "inputtool_sign_in_as": {
+      "message": "目前的登录帐户为："
+   },
+   "inputtool_sign_in_guide": {
+      "message": "登录帐户，然后将自己的设置和个人字典保存到网络上，即可在任何计算机上获得个性化的输入体验和更好的输入质量。"
+   },
+   "inputtool_sign_out": {
+      "message": "退出"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "状态栏是一个浮动小窗口，中文拼音、五笔、仓颉、注音和粤语IME使用该窗口切换中文/英文输入模式、中文/英文标点符号以及全角/半角字母数字字符。您选择上述其中一种IME后，即可看到状态栏。"
+   },
+   "inputtool_status_bar_span": {
+      "message": "显示状态栏："
+   },
+   "inputtool_title": {
+      "message": "Google 输入工具"
+   },
+   "inputtool_title_short": {
+      "message": "输入工具"
+   },
+   "inputtool_turnoff": {
+      "message": "关闭"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "此选项适用于IME。您选中此选项后，系统会在Google服务器上保存并同步您已输入的字词及相关联的源字符串（作为您的个人字典）。它将用于提高转换准确性。如果您取消选中此选项，我们将停止在Google服务器上保存您输入的内容。请注意：您取消选中此选项后，已经存储在Google服务器上的个人字典不会被清除。"
+   },
+   "inputtool_user_dict_span": {
+      "message": "同步个人字典："
+   },
+   "inputtool_user_dictionary": {
+      "message": "同步个人字典（推荐）"
+   },
+   "never_show": {
+      "message": "不要再显示"
+   },
+   "revert_last_input_tool": {
+      "message": "还原上一个输入工具"
+   },
+   "select_next_input_tool": {
+      "message": "选择下一个输入工具"
+   },
+   "shortcut_notification": {
+      "message": "不支持旧版键盘快捷键。请替换为扩展程序标准快捷键"
+   },
+   "shortcut_video": {
+      "message": "演示"
+   },
+   "toggle_input_tool": {
+      "message": "切换当前的输入工具"
+   },
+   "use_legacy_version": {
+      "message": "使用旧版本"
+   }
+}

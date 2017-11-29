@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "አሰናብት"
+   },
+   "guide_set_shortcut": {
+      "message": "የChrome ቅጥያ ቅንብር ገጽን ይክፈቱ። ወደ ገጹ መጨረሻ ወደ ታች ይሸብልሉ እና በመቀጠል «የቁልፍ ሰሌዳ አቋራጮች» የሚለው ላይ ጠቅ ያድርጉ"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "የግል መዝገበ-ቃላትዎን ያጽዱ በ"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "ተጨማሪ ለመረዳት"
+   },
+   "inputtool_description": {
+      "message": "የግቤት መሳሪያዎች በመረጡትን ቋንቋ እንዲተይቡ ያስችሉዎታል።"
+   },
+   "inputtool_extension_options": {
+      "message": "የቅጥያ አማራጮች"
+   },
+   "inputtool_google_account": {
+      "message": "የGoogle መለያ ቅንብሮች።"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "የቁልፍ ሰሌዳን ደብቅ"
+   },
+   "inputtool_learn_more": {
+      "message": "ተጨማሪ ለመረዳት"
+   },
+   "inputtool_manage": {
+      "message": "ቅጥያዎችን ለማቀናበር የመፍቻ TOOL_IMAGE ምናሌውን ጠቅ ያድርጉና የመሣሪያዎች RIGHT_ARROW ቅጥያዎችን ይምረጡ።"
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "ምናባዊ የቁልፍ ሰሌዳን ከመረጡ የታይታ የቁልፍ ሰሌዳውን በዚህ አማራጭ ማሳየት ወይም መደበቅ ይችላሉ።"
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "የማያ ገጽ ላይ ቁልፍ ሰሌዳ አሳይ፦"
+   },
+   "inputtool_options_title": {
+      "message": "የChrome ቅጥያ አማራጮች"
+   },
+   "inputtool_select_inputtools": {
+      "message": "የግቤት መሣሪያዎችን ያክሉ"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "የተመረጡ የግቤት መሣሪያዎች"
+   },
+   "inputtool_setup_in_process": {
+      "message": "ማዋቀር በሂደት ላይ..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "የቁልፍ ሰሌዳ አቋራጭ ቅንብሮች"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "የማያ ገጽ ላይ ቁልፍ ሰሌዳ አሳይ"
+   },
+   "inputtool_show_status_bar": {
+      "message": "የሁኔታ አሞሌ አሳይ"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "የቁልፍ ሰሌዳን አሳይ"
+   },
+   "inputtool_sign_in": {
+      "message": "በመለያ ይግቡ"
+   },
+   "inputtool_sign_in_as": {
+      "message": "እንደሚከተለው ሆነው ገብተዋል፦"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "ቅንብሮችዎን እና የግል መዝገበ ቃላትዎን በድር ላይ ለማስቀመጥ እና ለግል ብጁ የተደረገ የግቤት ተሞክሮን በማንኛቸውም ኮምፒዩተር ላይ ለማግኘት በመለያ ይግቡ። የተሻለ የግቤት ጥራት ያገኛሉ።"
+   },
+   "inputtool_sign_out": {
+      "message": "ዘግተው ይውጡ"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "የሁኔታ አሞሌ በቻይንኛ ፒንዪን፣ ዉቢ፣ ካንግጂ፣ ዡዪን እና ካንቶኒዝ አይ ኤም ኢዎችን ወደ ቻይንኛ/እንግሊዝኛ ሁነታ፣ ቻይንኛ/እንግሊዝኛ ስርዓተ ነጥቦች እና ባለሙሉ-ስፋት/ግማሽ-ስፋት ፊደል-ቁጥር ለመቀየር ጥቅም ላይ የሚውል ትንሽ ተንሳፋፊ መስኮት ነው። ከነዚህ አይ ኤም ኢዎች ውስጥ አንዱን ሲመርጡ ያዩታል።"
+   },
+   "inputtool_status_bar_span": {
+      "message": "የሁኔታ አሞሌ አሳይ፦"
+   },
+   "inputtool_title": {
+      "message": "Google የግቤት መሣሪያዎች"
+   },
+   "inputtool_title_short": {
+      "message": "የግቤት መሳሪያዎች"
+   },
+   "inputtool_turnoff": {
+      "message": "አጥፋ"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "ይህ ለአይ ኤም ኢዎች ነው። ይህን በመምረጥ ያስገቡዋቸው ቃላት እና የተቆራኙ የምንጭ ሕብረቁምፊዎች ይቀመጡ እና እንደ የግል መዝገበ-ቃላትዎ በGoogle አገልጋይ ላይ እንዲሰምሩ ይደረጋሉ። የልወጣ ትክክለኛነትን ለማሻሻል ጥቅም ላይ ይውላል። ይህን ምልክት ሳያደርጉበት ካለፉት ግቤትዎን በGoogle አገልጋይ ላይ ማስቀመጣችንን እናቆማለን። ይህን አማራጭ ምልክት ሳያደርጉበት ካለፉት በGoogle አገልጋይ ላይ ቀደም ሲል ተቀምጦ የነበረው የግል መዝገበ-ቃላትዎ እንዲጸዳ እንደማይደረግ ልብ ይበሉ።"
+   },
+   "inputtool_user_dict_span": {
+      "message": "የግል መዝገበ-ቃላትን አሳምር፦"
+   },
+   "inputtool_user_dictionary": {
+      "message": "የግል መዝገበ-ቃላትን አሳምር (የሚመከር)"
+   },
+   "never_show": {
+      "message": "ዳግመኛ አታሳይ"
+   },
+   "revert_last_input_tool": {
+      "message": "የመጨረሻውን የግቤት መሣሪያ መልስ"
+   },
+   "select_next_input_tool": {
+      "message": "ቀጣይ የግቤት መሣሪያን ይምረጡ"
+   },
+   "shortcut_notification": {
+      "message": "የቆዩ የቁልፍ ሰሌዳ አቋራጮች አይደገፉም። በቅጥያ መደበኛ አቋራጮች ተካ"
+   },
+   "shortcut_video": {
+      "message": "ቅንጭብ ማሳያ"
+   },
+   "toggle_input_tool": {
+      "message": "አሁን ያለውን የግቤት መሣሪያ ቀያይር"
+   },
+   "use_legacy_version": {
+      "message": "የቆየውን ስሪት ተጠቀም"
+   }
+}

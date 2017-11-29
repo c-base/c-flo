@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Nerādīt"
+   },
+   "guide_set_shortcut": {
+      "message": "Atveriet Chrome paplašinājuma iestatījumu lapu. Ritiniet lejup līdz lapas beigām un pēc tam noklikšķiniet uz vienuma Īsinājumtaustiņi."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Notīriet savu personīgo vārdnīcu šeit:"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Uzziniet vairāk"
+   },
+   "inputtool_description": {
+      "message": "Izmantojot ievades rīkus, varat rakstīt jūsu izvēlētā valodā."
+   },
+   "inputtool_extension_options": {
+      "message": "Paplašinājumu opcijas"
+   },
+   "inputtool_google_account": {
+      "message": "Google konta iestatījumi."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Paslēpt tastatūru"
+   },
+   "inputtool_learn_more": {
+      "message": "Uzziniet vairāk"
+   },
+   "inputtool_manage": {
+      "message": "Lai pārvaldītu paplašinājumus, noklikšķiniet uz uzgriežņu atslēgas TOOL_IMAGE izvēlnes un atlasiet Rīki RIGHT_ARROW Paplašinājumi."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Atlasot virtuālu tastatūru un izvēloties šo opciju, varat rādīt vai paslēpt ekrāna tastatūru."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Ekrāna tastatūras rādīšana"
+   },
+   "inputtool_options_title": {
+      "message": "Chrome paplašinājumu opcijas"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Ievades rīku pievienošana"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Atlasītie ievades rīki"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Notiek iestatīšana..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Īsinājumtaustiņu iestatījumi"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Rādīt ekrāna tastatūru"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Rādīt statusa joslu"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Rādīt tastatūru"
+   },
+   "inputtool_sign_in": {
+      "message": "Pierakstīšanās"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Pierakstījies kā"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Pierakstieties, lai saglabātu savus iestatījumus un personīgo vārdnīcu tīmeklī un jebkurā datorā izmantotu personalizētas ievades iespējas. Tādējādi tiks uzlabota ievades kvalitāte."
+   },
+   "inputtool_sign_out": {
+      "message": "Izrakstīties"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Statusa josla ir neliels peldošs logs, kas tiek lietots ķīniešu valodas piņjiņa, vubi, cangjie, žujiņa un Kantonas dialekta ievades metožu redaktoriem, lai pārslēgtos starp ķīniešu un angļu valodas režīmiem, ķīniešu un angļu valodas pieturzīmēm, kā arī pilna platuma un pusplatuma burtciparu rakstzīmēm. Tā būs redzama, tiklīdz atlasīsiet kādu no iepriekš minēto ievades metožu redaktoriem."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Statusa joslas rādīšana"
+   },
+   "inputtool_title": {
+      "message": "Google ievades rīki"
+   },
+   "inputtool_title_short": {
+      "message": "Ievades rīki"
+   },
+   "inputtool_turnoff": {
+      "message": "Izslēgt"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Šī iespēja ir paredzēta ievades metodes redaktoriem. Atlasot šo iespēju, ievadītie vārdi un saistītās avota virknes tiks saglabātas un sinhronizētas Google serverī jūsu personīgajā vārdnīcā. Šī vārdnīca tiks izmantota, lai uzlabotu pārvēršanas precizitāti. Noņemot atzīmi no šīs izvēles rūtiņas, tiks pārtraukta jūsu ievadītos vienumu saglabāšana Google serverī. Ņemiet vērā, ka, noņemot atzīmi no šīs izvēles rūtiņas, netiks dzēsta jūsu personīgā vārdnīca, kas tiek glabāta Google serverī."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Personīgās vārdnīcas sinhronizēšana"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sinhronizēt personīgo vārdnīcu (ieteicams)"
+   },
+   "never_show": {
+      "message": "Nekad vairs nerādīt"
+   },
+   "revert_last_input_tool": {
+      "message": "Atjaunot iepriekšējo ievades rīku"
+   },
+   "select_next_input_tool": {
+      "message": "Atlasīt nākamo ievades rīku"
+   },
+   "shortcut_notification": {
+      "message": "Mantotie īsinājumtaustiņi netiek atbalstīti. Aizstājiet tos ar paplašinājuma standarta īsinājumtaustiņiem."
+   },
+   "shortcut_video": {
+      "message": "Demonstrācija"
+   },
+   "toggle_input_tool": {
+      "message": "Pārslēgt pašreizējo ievades rīku"
+   },
+   "use_legacy_version": {
+      "message": "Izmantot mantoto versiju"
+   }
+}

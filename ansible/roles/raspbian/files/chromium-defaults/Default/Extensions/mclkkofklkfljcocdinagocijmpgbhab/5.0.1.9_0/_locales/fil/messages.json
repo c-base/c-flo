@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "I-dismiss"
+   },
+   "guide_set_shortcut": {
+      "message": "Buksan ang page ng Chrome extension setting. Mag-scroll pababa sa dulo ng page at pagkatapos ay i-click ang \"Mga Shortcut sa Keyboard\""
+   },
+   "inputtool_clear_dictionary": {
+      "message": "I-clear ang iyong personal na diksyunaryo sa"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Matuto nang higit pa"
+   },
+   "inputtool_description": {
+      "message": "Nagbibigay-daan sa iyo ang Mga Input Tool na i-type ang pinili mong wika."
+   },
+   "inputtool_extension_options": {
+      "message": "Mga pagpipilian sa Extension"
+   },
+   "inputtool_google_account": {
+      "message": "Mga Setting ng Google Account."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Itago ang Keyboard"
+   },
+   "inputtool_learn_more": {
+      "message": "Matuto nang higit pa"
+   },
+   "inputtool_manage": {
+      "message": "Upang pamahalaan ang mga extension. I-click ang menu na TOOL_IMAGE wrench at piliin ang Mga Tool RIGHT_ARROW Mga Extension."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Kung pipili ka ng virtual na keyboard, maaari mong ipakita o itago ang on-screen na keyboard gamit ang opsyong ito."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Ipakita ang on-screen na keyboard:"
+   },
+   "inputtool_options_title": {
+      "message": "Mga pagpipilian sa Chrome extension"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Magdagdag ng Mga Input Tool"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Mga Napiling Input Tool"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Pinoproseso ang pag-set up..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Mga Setting ng Keyboard Shortcut"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Ipakita ang on-screen na keyboard"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Ipakita ang status bar"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Ipakita ang Keyboard"
+   },
+   "inputtool_sign_in": {
+      "message": "Mag-sign in"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Nag-sign in bilang"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Mag-sign in upang i-save ang iyong mga setting at personal na diksyunaryo sa web at makuha ang naka-personalize na karanasan sa pag-input sa anumang computer. Makakakuha ka ng mas magandang kalidad ng pag-input."
+   },
+   "inputtool_sign_out": {
+      "message": "Mag-sign out"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Ang status bar ay ang maliit na lumulutang na window na gamit ng mga IME ng Chinese Pinyin, Wubi, Cangjie, Zhuyin, at Cantonese upang lumipat sa Chinese/English mode, mga pagbikas ng Chinese/Ingles, at full-wdith/half-width alphanumeric. Makikita mo ito kapag pinili mo ang isa sa mga IME na ito."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Ipakita ang status bar:"
+   },
+   "inputtool_title": {
+      "message": "Mga Input Tool ng Google"
+   },
+   "inputtool_title_short": {
+      "message": "Mga Input Tool"
+   },
+   "inputtool_turnoff": {
+      "message": "I-off"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Para ito sa mga IME. Sa pagpili nito, mase-save at masi-synchronize ang mga salitang iyong inilagay at ang mga kaugnay na pinagmulang string sa server ng Google bilang iyong personal na diksyunaryo. Gagamitin ito upang pahusayin ang katumpakan ng conversion. Kung aalisin mo ang check dito, ititigil namin ang pag-save ng iyong input sa server ng Google. Tandaan na hindi maki-clear ang personal mong diksyunaryo na nakaimbak na sa server ng Google kung aalisan mo ng check ang opsyong ito."
+   },
+   "inputtool_user_dict_span": {
+      "message": "I-synchronize ang personal na diksyunaryo:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "I-synchronize ang personal na diksyunaryo (inirerekomenda)"
+   },
+   "never_show": {
+      "message": "Huwag ipakitang muli"
+   },
+   "revert_last_input_tool": {
+      "message": "I-revert ang huling Input Tool"
+   },
+   "select_next_input_tool": {
+      "message": "Piliin ang susunod na Input Tool"
+   },
+   "shortcut_notification": {
+      "message": "Hindi sinusuportahan ang mga legacy shortcut sa keyboard. Palitan ng mga extension standard shortcut"
+   },
+   "shortcut_video": {
+      "message": "Demo"
+   },
+   "toggle_input_tool": {
+      "message": "I-toggle ang kasalukuyang Input Tool"
+   },
+   "use_legacy_version": {
+      "message": "Gamitin ang legacy na bersyon"
+   }
+}

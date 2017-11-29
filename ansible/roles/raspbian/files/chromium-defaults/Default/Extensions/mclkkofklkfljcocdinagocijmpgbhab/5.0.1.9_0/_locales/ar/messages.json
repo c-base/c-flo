@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "تجاهل"
+   },
+   "guide_set_shortcut": {
+      "message": "افتح صفحة تعيين إضافة Chrome. مرر لأسفل للوصول إلى نهاية الصفحة، ثم انقر على \"اختصارات لوحة المفاتيح\"."
+   },
+   "inputtool_clear_dictionary": {
+      "message": "مسح القاموس الشخصي في"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "مزيد من المعلومات"
+   },
+   "inputtool_description": {
+      "message": "تتيح لك أدوات الإدخال الكتابة باللغة التي تفضلها."
+   },
+   "inputtool_extension_options": {
+      "message": "خيارات الإضافات"
+   },
+   "inputtool_google_account": {
+      "message": "إعدادات حساب Google"
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "إخفاء لوحة المفاتيح"
+   },
+   "inputtool_learn_more": {
+      "message": "مزيد من المعلومات"
+   },
+   "inputtool_manage": {
+      "message": "لإدارة الإضافات. انقر على قائمة زر مفتاح الربط TOOL_IMAGE وحدد الأدوات RIGHT_ARROW الإضافات."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "في حالة تحديد لوحة المفاتيح الظاهرية، يمكنك إظهار أو إخفاء لوحة المفاتيح على الشاشة من خلال هذا الخيار."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "إظهار لوحة مفاتيح على الشاشة:"
+   },
+   "inputtool_options_title": {
+      "message": "خيارات إضافات Chrome"
+   },
+   "inputtool_select_inputtools": {
+      "message": "إضافة أدوات الإدخال"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "أدوات الإدخال المحددة"
+   },
+   "inputtool_setup_in_process": {
+      "message": "جارٍ الإعداد..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "إعدادات اختصارات لوحة المفاتيح"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "إظهار لوحة مفاتيح على الشاشة"
+   },
+   "inputtool_show_status_bar": {
+      "message": "إظهار شريط الحالة"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "عرض لوحة المفاتيح"
+   },
+   "inputtool_sign_in": {
+      "message": "تسجيل الدخول"
+   },
+   "inputtool_sign_in_as": {
+      "message": "مسجّل الدخول كـ"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "سجّل الدخول لحفظ الإعدادات والقاموس الشخصي على الويب والحصول على تجربة إدخال مخصصة في أي جهاز كمبيوتر، كما سيضمن ذلك حصولك على جودة إدخال أفضل."
+   },
+   "inputtool_sign_out": {
+      "message": "الخروج"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "شريط الحالة هو نافذة صغيرة عائمة تستخدمها أدوات IME للغات الصينية Pinyin وWubi وCangjie وZhuyin وCantonese للتبديل بين وضعي الصينية/الإنجليزية، وعلامات الترقيم الصينية/الإنجليزية، والحروف الأبجدية الرقمية بعرض كامل/نصف عرض. يظهر شريط الحالة عند تحديد إحدى أدوات IME هذه."
+   },
+   "inputtool_status_bar_span": {
+      "message": "إظهار شريط الحالة:"
+   },
+   "inputtool_title": {
+      "message": "أدوات الإدخال من Google"
+   },
+   "inputtool_title_short": {
+      "message": "أدوات الإدخال"
+   },
+   "inputtool_turnoff": {
+      "message": "إيقاف"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "يتعلق هذا الخيار بأدوات IME. عند تحديده، سيتم حفظ الكلمات التي أدخلتها وسلاسل المصدر المرتبطة ومزامنتها في خادم Google كما في القاموس الشخصي. وسيتم استخدامها بهدف تحسين دقة التحويل. أما في حالة إلغاء تحديده، فسيتم التوقف عن حفظ الإدخالات في خادم Google. مع العلم بأنه لن يتم مسح القاموس الشخصي الذي تم تخزينه في خادم Google في حالة إلغاء تحديد هذا الخيار."
+   },
+   "inputtool_user_dict_span": {
+      "message": "مزامنة القاموس الشخصي:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "مزامنة القاموس الشخصي (مستحسن)"
+   },
+   "never_show": {
+      "message": "عدم العرض مرة أخرى مطلقًا"
+   },
+   "revert_last_input_tool": {
+      "message": "العودة إلى أداة الإدخال السابقة"
+   },
+   "select_next_input_tool": {
+      "message": "تحديد أداة الإدخال التالية"
+   },
+   "shortcut_notification": {
+      "message": "لا تتوفر اختصارات لوحة المفاتيح القديمة. يمكنك استبدالها باختصارات الإضافات القياسية."
+   },
+   "shortcut_video": {
+      "message": "العرض التوضيحي"
+   },
+   "toggle_input_tool": {
+      "message": "تبديل أداة الإدخال الحالية"
+   },
+   "use_legacy_version": {
+      "message": "استخدام الإصدار القديم"
+   }
+}

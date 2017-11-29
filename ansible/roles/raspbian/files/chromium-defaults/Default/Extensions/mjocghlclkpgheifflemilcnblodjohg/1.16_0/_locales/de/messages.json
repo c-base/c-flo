@@ -1,0 +1,11 @@
+{
+   "action_title": {
+      "message": "Klicken Sie auf Vollbild Uhr zu starten"
+   },
+   "description": {
+      "message": "Bietet eine n\u00FCtzliche Symbolleiste Uhr und optional Vollbild Uhr."
+   },
+   "name": {
+      "message": "Uhr"
+   }
+}

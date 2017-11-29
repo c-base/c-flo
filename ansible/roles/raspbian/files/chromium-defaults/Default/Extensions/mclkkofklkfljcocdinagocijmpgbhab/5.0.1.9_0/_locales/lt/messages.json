@@ -1,0 +1,119 @@
+{
+   "dismiss": {
+      "message": "Atsisakyti"
+   },
+   "guide_set_shortcut": {
+      "message": "Atidarykite „Chrome“ plėtinių nustatymų puslapį. Slinkite žemyn iki puslapio pabaigos, tada spustelėkite „Spartieji klavišai“"
+   },
+   "inputtool_clear_dictionary": {
+      "message": "Išvalykite asmeninį žodyną"
+   },
+   "inputtool_context_aware_learn_more": {
+      "message": "Sužinokite daugiau"
+   },
+   "inputtool_description": {
+      "message": "Naudodami Įvesties įrankius galite vesti tekstą pasirinkta kalba."
+   },
+   "inputtool_extension_options": {
+      "message": "Plėtinių parinktys"
+   },
+   "inputtool_google_account": {
+      "message": "„Google“ paskyros nustatymuose."
+   },
+   "inputtool_hide_virtual_keyboard": {
+      "message": "Slėpti klaviatūrą"
+   },
+   "inputtool_learn_more": {
+      "message": "Sužinokite daugiau"
+   },
+   "inputtool_manage": {
+      "message": "Jei norite valdyti plėtinius, spustelėkite veržliarakčio TOOL_IMAGE meniu ir pasirinkite skiltį „Įrankiai“ RIGHT_ARROW „Plėtiniai“."
+   },
+   "inputtool_on_screen_keyboard_desc": {
+      "message": "Jei pasirinksite virtualiąją klaviatūrą, galėsite rodyti arba slėpti ekrano klaviatūrą ekrane naudodami šią parinktį."
+   },
+   "inputtool_on_screen_keyboard_span": {
+      "message": "Rodyti ekrano klaviatūrą:"
+   },
+   "inputtool_options_title": {
+      "message": "„Chrome“ plėtinių parinktys"
+   },
+   "inputtool_select_inputtools": {
+      "message": "Pridėti įvesties įrankius"
+   },
+   "inputtool_selected_inputtools": {
+      "message": "Pasirinkti įvesties įrankiai"
+   },
+   "inputtool_setup_in_process": {
+      "message": "Vykdoma sąranka..."
+   },
+   "inputtool_shortcut_option": {
+      "message": "Sparčiųjų klavišų nustatymai"
+   },
+   "inputtool_show_on_screen_keyboard": {
+      "message": "Rodyti ekrano klaviatūrą"
+   },
+   "inputtool_show_status_bar": {
+      "message": "Rodyti būsenos juostą"
+   },
+   "inputtool_show_virtual_keyboard": {
+      "message": "Rodyti klaviatūrą"
+   },
+   "inputtool_sign_in": {
+      "message": "Prisijungti"
+   },
+   "inputtool_sign_in_as": {
+      "message": "Prisijungta kaip"
+   },
+   "inputtool_sign_in_guide": {
+      "message": "Prisijunkite, kad išsaugotumėte nustatymus ir asmeninį žodyną žiniatinklyje ir galėtumėte naudoti suasmenintas įvesties funkcijas bet kuriame kompiuteryje. Įvesties kokybė bus geresnė."
+   },
+   "inputtool_sign_out": {
+      "message": "Atsijungti"
+   },
+   "inputtool_status_bar_desc": {
+      "message": "Būsenos juosta yra mažas slankusis langas kinų k. „Pinyin“, „Wubi“, „Cangjie“, „Zhuyin“ ir kantoniečių dialekto IME, kad būtų galima perjungti kinų / anglų k. režimus, kinų / anglų k. skyrybos ir viso pločio / pusės pločio raidinius ir skaitinius simbolius. Ją matysite, kai pasirinksite vieną iš šių IME."
+   },
+   "inputtool_status_bar_span": {
+      "message": "Rodyti būsenos juostą:"
+   },
+   "inputtool_title": {
+      "message": "„Google“ įvesties įrankiai"
+   },
+   "inputtool_title_short": {
+      "message": "Įvesties įrankiai"
+   },
+   "inputtool_turnoff": {
+      "message": "Išjungti"
+   },
+   "inputtool_user_dict_desc": {
+      "message": "Ši parinktis skirta IME. Kai ją pasirinksite, įvesti žodžiai ir susijusios šaltinio eilutės bus išsaugoti ir sinchronizuojami „Google“ serveryje kaip asmeninis žodynas. Ji bus naudojama siekiant pagerinti konversijos tikslumą. Jei atžymėsite ją, nebesaugosime jūsų įvesties „Google“ serveryje. Atminkite, kad asmeninis žodynas, kuris buvo saugomas „Google“ serveryje, nebus išvalytas, jei šią parinktį atžymėsite."
+   },
+   "inputtool_user_dict_span": {
+      "message": "Sinchronizuoti asmeninį žodyną:"
+   },
+   "inputtool_user_dictionary": {
+      "message": "Sinchronizuoti asmeninį žodyną (rekomenduojama)"
+   },
+   "never_show": {
+      "message": "Niekada nerodyti"
+   },
+   "revert_last_input_tool": {
+      "message": "Grąžinti paskutinį įvesties įrankį"
+   },
+   "select_next_input_tool": {
+      "message": "Pasirinkti kitą įvesties įrankį"
+   },
+   "shortcut_notification": {
+      "message": "Pasenę spartieji klavišai nepalaikomi. Pakeiskite įprastais plėtinių sparčiaisiais klavišais"
+   },
+   "shortcut_video": {
+      "message": "Demonstracinė versija"
+   },
+   "toggle_input_tool": {
+      "message": "Perjungti dabartinį įvesties įrankį"
+   },
+   "use_legacy_version": {
+      "message": "Naudoti pasenusią versiją"
+   }
+}
