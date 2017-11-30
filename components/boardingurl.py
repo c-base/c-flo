@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import msgflo
+import urllib.parse
 
 class BoardingUrl(msgflo.Participant):
   def __init__(self, role):
@@ -18,7 +19,8 @@ class BoardingUrl(msgflo.Participant):
     msgflo.Participant.__init__(self, d, role)
 
   def process(self, inport, msg):
-    url = 'https://c-beam.cbrp3.c-base.org/welcome/%s' % msg.data['user']
+    greeting = 'hallo %s, willkommen an bord!' % msg.data['user']
+    url = 'http://c-flo.cbrp3.c-base.org/visual-paging/?%s' % urllib.parse.quote(greeting.encode('utf-8'))
     self.send('out', url)
     self.ack(msg)
 
