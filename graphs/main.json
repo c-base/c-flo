@@ -139,7 +139,7 @@
       "component": "c-base/infodisplay"
     },
     "nerdctrl-display": {
-      "component": "c-base/mqttwebview"
+      "component": "c-base/infodisplay"
     },
     "nerd": {
       "component": "c-flo/pedestrianlight"
