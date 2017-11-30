@@ -5,5 +5,5 @@ important_urls:
 urls: 
     - "https://c-beam.cbrp3.c-base.org/events"
     - "http://c-flo.cbrp3.c-base.org/bar-history/"
-    - "https://c-beam.cbrp3.c-base.org/sensors"
     - "https://c-beam.cbrp3.c-base.org/he1display"
+    - "http://c-flo.cbrp3.c-base.org/internet/"

@@ -6,17 +6,9 @@ important_urls:
 urls:
     - "http://www.c-base.org"
     - "http://logbuch.c-base.org/"
-    - "https://c-beam.cbrp3.c-base.org/events"
-    - "https://c-beam.cbrp3.c-base.org/c-base-map"
-    - "https://cbag3.c-base.org/artefact"
     - "https://c-beam.cbrp3.c-base.org/missions"
-    - "https://c-beam.cbrp3.c-base.org/weather"
-    - "https://c-beam.cbrp3.c-base.org/bvg"
-    - "https://c-beam.cbrp3.c-base.org/nerdctrl"
     - "https://c-beam.cbrp3.c-base.org/sensors"
     - "https://c-beam.cbrp3.c-base.org/ceitloch"
-    - "https://c-beam.cbrp3.c-base.org/reddit"
-    - "http://vimeo.com/cbase/videos"
     - "https://wiki.c-base.org/dokuwiki/"
 
 ansible_ssh_user: uk
