@@ -1,7 +1,7 @@
 ---
 # Any module can be used for the handler action
-- name: Restart lightdm
-  become: yes
-  become_user: root
-  action: service name=lightdm state=restarted enabled=true
+#- name: Restart lightdm
+#  become: yes
+#  become_user: root
+#  action: service name=lightdm state=restarted enabled=true
 

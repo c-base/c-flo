@@ -1,0 +1,35 @@
+---
+# These tasks installs i3 and chromium in fullscreen-mode
+
+- name: Select i3 as default window manager
+  become: yes
+  become_user: root
+  alternatives:
+    name: x-window-manager
+    path: /usr/bin/i3
+  tags: config,bla
+
+- name: Create directory for i3 config
+  become: yes
+  become_user: root
+  file: path=/home/{{ display_user }}/.i3 state=directory owner={{ display_user }}
+  tags: i3,config,bla
+
+- name: Upload i3 config file.
+  become: yes
+  become_user: root
+  template: src=i3config.conf dest=/home/{{ display_user }}/.i3/config mode=0644
+  tags: config,bla
+
+- name: Create cronjob to restart lxdm
+  become: yes
+  become_user: root
+  cron:
+      name: restart mqttwebview
+      weekday: "*"
+      minute: 0
+      hour: "*"
+      user: root
+      job: "/usr/sbin/service lxdm restart"
+      cron_file: ansible_restart_mqttwebview
+  tags: config,bla

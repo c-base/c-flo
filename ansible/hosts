@@ -7,3 +7,7 @@ soundlab-display		ansible_ssh_host=soundlab-display.local
 nerdarea-display		ansible_ssh_host=nerdarea-display.local
 he1-terminal			ansible_ssh_host=he1-terminal.cbrp3.c-base.org
 siri					ansible_ssh_host=siri.cbrp3.c-base.org
+
+[lxdms]
+nerdctrl				ansible_ssh_host=nerdctrl.cbrp3.c-base.org
+

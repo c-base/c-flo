@@ -5,3 +5,11 @@
   hosts: raspbians
   roles:
     - raspbian
+    - lightdm
+    - fullscreen
+    
+- name: configure and deploy the webservers and application code
+  hosts: lxdms
+  roles:
+    - raspbian
+    - splitscreen

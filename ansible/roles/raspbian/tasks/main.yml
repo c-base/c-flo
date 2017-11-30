@@ -13,7 +13,6 @@
     - sudo
     - xorg
     - xinit
-    - lightdm
     - i3
     - python3-gi
     - gir1.2-webkit-3.0
@@ -23,42 +22,6 @@
     - libnss3-tools
     - curl
     - chromium-browser
-
-- name: Select i3 as default window manager
-  become: yes
-  become_user: root
-  alternatives:
-    name: x-window-manager
-    path: /usr/bin/i3
-  tags: config
-
-- name: Enable lightdm service
-  become: yes
-  become_user: root
-  service: name=lightdm state=started enabled=yes
-  tags: config
-
-- name: Upload lightdm config file.
-  become: yes
-  become_user: root
-  template: src=lightdm.conf dest=/etc/lightdm/lightdm.conf mode=0644
-  notify:
-    - Restart lightdm
-  tags: config
-
-- name: Create directory for i3 config
-  become: yes
-  become_user: root
-  file: path=/home/{{ display_user }}/.i3 state=directory owner={{ display_user }}
-  tags: i3,config
-
-- name: Upload i3 config file.
-  become: yes
-  become_user: root
-  template: src=i3config.conf dest=/home/{{ display_user }}/.i3/config mode=0644
-  notify:
-    - Restart lightdm
-  tags: config
 
 - name: Download git repo
   become: yes
@@ -74,36 +37,23 @@
   tags: git, config
   register: git
 
-- name: Install pip requirements
-  become: yes
-  become_user: "{{ display_user }}"
-  pip:
-    requirements: "{{ project_root }}/requirements.txt"
-    executable: pip3
-    state: present
-    extra_args: --user
-  tags: pip
+# - name: Install pip requirements
+#   become: yes
+#   become_user: "{{ display_user }}"
+#   pip:
+#     requirements: "{{ project_root }}/requirements.txt"
+#     executable: pip3
+#     state: present
+#     extra_args: --user
+#   tags: pip
 
-- name: Upload config.py file.
-  become: yes
-  become_user: root
-  template: src=config.py dest=/home/{{ display_user }}/mqttwebview/config.py mode=0644 owner={{ display_user }}
-  notify:
-    - Restart lightdm
-  tags: config
-
-- name: Create cronjob to restart mqttwebview
-  become: yes
-  become_user: root
-  cron:
-      name: restart mqttwebview
-      weekday: "*"
-      minute: 0
-      hour: "*"
-      user: root
-      job: "/usr/sbin/service lightdm restart"
-      cron_file: ansible_restart_mqttwebview
-  tags: config
+# - name: Upload config.py file.
+#   become: yes
+#   become_user: root
+#   template: src=config.py dest=/home/{{ display_user }}/mqttwebview/config.py mode=0644 owner={{ display_user }}
+#   notify:
+#     - Restart lightdm
+#   tags: config
   
 - name: Load cacert root certs
   become: Yes
@@ -124,8 +74,6 @@
   become: yes
   become_user: root
   template: src=run_chromium.sh dest=/home/{{ display_user }}/run_chromium.sh mode=0744 owner={{ display_user }}
-  notify:
-    - Restart lightdm
   tags: config,bla
   
 
