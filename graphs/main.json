@@ -536,6 +536,16 @@
     },
     {
       "src": {
+        "process": "airportweather",
+        "port": "metar"
+      },
+      "tgt": {
+        "process": "CrewOnline",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
         "process": "crew",
         "port": "boarding"
       },
