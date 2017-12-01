@@ -5,6 +5,7 @@ important_urls:
 urls: 
     - "https://c-beam.cbrp3.c-base.org/c-base-map"
     - "https://c-beam.cbrp3.c-base.org/weather"
+    - "https://c-beam.cbrp3.c-base.org/he1display"
     - "https://c-beam.cbrp3.c-base.org/bvg"
     
 msgflo_role: "he1"
