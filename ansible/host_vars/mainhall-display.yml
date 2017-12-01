@@ -3,7 +3,7 @@ important_urls:
     - "http://c-flo.cbrp3.c-base.org/mainhall/"
 
 urls: 
-    - "https://c-beam.cbrp3.c-base.org/events"
+    - "http://c-flo.cbrp3.c-base.org/events/"
     - "http://c-flo.cbrp3.c-base.org/bar-history/"
     - "http://c-flo.cbrp3.c-base.org/mainhall/"
     - "https://c-beam.cbrp3.c-base.org/he1display"

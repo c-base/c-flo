@@ -3,7 +3,7 @@ important_urls:
     - "http://c-flo.cbrp3.c-base.org/bar-status/"
 
 urls: 
-    - "https://c-beam.cbrp3.c-base.org/events"
+    - "http://c-flo.cbrp3.c-base.org/events/"
     - "http://c-flo.cbrp3.c-base.org/internet/"
     - "https://c-beam.cbrp3.c-base.org/sensors"
     - "https://c-beam.cbrp3.c-base.org/bvg"
