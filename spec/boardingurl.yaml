@@ -16,4 +16,4 @@ cases:
   expect:
     out:
       -
-        equals: 'https://c-beam.cbrp3.c-base.org/welcome/bergie'
+        equals: 'http://c-flo.cbrp3.c-base.org/visual-paging/?hallo%20bergie%2C%20willkommen%20an%20bord%21'
