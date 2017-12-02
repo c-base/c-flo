@@ -1,10 +1,10 @@
 ---
 important_urls: 
-    - "https://c-beam.cbrp3.c-base.org/soundlab"
+    - "http://c-flow.cbrp3.c-base.org/soundlab"
 
 urls: 
     - "http://c-flo.cbrp3.c-base.org/events/"
     - "https://c-beam.cbrp3.c-base.org/sensors"
-    - "https://c-beam.cbrp3.c-base.org/soundlab"
+    - "http://c-flow.cbrp3.c-base.org/soundlab"
     - "https://c-beam.cbrp3.c-base.org/bvg"
     - "http://c-flo.cbrp3.c-base.org/bar-history/"
