@@ -8,7 +8,6 @@ services:
 before_script:
 - npm install -g grunt-cli
 - pip install -r requirements.pip --user
-- pip install ansible-lint --user
 # Prepare cross-compiling environment if targeting ARM
 - if [ "$TARGET" == "raspberrypi3" ]; then docker run --rm --privileged multiarch/qemu-user-static:register --reset; fi
 # Build the Docker image
@@ -18,9 +17,6 @@ before_script:
 - docker-compose ps
 # Wait for runtime to be ready
 - until ./node_modules/.bin/fbp-protocol-healthcheck ws://127.0.0.1:3569 || (( count++ >= 10 )); do echo "Waiting for runtime to be ready"; sleep 10; done
-script:
-- npm test
-- ansible-lint ansible/c-flo.yml
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
   docker push "$DOCKER_IMAGE"; fi
