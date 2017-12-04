@@ -1,10 +1,11 @@
 ---
 important_urls: 
-    - "http://c-flo.cbrp3.c-base.org/mainhall/"
+    - "http://c-flo.cbrp3.c-base.org/nerdarea-music/"
 
 urls: 
     - "http://c-flo.cbrp3.c-base.org/events/"
     - "http://c-flo.cbrp3.c-base.org/internet/"
     - "https://c-beam.cbrp3.c-base.org/sensors"
+    - "http://c-flo.cbrp3.c-base.org/mainhall/"
     - "http://c-flo.cbrp3.c-base.org/bar-status/"
     - "http://c-flo.cbrp3.c-base.org/bar-history/"

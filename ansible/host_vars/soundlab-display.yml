@@ -6,5 +6,4 @@ urls:
     - "http://c-flo.cbrp3.c-base.org/events/"
     - "https://c-beam.cbrp3.c-base.org/sensors"
     - "http://c-flo.cbrp3.c-base.org/soundlab"
-    - "https://c-beam.cbrp3.c-base.org/bvg"
     - "http://c-flo.cbrp3.c-base.org/bar-history/"
