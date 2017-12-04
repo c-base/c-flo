@@ -85,6 +85,10 @@ Participant = (client, role) ->
         # Send only when there is new METAR
         callback 'skipped', null, weather
         return
+      if weather.altimeterInHpa < 500
+        # Faulty reading, skip
+        callback 'skipped', null, weather
+        return
       participant.send 'pressure', weather.altimeterInHpa
       participant.send 'humidity', getHumidity weather
       participant.send 'metar', weather.metar
