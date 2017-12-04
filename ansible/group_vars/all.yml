@@ -7,4 +7,4 @@ repository: https://github.com/c-base/mqttwebview.git
 email_host: c-mail.c-base.org
 msgflo_role: "{{ ansible_nodename }}"
 use_kiosk: true
-
+timezone: "Europe/Berlin"

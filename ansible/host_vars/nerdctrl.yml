@@ -22,3 +22,5 @@ display_user: nerdctrl
 project_root: /home/{{ display_user }}/mqttwebview
 use_kiosk: false
 msgflo_role: nerdctrl-display
+display_manager: lxdm
+

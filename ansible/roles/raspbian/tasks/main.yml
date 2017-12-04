@@ -15,27 +15,28 @@
     - xinit
     - i3
     - python3-gi
-    - gir1.2-webkit-3.0
-    - libwebkitgtk-3.0-dev
-    - git-core
+#    - gir1.2-webkit-3.0
+#    - libwebkitgtk-3.0-dev
+#    - git-core
     - python3-pip
     - libnss3-tools
     - curl
     - chromium-browser
+    - tzdata
 
-- name: Download git repo
-  become: yes
-  become_user: "{{ display_user }}"
-  git:
-    repo: "{{ repository }}"
-    dest: "{{ project_root }}"
-    version: master
-  args:
-    accept_hostkey: yes
-  notify:
-        - Restart lightdm
-  tags: git, config
-  register: git
+#- name: Download git repo
+#  become: yes
+#  become_user: "{{ display_user }}"
+#  git:
+#    repo: "{{ repository }}"
+#    dest: "{{ project_root }}"
+#    version: master
+#  args:
+#    accept_hostkey: yes
+#  notify:
+#        - Restart lightdm
+#  tags: git, config
+#  register: git
 
 # - name: Install pip requirements
 #   become: yes
@@ -60,7 +61,7 @@
   become_user: "{{ display_user }}"
   shell: curl -k -o "cacert-root.crt" "http://www.cacert.org/certs/root.crt" && curl -k -o "cacert-class3.crt" "http://www.cacert.org/certs/class3.crt" && certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "CAcert.org" -i cacert-root.crt && certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "CAcert.org Class 3" -i cacert-class3.crt
   args:
-      chdir: /home/{{ display_user }}
+      chdir: "/home/{{ display_user }}/"
 
 - name: Upload chromium defaults.
 #  copy: src=chromium-defaults/ dest=/home/{{ display_user }}/chromium-defaults directory_mode=yes
@@ -75,5 +76,16 @@
   become_user: root
   template: src=run_chromium.sh dest=/home/{{ display_user }}/run_chromium.sh mode=0744 owner={{ display_user }}
   tags: config,bla
+  notify:
+    - Restart display-manager
+
+- name: Set the timezone
+  become: yes
+  become_user: root
+  template: src=timezone.txt dest=/etc/timezone mode=0644 owner=root
+  tags: config,bla
+  notify:
+    - Reconfigure time zone
+    - Restart display-manager
   
 

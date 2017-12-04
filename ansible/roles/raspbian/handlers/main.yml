@@ -1,7 +1,12 @@
 ---
 # Any module can be used for the handler action
-#- name: Restart lightdm
-#  become: yes
-#  become_user: root
-#  action: service name=lightdm state=restarted enabled=true
+- name: Restart display-manager
+  become: yes
+  become_user: root
+  action: service name="{{ display_manager }}" state=restarted enabled=true
 
+# Any module can be used for the handler action
+- name: Reconfigure time zone
+  become: yes
+  become_user: root
+  shell: dpkg-reconfigure -f noninteractive tzdata
