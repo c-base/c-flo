@@ -11,10 +11,11 @@ class CrewOnline(msgflo.Participant):
       'label': 'Who is connected to c-base crew network',
       'icon': 'child',
       'inports': [
-      	{ 'id': 'in', 'type': 'bang'}
+          { 'id': 'in', 'type': 'bang'}
       ],
       'outports': [
-      	{ 'id': 'out', 'type': 'array'}
+          { 'id': 'out', 'type': 'array'},
+          { 'id': 'bar', 'type': 'boolean', 'queue': 'bar/state'}
       ]
     }
     msgflo.Participant.__init__(self, d, role)
@@ -24,4 +25,5 @@ class CrewOnline(msgflo.Participant):
     response = urllib.request.urlopen(url)
     data = json.loads(response.read())
     self.send('out', data["userlist"])
+    self.send('bar', data["barstatus"])
     self.ack(msg)
