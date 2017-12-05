@@ -8,8 +8,8 @@ urls:
     - "http://logbuch.c-base.org/"
     - "https://c-beam.cbrp3.c-base.org/missions"
     - "https://c-beam.cbrp3.c-base.org/sensors"
-    - "https://c-beam.cbrp3.c-base.org/ceitloch"
-    - "https://wiki.c-base.org/dokuwiki/"
+    - "http://c-flo.cbrp3.c-base.org/weltenbaulab/"
+    - "http://c-flo.cbrp3.c-base.org/internet/"
 
 ansible_ssh_user: uk
 display_user: siri
