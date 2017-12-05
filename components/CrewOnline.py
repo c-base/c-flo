@@ -25,5 +25,8 @@ class CrewOnline(msgflo.Participant):
     response = urllib.request.urlopen(url)
     data = json.loads(response.read())
     self.send('out', data["userlist"])
-    self.send('bar', data["barstatus"])
+    if data["barstatus"]:
+      self.send('bar', "open")
+    else:
+      self.send('bar', "closed")
     self.ack(msg)
