@@ -7,15 +7,12 @@ urls:
     - "http://logbuch.c-base.org/"
     - "http://c-flo.cbrp3.c-base.org/bar-status/"
     - "http://c-flo.cbrp3.c-base.org/events/"
-    - "https://c-beam.cbrp3.c-base.org/c-base-map"
-    - "https://cbag3.c-base.org/artefact"
     - "https://c-beam.cbrp3.c-base.org/missions"
+    - "http://c-flo.cbrp3.c-base.org/nerdarea-music/"
     - "https://c-beam.cbrp3.c-base.org/weather"
-    - "https://c-beam.cbrp3.c-base.org/bvg"
     - "https://c-beam.cbrp3.c-base.org/sensors"
-    - "https://c-beam.cbrp3.c-base.org/ceitloch"
-    - "https://c-beam.cbrp3.c-base.org/reddit"
     - "https://wiki.c-base.org/dokuwiki/"
+    - "http://c-flo.cbrp3.c-base.org/nerdarea/"
 
 ansible_ssh_user: uk
 display_user: nerdctrl
