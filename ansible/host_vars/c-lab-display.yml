@@ -3,7 +3,6 @@ important_urls:
     - "http://c-flo.cbrp3.c-base.org/c_lab/"
 
 urls: 
-    - "https://c-beam.cbrp3.c-base.org/sensors"
     - "http://c-flo.cbrp3.c-base.org/internet/"
     - "http://c-flo.cbrp3.c-base.org/c_lab-music/"
     - "http://c-flo.cbrp3.c-base.org/events/"
