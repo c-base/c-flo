@@ -42,6 +42,9 @@
     "c-leuse-display": {
       "component": "c-base/infodisplay"
     },
+    "launch-announcer": {
+      "component": "c-flo/LaunchAnnouncer"
+    },
     "CrewOnline": {
       "component": "c-flo/CrewOnline"
     },
@@ -586,6 +589,16 @@
     },
     {
       "src": {
+        "process": "launch-announcer",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "c_out_output",
+        "port": "saytext_en"
+      }
+    },
+    {
+      "src": {
         "process": "MainhallGate",
         "port": "out"
       },
@@ -761,6 +774,16 @@
       },
       "tgt": {
         "process": "EventCalendar",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
+        "process": "launch-announcer",
         "port": "in"
       }
     },
