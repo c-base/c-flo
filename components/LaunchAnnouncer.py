@@ -57,11 +57,6 @@ class LaunchAnnouncer(msgflo.Participant):
   def process(self, inport, msg):
     next_launch = get_next_launch()
     now = datetime.datetime.now(timezone('Europe/Berlin'))
-    if not is_launch_on_date(next_launch, now):
-      # No launches today, no-op
-      self.ack(msg)
-      return
-
     # We only generate announcements on certain times
     times = [5, 10, 15, 30, 60]
     minutes = minutes_to_launch(next_launch, now)
