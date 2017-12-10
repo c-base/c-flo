@@ -49,6 +49,7 @@ class LaunchAnnouncer(msgflo.Participant):
       ],
       'outports': [
         { 'id': 'out', 'type': 'string' },
+        { 'id': 'skipped', 'type': 'string' },
       ],
     }
     msgflo.Participant.__init__(self, d, role)
@@ -66,6 +67,8 @@ class LaunchAnnouncer(msgflo.Participant):
     minutes = minutes_to_launch(next_launch, now)
     if minutes in times:
       self.send('out', launch_to_string(next_launch, now))
+    else:
+      self.send('skipped', launch_to_string(next_launch, now))
 
     self.ack(msg)
 
