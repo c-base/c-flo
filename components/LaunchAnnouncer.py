@@ -35,8 +35,8 @@ def minutes_to_launch(launch, now):
 def launch_to_string(launch, now):
     minutes = minutes_to_launch(launch, now)
     if (len(launch["missions"]) > 0):
-        return '%s launch "%s" from %s in %d minutes' % (launch["rocket"]["name"], launch["missions"][0]["name"], launch["location"]["name"], minutes)
-    return '%s launch from %s in %d minutes' % (launch["rocket"]["name"], launch["location"]["name"], minutes)
+        return '%s "%s" is launching from %s in %d minutes' % (launch["rocket"]["name"], launch["missions"][0]["name"], launch["location"]["name"], minutes)
+    return '%s is launching from %s in %d minutes' % (launch["rocket"]["name"], launch["location"]["name"], minutes)
 
 class LaunchAnnouncer(msgflo.Participant):
   def __init__(self, role):
