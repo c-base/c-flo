@@ -9,7 +9,7 @@ urls:
     - "https://c-beam.cbrp3.c-base.org/missions"
     - "https://c-beam.cbrp3.c-base.org/sensors"
     - "http://c-flo.cbrp3.c-base.org/weltenbaulab/"
-    - "http://c-flo.cbrp3.c-base.org/internet/"
+    - "http://c-flo.cbrp3.c-base.org/events/"
 
 ansible_ssh_user: uk
 display_user: siri
