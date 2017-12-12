@@ -123,6 +123,9 @@
     "mechblast": {
       "component": "c-flo/playsound"
     },
+    "mechblast-display": {
+      "component": "c-base/infodisplay"
+    },
     "he1": {
       "component": "c-base/infodisplay"
     },
@@ -307,6 +310,16 @@
       },
       "tgt": {
         "process": "weltenbau-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mechblast-display",
         "port": "open"
       }
     },
@@ -907,6 +920,16 @@
       },
       "tgt": {
         "process": "weltenbau-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mechblast-display",
         "port": "open"
       }
     },
