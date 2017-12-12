@@ -1,8 +1,11 @@
 ---
 important_urls: 
-    - "https://c-beam.cbrp3.c-base.org/mechdisplay"
+    # - "https://c-beam.cbrp3.c-base.org/mechdisplay"
+    - "http://c-flo.cbrp3.c-base.org/workshop/"
 
 urls: 
-    - "https://c-beam.cbrp3.c-base.org/mechdisplay"
+    - "http://c-flo.cbrp3.c-base.org/workshop-music/"
+    - "http://c-flo.cbrp3.c-base.org/events/"
+    - "http://c-flo.cbrp3.c-base.org/workshop/"
     
 msgflo_role: "mechblast-display"
