@@ -1,0 +1,8 @@
+---
+#important_urls: 
+#    - "https://c-beam.cbrp3.c-base.org/he1display"
+
+urls: 
+    - "https://c-beam.cbrp3.c-base.org/he1display"
+    
+msgflo_role: "mechblast"
