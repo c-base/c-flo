@@ -126,6 +126,9 @@
     "he1": {
       "component": "c-base/infodisplay"
     },
+    "he2-display": {
+      "component": "c-base/infodisplay"
+    },
     "roboblast-display": {
       "component": "c-base/mqttwebview"
     },
@@ -234,6 +237,16 @@
       },
       "tgt": {
         "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "he2-display",
         "port": "open"
       }
     },
@@ -824,6 +837,16 @@
       },
       "tgt": {
         "process": "he1",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "he2-display",
         "port": "open"
       }
     },
