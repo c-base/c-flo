@@ -25,7 +25,7 @@
   "homepage": "https://github.com/c-base/c-flo#readme",
   "devDependencies": {
     "chai": "^4.0.2",
-    "fbp-spec": "^0.5.0",
+    "fbp-spec": "^0.5.2",
     "grunt": "^1.0.1",
     "grunt-mocha-test": "^0.13.2",
     "grunt-yamllint": "^0.3.0",
