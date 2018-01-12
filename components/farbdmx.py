@@ -1,4 +1,15 @@
 import msgflo
+import random
+
+FARB_VARIANTS = [
+    'v1',
+    'v2',
+    'v3',
+    'v4',
+]
+
+def randomVariant():
+    return random.choice(FARB_VARIANTS)
 
 RGB_COLUMNS = [
     'dmx-1-7/rgb',
@@ -79,9 +90,10 @@ class farbdmx(msgflo.Participant):
             channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v2'][1]})
             channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v2'][2]})
         for i in RGB_WALL:
-            channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v3'][0]})
-            channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v3'][1]})
-            channels.append({'channel_id': '%s/b' % i, 'value': msg.data['v3'][2]})
+            key = randomVariant()
+            channels.append({'channel_id': '%s/r' % i, 'value': msg.data[key][0]})
+            channels.append({'channel_id': '%s/g' % i, 'value': msg.data[key][1]})
+            channels.append({'channel_id': '%s/b' % i, 'value': msg.data[key][2]})
         for i in RGB_GATE:
             channels.append({'channel_id': '%s/r' % i, 'value': msg.data['v4'][0]})
             channels.append({'channel_id': '%s/g' % i, 'value': msg.data['v4'][1]})
