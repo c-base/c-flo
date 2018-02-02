@@ -1,0 +1,20 @@
+name: 'Mainhall Theme'
+topic: c-flo/MainhallTheme
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=mainhallTheme.THEME:THEME
+    INPORT=mainhallTheme.CHANNELS:CHANNELS
+    OUTPORT=mainhallTheme.OUT:OUT
+    mainhallTheme(c-flo/MainhallTheme)
+cases:
+-
+  name: 'theme DMX'
+  assertion: 'should forward the channels'
+  inputs:
+    theme: 'DMX'
+    channels: []
+  expect:
+    out:
+      -
+        equals: []
