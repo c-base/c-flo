@@ -1,4 +1,4 @@
-msgflo>=0.2.2
+msgflo>=0.4.1
 colour==0.1.4
 icalendar>=3.11.4
 python-dateutil>=2.6.1
