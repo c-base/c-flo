@@ -7,7 +7,7 @@ from pytz import timezone
 import msgflo
 
 tz = timezone('Europe/Amsterdam')
-now = datetime.now(tz)
+now = tz.localize(datetime.now())
 recurFrom = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 recurTo = recurFrom + timedelta(days=7)
 
