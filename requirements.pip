@@ -5,3 +5,5 @@ python-dateutil>=2.6.1
 pytz>=2017.3
 Pillow>=4.1.1
 beautifulsoup4>=4.6.0
+qhue>=1.0.9
+rgbxy>=0.5
