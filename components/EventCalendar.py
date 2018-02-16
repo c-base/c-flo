@@ -43,7 +43,7 @@ def get_events(url):
 
         repeat = event.get('rrule')
         if repeat:
-            rrule = rrulestr(repeat.to_ical(), ignoretz=True, dtstart=start.replace(tzinfo=None))
+            rrule = rrulestr(repeat.to_ical().decode(), ignoretz=True, dtstart=start.replace(tzinfo=None))
             ruleset = rruleset()
             ruleset.rrule(rrule)
             nextRepeat = ruleset.between(recurFrom, recurTo)
