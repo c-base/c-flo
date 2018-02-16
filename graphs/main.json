@@ -105,6 +105,9 @@
     "farbgeber": {
       "component": "c-flo/farbgeber"
     },
+    "farbhue": {
+      "component": "c-flo/farbhue"
+    },
     "hallway-display": {
       "component": "c-base/c-beam-viewer"
     },
@@ -700,6 +703,16 @@
       },
       "tgt": {
         "process": "farbdmx",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "farbgeber",
+        "port": "palette"
+      },
+      "tgt": {
+        "process": "farbhue",
         "port": "in"
       }
     },
