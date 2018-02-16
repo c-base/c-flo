@@ -2,10 +2,6 @@ import msgflo
 from qhue import Bridge
 from rgbxy import Converter
 
-username = "psyw1FycddUaRxU2oDyNoPja6jtWlZssJJ8Z9R6V"
-bridge = Bridge("10.0.0.159", username)
-converter = Converter()
-
 class farbhue(msgflo.Participant):
     def __init__(self, role):
         d = {
@@ -22,6 +18,9 @@ class farbhue(msgflo.Participant):
         msgflo.Participant.__init__(self, d, role)
 
     def process(self, inport, msg):
+        hueUser = "psyw1FycddUaRxU2oDyNoPja6jtWlZssJJ8Z9R6V"
+        bridge = Bridge("10.0.0.159", hueUser)
+        converter = Converter()
         # Convert farbgeber to Hue xy
         xy = converter.rgb_to_xy(msg.data['v1'][0], msg.data['v1'][1], msg.data['v1'][2])
         # Send to all lights
