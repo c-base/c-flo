@@ -12,6 +12,7 @@ class DetectCircle(msgflo.Participant):
           ],
           'outports': [
             { 'id': 'out', 'type': 'object'},
+            { 'id': 'circle', 'type': 'boolean' },
           ],
         }
         self.is_circle = False
@@ -41,10 +42,12 @@ class DetectCircle(msgflo.Participant):
                         'green': 0,
                         }
                 self.send('out', lights)
+                self.send('circle', self.is_circle)
                 self.ack(msg)
                 return
 
             self.is_circle = False
+            self.send('circle', self.is_circle)
             if self.previous_data:
                 # Let lights go to pre-circle state
                 self.send('out', self.previous_data)
