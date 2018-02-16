@@ -1,5 +1,11 @@
 import msgflo
 
+def has_circle(events):
+    for event in events:
+        if event['summary'] == 'circle':
+            return True
+    return False
+
 class DetectCircle(msgflo.Participant):
     def __init__(self, role):
         d = {
@@ -7,7 +13,7 @@ class DetectCircle(msgflo.Participant):
           'label': 'Blink traffic lights red when there is a circle meeting',
           'icon': 'hand-paper-o',
           'inports': [
-            { 'id': 'current', 'type': 'object'},
+            { 'id': 'current', 'type': 'array'},
             { 'id': 'in', 'type': 'object' },
           ],
           'outports': [
@@ -33,7 +39,7 @@ class DetectCircle(msgflo.Participant):
             self.ack(msg)
             return
         if inport == 'current':
-            if msg.data and msg.data['summary'] == 'circle':
+            if len(msg.data) and has_circle(events):
                 print("Circle event ongoing")
                 self.is_circle = True
                 lights = {

@@ -64,16 +64,16 @@ def get_events(url):
         })
 
     events.sort(key=lambda x: x['start'])
-    currentEvent = None
+    currentEvents = []
     nextEvent = None
     for event in events:
         if (event['start'] < now and event['end'] > now):
-            currentEvent = event
+            currentEvents.append(clean_event(event))
         if (event['start'] > now):
             nextEvent = event
             break
     return {
-            'current': clean_event(currentEvent),
+            'current': currentEvents,
             'next': clean_event(nextEvent),
     }
 
@@ -87,7 +87,7 @@ class EventCalendar(msgflo.Participant):
         { 'id': 'in', 'type': 'bang' },
       ],
       'outports': [
-        { 'id': 'current', 'type': 'object' },
+        { 'id': 'current', 'type': 'array' },
         { 'id': 'next', 'type': 'object' },
       ],
     }
