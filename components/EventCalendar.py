@@ -49,9 +49,9 @@ def get_events(url):
             nextRepeat = ruleset.between(recurFrom, recurTo)
             if (len(nextRepeat) == 0):
                 continue
-            start = nextRepeat[0].replace(tzinfo=tz)
-            end = datetime(nextRepeat[0].year, nextRepeat[0].month, nextRepeat[0].day,
-                                                             end.hour, end.minute, end.second, tzinfo=tz)
+            start = tz.localize(nextRepeat[0])
+            end = tz.localize(datetime(nextRepeat[0].year, nextRepeat[0].month, nextRepeat[0].day,
+                                                             end.hour, end.minute, end.second))
 
         if (end < now):
             continue
