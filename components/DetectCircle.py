@@ -39,7 +39,7 @@ class DetectCircle(msgflo.Participant):
             self.ack(msg)
             return
         if inport == 'current':
-            if len(msg.data) and has_circle(events):
+            if len(msg.data) and has_circle(msg.data):
                 print("Circle event ongoing")
                 self.is_circle = True
                 lights = {
