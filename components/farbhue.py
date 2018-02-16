@@ -25,7 +25,7 @@ class farbhue(msgflo.Participant):
         xy = converter.rgb_to_xy(msg.data['v1'][0], msg.data['v1'][1], msg.data['v1'][2])
         # Send to all lights
         for lightId in bridge.lights():
-            bridge.lights[lightId].state(xy=xy, on=True, bri=200)
+            bridge.lights[lightId].state(xy=xy)
         # Send light status out
         self.send('out', bridge.lights())
         self.ack(msg)
