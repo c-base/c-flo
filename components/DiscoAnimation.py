@@ -11,7 +11,7 @@ DISCO_COLORS=cycle([(0xFF, 0x00, 0x00), (0, 102, 255), (255, 0, 51), (0xff, 0xff
 # for i in a.keys(): s.add('/'.join(i.split('/')[:-1]))
 RGB_NAMES = [
     'dmx-1-46/rgb',
-    'dmx-1-60/rgb',
+    'dmx-1-61/rgb',
     'dmx-1-13/rgb',
     'dmx-1-185/rgb8',
     'dmx-1-185/rgb4',
@@ -51,7 +51,7 @@ RGB_NAMES = [
     'dmx-1-37/rgb',
     'dmx-1-40/rgb',
     'dmx-1-1/rgb',
-    'dmx-1-55/rgb',
+    'dmx-1-56/rgb',
     'dmx-1-49/rgb',
     'dmx-1-43/rgb',
     'dmx-1-31/rgb',
