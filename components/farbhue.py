@@ -22,10 +22,16 @@ class farbhue(msgflo.Participant):
         bridge = Bridge("10.0.0.159", hueUser)
         converter = Converter()
         # Convert farbgeber to Hue xy
-        xy = converter.rgb_to_xy(msg.data['v1'][0], msg.data['v1'][1], msg.data['v1'][2])
-        # Send to all lights
+        v1xy = converter.rgb_to_xy(msg.data['v1'][0], msg.data['v1'][1], msg.data['v1'][2])
+        cxy = converter.rgb_to_xy(msg.data['c'][0], msg.data['c'][1], msg.data['c'][2])
+        contrasted = False
+        # Send to all lights. First light found gets contrast color
         for lightId in bridge.lights():
-            bridge.lights[lightId].state(xy=xy)
+            if contrasted:
+                bridge.lights[lightId].state(xy=v1xy)
+            else:
+                contrasted = True
+                bridge.lights[lightId].state(xy=cxy)
         # Send light status out
         self.send('out', bridge.lights())
         self.ack(msg)
