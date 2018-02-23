@@ -7,9 +7,6 @@ from pytz import timezone
 import msgflo
 
 tz = timezone('Europe/Amsterdam')
-now = tz.localize(datetime.now())
-recurFrom = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-recurTo = recurFrom + timedelta(days=7)
 
 def clean_event(event):
     if not event:
@@ -22,6 +19,9 @@ def clean_event(event):
     }
 
 def get_events(url):
+    now = tz.localize(datetime.now())
+    recurFrom = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    recurTo = recurFrom + timedelta(days=7)
     req = urllib.request.Request(url)
     res = urllib.request.urlopen(req)
     data = res.read()
@@ -52,7 +52,6 @@ def get_events(url):
             start = tz.localize(nextRepeat[0])
             end = tz.localize(datetime(nextRepeat[0].year, nextRepeat[0].month, nextRepeat[0].day,
                                                              end.hour, end.minute, end.second))
-
         if (end < now):
             continue
 
