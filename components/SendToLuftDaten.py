@@ -67,7 +67,7 @@ class SendToLuftDaten(msgflo.Participant):
         self.send('skipped', True)
     self.ack(msg)
 
-  def sendToLuftDaten(url, pin, values):
+  def sendToLuftDaten(self, url, pin, values):
     headers = {
       'X-Pin': str(pin),
       'X-Sensor': self.sensorId
