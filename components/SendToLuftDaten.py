@@ -11,11 +11,11 @@ class SendToLuftDaten(msgflo.Participant):
       'label': 'Send environmental data to luftdaten.info',
       'icon': 'cloud-upload',
       'inports': [
-        { 'id': 'pm10', 'type': 'number' },
-        { 'id': 'pm25', 'type': 'number' },
-        { 'id': 'temperature', 'type': 'number' },
-        { 'id': 'humidity', 'type': 'number' },
-        { 'id': 'sensor', 'type': 'string' },
+        { 'id': 'pm10', 'type': 'number', 'queue': 'staub/arboretum/pm10' },
+        { 'id': 'pm25', 'type': 'number', 'queue': 'staub/arboretum/pm25' },
+        { 'id': 'temperature', 'type': 'number', 'queue': 'staub/arboretum/temperature' },
+        { 'id': 'humidity', 'type': 'number', 'queue': 'staub/arboretum/humidity' },
+        { 'id': 'sensor', 'type': 'string'  },
       ],
       'outports': [
         { 'id': 'sent', 'type': 'bang' },
@@ -28,7 +28,7 @@ class SendToLuftDaten(msgflo.Participant):
       'temperature': None,
       'humidity': None
     }
-    self.sensorId = 'msgflo-000042'
+    self.sensorId = 'msgflo-00000042'
     msgflo.Participant.__init__(self, d, role)
 
   def process(self, inport, msg):
@@ -38,7 +38,6 @@ class SendToLuftDaten(msgflo.Participant):
       return
     self.values[inport] = msg.data
     if inport == 'pm10' or inport == 'pm25':
-      print(self.values)
       if self.values['pm10'] != None and self.values['pm25'] != None:
         self.sendToLuftDaten(endpoint, 1, {
           'P1': self.values['pm10'],
@@ -54,7 +53,6 @@ class SendToLuftDaten(msgflo.Participant):
       else:
         self.send('skipped', True)
     if inport == 'temperature' or inport == 'humidity':
-      print(self.values)
       if self.values['temperature'] != None and self.values['humidity'] != None:
         self.sendToLuftDaten(endpoint, 11, {
           'temperature': self.values['temperature'],
