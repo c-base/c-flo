@@ -147,12 +147,6 @@
     "station-announcer": {
       "component": "station-announcer/StationAnnouncer"
     },
-    "staub/arboretum": {
-      "component": "FeinstaubSensor"
-    },
-    "staub/mainhall": {
-      "component": "FeinstaubSensor"
-    },
     "soundlab-display": {
       "component": "c-base/infodisplay"
     },
