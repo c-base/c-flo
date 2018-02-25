@@ -11,10 +11,10 @@ class SendToLuftDaten(msgflo.Participant):
       'label': 'Send environmental data to luftdaten.info',
       'icon': 'cloud-upload',
       'inports': [
-        { 'id': 'pm10', 'type': 'number' },
-        { 'id': 'pm25', 'type': 'number' },
-        { 'id': 'temperature', 'type': 'number' },
-        { 'id': 'humidity', 'type': 'number' },
+        { 'id': 'pm10', 'type': 'number', 'queue': 'staub/arboretum/pm10' },
+        { 'id': 'pm25', 'type': 'number', 'queue': 'staub/arboretum/pm25' },
+        { 'id': 'temperature', 'type': 'number', 'queue': 'staub/arboretum/temperature' },
+        { 'id': 'humidity', 'type': 'number', 'queue': 'staub/arboretum/humidity' },
         { 'id': 'sensor', 'type': 'string'  },
       ],
       'outports': [

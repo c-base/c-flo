@@ -867,46 +867,6 @@
     },
     {
       "src": {
-        "process": "staub/arboretum",
-        "port": "temperature"
-      },
-      "tgt": {
-        "process": "SendToLuftDaten",
-        "port": "temperature"
-      }
-    },
-    {
-      "src": {
-        "process": "staub/arboretum",
-        "port": "humidity"
-      },
-      "tgt": {
-        "process": "SendToLuftDaten",
-        "port": "humidity"
-      }
-    },
-    {
-      "src": {
-        "process": "staub/arboretum",
-        "port": "pm25"
-      },
-      "tgt": {
-        "process": "SendToLuftDaten",
-        "port": "pm25"
-      }
-    },
-    {
-      "src": {
-        "process": "staub/arboretum",
-        "port": "pm10"
-      },
-      "tgt": {
-        "process": "SendToLuftDaten",
-        "port": "pm10"
-      }
-    },
-    {
-      "src": {
         "process": "VisualPaging",
         "port": "out"
       },
