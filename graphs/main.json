@@ -69,6 +69,9 @@
     "Replicator": {
       "component": "c-flo/Replicator"
     },
+    "SendToLuftDaten": {
+      "component": "c-flo/SendToLuftDaten"
+    },
     "togglelights": {
       "component": "c-flo/togglelights"
     },
@@ -143,6 +146,9 @@
     },
     "station-announcer": {
       "component": "station-announcer/StationAnnouncer"
+    },
+    "staub/arboretum": {
+      "component": "FeinstaubSensor"
     },
     "soundlab-display": {
       "component": "c-base/infodisplay"
@@ -854,6 +860,46 @@
       "tgt": {
         "process": "station-announcer",
         "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "staub/arboretum",
+        "port": "temperature"
+      },
+      "tgt": {
+        "process": "SendToLuftDaten",
+        "port": "temperature"
+      }
+    },
+    {
+      "src": {
+        "process": "staub/arboretum",
+        "port": "humidity"
+      },
+      "tgt": {
+        "process": "SendToLuftDaten",
+        "port": "humidity"
+      }
+    },
+    {
+      "src": {
+        "process": "staub/arboretum",
+        "port": "pm25"
+      },
+      "tgt": {
+        "process": "SendToLuftDaten",
+        "port": "pm25"
+      }
+    },
+    {
+      "src": {
+        "process": "staub/arboretum",
+        "port": "pm10"
+      },
+      "tgt": {
+        "process": "SendToLuftDaten",
+        "port": "pm10"
       }
     },
     {
