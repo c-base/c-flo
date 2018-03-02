@@ -55,7 +55,7 @@ class GetLuftJetzt(msgflo.Participant):
       port = self.measurements[measurement["data"]["pollutant"]]
       if port == None:
         continue
-      if measurement["data"]["date_time"] < self.lastSeen[port]:
+      if measurement["data"]["date_time"] <= self.lastSeen[port]:
         # Already got this data
         continue
       self.send(port, measurement["data"]["value"])
