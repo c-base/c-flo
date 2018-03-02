@@ -3,4 +3,5 @@ npm-debug.log
 fbp.json
 /components/*.pyc
 /components/*.swp
+/components/__pycache__
 /devices/*/*.h

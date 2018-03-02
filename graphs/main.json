@@ -60,6 +60,9 @@
     "EventCalendar": {
       "component": "c-flo/EventCalendar"
     },
+    "LuftJetzt": {
+      "component": "c-flo/GetLuftJetzt"
+    },
     "MainhallGate": {
       "component": "c-flo/Gate"
     },
@@ -68,6 +71,9 @@
     },
     "Replicator": {
       "component": "c-flo/Replicator"
+    },
+    "SendToLuftDaten": {
+      "component": "c-flo/SendToLuftDaten"
     },
     "togglelights": {
       "component": "c-flo/togglelights"
@@ -91,6 +97,9 @@
       "component": "c-base/mqttwebview"
     },
     "nerdarea-display": {
+      "component": "c-base/infodisplay"
+    },
+    "bar-display": {
       "component": "c-base/infodisplay"
     },
     "crew": {
@@ -148,6 +157,9 @@
       "component": "c-base/infodisplay"
     },
     "mainhall-display": {
+      "component": "c-base/infodisplay"
+    },
+    "mainhall-mirror-display": {
       "component": "c-base/infodisplay"
     },
     "nerdctrl-display": {
@@ -228,6 +240,16 @@
     },
     {
       "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "bar-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
         "process": "he1",
         "port": "opened"
       },
@@ -283,6 +305,16 @@
       },
       "tgt": {
         "process": "mainhall-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mainhall-mirror-display",
         "port": "open"
       }
     },
@@ -822,6 +854,16 @@
         "port": "time"
       },
       "tgt": {
+        "process": "LuftJetzt",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
         "process": "launch-announcer",
         "port": "in"
       }
@@ -854,6 +896,16 @@
       "tgt": {
         "process": "station-announcer",
         "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "bar-display",
+        "port": "open"
       }
     },
     {
@@ -903,6 +955,16 @@
       },
       "tgt": {
         "process": "mainhall-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mainhall-mirror-display",
         "port": "open"
       }
     },
@@ -1055,6 +1117,13 @@
       "tgt": {
         "process": "farbgeber",
         "port": "in"
+      }
+    },
+    {
+      "data": "DEBE068",
+      "tgt": {
+        "process": "LuftJetzt",
+        "port": "station"
       }
     },
     {

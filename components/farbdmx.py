@@ -22,8 +22,8 @@ RGB_COLUMNS = [
 
 RGB_GATE = [
     # c-gate
-    'dmx-1-55/rgb',
-    'dmx-1-60/rgb',
+    'dmx-1-56/rgb',
+    'dmx-1-61/rgb',
 ]
 
 RGB_WALL = [

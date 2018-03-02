@@ -1,12 +1,12 @@
 ---
 important_urls: 
-    - "http://c-flo.cbrp3.c-base.org/mainhall/"
+    - "http://c-flo.cbrp3.c-base.org/bar-status/"
 
 urls: 
     - "http://c-flo.cbrp3.c-base.org/mainhall-music/"
     - "http://c-flo.cbrp3.c-base.org/events/"
     - "http://c-flo.cbrp3.c-base.org/bar-history/"
-    - "http://c-flo.cbrp3.c-base.org/mainhall/"
     - "http://c-flo.cbrp3.c-base.org/mainhall-music/"
+    - "http://c-flo.cbrp3.c-base.org/bar-status/"
     - "http://c-flo.cbrp3.c-base.org/life-support/"
     - "http://c-flo.cbrp3.c-base.org/events/"

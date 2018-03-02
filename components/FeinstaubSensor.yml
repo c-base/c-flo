@@ -1,0 +1,23 @@
+component: FeinstaubSensor
+label: ''
+icon: ''
+inports:
+  sampleinterval:
+    queue: '#ROLE/sampleinterval'
+    type: any
+  sendinterval:
+    queue: '#ROLE/sendinterval'
+    type: any
+outports:
+  temperature:
+    queue: '#ROLE/temperature'
+    type: any
+  humidity:
+    queue: '#ROLE/humidity'
+    type: any
+  pm25:
+    queue: '#ROLE/pm25'
+    type: any
+  pm10:
+    queue: '#ROLE/pm10'
+    type: any
