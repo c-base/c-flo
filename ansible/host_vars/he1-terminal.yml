@@ -3,9 +3,9 @@ important_urls:
     - "https://c-beam.cbrp3.c-base.org/he1display"
 
 urls: 
-    - "https://c-beam.cbrp3.c-base.org/c-base-map"
     - "https://c-beam.cbrp3.c-base.org/weather"
     - "https://c-beam.cbrp3.c-base.org/he1display"
     - "https://c-beam.cbrp3.c-base.org/bvg"
+    - "https://c-beam.cbrp3.c-base.org/he1display"
     
 msgflo_role: "he1"
