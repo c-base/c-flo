@@ -60,6 +60,9 @@
     "EventCalendar": {
       "component": "c-flo/EventCalendar"
     },
+    "LuftJetzt": {
+      "component": "c-flo/GetLuftJetzt"
+    },
     "MainhallGate": {
       "component": "c-flo/Gate"
     },
@@ -825,6 +828,16 @@
         "port": "time"
       },
       "tgt": {
+        "process": "LuftJetzt",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
+        "process": "time",
+        "port": "time"
+      },
+      "tgt": {
         "process": "launch-announcer",
         "port": "in"
       }
@@ -1058,6 +1071,13 @@
       "tgt": {
         "process": "farbgeber",
         "port": "in"
+      }
+    },
+    {
+      "data": "DEBE068",
+      "tgt": {
+        "process": "LuftJetzt",
+        "port": "station"
       }
     },
     {
