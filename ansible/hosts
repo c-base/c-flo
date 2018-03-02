@@ -10,7 +10,7 @@ nerdarea-display		ansible_ssh_host=nerdarea-display.local
 he1-terminal			ansible_ssh_host=he1-terminal.cbrp3.c-base.org
 siri				ansible_ssh_host=siri.cbrp3.c-base.org
 mechblast		        ansible_ssh_host=mechblast.cbrp3.c-base.org
-he2-display			ansible_ssh_host=he2-display.cbrp3.c-base.org
+he2-display			ansible_ssh_host=he2-display.local
 
 [lxdms]
 nerdctrl				ansible_ssh_host=nerdctrl.cbrp3.c-base.org

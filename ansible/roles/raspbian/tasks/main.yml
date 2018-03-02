@@ -23,6 +23,7 @@
     - curl
     - chromium-browser
     - tzdata
+    - python-pexpect
 
 #- name: Download git repo
 #  become: yes
@@ -55,7 +56,26 @@
 #   notify:
 #     - Restart lightdm
 #   tags: config
-  
+
+# This is necessary because you will get the Error:
+# certutil: function failed: security library: bad database
+# https://serverfault.com/questions/414578/certutil-function-failed-security-library-bad-database
+- name: Create directory for cert database
+  become: yes
+  become_user: "{{ display_user }}"
+  file: path=/home/{{ display_user }}/.pki/nssdb state=directory
+
+- name: Prepare cert directory
+  become: yes
+  become_user: "{{ display_user }}"
+  expect:
+      command: /usr/bin/certutil -d /home/{{ display_user }}/.pki/nssdb -N
+      responses:
+        Enter Password or Pin for "NSS Certificate DB": ""
+        Enter new password: ""
+        Re-enter password: ""
+  creates: /home/{{ display_user }}/.pki/nssdb/cert8.db
+
 - name: Load cacert root certs
   become: Yes
   become_user: "{{ display_user }}"
