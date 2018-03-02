@@ -99,6 +99,9 @@
     "nerdarea-display": {
       "component": "c-base/infodisplay"
     },
+    "bar-display": {
+      "component": "c-base/infodisplay"
+    },
     "crew": {
       "component": "c-flo/crew"
     },
@@ -154,6 +157,9 @@
       "component": "c-base/infodisplay"
     },
     "mainhall-display": {
+      "component": "c-base/infodisplay"
+    },
+    "mainhall-mirror-display": {
       "component": "c-base/infodisplay"
     },
     "nerdctrl-display": {
@@ -234,6 +240,16 @@
     },
     {
       "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "bar-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
         "process": "he1",
         "port": "opened"
       },
@@ -289,6 +305,16 @@
       },
       "tgt": {
         "process": "mainhall-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "boardingurl",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mainhall-mirror-display",
         "port": "open"
       }
     },
@@ -878,6 +904,16 @@
         "port": "out"
       },
       "tgt": {
+        "process": "bar-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
         "process": "he1",
         "port": "open"
       }
@@ -919,6 +955,16 @@
       },
       "tgt": {
         "process": "mainhall-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "VisualPaging",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mainhall-mirror-display",
         "port": "open"
       }
     },
