@@ -1,5 +1,6 @@
 [raspbians]
-bar-display			ansible_ssh_host=bar-display.local
+bar-display			ansible_ssh_host=10.0.0.99
+#bar-display			ansible_ssh_host=bar-display.local
 c-leuse-display			ansible_ssh_host=c-leuse-display.local
 mainhall-display		ansible_ssh_host=mainhall-display.local
 mainhall-mirror-display		ansible_ssh_host=mainhall-mirror-display.local
