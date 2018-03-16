@@ -1,0 +1,34 @@
+[Unit]
+Description={{ container_description }}
+After={{ container_after }}
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=0
+Restart=always
+ExecStartPre=-/usr/bin/docker stop {{ container_name }}
+ExecStartPre=-/usr/bin/docker rm {{ container_name }}
+{% if container_pull %}
+ExecStartPre=-/usr/bin/docker pull {{ container_image }}
+{% endif %}
+ExecStart=/usr/bin/docker run --rm -t \
+{% for port in container_ports %}
+    -p {{ port }} \
+{% endfor %}
+{% for volume in container_volumes %}
+    -v {{ volume }} \
+{% endfor %}
+{% for var in container_environment %}
+    --env {{ var }} \
+{% endfor %}
+{% for option in container_extra_options %}
+    {{ option }} \
+{% endfor %}
+    --name {{ container_name }} {{ container_image }} {{ container_cmd }}
+ExecStop=-/usr/bin/docker stop -t 3 {{ container_name }}
+ExecStop=-/usr/bin/docker rm {{ container_name }}
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target

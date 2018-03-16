@@ -16,3 +16,5 @@ he2-display			ansible_ssh_host=he2-display.local
 [lxdms]
 nerdctrl				ansible_ssh_host=nerdctrl.cbrp3.c-base.org
 
+[openmcts]
+openmct         ansible_ssh_host=openmct.cbrp3.c-base.org
