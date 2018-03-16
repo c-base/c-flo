@@ -15,6 +15,8 @@
       container_repository: "matthiasg/rpi-couchdb"
       container_ports:
         - "5984:5984"
+      container_volumes:
+        - "/var/couchdb:/opt/couchdb/data"
     - role: "docker-systemd"
       container_name: "cbeam-telemetry-server"
       container_repository: "cbase/raspberrypi3-cbeam-telemetry-server"
