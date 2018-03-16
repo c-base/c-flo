@@ -19,7 +19,7 @@
       container_name: "cbeam-telemetry-server"
       container_repository: "cbase/raspberrypi3-cbeam-telemetry-server"
       container_environment:
-        - "MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org:1883"
+        - "MSGFLO_BROKER=mqtt://10.0.1.17"
         - "INFLUX_HOST=localhost"
         - "OPENMCT_CONFIG=c-base.js"
       container_extra_options:
