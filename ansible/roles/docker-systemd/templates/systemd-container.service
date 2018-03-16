@@ -1,6 +1,6 @@
 [Unit]
 Description={{ container_description }}
-After={{ container_after }}docker.service
+After={{ container_after }}
 Requires=docker.service
 
 [Service]
