@@ -24,3 +24,4 @@
         - "OPENMCT_CONFIG=c-base.js"
       container_extra_options:
         - "--net host"
+      container_after: "docker.service influxdb.service couchdb.service"

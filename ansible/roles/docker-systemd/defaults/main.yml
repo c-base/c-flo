@@ -9,3 +9,4 @@ container_ports: []
 container_volumes: []
 container_extra_options: []
 container_environment: []
+container_after: "docker.service"
