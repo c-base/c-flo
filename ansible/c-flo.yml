@@ -13,3 +13,5 @@
   roles:
     - raspbian
     - splitscreen
+
+- import_playbook: openmct.yml

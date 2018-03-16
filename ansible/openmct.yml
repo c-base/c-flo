@@ -1,0 +1,26 @@
+---
+- name: station IoT logging and dashboard
+  hosts: openmcts
+  roles:
+    - role: "arch-docker"
+    - role: "docker-systemd"
+      container_name: "influxdb"
+      container_repository: "hypriot/rpi-influxdb"
+      container_ports:
+        - "127.0.0.1:8086:8086"
+      container_volumes:
+        - "/var/influxdb:/data"
+    - role: "docker-systemd"
+      container_name: "couchdb"
+      container_repository: "matthiasg/rpi-couchdb"
+      container_ports:
+        - "5984:5984"
+    - role: "docker-systemd"
+      container_name: "cbeam-telemetry-server"
+      container_repository: "cbase/raspberrypi3-cbeam-telemetry-server"
+      container_environment:
+        - "MSGFLO_BROKER=mqtt://c-beam.cbrp3.c-base.org:1883"
+        - "INFLUX_HOST=localhost"
+        - "OPENMCT_CONFIG=c-base.js"
+      container_extra_options:
+        - "--net host"
