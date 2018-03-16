@@ -4,7 +4,7 @@ container_pull: true
 container_cmd: ""
 container_service_name: "container-{{ container_name }}.service"
 container_repository: "{{ container_name }}"
-container_image: "{{ docker_registry}}{{ '/' if docker_registry else '' }}{{ container_repository }}"
+container_image: "{{ container_repository }}"
 container_ports: []
 container_volumes: []
 container_extra_options: []

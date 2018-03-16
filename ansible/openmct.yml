@@ -22,8 +22,9 @@
       container_repository: "cbase/raspberrypi3-cbeam-telemetry-server"
       container_environment:
         - "MSGFLO_BROKER=mqtt://10.0.1.17"
-        - "INFLUX_HOST=localhost"
+        - "INFLUX_HOST=127.0.0.1"
         - "OPENMCT_CONFIG=c-base.js"
+        - "PORT=80"
       container_extra_options:
         - "--net host"
       container_after: "docker.service influxdb.service couchdb.service"
