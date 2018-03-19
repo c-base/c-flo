@@ -10,6 +10,7 @@
         - "127.0.0.1:8086:8086"
       container_volumes:
         - "/var/influxdb:/data"
+        - "/tmp/influxdbbackup:/backup"
     - role: "docker-systemd"
       container_name: "couchdb"
       container_repository: "matthiasg/rpi-couchdb"
@@ -28,3 +29,4 @@
       container_extra_options:
         - "--net host"
       container_after: "docker.service influxdb.service couchdb.service"
+    - role: "influxdb-docker-backup"

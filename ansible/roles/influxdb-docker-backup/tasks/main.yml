@@ -1,0 +1,60 @@
+---
+- name: Install rsync
+  pacman:
+    name: rsync
+    state: latest
+    update_cache: yes
+  become: yes
+  
+- name: Load secrets
+  include_vars: "secrets.yml"
+  no_log: true
+  
+- name: Create ssh directory for user
+  file: path=/home/alarm/.ssh state=directory owner=alarm
+  
+- name: Copy private backup ssh key
+  copy:
+    dest="{{ item.key }}"
+    content="{{ item.value.content }}"
+    owner="{{ item.value.owner }}"
+    group="{{ item.value.group }}"
+    mode="{{ item.value.mode }}"
+  with_dict: "{{ deploy_key_files }}"
+  no_log: true
+
+- name: Create backup.sh script.
+  template: src=backup.sh dest=/home/alarm/backup.sh
+
+- name: Create timer file
+  template:
+    dest: "/etc/systemd/system/influx-backup.timer"
+    src: "influx-backup.timer"
+  register: timer_config
+  become: yes
+  
+- name: Create service file
+  template:
+    dest: "/etc/systemd/system/influx-backup.service"
+    src: "influx-backup.service"
+  register: timer_config
+  become: yes
+
+- name: Reload daemon
+  shell: systemctl daemon-reload
+  when: timer_config.changed
+  become: yes
+
+- name: Restart service
+  service:
+    name: "influx-backup.timer"
+    state: restarted
+  when: timer_config.changed
+  become: yes
+
+- name: Enable service
+  service:
+    name: "influx-backup.timer"
+    state: started
+    enabled: yes
+  become: yes

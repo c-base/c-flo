@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup influxdb
+Requires=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/alarm/backup.sh
+User=alarm
+Group=alarm
