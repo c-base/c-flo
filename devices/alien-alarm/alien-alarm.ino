@@ -12,7 +12,7 @@ struct Config {
   const String role = "alien-alarm";
 
   const int builtinLed = D4;
-  const int button = D2;
+  const int button = D3;
 
   const char *wifiSsid = WIFI_SSID;
   const char *wifiPassword = WIFI_PASSWORD;
@@ -67,7 +67,7 @@ void setup() {
   Serial.printf("Led pin: %d\r\n", cfg.builtinLed);
   Serial.printf("Button pin: %d\r\n", cfg.button);
 
-  pinMode(cfg.button, INPUT_PULLUP);
+  pinMode(cfg.button, INPUT);
   pinMode(cfg.builtinLed, OUTPUT);
 
   // Start with LED off
