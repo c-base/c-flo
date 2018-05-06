@@ -12,7 +12,8 @@ struct Config {
   const String role = "alien-alarm";
 
   const int builtinLed = D4;
-  const int button = D3;
+  const int button = D1;
+  const int door = D2;
 
   const char *wifiSsid = WIFI_SSID;
   const char *wifiPassword = WIFI_PASSWORD;
@@ -28,9 +29,12 @@ WiFiClient wifiClient;
 PubSubClient mqttClient;
 msgflo::Engine *engine;
 msgflo::OutPort *alarmPort;
+msgflo::OutPort *doorPort;
 msgflo::InPort *ledPort;
 long nextButtonCheck = 0;
 long nextPeriodicUpdate = 0;
+
+long nextDoorCheck = 0;
 
 auto participant = msgflo::Participant("c-base/AlienAlarm", cfg.role);
 
@@ -56,6 +60,7 @@ void setup() {
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
   alarmPort = engine->addOutPort("alarm", "boolean", cfg.prefix+cfg.role+"/alarm");
+  doorPort = engine->addOutPort("door", "boolean", cfg.prefix+cfg.role+"/door");
   ledPort = engine->addInPort("led", "boolean", cfg.prefix+cfg.role+"/led",
   [](byte *data, int length) -> void {
       const std::string in((char *)data, length);
@@ -75,6 +80,24 @@ void setup() {
 }
 
 bool pressedStateButton = true;
+bool pressedStateDoor = false;
+
+void checkDoor() {
+  // Read door state every 50ms, send if changed
+  if (millis() > nextDoorCheck) {
+    const bool pressed = digitalRead(cfg.door);
+    if (pressedStateDoor != pressed){
+      doorPort->send(pressed ? "false" : "true");
+      pressedStateDoor = pressed;
+      Serial.write("Door pressed\n");
+    } else if (millis() > nextPeriodicUpdate) {
+      // Also send current state once per minute
+      alarmPort->send(pressedStateDoor ? "false" : "true");
+      nextPeriodicUpdate += 60*1000;
+    }
+    nextDoorCheck += 50;
+  }
+}
 
 void loop() {
   static bool connected = false;
@@ -87,6 +110,7 @@ void loop() {
     
     engine->loop();
     checkButtons();
+    checkDoor();
   } else {
     if (connected) {
       connected = false;
@@ -102,6 +126,7 @@ void checkButtons() {
     if (pressedStateButton != pressed){
       alarmPort->send(pressed ? "false" : "true");
       pressedStateButton = pressed;
+      Serial.write("Button pressed\n");
     } else if (millis() > nextPeriodicUpdate) {
       // Also send current state once per minute
       alarmPort->send(pressedStateButton ? "false" : "true");
