@@ -6,7 +6,7 @@
 #include <PubSubClient.h>
 #include <Msgflo.h>
 
-#include "FastLED.h" //alien-eyes
+#include "FastLED.h" //two alien-eyes, ws2812B leds
 #define NUM_LEDS 2
 #define DATA_PIN D3
 
