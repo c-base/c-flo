@@ -6,6 +6,9 @@
 #include <PubSubClient.h>
 #include <Msgflo.h>
 
+#include "FastLED.h" //alien-eyes
+#define NUM_LEDS 2
+#define DATA_PIN D3
 
 struct Config {
   const String prefix = "";
@@ -38,13 +41,21 @@ long nextDoorCheck = 0;
 
 auto participant = msgflo::Participant("c-base/AlienAlarm", cfg.role);
 
+CRGB leds[NUM_LEDS];
+
 void setup() {
+
+  FastLED.addLeds<WS2812B, DATA_PIN, RGB>(leds, NUM_LEDS);
+  leds[0] = CRGB::Red;
+  leds[1] = CRGB::Red;
+  FastLED.show();
+  
   Serial.begin(115200);
   delay(100);
   Serial.println();
   Serial.println();
   Serial.println();
-
+  
   WiFi.mode(WIFI_STA);
   Serial.printf("Configuring wifi: %s\r\n", cfg.wifiSsid);
   WiFi.begin(cfg.wifiSsid, cfg.wifiPassword);
