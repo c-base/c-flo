@@ -1,3 +1,6 @@
 ---
 important_urls: 
-    - "http://c-flo.cbrp3.c-base.org/events/
+    - "https://c-flo.cbrp3.c-base.org/events/"
+
+urls: 
+    - "https://c-flo.cbrp3.c-base.org/events"
