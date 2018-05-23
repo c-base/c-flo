@@ -38,6 +38,7 @@ long nextButtonCheck = 0;
 long nextPeriodicUpdate = 0;
 
 long nextDoorCheck = 0;
+long resetAlienAlarmLed = 0;
 
 auto participant = msgflo::Participant("c-base/AlienAlarm", cfg.role);
 
@@ -45,9 +46,9 @@ CRGB leds[NUM_LEDS];
 
 void setup() {
 
-  FastLED.addLeds<WS2812B, DATA_PIN, RGB>(leds, NUM_LEDS);
-  leds[0] = CRGB::Red;
-  leds[1] = CRGB::Red;
+  FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
+  leds[0] = CRGB::Green;
+  leds[1] = CRGB::Green;
   FastLED.show();
   
   Serial.begin(115200);
@@ -103,7 +104,7 @@ void checkDoor() {
       Serial.write("Door pressed\n");
     } else if (millis() > nextPeriodicUpdate) {
       // Also send current state once per minute
-      alarmPort->send(pressedStateDoor ? "false" : "true");
+      doorPort->send(pressedStateDoor ? "false" : "true");
       nextPeriodicUpdate += 60*1000;
     }
     nextDoorCheck += 50;
@@ -122,6 +123,7 @@ void loop() {
     engine->loop();
     checkButtons();
     checkDoor();
+    updateLed();
   } else {
     if (connected) {
       connected = false;
@@ -129,13 +131,26 @@ void loop() {
     }
   }
 }
-
+void updateLed() {
+  if (resetAlienAlarmLed < millis()) {
+      leds[0] = CRGB::Green;
+      leds[1] = CRGB::Green;
+      FastLED.show();
+  }
+}
 void checkButtons() {
   // Read button state every 50ms, send if changed
   if (millis() > nextButtonCheck) {
     const bool pressed = digitalRead(cfg.button);
     if (pressedStateButton != pressed){
+        if (pressed) {
+          leds[0] = CRGB::Red;
+          leds[1] = CRGB::Red;
+          resetAlienAlarmLed = millis()+10*1000;
+          FastLED.show();
+      }
       alarmPort->send(pressed ? "false" : "true");
+      
       pressedStateButton = pressed;
       Serial.write("Button pressed\n");
     } else if (millis() > nextPeriodicUpdate) {
