@@ -16,7 +16,7 @@ struct Config {
 
   const int builtinLed = D4;
   const int button = D1;
-  const int door = D2;
+  const int dooropen = D2;
 
   const char *wifiSsid = WIFI_SSID;
   const char *wifiPassword = WIFI_PASSWORD;
@@ -42,7 +42,7 @@ long nextDoorCheck = 0;
 long resetAlienAlarmLed = 0;
 
 bool pressedStateButton = true;
-bool pressedStateDoor = false;
+bool openStateDoor = false;
 
 auto participant = msgflo::Participant("c-base/AlienAlarm", cfg.role);
 
@@ -76,14 +76,14 @@ void setup() {
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
   alarmPort = engine->addOutPort("alarm", "boolean", cfg.prefix+cfg.role+"/alarm");
-  doorPort = engine->addOutPort("door", "boolean", cfg.prefix+cfg.role+"/door");
+  doorPort = engine->addOutPort("door", "boolean", cfg.prefix+cfg.role+"/door-open");
   ledPort = engine->addInPort("led", "boolean", cfg.prefix+cfg.role+"/led",
   [](byte *data, int length) -> void {
       const std::string in((char *)data, length);
       const boolean on = (in != "1" && in != "true");
       digitalWrite(cfg.builtinLed, on);
   });
-  
+
 
   Serial.printf("Led pin: %d\r\n", cfg.builtinLed);
   Serial.printf("Button pin: %d\r\n", cfg.button);
@@ -98,14 +98,14 @@ void setup() {
 void checkDoor() {
   // Read door state every 50ms, send if changed
   if (millis() > nextDoorCheck) {
-    const bool pressed = digitalRead(cfg.door);
-    if (pressedStateDoor != pressed){
-      doorPort->send(pressed ? "false" : "true");
-      pressedStateDoor = pressed;
-      Serial.write("Door pressed\n");
+    const bool currentState = digitalRead(cfg.dooropen);
+    if (openStateDoor != currentState){
+      doorPort->send(currentState ? "true" : "false");
+      openStateDoor = currentState;
+      Serial.write("Door state changed\n");
     } else if (millis() > nextPeriodicUpdateDoor) {
       // Also send current state once per minute
-      doorPort->send(pressedStateDoor ? "false" : "true");
+      doorPort->send(openStateDoor ? "true" : "false");
       nextPeriodicUpdateDoor += 60*1000;
     }
     nextDoorCheck += 50;
