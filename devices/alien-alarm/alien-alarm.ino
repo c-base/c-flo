@@ -35,10 +35,14 @@ msgflo::OutPort *alarmPort;
 msgflo::OutPort *doorPort;
 msgflo::InPort *ledPort;
 long nextButtonCheck = 0;
-long nextPeriodicUpdate = 0;
+long nextPeriodicUpdateAlarm = 0;
+long nextPeriodicUpdateDoor = 0;
 
 long nextDoorCheck = 0;
 long resetAlienAlarmLed = 0;
+
+bool pressedStateButton = true;
+bool pressedStateDoor = false;
 
 auto participant = msgflo::Participant("c-base/AlienAlarm", cfg.role);
 
@@ -91,9 +95,6 @@ void setup() {
   digitalWrite(cfg.builtinLed, true);
 }
 
-bool pressedStateButton = true;
-bool pressedStateDoor = false;
-
 void checkDoor() {
   // Read door state every 50ms, send if changed
   if (millis() > nextDoorCheck) {
@@ -102,10 +103,10 @@ void checkDoor() {
       doorPort->send(pressed ? "false" : "true");
       pressedStateDoor = pressed;
       Serial.write("Door pressed\n");
-    } else if (millis() > nextPeriodicUpdate) {
+    } else if (millis() > nextPeriodicUpdateDoor) {
       // Also send current state once per minute
       doorPort->send(pressedStateDoor ? "false" : "true");
-      nextPeriodicUpdate += 60*1000;
+      nextPeriodicUpdateDoor += 60*1000;
     }
     nextDoorCheck += 50;
   }
@@ -153,10 +154,10 @@ void checkButtons() {
       
       pressedStateButton = pressed;
       Serial.write("Button pressed\n");
-    } else if (millis() > nextPeriodicUpdate) {
+    } else if (millis() > nextPeriodicUpdateAlarm) {
       // Also send current state once per minute
       alarmPort->send(pressedStateButton ? "false" : "true");
-      nextPeriodicUpdate += 60*1000;
+      nextPeriodicUpdateAlarm += 60*1000;
     }
     nextButtonCheck += 50;
   }
