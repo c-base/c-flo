@@ -19,7 +19,10 @@ class AlienAlarmOnScreen(msgflo.Participant):
 
   def process(self, inport, msg):
     if msg.data:
+      print("Alien Alarm!")
       self.send('out', 'http://c-flo.cbrp3.c-base.org/alien-alarm/')
+    else:
+      print("Alarm over")
     self.ack(msg)
 
 if __name__ == '__main__':
