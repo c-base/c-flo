@@ -1,0 +1,13 @@
+component: c-base/AlienAlarm
+icon: reddit-alien
+inports:
+  led:
+    queue: alien-alarm/led
+    type: boolean
+outports:
+  alarm:
+    queue: alien-alarm/alarm
+    type: boolean
+  stateful:
+    queue: alien-alarm/door
+    type: boolean
