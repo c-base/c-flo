@@ -9,6 +9,9 @@
     "airportweather": {
       "component": "c-flo/AirportWeather"
     },
+    "alien-alarm": {
+      "component": "c-base/AlienAlarm"
+    },
     "bar-announcer": {
       "component": "c-flo/BarAnnouncer"
     },
@@ -44,6 +47,9 @@
     },
     "launch-announcer": {
       "component": "c-flo/LaunchAnnouncer"
+    },
+    "AlienAlarmOnScreen": {
+      "component": "c-flo/AlienAlarmOnScreen"
     },
     "CrewOnline": {
       "component": "c-flo/CrewOnline"
@@ -190,6 +196,16 @@
   "connections": [
     {
       "src": {
+        "process": "alien-alarm",
+        "port": "alarm"
+      },
+      "tgt": {
+        "process": "AlienAlarmOnScreen",
+        "port": "in"
+      }
+    },
+    {
+      "src": {
         "process": "bar-announcer",
         "port": "out"
       },
@@ -315,6 +331,46 @@
       },
       "tgt": {
         "process": "mainhall-mirror-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "AlienAlarmOnScreen",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerdarea-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "AlienAlarmOnScreen",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "mechblast-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "AlienAlarmOnScreen",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "nerdctrl-display",
+        "port": "open"
+      }
+    },
+    {
+      "src": {
+        "process": "AlienAlarmOnScreen",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "roboblast-display",
         "port": "open"
       }
     },
