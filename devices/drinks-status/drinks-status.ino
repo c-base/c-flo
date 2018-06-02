@@ -1,19 +1,21 @@
-#include "config.h"
 #include <WiFiClient.h>
 #include <WiFiClientSecure.h>
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 #include <FastLED.h>
+#include <config.h>
 
 #include <PubSubClient.h>
 #include <Msgflo.h>
 
-#define DATA_PIN 3
-#define BRIGHTNESS 20
-#define NUM_LEDS 10
-#define DATA_PIN    3
-#define LED_TYPE    WS2811
-#define COLOR_ORDER BRG
+#define MQTT_MAX_PACKET_SIZE 1024
+
+
+#define BRIGHTNESS 30
+#define NUM_LEDS 8
+#define DATA_PIN    D5
+#define LED_TYPE    WS2812B
+#define COLOR_ORDER GRB
 
 CRGB leds[NUM_LEDS];
 
@@ -21,8 +23,8 @@ struct Config {
   const String prefix = "";
   const String role = "drinks-status";
 
-  const char *wifiSsid = WIFI_SSID;
-  const char *wifiPassword = WIFI_PASSWORD;
+  const char *wifiSsid = "c-base-botnet";
+  const char *wifiPassword = "shrokosht";
 
   const char *mqttHost = "c-beam.cbrp3.c-base.org";
   const int mqttPort = 1883;
@@ -78,14 +80,14 @@ void replicatorCallback(byte *payload, int length) {
 
   Serial.println("Updated replicator status.");
   bool replicator[7];
-  replicator[0]  = extractStatusFromJson(root, " 1 Club-Mate 0,5 ");
-  replicator[1] = extractStatusFromJson(root, " 2 Berliner 0,5 ");
-  replicator[2] = extractStatusFromJson(root, " 3 Berliner 0,5 ");
-  replicator[3] = extractStatusFromJson(root, " 4 Flora-Mate 0,5 ");
-  replicator[4] = extractStatusFromJson(root, " 5 Premium Cola 0,5 ");
-  replicator[5] = extractStatusFromJson(root, " 6 Spezi 0,5 ");
-  replicator[6] = extractStatusFromJson(root, " 7 Kraftmalz 0,5 ");
-  for (int i=0; i<7; i++) {
+  replicator[1]  = extractStatusFromJson(root, " 1 Club-Mate 0,5 ");
+  replicator[2] = extractStatusFromJson(root, " 2 Berliner 0,5 ");
+  replicator[3] = extractStatusFromJson(root, " 3 Berliner 0,5 ");
+  replicator[4] = extractStatusFromJson(root, " 4 Flora-Mate 0,5 ");
+  replicator[5] = extractStatusFromJson(root, " 5 Premium Cola 0,5 ");
+  replicator[6] = extractStatusFromJson(root, " 6 Spezi 0,5 ");
+  replicator[7] = extractStatusFromJson(root, " 7 Kraftmalz 0,5 ");
+  for (int i=1; i<8; i++) {
     if (replicator[i]) {
       statuses[i] = 2;
     } else {
@@ -103,9 +105,9 @@ void barCallback(byte *payload, int length) {
 
   Serial.printf("Updated bar status: %s.\r\n", in.c_str());
   if (open) {
-    statuses[7] = 2;
+    statuses[0] = 2;
   } else{
-    statuses[7] = 1;
+    statuses[0] = 1;
   }
   updateLights();
 }
