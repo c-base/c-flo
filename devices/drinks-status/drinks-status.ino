@@ -23,8 +23,8 @@ struct Config {
   const String prefix = "";
   const String role = "drinks-status";
 
-  const char *wifiSsid = "c-base-botnet";
-  const char *wifiPassword = "shrokosht";
+  const char *wifiSsid = WIFI_SSID;
+  const char *wifiPassword = WIFI_PASSWORD;
 
   const char *mqttHost = "c-beam.cbrp3.c-base.org";
   const int mqttPort = 1883;
