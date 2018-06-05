@@ -3,7 +3,7 @@
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 #include <FastLED.h>
-#include <config.h>
+#include "config.h"
 
 #include <PubSubClient.h>
 #include <Msgflo.h>
