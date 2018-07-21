@@ -58,7 +58,7 @@ void callback(byte *payload, int length) {
     Serial.println("parseObject() failed");
     return;
   }
-  setColorsFromJson(root, "v1");
+  setColorsFromJson(root, "c");
 }
 
 // the setup function runs once when you press reset or power the board
