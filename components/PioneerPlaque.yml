@@ -1,0 +1,11 @@
+component: c-base/PioneerPlaque
+label: 'c-base Pioneer Plaque'
+icon: lightbulb-o
+inports:
+  led:
+    type: boolean
+    queue: case/pioneer/led
+  colors:
+    type: object
+    queue: case/pioneer/colors
+outports: {}

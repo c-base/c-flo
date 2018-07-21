@@ -57,6 +57,9 @@
     "OnlineHeatmap": {
       "component": "c-flo/OnlineHeatmap"
     },
+    "pioneer": {
+      "component": "c-base/PioneerPlaque"
+    },
     "DetectABBA": {
       "component": "c-flo/DetectABBA"
     },
@@ -771,6 +774,16 @@
       },
       "tgt": {
         "process": "bigswitch",
+        "port": "colors"
+      }
+    },
+    {
+      "src": {
+        "process": "farbgeber",
+        "port": "palette"
+      },
+      "tgt": {
+        "process": "pioneer",
         "port": "colors"
       }
     },
