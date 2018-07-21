@@ -42,6 +42,15 @@ msgflo::InPort *ledStripPort;
 
 auto participant = msgflo::Participant("c-base/PioneerPlaque", cfg.role);
 
+void setColorsFromDefaults() {
+  for (int i=0; i < NUM_LEDS; i++) {
+    leds[i].red   = 10;
+    leds[i].green = 200;
+    leds[i].blue  = 200;
+  }
+  FastLED.show();
+}
+
 void setColorsFromJson(const JsonObject& json, const char* pKey) {
   for (int i=0; i < NUM_LEDS; i++) {
     leds[i].red   = json[pKey][0];
@@ -107,10 +116,12 @@ void loop() {
   if (WiFi.status() == WL_CONNECTED) {
     if (!connected) {
       Serial.printf("Wifi connected: ip=%s\r\n", WiFi.localIP().toString().c_str());
+      setColorsFromDefaults();
     }
     connected = true;
     engine->loop();
   } else {
+    setColorsFromDefaults();
     if (connected) {
       connected = false;
       Serial.println("Lost wifi connection.");
