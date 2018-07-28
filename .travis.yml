@@ -2,7 +2,7 @@ language: node_js
 dist: trusty
 sudo: false
 node_js:
-- '6'
+- lts/*
 services:
 - docker
 before_script:
@@ -16,11 +16,14 @@ before_script:
 - docker-compose up -d
 - docker-compose ps
 # Wait for runtime to be ready
-- until ./node_modules/.bin/fbp-protocol-healthcheck ws://127.0.0.1:3569 || (( count++ >= 30 )); do echo "Waiting for runtime to be ready"; sleep 10; done
+- until ./node_modules/.bin/fbp-protocol-healthcheck ws://127.0.0.1:3569 || (( count++ >= 40 )); do echo "Waiting for runtime to be ready"; sleep 10; done
 - sleep 20
-after_success:
-- if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-  docker push "$DOCKER_IMAGE"; fi
+deploy:
+  -
+    provider: script
+    script: docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" && docker push "$DOCKER_IMAGE"
+    on:
+      branch: master
 env:
   global:
   - secure: NBFlwckuFzE4WXnAdDQ4LGrdsDrOQCvSiKlf3rO4DiADzv/Ntt45QhPTtH4h80wUbbdkU1MUfFBstQwNkWiwlSX+h825IweKpDpnxKWid7u3u4Cn9ie4qXxPI+4OdkTeYJhC1vqiGNOgdY6adacFVlZAeO+QGea7Wgt/6CJivbwZtM5lOyfuaANBGMs7fO3VOWGVRnG5DhGVvIB4+mvPF7yPzz8NNqKhntjH3Ll0W+hYlTJD4akXquv2Oixr0cqjpsi3tS4w+yqXBKg56Ls882N9s2eyM/NK1t66iVswiZyJ/CLPplsNpC1qWcizrN5ecy9lOSqc7kksiio/bErzBB6CZ5GHpMrtVXGsrkIQcfY+U8MtduBD2p85hy1b+ojH7vlkmsHt7vhBAOn9JA4ODGpzAGcbTzLbot6svMziD14S9ntw06FRyEMV1KHpfAlV05G4cbiQfCGZccdXF1IyIaHH2G9JVMAFeIqUqTVTQKnMLg4gZAMnqPYjchxa7IkilfDTlLgxqE53O6TSNon5X2KnCgS74mcu0qDU7A13voJ+FjLg7E75iHq+Drb2KmiFP5k95h1HHOpx6/x9wvclCybgJEc+hmUrrX7Kr4jhsfALUeUAy+8I5F/tflrJnZ3C/sOj/Cyg8kdP7iSI6tl6OqpsIHzvIHxAQJHaNmy8J7s=
