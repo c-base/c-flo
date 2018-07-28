@@ -26,7 +26,7 @@ services:
     links:
       - mqtt
   msgflo_foreign:
-    image: cbase/c-flo
+    image: cbase/raspberrypi3-c-flo
     container_name: c-flo-foreign
     environment:
       MSGFLO_BROKER: 'mqtt://mqtt:1883'
