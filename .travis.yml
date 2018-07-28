@@ -16,7 +16,7 @@ before_script:
 - docker-compose up -d
 - docker-compose ps
 # Wait for runtime to be ready
-- until ./node_modules/.bin/fbp-protocol-healthcheck ws://127.0.0.1:3569 || (( count++ >= 30 )); do echo "Waiting for runtime to be ready"; sleep 10; done
+- until ./node_modules/.bin/fbp-protocol-healthcheck ws://127.0.0.1:3569 || (( count++ >= 40 )); do echo "Waiting for runtime to be ready"; sleep 10; done
 - sleep 20
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
