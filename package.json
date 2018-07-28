@@ -60,5 +60,8 @@
       "c-base/buttonpanel": "msgflo-register --role #ROLE:components/buttonpanel.yml",
       "core/Output": "#NOFLO"
     }
+  },
+  "config": {
+    "unsafe-perm": true
   }
 }
