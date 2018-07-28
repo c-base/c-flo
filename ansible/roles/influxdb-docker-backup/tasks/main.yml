@@ -1,9 +1,9 @@
 ---
 - name: Install rsync
-  pacman:
+  apt:
     name: rsync
     state: latest
-    update_cache: yes
+    update_cache: no
   become: yes
   
 - name: Load secrets
@@ -11,7 +11,7 @@
   no_log: true
   
 - name: Create ssh directory for user
-  file: path=/home/alarm/.ssh state=directory owner=alarm
+  file: path=/home/sascha/.ssh state=directory owner=sascha
   
 - name: Copy private backup ssh key
   copy:
@@ -24,7 +24,7 @@
   no_log: true
 
 - name: Create backup.sh script.
-  template: src=backup.sh dest=/home/alarm/backup.sh
+  template: src=backup.sh dest=/home/sascha/backup.sh
 
 - name: Create timer file
   template:

@@ -12,7 +12,7 @@ BACKUP_SOURCE_DIR="/tmp/influxdbbackup/"
 
 sudo rm /tmp/influxdbbackup/cbeam.backup -rf
 sudo docker exec influxdb influxd backup -database cbeam /backup/cbeam.backup
-sudo chown -R alarm:alarm /tmp/influxdbbackup/
+sudo chown -R sascha:sascha /tmp/influxdbbackup/
 
 rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress \
 	$BACKUP_SOURCE_DIR $SNAPSHOT_DIR
