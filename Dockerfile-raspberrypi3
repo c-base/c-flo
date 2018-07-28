@@ -28,7 +28,7 @@ WORKDIR /var/c-flo
 COPY . /var/c-flo
 
 # Install MsgFlo and dependencies
-RUN npm install
+RUN npm install --only=production
 
 # Map the volumes
 VOLUME /var/c-flo/graphs /var/c-flo/components /var/c-flo/spec
