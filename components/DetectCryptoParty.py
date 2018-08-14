@@ -28,7 +28,7 @@ class DetectCryptoParty(msgflo.Participant):
     d = {
       'component': 'c-flo/DetectCryptoParty',
       'label': 'Detect a CryptoParty event',
-      'icon': 'star-o',
+      'icon': 'unlock-alt ',
       'inports': [
         { 'id': 'current', 'type': 'array'}
       ],
