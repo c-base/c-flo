@@ -3,17 +3,17 @@ topic: c-flo/EventColors
 fixture:
   type: 'fbp'
   data: |
-    INPORT=eventcolors.CURRENT:CURRENT
-    INPORT=eventcolors.PALETTE:PALETTE
-    OUTPORT=eventcolors.PALETTE:PALETTE
-    eventcolors(c-flo/EventColors)
+    INPORT=Events.CURRENT:CURRENT
+    INPORT=Events.COLORS:COLORS
+    OUTPORT=Events.PALETTE:PALETTE
+    Events(c-flo/EventColors)
 cases:
 -
   name: 'when there is no event'
   assertion: 'should return farbgeber palette'
   inputs:
     current: []
-    palette:
+    colors:
       b: [0, 0, 0]
   expect:
     palette:
@@ -27,15 +27,15 @@ cases:
     current:
       -
         summary: cryptoparty
-    palette:
+    colors:
       b: [0, 0, 0]
   expect:
     palette:
       -
         equals:
-          b: [217, 0, 255]
-          c: [255, 0, 152]
-          v1: [217, 0, 255]
-          v2: [217, 0, 255]
-          v3: [255, 0, 152]
-          v4: [255, 0, 152]
+          b: [255, 0, 152]
+          c: [217, 0, 255]
+          v1: [255, 0, 152]
+          v2: [255, 0, 152]
+          v3: [217, 0, 255]
+          v4: [217, 0, 255]

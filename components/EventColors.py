@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import gevent
 import msgflo
 
 def getCryptoParty(palette):
@@ -16,6 +15,9 @@ def getCryptoParty(palette):
   }
 
 def handleEvents(events, palette):
+  if len(events) == 0:
+    # farbgeber when there are no events
+    return palette
   for event in events:
     if event['summary'].lower() == 'cryptoparty':
       return getCryptoParty(palette)
@@ -30,7 +32,7 @@ class EventColors(msgflo.Participant):
       'icon': 'palette',
       'inports': [
         { 'id': 'current', 'type': 'array'},
-        { 'id': 'palette', 'type': 'object' },
+        { 'id': 'colors', 'type': 'object' },
       ],
       'outports': [
         { 'id': 'palette', 'type': 'object' },
@@ -47,11 +49,10 @@ class EventColors(msgflo.Participant):
         self.send('palette', handleEvents(msg.data, self.palette))
       self.ack(msg)
       return
-    if inport == 'palette':
+    if inport == 'colors':
       self.palette = msg.data
-      self.send('palette', handleEvents(msg.current_events, msg.data))
-      self.ack(msg)
-      return
+      self.send('palette', handleEvents(self.current_events, msg.data))
+    self.ack(msg)
 
 if __name__ == '__main__':
   msgflo.main(EventColors)

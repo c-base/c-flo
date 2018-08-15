@@ -817,7 +817,7 @@
       },
       "tgt": {
         "process": "eventcolors",
-        "port": "palette"
+        "port": "colors"
       }
     },
     {
