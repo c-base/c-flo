@@ -782,7 +782,7 @@
     },
     {
       "src": {
-        "process": "farbgeber",
+        "process": "eventcolors",
         "port": "palette"
       },
       "tgt": {
