@@ -1,0 +1,41 @@
+name: 'Handling event colors'
+topic: c-flo/EventColors
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=eventcolors.CURRENT:CURRENT
+    INPORT=eventcolors.PALETTE:PALETTE
+    OUTPORT=eventcolors.PALETTE:PALETTE
+    eventcolors(c-flo/EventColors)
+cases:
+-
+  name: 'when there is no event'
+  assertion: 'should return farbgeber palette'
+  inputs:
+    current: []
+    palette:
+      b: [0, 0, 0]
+  expect:
+    palette:
+      -
+        equals:
+          b: [0, 0, 0]
+-
+  name: 'when there is a cryptoparty'
+  assertion: 'should return cryptoparty pink'
+  inputs:
+    current:
+      -
+        summary: cryptoparty
+    palette:
+      b: [0, 0, 0]
+  expect:
+    palette:
+      -
+        equals:
+          b: [217, 0, 255]
+          c: [255, 0, 152]
+          v1: [217, 0, 255]
+          v2: [217, 0, 255]
+          v3: [255, 0, 152]
+          v4: [255, 0, 152]
