@@ -39,6 +39,7 @@ PubSubClient mqttClient;
 msgflo::Engine *engine;
 msgflo::InPort *ledPort;
 msgflo::InPort *ledStripPort;
+const String clientId = cfg.role + WiFi.macAddress();
 
 auto participant = msgflo::Participant("c-base/PioneerPlaque", cfg.role);
 
@@ -90,9 +91,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
 

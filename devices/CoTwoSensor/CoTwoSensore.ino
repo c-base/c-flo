@@ -69,6 +69,7 @@ msgflo::OutPort *COTwoPort;
 long nextEnvRead= 0;
 int percentage;
 
+const String clientId = cfg.role + WiFi.macAddress();
 
 auto participant = msgflo::Participant("c-base/CO2", cfg.role);
 
@@ -110,9 +111,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
 
