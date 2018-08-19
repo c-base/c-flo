@@ -38,6 +38,7 @@ int rightDoorState = LOW;
 int leftDoorState = LOW;
 int latestRightDoorState = LOW;
 int latestLeftDoorState = LOW;
+const String clientId = cfg.role + WiFi.macAddress();
 
 auto participant = msgflo::Participant("c-base/DoorStatus", cfg.role);
 
@@ -57,9 +58,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
 

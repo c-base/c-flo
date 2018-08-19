@@ -38,6 +38,7 @@ msgflo::OutPort *humPort;
 
 auto participant = msgflo::Participant("c-base/c_leuse_sensor", cfg.role);
 long nextEnvCheck = 0;
+const String clientId = cfg.role + WiFi.macAddress();
 
 void setup() {
   Serial.begin(115200);
@@ -56,9 +57,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
   

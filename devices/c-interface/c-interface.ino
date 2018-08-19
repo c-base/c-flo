@@ -86,6 +86,7 @@ auto participant = msgflo::Participant("c-base/screen", cfg.role);
 
 rgb_lcd lcd;
 
+const String clientId = cfg.role + WiFi.macAddress();
 
 
 void setLedGroupColor(Color color) {
@@ -126,9 +127,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
   farbgeberPort = engine->addInPort("colors", "object", cfg.prefix+cfg.role+"/colors", callback);

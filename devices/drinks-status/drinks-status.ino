@@ -41,6 +41,8 @@ msgflo::InPort *barPort;
 
 auto participant = msgflo::Participant("c-base/DrinksStatusLight", cfg.role);
 
+const String clientId = cfg.role + WiFi.macAddress();
+
 // 0 = unknown
 // 1 = red
 // 2 = green
@@ -128,9 +130,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
   // FIXME: Switch to correct port in production
