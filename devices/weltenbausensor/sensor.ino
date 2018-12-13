@@ -49,6 +49,7 @@ int readings[numReadings];
 int readIndex = 0;
 int total = 0;
 float average = 0;
+const String clientId = cfg.role + WiFi.macAddress();
 
 void setup() {
   Serial.begin(115200);
@@ -71,9 +72,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
 

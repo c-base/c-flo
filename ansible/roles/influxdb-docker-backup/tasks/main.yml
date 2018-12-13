@@ -1,9 +1,12 @@
 ---
 - name: Install rsync
+  become: yes
+  become_user: root
   apt:
     name: rsync
     # update_cache: yes
-  become: yes
+    state: latest
+    update_cache: no
   
 - name: Load secrets
   include_vars: "secrets.yml"
@@ -26,6 +29,8 @@
 - name: Create backup.sh script.
   template: src=backup.sh dest=/home/sascha/backup.sh owner=sascha
   become: yes
+  become_user: root
+  template: src=backup.sh dest=/home/sascha/backup.sh
 
 - name: Create timer file
   template:
@@ -33,6 +38,7 @@
     src: "influx-backup.timer"
   register: timer_config
   become: yes
+  become_user: root
   
 - name: Create service file
   template:

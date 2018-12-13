@@ -48,6 +48,8 @@ auto participant = msgflo::Participant("c-base/AlienAlarm", cfg.role);
 
 CRGB leds[NUM_LEDS];
 
+const String clientId = cfg.role + WiFi.macAddress();
+
 void setup() {
 
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
@@ -70,9 +72,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
   alarmPort = engine->addOutPort("alarm", "boolean", cfg.prefix+cfg.role+"/alarm");

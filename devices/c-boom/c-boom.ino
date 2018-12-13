@@ -36,6 +36,8 @@ msgflo::InPort *ledPort;
 long nextButtonCheck = 0;
 long nextPeriodicUpdate = 0;
 
+const String clientId = cfg.role + WiFi.macAddress();
+
 auto participant = msgflo::Participant("c-base/buttonpanel", cfg.role);
 
 void setup() {
@@ -54,9 +56,6 @@ void setup() {
 
   mqttClient.setServer(cfg.mqttHost, cfg.mqttPort);
   mqttClient.setClient(wifiClient);
-
-  String clientId = cfg.role;
-  clientId += WiFi.macAddress();
 
   engine = msgflo::pubsub::createPubSubClientEngine(participant, &mqttClient, clientId.c_str(), cfg.mqttUsername, cfg.mqttPassword);
 

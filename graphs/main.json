@@ -117,6 +117,9 @@
     "echelon": {
       "component": "c-flo/echelon"
     },
+    "eventcolors": {
+      "component": "c-flo/EventColors"
+    },
     "farbdmx": {
       "component": "c-flo/farbdmx"
     },
@@ -479,6 +482,16 @@
     },
     {
       "src": {
+        "process": "EventCalendar",
+        "port": "current"
+      },
+      "tgt": {
+        "process": "eventcolors",
+        "port": "current"
+      }
+    },
+    {
+      "src": {
         "process": "togglelights",
         "port": "out"
       },
@@ -769,7 +782,7 @@
     },
     {
       "src": {
-        "process": "farbgeber",
+        "process": "eventcolors",
         "port": "palette"
       },
       "tgt": {
@@ -800,6 +813,16 @@
     {
       "src": {
         "process": "farbgeber",
+        "port": "palette"
+      },
+      "tgt": {
+        "process": "eventcolors",
+        "port": "colors"
+      }
+    },
+    {
+      "src": {
+        "process": "eventcolors",
         "port": "palette"
       },
       "tgt": {
@@ -1178,6 +1201,13 @@
       "data": true,
       "tgt": {
         "process": "CrewOnline",
+        "port": "in"
+      }
+    },
+    {
+      "data": true,
+      "tgt": {
+        "process": "EventCalendar",
         "port": "in"
       }
     },
