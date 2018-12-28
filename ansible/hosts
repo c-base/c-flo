@@ -5,10 +5,12 @@ c-leuse-display						ansible_ssh_host=c-leuse-display.local
 #mainhall-display					ansible_ssh_host=mainhall-display.local
 mainhall-display							ansible_ssh_host=mainhall-display.35c3.c-base.org
 mainhall-mirror-display		ansible_ssh_host=mainhall-mirror-display.local
-weltenbau-display					ansible_ssh_host=weltenbau-display.local
+#weltenbau-display					ansible_ssh_host=weltenbau-display.local
+weltenbau-display					ansible_ssh_host=weltenbau-display.35c3.c-base.org
 #c-lab-display							ansible_ssh_host=10.0.0.64 avahi=c-lab-display.local
 c-lab-display							ansible_ssh_host=c-lab-display.35c3.c-base.org
-soundlab-display					ansible_ssh_host=soundlab-display.local
+#soundlab-display					ansible_ssh_host=soundlab-display.local
+soundlab-display					ansible_ssh_host=soundlab-display.35c3.c-base.org
 nerdarea-display					ansible_ssh_host=nerdarea-display.local
 he1-terminal							ansible_ssh_host=he1-terminal.cbrp3.c-base.org
 siri											ansible_ssh_host=siri.cbrp3.c-base.org
