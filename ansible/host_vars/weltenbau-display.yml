@@ -1,10 +1,10 @@
 ---
 important_urls: 
-    - "http://c-flo.cbrp3.c-base.org/35c3-events/"
+    - "http://c-flo.cbrp3.c-base.org/weltenbaulab/"
 
 urls: 
-    - "http://c-flo.cbrp3.c-base.org/35c3-life-support/"
-    - "http://c-flo.cbrp3.c-base.org/35c3-events/"
-    - "http://c-flo.cbrp3.c-base.org/35c3-events/"
-    - "http://c-flo.cbrp3.c-base.org/35c3-video?base-full-loop-1-green-blue"
-    - "http://c-flo.cbrp3.c-base.org/35c3-events/"
+    - "http://c-flo.cbrp3.c-base.org/events/"
+    - "http://c-flo.cbrp3.c-base.org/weltenbaulab/"
+    - "http://c-flo.cbrp3.c-base.org/internet/"
+    - "http://c-flo.cbrp3.c-base.org/bar-status/"
+    - "http://c-flo.cbrp3.c-base.org/weltenbaulab-music/"

@@ -1,10 +1,9 @@
 ---
 important_urls: 
-    - "http://c-flo.cbrp3.c-base.org/35c3-events/"
+    - "http://c-flo.cbrp3.c-base.org/soundlab"
 
 urls: 
-    - "http://c-flo.cbrp3.c-base.org/35c3-life-support/"
-    - "http://c-flo.cbrp3.c-base.org/35c3-events/"
-    - "http://c-flo.cbrp3.c-base.org/35c3-events/"
-    - "http://c-flo.cbrp3.c-base.org/35c3-video?base-full-loop-1-green-blue"
-    - "http://c-flo.cbrp3.c-base.org/35c3-events/"
+    - "http://c-flo.cbrp3.c-base.org/events/"
+    - "http://c-flo.cbrp3.c-base.org/soundlab"
+    - "http://c-flo.cbrp3.c-base.org/bar-history/"
+    - "http://c-flo.cbrp3.c-base.org/soundlab"
