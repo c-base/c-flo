@@ -1,15 +1,14 @@
 ---
-- name: Install Docker
-  pacman:
-    name: docker
-    state: latest
-    update_cache: yes
-  become: yes
-
-- name: Ensure that Docker runs
-  systemd:
-    name: docker
-    state: started
-    enabled: yes
-  become: yes
+#- name: Install Docker
+#  apt:
+#    name: docker
+#    state: latest
+#  become: yes
+#
+#- name: Ensure that Docker runs
+#  systemd:
+#    name: docker
+#    state: started
+#    enabled: yes
+#  become: yes
   
