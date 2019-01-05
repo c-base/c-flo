@@ -1,3 +1,6 @@
+### Currently using McLighting for the alien-sign @ c-base ###
+
+
 # McLighting v2 - The ESP8266 based multi-client lighting gadget
 
 [![Gitter](https://badges.gitter.im/mclighting/Lobby.svg)](https://gitter.im/mclighting/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
