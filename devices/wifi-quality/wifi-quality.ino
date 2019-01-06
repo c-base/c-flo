@@ -1,3 +1,5 @@
+// Code by hansjny. https://github.com/hansjny/Natural-Nerd/blob/master/arduino/wifiquality.ino
+
 #include "config.h"
 #include <ESP8266WiFi.h>
 #include <FastLED.h>
