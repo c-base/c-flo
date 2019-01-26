@@ -4,7 +4,6 @@
   roles:
     - role: "arch-docker"
     - role: "docker-systemd"
-      role_name: "container-msgflo"
       container_name: "msgflo"
       container_repository: "cbase/raspberrypi3-c-flo"
       container_ports:
@@ -13,7 +12,6 @@
         - "MSGFLO_BROKER=mqtt://10.0.1.17"
         - "INFOSCREENS_URL=http://c-flo.cbrp3.c-base.org"
     - role: "docker-systemd"
-      role_name: "container-msgflo-foreign"
       container_name: "msgflo-foreign"
       container_repository: "cbase/raspberrypi3-c-flo"
       container_after: "docker.service msgflo.service"
