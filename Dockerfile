@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:10
 
 # Export the Websocket port for Flowhub connection
 EXPOSE 3569

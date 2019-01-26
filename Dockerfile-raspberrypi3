@@ -1,4 +1,4 @@
-FROM resin/raspberrypi3-node:8
+FROM resin/raspberrypi3-node:10
 
 # Export the Websocket port for Flowhub connection
 EXPOSE 3569
