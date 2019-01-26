@@ -21,3 +21,6 @@ nerdctrl									ansible_ssh_host=nerdctrl.cbrp3.c-base.org
 
 [openmcts]
 openmct										ansible_ssh_host=openmct.cbrp3.c-base.org
+
+[msgflos]
+c-flo											ansible_ssh_host=c-flo.cbrp3.c-base.org
