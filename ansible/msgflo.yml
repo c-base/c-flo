@@ -1,0 +1,33 @@
+---
+- name: station IoT coordinator
+  hosts: msgflos
+  roles:
+    - role: "arch-docker"
+    - role: "docker-systemd"
+      container_name: "msgflo"
+      container_repository: "cbase/raspberrypi3-c-flo"
+      container_ports:
+        - "3569:3569"
+      container_environment:
+        - "MSGFLO_BROKER=mqtt://10.0.1.17"
+        - "INFOSCREENS_URL=http://c-flo.cbrp3.c-base.org"
+    - role: "docker-systemd"
+      container_name: "msgflo-foreign"
+      container_repository: "cbase/raspberrypi3-c-flo"
+      container_after: "docker.service msgflo.service"
+      container_environment:
+        - "MSGFLO_BROKER=mqtt://10.0.1.17"
+      container_cmd: "/usr/local/bin/npm run foreign"
+    - role: "docker-systemd"
+      container_name: "station-announcer"
+      container_repository: "cbase/raspberrypi3-station-announcer"
+      container_environment:
+        - "MSGFLO_BROKER=mqtt://10.0.1.17"
+    - role: "docker-systemd"
+      container_name: "infoscreens"
+      container_repository: "cbase/raspberrypi3-infoscreens"
+      container_ports:
+        - "80:8080"
+      container_volumes:
+        - "/opt/infoscreens/videos:/var/infoscreens/videos"
+        - "/opt/infoscreens/pictures:/var/infoscreens/pictures"

@@ -6,3 +6,4 @@ fbp.json
 /components/*.swp
 /components/__pycache__
 /devices/*/*.h
+.DS_Store

@@ -9,7 +9,7 @@ Restart=always
 ExecStartPre=-/usr/bin/docker stop {{ container_name }}
 ExecStartPre=-/usr/bin/docker rm {{ container_name }}
 {% if container_pull %}
-ExecStartPre=-/usr/bin/docker pull {{ container_image }}
+ExecStartPre=-/usr/bin/docker pull {{ container_image }}:{{ container_tag | default('latest') }}
 {% endif %}
 ExecStart=/usr/bin/docker run --rm -t \
 {% for port in container_ports %}

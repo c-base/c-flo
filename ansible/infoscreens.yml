@@ -1,0 +1,13 @@
+---
+- name: station info screens
+  hosts: raspbians
+  roles:
+    - raspbian
+    - lightdm
+    - fullscreen
+    
+- name: station legacy info screens
+  hosts: lxdms
+  roles:
+    - raspbian
+    - splitscreen

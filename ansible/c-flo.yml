@@ -1,17 +1,5 @@
 ---
 # This playbook deploys the whole application stack in this site.
-
-- name: configure and deploy the webservers and application code
-  hosts: raspbians
-  roles:
-    - raspbian
-    - lightdm
-    - fullscreen
-    
-- name: configure and deploy the webservers and application code
-  hosts: lxdms
-  roles:
-    - raspbian
-    - splitscreen
-
+- import_playbook: infoscreens.yml
+- import_playbook: msgflo.yml
 - import_playbook: openmct.yml
