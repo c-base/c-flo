@@ -60,6 +60,7 @@
 # This is necessary because you will get the Error:
 # certutil: function failed: security library: bad database
 # https://serverfault.com/questions/414578/certutil-function-failed-security-library-bad-database
+
 - name: Create directory for cert database
   become: yes
   become_user: "{{ display_user }}"
@@ -74,7 +75,7 @@
         Enter Password or Pin for "NSS Certificate DB": ""
         Enter new password: ""
         Re-enter password: ""
-  creates: /home/{{ display_user }}/.pki/nssdb/cert8.db
+      creates: /home/{{ display_user }}/.pki/nssdb/cert8.db
 
 - name: Load cacert root certs
   become: Yes
