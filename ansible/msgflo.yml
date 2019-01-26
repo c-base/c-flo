@@ -20,6 +20,6 @@
       container_cmd: "/usr/local/bin/npm run foreign"
     - role: "docker-systemd"
       container_name: "station-announcer"
-      container_repository: "cbase/station-announcer"
+      container_repository: "cbase/raspberrypi3-station-announcer"
       container_environment:
         - "MSGFLO_BROKER=mqtt://10.0.1.17"
