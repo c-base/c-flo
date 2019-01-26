@@ -8,9 +8,13 @@
       container_repository: "cbase/raspberrypi3-c-flo"
       container_ports:
         - "127.0.0.1:3569:3569"
+      container_environment:
+        - "MSGFLO_BROKER=mqtt://10.0.1.17"
     - role: "docker-systemd"
       container_name: "msgflo-foreign"
       container_repository: "cbase/raspberrypi3-c-flo"
       container_extra_options:
         "--entrypoint npm run foreign"
       container_after: "docker.service msgflo.service"
+      container_environment:
+        - "MSGFLO_BROKER=mqtt://10.0.1.17"
