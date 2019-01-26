@@ -30,7 +30,6 @@
   template: src=backup.sh dest=/home/sascha/backup.sh owner=sascha
   become: yes
   become_user: root
-  template: src=backup.sh dest=/home/sascha/backup.sh
 
 - name: Create timer file
   template:
