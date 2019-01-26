@@ -14,7 +14,7 @@
       container_name: "msgflo-foreign"
       container_repository: "cbase/raspberrypi3-c-flo"
       container_extra_options:
-        - "--entrypoint npm run foreign"
+        - '--entrypoint "npm run foreign"'
       container_after: "docker.service msgflo.service"
       container_environment:
         - "MSGFLO_BROKER=mqtt://10.0.1.17"
