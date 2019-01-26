@@ -1,4 +1,5 @@
 ---
 # This playbook deploys the whole application stack in this site.
 - import_playbook: infoscreens.yml
+- import_playbook: msgflo.yml
 - import_playbook: openmct.yml
