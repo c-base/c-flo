@@ -1,9 +1,15 @@
 ---
 - name: Install Docker
+  become: yes
+  become_user: root
   pacman:
     name: docker
     state: present
+    update_cache: yes
+
 - name: Ensure that Docker runs
+  become: yes
+  become_user: root
   systemd:
     name: docker
     state: started
