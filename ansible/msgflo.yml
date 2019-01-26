@@ -23,3 +23,13 @@
       container_repository: "cbase/raspberrypi3-station-announcer"
       container_environment:
         - "MSGFLO_BROKER=mqtt://10.0.1.17"
+    - role: "docker-systemd"
+      container_name: "infoscreens"
+      container_repository: "cbase/raspberrypi3-infoscreens"
+      container_ports:
+        - "127.0.0.1:80:8080"
+      container_extra_options:
+        - "--net host"
+      container_volumes:
+        - "/opt/infoscreens/videos:/var/infoscreens/videos"
+        - "/opt/infoscreens/pictures:/var/infoscreens/pictures"
