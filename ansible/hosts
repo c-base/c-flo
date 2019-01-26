@@ -1,20 +1,15 @@
 [raspbians]
-bar-display								ansible_ssh_host=10.0.0.99
-#bar-display							ansible_ssh_host=bar-display.local
+bar-display								ansible_ssh_host=bar-display.local
 c-leuse-display						ansible_ssh_host=c-leuse-display.local
-#mainhall-display					ansible_ssh_host=mainhall-display.local
-mainhall-display							ansible_ssh_host=mainhall-display.35c3.c-base.org
+mainhall-display					ansible_ssh_host=mainhall-display.local
 mainhall-mirror-display		ansible_ssh_host=mainhall-mirror-display.local
-#weltenbau-display					ansible_ssh_host=weltenbau-display.local
-weltenbau-display					ansible_ssh_host=weltenbau-display.35c3.c-base.org
-#c-lab-display							ansible_ssh_host=10.0.0.64 avahi=c-lab-display.local
-c-lab-display							ansible_ssh_host=c-lab-display.35c3.c-base.org
-#soundlab-display					ansible_ssh_host=soundlab-display.local
-soundlab-display					ansible_ssh_host=soundlab-display.35c3.c-base.org
+weltenbau-display					ansible_ssh_host=weltenbau-display.local
+c-lab-display							ansible_ssh_host=10.0.0.64 avahi=c-lab-display.local
+soundlab-display					ansible_ssh_host=soundlab-display.local
 nerdarea-display					ansible_ssh_host=nerdarea-display.local
 he1-terminal							ansible_ssh_host=he1-terminal.cbrp3.c-base.org
 siri											ansible_ssh_host=siri.cbrp3.c-base.org
-mechblast		      				ansible_ssh_host=mechblast.cbrp3.c-base.org
+mechblast									ansible_ssh_host=mechblast.cbrp3.c-base.org
 he2-display								ansible_ssh_host=he2-display.local
 east-display							ansible_ssh_host=east-display.35c3.c-base.org
 south-display							ansible_ssh_host=south-display.35c3.c-base.org
@@ -25,4 +20,4 @@ north-display							ansible_ssh_host=north-display.35c3.c-base.org
 nerdctrl									ansible_ssh_host=nerdctrl.cbrp3.c-base.org
 
 [openmcts]
-openmct         					ansible_ssh_host=openmct.cbrp3.c-base.org
+openmct										ansible_ssh_host=openmct.cbrp3.c-base.org
