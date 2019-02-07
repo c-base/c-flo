@@ -6,6 +6,8 @@ metarParser = require('metar')
 getWeather = (station, callback) ->
   metarFetcher.getData(station)
   .then (data) ->
+    unless data
+      return Promise.reject new Error "No data returned"
     clean = data.split("\n")[1]
     parsed = metarParser clean
     parsed.metar = clean
