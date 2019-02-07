@@ -1,5 +1,5 @@
 msgflo = require 'msgflo-nodejs'
-adds = require("adds")
+adds = require 'adds'
 
 getWeather = (station, callback) ->
   adds('metars',
