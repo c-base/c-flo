@@ -1,22 +1,18 @@
 msgflo = require 'msgflo-nodejs'
-MetarFetcher = require('metar-taf').MetarFetcher
-metarFetcher = new MetarFetcher
-metarParser = require('metar')
+adds = require("adds")
 
 getWeather = (station, callback) ->
-  metarFetcher.getData(station)
+  adds('metars',
+    stationString: station
+    hoursBeforeNow: 1
+  )
   .then (data) ->
-    unless data
-      return Promise.reject new Error "No data returned"
-    clean = data.split("\n")[1]
-    parsed = metarParser clean
-    parsed.metar = clean
-    callback null, parsed
+    callback null, data[0]
   , (err) ->
     callback err
 getHumidity = (weather) ->
-  Tc = weather.temperature
-  Tdc = weather.dewpoint
+  Tc = weather.temp_c
+  Tdc = weather.dewpoint_c
   Es=6.11*10.0**(7.5*Tc/(237.7+Tc))
   E=6.11*10.0**(7.5*Tdc/(237.7+Tdc))
   return (E/Es)*100
@@ -83,19 +79,19 @@ Participant = (client, role) ->
       return callback 'error', new Error "No weather station provided"
     getWeather station, (err, weather) ->
       return callback 'error', err if err
-      if weather.metar is lastMetar
+      if weather.raw_text is lastMetar
         # Send only when there is new METAR
         callback 'skipped', null, weather
         return
-      if weather.altimeterInHpa < 500
+      if weather.sea_level_pressure_mb < 500
         # Faulty reading, skip
         callback 'skipped', null, weather
         return
-      participant.send 'pressure', weather.altimeterInHpa
+      participant.send 'pressure', weather.sea_level_pressure_mb
       participant.send 'humidity', getHumidity weather
-      participant.send 'metar', weather.metar
-      lastMetar = weather.metar
-      callback 'temperature', null, weather.temperature
+      participant.send 'metar', weather.raw_text
+      lastMetar = weather.raw_text
+      callback 'temperature', null, weather.temp_c
 
   participant = new msgflo.participant.Participant client, definition, process, role
   return participant
