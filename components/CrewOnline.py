@@ -4,6 +4,10 @@ import msgflo
 import urllib.request
 import json
 
+# Ignore self-signed cert
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 class CrewOnline(msgflo.Participant):
   def __init__(self, role):
     d = {
