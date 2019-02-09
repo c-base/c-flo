@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 
 import msgflo
-import urllib.request
-import json
-
-# Ignore self-signed cert
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+import requests
 
 class CrewOnline(msgflo.Participant):
   def __init__(self, role):
@@ -26,8 +21,8 @@ class CrewOnline(msgflo.Participant):
 
   def process(self, inport, msg):
     url = "https://c-beam.cbrp3.c-base.org/mechblast_json"
-    response = urllib.request.urlopen(url)
-    data = json.loads(response.read())
+    response = requests.get(url, verify=False)
+    data = response.json()
     self.send('out', data["userlist"])
     if data["barstatus"]:
       self.send('bar', "open")
