@@ -25,7 +25,7 @@
   "homepage": "https://github.com/c-base/c-flo#readme",
   "devDependencies": {
     "chai": "^4.0.2",
-    "fbp-spec": "^0.5.2",
+    "fbp-spec": "^0.6.6",
     "grunt": "^1.0.1",
     "grunt-mocha-test": "^0.13.2",
     "grunt-yamllint": "^0.3.0",
@@ -35,7 +35,7 @@
     "adds": "^1.2.6",
     "coffeescript": "^2.3.1",
     "fbp-protocol-healthcheck": "^1.0.0",
-    "msgflo": "^0.11.0",
+    "msgflo": "^0.12.0",
     "msgflo-nodejs": "^0.11.1",
     "noflo": "^1.0.0",
     "noflo-core": "^0.6.1",
