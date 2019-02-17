@@ -9,6 +9,8 @@
 #define DATA_PIN D3
 #define LED_TYPE WS2812B
 #define BRIGHTNESS 255
+#define COLOR_ORDER GRB
+#define FRAMES_PER_SECOND 60
 
 // Define the array of leds
 CRGB leds[NUM_LEDS];
@@ -68,20 +70,10 @@ void callback(char* topic, byte* payload, unsigned int length) {
   
   if (inputPayload == "open") {
     digitalWrite(D4, LOW);   // Turn the BUILTIN_LED on by making the voltage LOW
-
-    // Tell FastLED to turn the open side GREEN
-//    leds[0] = CRGB::Green;
-//    FastLED.show();
-//    delay(500);
     baropen();
     
   } else {
     digitalWrite(D4, HIGH);  // Turn the BUILTIN_LED off by making the voltage HIGH
-
-    // Tell FastLED to turn the close side RED
-//    leds[0] = CRGB::Red;
-//    FastLED.show();
-//    delay(500);
     barclose();
     
   }
@@ -101,7 +93,7 @@ void reconnect() {
     if (client.connect(clientId.c_str())) {
       Serial.println("connected");
       // ... and resubscribe
-      clit.subscribe("bar/state");
+      client.subscribe("bar/state");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -114,8 +106,9 @@ void reconnect() {
 
 void setup() {
   // Setup FastLED LEDs and Brightness
-  FastLED.addLeds<LED_TYPE, DATA_PIN>(leds, NUM_LEDS);
+  FastLED.addLeds<LED_TYPE,DATA_PIN,COLOR_ORDER>(leds, NUM_LEDS);
   FastLED.setBrightness(BRIGHTNESS );
+  FastLED.delay(1000/FRAMES_PER_SECOND);
 
   // Initialize D4 / BUILTIN_LED as an output
   pinMode(D4, OUTPUT);
@@ -147,22 +140,35 @@ void loop() {
 
 void baropen() {
     // Tell FastLED to turn close side White
-    for (int i = 21; i < 104; i++) {
+for (int i = 21; i < 104; i++) {
     leds[i] = CRGB::White;
     }
     delay(50);
 
     
     // Tell FastLED to turn the open side GREEN
+    for (int t = 0; t < 10; t++) {
+    
     for (int i = 0; i < 21; i++) {
-    leds[i] = CRGB::Red;
+    leds[i] = CRGB::Blue;
     }
     delay(50);
     for (int i = 104; i < 165; i++) {
-    leds[i] = CRGB::Red;
+    leds[i] = CRGB::Blue;
     }
     FastLED.show();
+    delay(500);
+    
+    for (int i = 0; i < 21; i++) {
+    leds[i] = CRGB::Green;
+    }
     delay(50);
+    for (int i = 104; i < 165; i++) {
+    leds[i] = CRGB::Green;
+    }
+    FastLED.show();
+    delay(500);
+  }
 }
 
 void barclose() {
@@ -179,10 +185,19 @@ void barclose() {
 
 
     // Tell FastLED to turn the close side RED
+for (int t = 0; t < 10; t++) {
+  
     for (int i = 21; i < 104; i++) {
-    leds[i] = CRGB::Green;
+    leds[i] = CRGB::Yellow;
     }
     FastLED.show();
-    delay(50);
+    delay(500);
+
+  for (int i = 21; i < 104; i++) {
+    leds[i] = CRGB::Red;
+    }
+    FastLED.show();
+    delay(500);
+  }    
 }
 
