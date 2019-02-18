@@ -29,7 +29,7 @@
     "grunt": "^1.0.1",
     "grunt-mocha-test": "^0.13.2",
     "grunt-yamllint": "^0.3.0",
-    "mocha": "^5.0.0"
+    "mocha": "^6.0.0"
   },
   "dependencies": {
     "adds": "^1.2.6",
