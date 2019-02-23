@@ -6,7 +6,6 @@ node_js:
 services:
 - docker
 before_script:
-- npm install -g grunt-cli
 - pip install -r requirements.pip --user
 # Prepare cross-compiling environment if targeting ARM
 - if [ "$TARGET" == "raspberrypi3" ]; then docker run --rm --privileged multiarch/qemu-user-static:register --reset; fi
