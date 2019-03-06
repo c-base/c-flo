@@ -1,0 +1,18 @@
+name: 'Detecting Circle meeting'
+topic: c-flo/DetectCircle
+fixture:
+  type: 'fbp'
+  data: |
+    INPORT=calendar.IN:FETCH
+    OUTPORT=circle.CIRCLE:CIRCLE
+    calendar(c-flo/EventCalendar) CURRENT -> CURRENT circle(c-flo/DetectCircle)
+cases:
+-
+  name: 'when fetching calendar'
+  assertion: 'should tell if there is an ongoing circle meeting'
+  inputs:
+    fetch: true
+  expect:
+    circle:
+      -
+        type: 'boolean'
