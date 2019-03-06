@@ -1,5 +1,6 @@
 component: c-base/AlienAlarm
 icon: reddit-alien
+label: 'Alien Alarm in nerdarea'
 inports:
   led:
     queue: alien-alarm/led
@@ -8,6 +9,6 @@ outports:
   alarm:
     queue: alien-alarm/alarm
     type: boolean
-  stateful:
+  door:
     queue: alien-alarm/door
     type: boolean

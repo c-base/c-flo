@@ -6,4 +6,4 @@ outports:
   current_song:
     type: object
     description: JSON object of the current song being played.
-    queue: megablast/current_song
+    queue: '#ROLE/current_song'

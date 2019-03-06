@@ -1,0 +1,20 @@
+component: ingress-table/data
+label: Ingress data fetching for the Ingress Table
+icon: fire
+inports:
+  fetch:
+    queue: '#ROLE.FETCH'
+    type: bang
+  poll:
+    queue: '#ROLE.POLL'
+    type: number
+outports:
+  light:
+    queue: '#ROLE.LIGHT'
+    type: array
+  streets:
+    queue: '#ROLE.STREETS'
+    type: any
+  floor:
+    queue: '#ROLE.FLOOR'
+    type: array
