@@ -1,0 +1,20 @@
+component: ingress-table/lights
+icon: lightbulb-o
+label: 'Drive the lights on the table'
+inports:
+  streets:
+    queue: '#ROLE.STREETS'
+    type: array
+  floor:
+    queue: '#ROLE.FLOOR'
+    type: array
+  light:
+    queue: '#ROLE.LIGHT'
+    type: array
+  animate:
+    queue: '#ROLE.ANIMATE'
+    type: any
+outports:
+  shown:
+    queue: '#ROLE.SHOWN'
+    type: any
