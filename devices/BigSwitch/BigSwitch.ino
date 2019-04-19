@@ -7,6 +7,7 @@
 #include <PubSubClient.h>
 #include <Msgflo.h>
 
+#include "config.h"
 
 struct Config {
   const String prefix = "button/";
@@ -57,6 +58,8 @@ msgflo::InPort *ledPort;
 msgflo::InPort *ledStripPort;
 
 long nextButtonCheck = 0;
+long nextTransmission = 0;
+bool isPressed = false;
 
 auto participant = msgflo::Participant("c-base/BigSwitch", cfg.role);
 
@@ -163,10 +166,20 @@ void loop() {
     }
   }
 
-  // TODO: check for statechange. If changed, send right away. Else only send every 3 seconds or so
-  if (millis() > nextButtonCheck) {
+  if (connected && millis() > nextButtonCheck) {
     const bool pressed = digitalRead(cfg.buttonPin);
-    buttonPort->send(pressed ? "true" : "false");
+    if (pressed == isPressed) {
+      // Same state as before, send every 10 seconds
+      if (millis() > nextTransmission) {
+        buttonPort->send(pressed ? "true" : "false");
+        nextTransmission += 10000;
+      }
+    } else {
+      // State changed, send immediately
+      buttonPort->send(pressed ? "true" : "false");
+      nextTransmission += 10000;
+      isPressed = pressed;
+    }
     nextButtonCheck += 500;
   }
 }
