@@ -84,7 +84,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   if (inputPayload == "open") {
     digitalWrite(D4, LOW);   // Turn the BUILTIN_LED on by making the voltage LOW
     currentState = true;
-  } else {
+  } else if (inputPayload == "closed") {
     digitalWrite(D4, HIGH);  // Turn the BUILTIN_LED off by making the voltage HIGH
     currentState = false; 
   }
