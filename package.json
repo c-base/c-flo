@@ -32,7 +32,7 @@
     "yaml-lint": "^1.2.4"
   },
   "dependencies": {
-    "adds": "^1.2.6",
+    "adds": "1.2.7",
     "coffeescript": "^2.3.1",
     "fbp-protocol-healthcheck": "^1.0.0",
     "msgflo": "^0.12.0",
