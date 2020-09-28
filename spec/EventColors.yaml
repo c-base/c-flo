@@ -4,8 +4,8 @@ fixture:
   type: 'fbp'
   data: |
     INPORT=Events.CURRENT:CURRENT
-    INPORT=Events.COLORS:COLORS
-    OUTPORT=Events.PALETTE:PALETTE
+    INPORT=Events.PALETTE:PALETTE
+    OUTPORT=Events.MAINHALL:MAINHALL
     Events(c-flo/EventColors)
 cases:
 -
@@ -13,10 +13,10 @@ cases:
   assertion: 'should return farbgeber palette'
   inputs:
     current: []
-    colors:
+    palette:
       b: [0, 0, 0]
   expect:
-    palette:
+    mainhall:
       -
         equals:
           b: [0, 0, 0]
@@ -27,10 +27,10 @@ cases:
     current:
       -
         summary: cryptoparty
-    colors:
+    palette:
       b: [0, 0, 0]
   expect:
-    palette:
+    mainhall:
       -
         equals:
           b: [255, 0, 152]
