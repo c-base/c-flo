@@ -783,7 +783,7 @@
     {
       "src": {
         "process": "eventcolors",
-        "port": "palette"
+        "port": "mainhall"
       },
       "tgt": {
         "process": "bigswitch",
@@ -792,8 +792,8 @@
     },
     {
       "src": {
-        "process": "farbgeber",
-        "port": "palette"
+        "process": "eventcolors",
+        "port": "membersarea"
       },
       "tgt": {
         "process": "pioneer",
@@ -817,13 +817,13 @@
       },
       "tgt": {
         "process": "eventcolors",
-        "port": "colors"
+        "port": "palette"
       }
     },
     {
       "src": {
         "process": "eventcolors",
-        "port": "palette"
+        "port": "mainhall"
       },
       "tgt": {
         "process": "farbdmx",
@@ -832,8 +832,8 @@
     },
     {
       "src": {
-        "process": "farbgeber",
-        "port": "palette"
+        "process": "eventcolors",
+        "port": "membersarea"
       },
       "tgt": {
         "process": "farbhue",

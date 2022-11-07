@@ -32,10 +32,11 @@ class EventColors(msgflo.Participant):
       'icon': 'palette',
       'inports': [
         { 'id': 'current', 'type': 'array'},
-        { 'id': 'colors', 'type': 'object' },
+        { 'id': 'palette', 'type': 'object' },
       ],
       'outports': [
-        { 'id': 'palette', 'type': 'object' },
+        { 'id': 'mainhall', 'type': 'object' },
+        { 'id': 'membersarea', 'type': 'object' },
       ],
     }
     self.palette = None
@@ -46,12 +47,13 @@ class EventColors(msgflo.Participant):
     if inport == 'current':
       self.current_events = msg.data
       if self.palette:
-        self.send('palette', handleEvents(msg.data, self.palette))
+        self.send('mainhall', handleEvents(msg.data, self.palette))
       self.ack(msg)
       return
-    if inport == 'colors':
+    if inport == 'palette':
       self.palette = msg.data
-      self.send('palette', handleEvents(self.current_events, msg.data))
+      self.send('mainhall', handleEvents(self.current_events, msg.data))
+      self.send('membersarea', handleEvents(self.current_events, msg.data))
     self.ack(msg)
 
 if __name__ == '__main__':
